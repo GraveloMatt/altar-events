@@ -53,7 +53,24 @@ jobs:
             echo "No change."
           else
             git commit -m "events: $(date -u +%Y-%m-%d) [skip ci]"
-            git push
+            # The runner checked out a commit that may no longer be the tip:
+            # anyone editing data/manual.yml or sources.yml in GitHub's web UI
+            # while a build is running pushes ahead of us, and a bare `git push`
+            # then dies with "! [rejected] main -> main (fetch first)". That
+            # happened on run #1. Rebase our generated files onto whatever
+            # landed meanwhile — they only ever touch site/ and data/cache/,
+            # which a human never edits by hand, so there is nothing to conflict
+            # with. Retry the whole dance in case a second push slips in.
+            for attempt in 1 2 3; do
+              if git push; then
+                echo "Pushed on attempt $attempt."
+                exit 0
+              fi
+              echo "Push rejected, rebasing onto origin/main (attempt $attempt)."
+              git pull --rebase --autostash origin main
+            done
+            echo "::error::Could not push results after 3 attempts."
+            exit 1
           fi
 
       - uses: actions/upload-pages-artifact@v3
