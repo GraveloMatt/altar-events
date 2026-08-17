@@ -1,5 +1,5 @@
 {
- "at": "2026-08-17T18:45:20.504874+00:00",
+ "at": "2026-08-17T18:54:27.328646+00:00",
  "events": [
   {
    "title": "Trek Tuesday - Kitsuma Trail Day",
@@ -90,12 +90,12 @@
    "uid": "f25b655f83100d84"
   },
   {
-   "title": "Fall Trail Weekend!",
+   "title": "Fall Trail Weekend! Nov 6-8",
    "start": "2026-11-06T16:00:00",
    "end": "2026-11-08T13:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "",
+   "description": "SAVE THE DATE",
    "venue": "Camp Grier",
    "city": "Old Fort",
    "state": "NC",
@@ -109,7 +109,7 @@
    "category": "trail-work",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "65a4e186a310b33a"
+   "uid": "d1d99200ca490eae"
   }
  ]
 }
