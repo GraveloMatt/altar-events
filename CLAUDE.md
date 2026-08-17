@@ -107,7 +107,7 @@ still exits 0, writes every `site/` file, and lists each failure under
 | id | adapter | trust | status |
 |---|---|---|---|
 | asheville-on-bikes | llm | 80 | needs `ANTHROPIC_API_KEY` |
-| asheville-on-bikes-rwgps | ridewithgps | 75 | needs `RWGPS_API_KEY`, optional |
+| asheville-on-bikes-rwgps | ridewithgps | 75 | **DEAD END** — see below, optional |
 | darc | llm | 80 | needs `ANTHROPIC_API_KEY` |
 | blue-ridge-dirt-skrrts | llm | 80 | **ADDED 2026-08-17**; best group-ride source |
 | velosports-ring-of-fire | llm | 80 | **ADDED**; seasonal May-Jun, optional |
@@ -261,19 +261,41 @@ not broken. Same for pisgah-rage and ic-imagine.
 
 Deploy is DONE. What follows is what would most improve the calendar.
 
-**1. `RWGPS_API_KEY` — by far the highest-value remaining item.** Free and
-self-serve at `ridewithgps.com/api/v1/doc`; add it as a repo secret exactly
-like `ANTHROPIC_API_KEY`. It unlocks Asheville on Bikes' Thursday rides *and*
-is the only realistic route to BRBC's rides (they advertise 600+ club routes
-there). Group rides are currently the thinnest category on the live site — 15
-events, nearly all one-off. This single key is the biggest lever there is.
+**1. RWGPS — CLOSED 2026-08-17. Do not chase this again.** Three revisions of
+this brief called an RWGPS key "by far the highest-value remaining item". That
+was wrong, and it was never verified. Matt got a key, and here is what the live
+sites actually show:
+
+* **Asheville on Bikes** (`/clubs/1802-asheville-on-bikes/events`) — the Events
+  tab's most recent entry is **4 May 2024**. Two years stale. No upcoming
+  events at all.
+* **Blue Ridge Bicycle Club** — they are an *organization*, not a club:
+  `ridewithgps.com/organizations/120-blue-ridge-bicycle-club`. Their Events tab
+  says **"No events in August"** with 3 unscheduled events.
+
+Both clubs use Ride with GPS as a **route library**, not an event calendar. The
+"600+ BRBC routes" figure that made this look valuable counts *routes* — GPX
+files with no dates — which are not calendar events and never will be. The
+weekly rides genuinely are not published anywhere machine-readable; they live
+on Facebook, in email, and behind BRBC's member wall.
+
+The adapter still fails with a 404 because `/api/v1/clubs/{id}/events.json` was
+invented and the v1 docs document no club or event endpoints at all (only
+`/api/v1/routes.json`). Fixing the path is NOT worth doing: the credentials are
+accepted — the error moved from "needs RWGPS_API_KEY" to a real 404 once the
+secrets were wired into build.yml — so a corrected path would just return an
+empty list more politely. The source stays `optional` and inert.
+
+**Keep the secrets in place.** They cost nothing, they are correctly wired, and
+if either club ever starts scheduling events properly the only work left is the
+endpoint path.
 
 **2. Pisgah Area SORBA's VolunteerHub URL.** One click for a human: open their
 events page, click any "click Here!" button, read the domain off the address
 bar. VolunteerHub exposes iCal, which turns a dead source into an exact `ics`
 feed and brings back their dig days.
 
-**3. Multi-day events publish once per day.** Blue Ridge Heritage's craft
+**2b. Multi-day events publish once per day.** Blue Ridge Heritage's craft
 exhibition appeared ELEVEN times before the keyword fix removed it entirely.
 The underlying behaviour is still there and will bite any future source whose
 feed emits one entry per day of a multi-day event. Nothing currently in

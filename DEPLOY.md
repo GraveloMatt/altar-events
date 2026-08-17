@@ -95,24 +95,32 @@ title, because without that rule you get turkey trots and 5Ks.
 league: racing runs late January to June, and registration opens November 1.
 They're legitimately empty from July to November.
 
-**Asheville on Bikes' Thursday rides — missing.** Those live on Ride with GPS,
-which needs a free API key. See below; it's the single biggest improvement
-available.
+**Ride with GPS — a dead end, and I was wrong about it.** I told you this was
+the biggest available improvement. It isn't. Your key is installed and working,
+but I checked both clubs' actual Ride with GPS pages: Asheville on Bikes' last
+event there was **May 2024**, and Blue Ridge Bicycle Club's events tab says "No
+events in August". Both use Ride with GPS to store *routes* — GPX files with no
+dates — not to schedule rides. There is nothing there to fetch. The secrets are
+staying put in case that ever changes; they cost nothing.
 
 ---
 
-## The one upgrade worth doing
+## Where the weekly rides actually are
 
-A **Ride with GPS API key** unlocks Asheville on Bikes' weekly rides and is the
-realistic route to Blue Ridge Bicycle Club's 600+ club routes. Group rides are
-the thinnest part of the calendar right now, and this fixes most of that.
+The recurring group rides — the AoB Thursday rides, BRBC's weekly calendar —
+are not published anywhere a computer can read. They live on Facebook, in
+email newsletters, and behind BRBC's member wall.
 
-It's free and self-serve at **ridewithgps.com/api/v1/doc**. Once you have it:
+Two things that would genuinely help, both of them human:
 
-1. https://github.com/GraveloMatt/altar-events/settings/secrets/actions
-2. **New repository secret**
-3. Name: `RWGPS_API_KEY` — paste the key as the value
-4. Actions tab → **Build events calendar** → **Run workflow**
+**Ask the ride leaders to send you dates.** One email a season to AoB and the
+Dirt Skrrts, then `data/manual.yml` (see above). Hand-entered events outrank
+everything and it's about two minutes per ride series.
+
+**Ask Pisgah Area SORBA whether they publish a feed.** We currently read their
+VolunteerHub portal through an undocumented internal route, which works today
+but could break without warning. A shop-to-club email is more durable than any
+endpoint I can find.
 
 ---
 
