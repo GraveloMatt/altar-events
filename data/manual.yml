@@ -1,0 +1,24 @@
+# Events the shop adds by hand. Highest trust — these beat anything scraped.
+#
+# Use this for:
+#   - Altar's own rides, demo days, clinics, film nights
+#   - anything a promoter texts you before it's online anywhere
+#   - fixing a scraped event that came through wrong (same title + date wins)
+#
+# Only `title` and `start` are required. Dates are ISO: 2026-09-05
+# Add a time with 2026-09-05T18:00:00 — leave it off for an all-day event.
+
+events: []
+
+# events:
+#   - title: Altar Shop Ride — Bent Creek
+#     start: 2026-09-04T18:00:00
+#     venue: Altar Cycles
+#     city: Asheville
+#     state: NC
+#     lat: 35.5851
+#     lng: -82.5710
+#     url: https://altar.bike/rides
+#     description: >
+#       No-drop, roughly two hours, lights after October. Meet at the shop,
+#       roll at six. Loaner tubes on the bench if you need one.
