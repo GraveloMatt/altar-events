@@ -58,7 +58,7 @@ almost always why.
 
 Each morning's run appears here. Click the top one and you get a summary like:
 
-> **97 events published**
+> **64 events published**
 > - asheville-on-bikes — ok (21 events via llm)
 > - bikereg — ok (31 events via bikereg)
 > - blue-ridge-bicycle-club — down — …
@@ -82,6 +82,14 @@ Transylvania) still arrive via BikeReg and RunSignup.
 February; they run signups through VolunteerHub. **If you can get me that
 VolunteerHub link** it becomes a proper feed and their dig days come back. Open
 their events page, click any "click Here!" button, and read the address bar.
+
+**Ring of Fire — seasonal.** The velodrome series at Carrier Park runs
+Wednesdays from early May to late June. It's empty the rest of the year, and
+entry is BikeReg-only so it arrives through that source too.
+
+**RunSignup — nearly always 0 or 1 event, on purpose.** It's a running-race
+platform. It only publishes here when a race has an actual cycling word in its
+title, because without that rule you get turkey trots and 5Ks.
 
 **The three youth/NICA sources — seasonal.** North Carolina is a *spring*
 league: racing runs late January to June, and registration opens November 1.
@@ -127,8 +135,14 @@ The Squarespace record it depends on is: type `CNAME`, host `calendar`, data
 `gravelomatt.github.io`.
 
 **Something non-cycling is on the calendar.** It got through a keyword filter.
-Tell me which event and I'll tighten it — this happened on day one with a craft
-exhibition that matched the word "trail".
+Tell me which event and I'll tighten it. This has happened twice: a craft
+exhibition that matched the word "trail", and a wave of running races whose
+descriptions mentioned "bike valet". Both are fixed, and both are pinned as
+tests so they can't come back.
+
+Three borderline events are on there **deliberately** — CRAFTED (a handbuilt
+bicycle show), the 1000 Mile BikeWalk (a charity ride), and the Dirt Skrrts
+self-defense class (bike club programming). Not oversights.
 
 **You want it rebuilt right now.** Actions tab → **Build events calendar** →
 **Run workflow** → green **Run workflow** button. Takes about three minutes.

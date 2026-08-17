@@ -11,7 +11,7 @@ subscribable as `.ics`.
 **LIVE as of 2026-08-17.** https://calendar.altar.bike — repo
 `GraveloMatt/altar-events` (public), GitHub Pages via Actions, HTTPS enforced,
 DNS CNAME `calendar` -> `gravelomatt.github.io` at Squarespace. Rebuilds every
-morning at 05:17 ET. First green run published 97 events.
+morning at 05:17 ET. Currently publishing 64 events.
 
 ---
 
@@ -102,13 +102,15 @@ Config: home 35.5951 / -82.5515, radius 75 mi, horizon 400 days.
 still exits 0, writes every `site/` file, and lists each failure under
 "needs attention". Verified 2026-08-17.
 
-## Source inventory — 13 sources
+## Source inventory — 15 sources
 
 | id | adapter | trust | status |
 |---|---|---|---|
 | asheville-on-bikes | llm | 80 | needs `ANTHROPIC_API_KEY` |
 | asheville-on-bikes-rwgps | ridewithgps | 75 | needs `RWGPS_API_KEY`, optional |
 | darc | llm | 80 | needs `ANTHROPIC_API_KEY` |
+| blue-ridge-dirt-skrrts | llm | 80 | **ADDED 2026-08-17**; best group-ride source |
+| velosports-ring-of-fire | llm | 80 | **ADDED**; seasonal May-Jun, optional |
 | blue-ridge-bicycle-club | clubexpress | 80 | **BLOCKED**, optional |
 | pisgah-area-sorba | squarespace | 80 | **STALE**, optional; 1 event via llm |
 | g5-trail-collective | wix | 80 | **VERIFIED working** |
@@ -116,7 +118,7 @@ still exits 0, writes every `site/` file, and lists each failure under
 | pisgah-rage | llm | 50 | seasonal, mirrors NICA |
 | ic-imagine-cycling | llm | 50 | seasonal, optional |
 | bikereg | bikereg | 60 | **VERIFIED**; 31 events |
-| runsignup | runsignup | 60 | **coord + date bugs fixed**; 36 events |
+| runsignup | runsignup | 60 | **title-only keywords**; 1 event, by design |
 | uci | llm | 60 | cosmetic, optional |
 | blue-ridge-heritage | tribe | 40 | route serves; **keywords tightened** |
 
@@ -186,6 +188,40 @@ up automatically if they refresh. **Cheap human next step:** click any "click
 Here!" link on their events page and read the VolunteerHub domain off the
 address bar — VolunteerHub exposes iCal, which would turn this into an exact
 `ics` source.
+
+**RunSignup flooded the calendar with running races — and the date fix caused
+it.** Getting the format right took this source 0 -> 23 events, and all 23 were
+running: Black Mountain Turkey Trot, HalloWine 5k, Color Me Mutt 5K, Blue Ridge
+Relay, Dollywood's Light The Way 5k, two sprint triathlons. Two causes, both
+worth remembering because they generalise:
+  1. `require_keywords` matched the **description** as well as the title, and
+     running-race blurbs mention bikes constantly — "bike valet", "no bikes on
+     course", "packet pickup at the bike shop". New per-source flag
+     `require_in_title` forces the keyword into the title. It is opt-in;
+     description matching is still right for orgs that write vague titles.
+  2. The bare keyword `mountain` matched **place names** — "GTC Paris Mountain
+     Road Race" (a running club), "Black Mountain Turkey Trot". Removed; "mtb"
+     and "bike" already cover mountain biking since "mountain bike" contains
+     "bike".
+Result: 23 -> 1. The survivor, "1000 Mile BikeWalk for Prevention", has a real
+ride in it and Matt chose to keep it, along with CRAFTED (a handbuilt bicycle
+show) and the Dirt Skrrts self-defense class (club programming). Do not "clean
+up" those three.
+
+**Blue Ridge Dirt Skrrts — added, and the best group-ride source available.**
+Women's/non-binary MTB nonprofit. Squarespace; `?format=json` is
+robots-disallowed exactly like Pisgah Area SORBA, so the llm rung reads
+/schedule, which renders cleanly server-side with date, times and venue.
+Monthly group rides confirmed through December. Took Group Rides from 15 to 19
+on the live site — the category that was thinnest with BRBC walled off.
+
+**Ring of Fire — found, but seasonal and already over for 2026.** Track racing
+at the Carrier Park velodrome (the "Mellowdrome", 500 Amboy Rd), run by
+VeloSports Racing with Cane Creek. The 2026 series ran **6 May - 24 June, every
+Wednesday, 7 races, first race 5:30pm**. Entry is "MUST REGISTER ON BikeReg -
+NO ONSITE REGISTRATION", so 2027 should arrive through the bikereg source
+anyway; this entry catches the series listing earlier and names the venue.
+Expect zero from July until the 2027 season is announced.
 
 ### Verified earlier on 2026-08-17 (first pass — still current)
 
