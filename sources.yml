@@ -1,0 +1,309 @@
+# Altar Cycles — event source registry
+#
+# Every source declares an `adapter` (how we get the data) and a `trust` level
+# (who wins when two sources describe the same event).
+#
+# adapter options, best to worst:
+#   ics          real iCalendar feed              — exact, cheap, never breaks
+#   tribe        WP "The Events Calendar" REST    — exact, cheap
+#   squarespace  Squarespace ?format=json         — exact, cheap
+#   clubexpress  ClubExpress iCal handler         — exact, cheap
+#   runsignup    RunSignup public REST            — exact, cheap
+#   bikereg      BikeReg event search             — exact, cheap
+#   ridewithgps  Ride with GPS club events        — exact, cheap
+#   jsonld       schema.org Event in page HTML    — exact if present
+#   llm          Claude reads the page            — works on anything, costs ~$0.001/page
+#
+# trust: 100 = hand-entered by the shop, 80 = the org's own site,
+#        60 = registration platform, 40 = third-party aggregator.
+
+defaults:
+  home:
+    lat: 35.5951
+    lng: -82.5515
+    zip: "28801"
+  radius_miles: 75        # roughly Asheville -> Boone / Chattanooga / Greenville
+  horizon_days: 400
+  timezone: America/New_York
+
+sources:
+
+  # ---------------------------------------------------------------- advocacy
+  - id: asheville-on-bikes
+    name: Asheville on Bikes
+    org_url: https://ashevilleonbikes.com/
+    trust: 80
+    default_category: group-ride
+    # VERIFIED 2026-08-17: /events is a hand-built page listing their ~17
+    # annual events by month with no years and no plugin feed — there is no
+    # Events Calendar REST endpoint here. The real dates live on the
+    # individual event pages, so we read the hub plus those.
+    adapter: llm
+    url: https://ashevilleonbikes.com/events
+    hint: >
+      This page lists annual recurring events grouped by month with no year.
+      Emit each as an all-day event in the next occurrence of that month.
+      Mark them clearly as annual in the description.
+    extra_urls:
+      - https://ashevilleonbikes.com/events/asheville-summer-cycle
+      - https://ashevilleonbikes.com/events/asheville-bike-love
+      - https://ashevilleonbikes.com/events/gran-fondo-asheville
+
+  - id: asheville-on-bikes-rwgps
+    name: Asheville on Bikes — community rides
+    org_url: https://ridewithgps.com/clubs/1802-asheville-on-bikes
+    trust: 75
+    default_category: group-ride
+    adapter: ridewithgps
+    club_id: 1802
+    optional: true
+    # VERIFIED 2026-08-17: the weekly community ride series lives here, not
+    # on the WP site — but the RWGPS v1 API requires a key on every request
+    # and the public club page renders its list in JavaScript. Stays inert
+    # until RWGPS_API_KEY is set. Worth doing: this is the only source for
+    # AoB's recurring Thursday rides.
+
+  # ------------------------------------------------------------------- clubs
+  - id: darc
+    name: Downtown Asheville Racing Club
+    org_url: https://darccycling.com/
+    trust: 80
+    default_category: race
+    # GoDaddy Website Builder. No feed, no JSON-LD, no microdata — the calendar
+    # is hand-written prose with bolded "September 5 - Event Name, City" lines.
+    # This is exactly what the llm adapter exists for.
+    adapter: llm
+    url: https://darccycling.com/calendar
+
+  - id: blue-ridge-bicycle-club
+    name: Blue Ridge Bicycle Club
+    org_url: https://brbcnc.clubexpress.com/
+    trust: 80
+    default_category: group-ride
+    adapter: clubexpress
+    club_id: "285841"
+    optional: true
+    # VERIFIED 2026-08-17: BLOCKED, not a wrong path. Two findings:
+    #  1. ClubExpress publishes no club-wide iCal feed. Its own docs list only
+    #     search filters (&ec, &ma, subgroup) for the calendar module, and its
+    #     user guide describes ICS as per-event "Add to my Calendar" only. Both
+    #     paths this adapter tries are therefore fictional.
+    #  2. Worse, content.aspx?page_id=4001&club_id=285841 redirects an
+    #     anonymous request to the Join Us membership page. BRBC lists
+    #     "advance notice on all group rides on the Event Calendar" as a paid
+    #     member benefit, so the ride calendar is behind the member wall.
+    # Conclusion: do not chase this. Scraping it would mean working around a
+    # members-only gate. Marked optional so it can't fail the build. The rides
+    # are on Ride with GPS (they advertise 600+ club routes there) and Strava,
+    # so RWGPS_API_KEY is the real path in — same key that unlocks AoB.
+    # Their public events (WNC Flyer, Tour de Transylvania) register through
+    # BikeReg/RunSignup and arrive that way regardless.
+    # BRBC runs 10+ rides/week plus Tour de Transylvania stages. Without this
+    # cap they are ~70% of the calendar by volume and drown everything else.
+    max_per_week: 4
+    prefer_titles:                 # keep these even when over the weekly cap
+      - flyer
+      - hilly hellacious
+      - tour de transylvania
+
+  # ------------------------------------------------------- trail stewardship
+  - id: pisgah-area-sorba
+    name: Pisgah Area SORBA
+    org_url: https://www.pisgahareasorba.org/
+    trust: 80
+    default_category: trail-work
+    adapter: squarespace
+    url: https://www.pisgahareasorba.org/events-volunteer
+    optional: true
+    # VERIFIED 2026-08-17: the page is real and reachable, but it is STALE and
+    # it is not the system of record. Findings:
+    #  1. The furthest-future event listed anywhere on /events-volunteer is
+    #     Bracken Dig Day, 21 Feb 2026 — six months in the past as of today.
+    #     There is nothing dated after Feb 2026 on the page at all.
+    #  2. The page tells you why: "When registering for an event, you will be
+    #     asked to create an account on VolunteerHub", with each event linking
+    #     out to sign up. PAS runs its actual calendar in VolunteerHub; the
+    #     Squarespace page is a hand-maintained shop window that has not been
+    #     refreshed.
+    #  3. ?format=json — the whole basis of the `squarespace` adapter — is
+    #     disallowed by their robots.txt, so we do not fetch it.
+    #  4. The obvious VolunteerHub guess, pisgahareasorba.volunteerhub.com,
+    #     404s. The real tenant slug is UNKNOWN and no public search surfaced
+    #     it.
+    # Expect this source to yield ZERO. That is the site's state, not a bug.
+    # Marked optional so it cannot fail the build; llm fallback added so that
+    # if PAS does refresh the page we pick it up without a code change.
+    # NEXT STEP (cheap, human): ask PAS for their VolunteerHub URL, or click
+    # any "click Here!" link on the page and read the domain off the address
+    # bar. Their VolunteerHub almost certainly exposes an iCal feed, which
+    # would make this an exact `ics` source instead of a scrape.
+    fallback:
+      - adapter: llm
+        url: https://www.pisgahareasorba.org/events-volunteer
+
+  - id: g5-trail-collective
+    name: G5 Trail Collective
+    org_url: https://www.g5trailcollective.org/
+    trust: 80
+    default_category: trail-work
+    adapter: wix
+    url: https://www.g5trailcollective.org/volunteer
+    # VERIFIED 2026-08-17: RESOLVES. Wix Events confirmed (event pages live at
+    # /event-details/<slug>). /volunteer renders the full list server-side —
+    # title, date, start and end time WITH year, full street address and a
+    # project description — so even if the wix/jsonld rung finds nothing, the
+    # llm rung has clean text to read. Six events found through Nov 2026.
+    # Multi-day events appear here (Fall Trail Weekend, Nov 6-8), so this is
+    # the source most likely to exercise end-date handling.
+    fallback:
+      - adapter: llm
+        url: https://www.g5trailcollective.org/volunteer
+
+  # ------------------------------------------------------------------- youth
+  - id: nica-nc
+    name: North Carolina Interscholastic Cycling League
+    org_url: https://northcarolinamtb.org/
+    trust: 80
+    default_category: youth
+    adapter: jsonld
+    url: https://northcarolinamtb.org/schedule/
+    # VERIFIED 2026-08-17: domain confirmed correct against NICA's own league
+    # directory (nationalmtb.org/nica-leagues). Feed shape still unverified.
+    # IMPORTANT: NC is a SPRING league — racing runs late Jan/early Feb to
+    # June, athlete registration opens Nov 1. So from roughly July to November
+    # this source legitimately returns nothing, and a probe.py FAIL in that
+    # window is seasonal, not broken. Same applies to pisgah-rage and
+    # ic-imagine below, whose calendars mirror the league schedule.
+    fallback:
+      - adapter: llm
+        url: https://northcarolinamtb.org/schedule/
+
+  # Pisgah Rage and IC Imagine are NICA *teams*, not race promoters. Their
+  # public calendars are the NICA NC league schedule plus team practices.
+  # Kept at low trust so league listings win the dedupe; practices are
+  # team-members-only and get dropped by the `drop_if_titled` filter.
+  - id: pisgah-rage
+    name: Pisgah Rage (NICA composite team)
+    org_url: https://www.pisgahrage.com/
+    trust: 50
+    default_category: youth
+    adapter: llm
+    url: https://www.pisgahrage.com/
+    drop_if_titled: [practice, parent meeting, rider assessment, team meeting]
+
+  - id: ic-imagine-cycling
+    name: IC Imagine Cycling
+    org_url: https://www.icimaginecycling.org/
+    trust: 50
+    default_category: youth
+    adapter: llm
+    url: https://www.icimaginecycling.org/
+    drop_if_titled: [practice, parent meeting, team meeting]
+    optional: true          # don't fail the build if the domain moves
+
+  # ------------------------------------------------- registration platforms
+  # These two are the highest-yield sources in the whole file. Nearly every
+  # regional race — Pisgah Stage Race, Old Fort Fifty, Dirt Diggler, NCCX,
+  # Gravity Carolinas, the UCI events at Rock Creek — sells tickets through
+  # one of them, so they catch events long before the promoter updates a site.
+  - id: bikereg
+    name: BikeReg
+    org_url: https://www.bikereg.com/
+    trust: 60
+    default_category: race
+    adapter: bikereg
+    category_authority: true
+    radius_miles: 100
+    # VERIFIED 2026-08-17: the GraphQL endpoint the adapter guessed
+    # (bikereg.com/api/graphql) does not exist. Switched to the documented
+    # public REST search at bikereg.com/api/search — no key, returns
+    # MatchingEvents with Latitude/Longitude and BikeReg's own EventTypes
+    # discipline tags, dates as ASP.NET /Date(ms±zzzz)/.
+    #
+    # RESOLVED 2026-08-17 (was the last open question here): BikeReg publishes
+    # real API docs at https://www.bikereg.com/api/EventSearchDoc.aspx. The
+    # working params are loc / distance / startDate / endDate / states /
+    # region / eventtype / startpage. Confirmed by probing:
+    #   loc="<lat>|<lng>" + distance=<miles>  -> WORKS, exact radius, and each
+    #       row comes back with a Distance in miles. This is what we use.
+    #   startDate/endDate as MM/DD/YYYY        -> WORKS
+    #   states=NC                              -> WORKS
+    #   region=Southeast                       -> WORKS; NC lives in Southeast
+    #   region="Mid Atlantic"/"New England"    -> WORK (SPACES, not hyphens)
+    #   region="Mid-Atlantic" (hyphen)         -> IGNORED, national list
+    #   region="North Carolina"                -> IGNORED, national list
+    # Region names use spaces; the hyphenated spelling in site URLs such as
+    # /events/Cyclocross/Mid-Atlantic is a web route slug, not the API value.
+    # We prefer loc+distance over region because region=Southeast drags in
+    # Maryland and Virginia events 400 miles away while missing nothing local.
+    # Docs say results cap at 100 rows ordered by date, so the adapter pages
+    # with startpage until a page repeats or comes back empty.
+    # Real GraphQL gateway, if ever needed, is
+    # https://outsideapi.com/fed-gw/graphql with appType: BIKEREG (untested).
+    # STILL WORTH DOING from a machine with real egress: confirm the true
+    # result count. Every count observed here came through a fetch layer that
+    # truncates the JSON body, so the numbers seen are floors, not totals.
+
+  - id: runsignup
+    name: RunSignup
+    org_url: https://runsignup.com/
+    trust: 60
+    default_category: race
+    adapter: runsignup
+    category_authority: true
+    radius_miles: 100
+    require_keywords: [bike, bicycle, cycl, mtb, mountain, gravel, gran fondo,
+                       criterium, cyclocross, enduro, downhill, fondo, pedal]
+    # RunSignup is mostly running races; without this filter it's 95% 5Ks.
+    # VERIFIED 2026-08-17: answers anonymously, no key. zipcode+radius ARE
+    # honoured server-side — radius=5 around 28801 returned 10 races all in
+    # Asheville/Woodfin, radius=100 reached Statesville and Jonesborough TN —
+    # so unlike BikeReg there is no silent-fallthrough risk here.
+    # BUT: the payload contains NO coordinates. No latitude, longitude, lat,
+    # lng or coord field exists anywhere — only address.street/city/state/
+    # zipcode. The adapter was reading race["latitude"], always None, so every
+    # event fell through to normalize's REGION_TOWNS name match and anything
+    # in a town not on that list was silently dropped. Fixed by trusting the
+    # server-side radius via a `pre_geofenced` flag; see adapters.runsignup.
+
+  # ------------------------------------------------------------------- world
+  # Matt asked for UCI. Nobody in Asheville plans a weekend around a World Cup
+  # in Andorra, but riders do want to know when to be at the shop watching.
+  # Kept in a separate bucket, geofence bypassed, top-tier classes only.
+  - id: uci
+    name: UCI
+    org_url: https://www.uci.org/
+    trust: 60
+    default_category: watch
+    bucket: world           # excluded from the local calendar by default
+    adapter: llm
+    url: https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season
+    only_classes: [World Cup, World Championships, WCH, CDM]
+    optional: true
+
+  # -------------------------------------------------------------- aggregator
+  # Backstop. Runs The Events Calendar and already indexes PAS and others,
+  # so it catches things the primary sources publish late. Low trust: it
+  # only contributes events nobody else reported.
+  - id: blue-ridge-heritage
+    name: Blue Ridge National Heritage Area
+    org_url: https://www.blueridgeheritage.com/
+    trust: 40
+    default_category: festival
+    adapter: tribe
+    url: https://www.blueridgeheritage.com/wp-json/tribe/events/v1/events
+    # VERIFIED 2026-08-17: platform confirmed as The Events Calendar (the
+    # Google Calendar / iCalendar / Export .ics subscribe block is its
+    # signature). Note the public archive slug is /calendar/, NOT /events/.
+    # CONFIRMED 2026-08-17 (previously only inferred): the REST route above is
+    # slug-independent and DOES serve. Fetched live and it returned real JSON
+    # event data — titles such as "Weaving our Heritage: Cherokee Baskets" and
+    # "Come To Leicester Annual Studio Tour" with dates, venues, organizers,
+    # pricing and images. The route is correct as written; no change needed.
+    # Note the sample was all craft/heritage programming, which is exactly why
+    # require_keywords below is doing the real work — expect this source to
+    # contribute a handful of events at most, and only ones nobody else has.
+    # If it ever 404s, TEC also exposes /calendar/list/?ical=1, which the
+    # plain `ics` adapter could read.
+    require_keywords: [bike, bicycle, cycl, mtb, trail, gravel, pedal]
+    optional: true
