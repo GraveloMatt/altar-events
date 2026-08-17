@@ -1,0 +1,40 @@
+name: Event submission
+description: Add a cycling event to the WNC calendar
+title: "[Event] "
+labels: ["event-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Add the `approved` label and the next build picks it up.
+  - type: input
+    id: name
+    attributes: {label: Event name, placeholder: Dirt Diggler Gravel Grinder}
+    validations: {required: true}
+  - type: input
+    id: date
+    attributes: {label: Date, description: "YYYY-MM-DD", placeholder: "2026-09-05"}
+    validations: {required: true}
+  - type: input
+    id: end
+    attributes: {label: End date, description: "Multi-day only"}
+  - type: input
+    id: time
+    attributes: {label: Start time, description: "HH:MM, 24h. Blank = all day"}
+  - type: input
+    id: location
+    attributes: {label: Location}
+  - type: input
+    id: city
+    attributes: {label: City}
+    validations: {required: true}
+  - type: input
+    id: state
+    attributes: {label: State, value: "NC"}
+  - type: input
+    id: link
+    attributes: {label: Link}
+    validations: {required: true}
+  - type: textarea
+    id: details
+    attributes: {label: Details}
