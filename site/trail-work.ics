@@ -10,7 +10,7 @@ BEGIN:VEVENT
 SUMMARY:Trek Tuesday - Kitsuma Trail Day
 DTSTART:20260818T100000
 DTEND:20260818T140000
-DTSTAMP:20260817T183855Z
+DTSTAMP:20260817T184718Z
 UID:7ddb518d25384c3a@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Project: Tread repairs & improvements. Optional ride after\, b
@@ -21,10 +21,50 @@ LOCATION:Kitsuma Peak Trailhead\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Women in Trail Leadership Panel - FREE!
+DTSTART:20260818T173000
+DTEND:20260818T193000
+DTSTAMP:20260817T184718Z
+UID:8db4680bcde2d288@altar.bike
+CATEGORIES:trail-work
+DESCRIPTION:Join us for an evening of conversation and connection at our W
+ omen in Trail Leadership Panel at REI Biltmore Park. RSVP your spot at htt
+ ps://www.rei.com/events/wtlp/pisgah-area-sorba-presents-women-in-trail-lea
+ dership-panel 5:30am - Meet and greet with light refreshments 6:00 - Panel
+  begins 7:00 - Social Networking\n\nMore: https://www.pisgahareasorba.org/
+ \n\nSource: Pisgah Area SORBA\n\nListed by Altar Cycles — altar.bike/cal
+ endar
+LOCATION:31 Schenck Pkwy\, Asheville\, NC 28803\, USA\, Asheville\, NC
+URL:https://www.pisgahareasorba.org/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Brevard Womens Work Day
+DTSTART:20260824T173000
+DTEND:20260824T193000
+DTSTAMP:20260817T184718Z
+UID:a7a570249b9c1518@altar.bike
+CATEGORIES:trail-work
+DESCRIPTION:Join Pisgah Area SORBA for a Women's Trail Work Day on Mon day
+ \, August 24\, from 5:30–7:30 PM ! Come spend an evening giving back to 
+ the trails\, meeting other women who love the outdoors\, and enjoying some
+  time by the river. We'll be brushing back vegetation along the Davidson R
+ iver Trail to improve the trail corridor and keep this popular trail looki
+ ng its best. We'll meet at the Cove Creek Trailhead \, making it easy to c
+ ool off with a swim in the Davidson River after the work is done. To top i
+ t all off\, we'll fire up the grill afterward and enjoy some food and cold
+  drinks together by the river! Date: Monday\, August 24th Time: 5:30 PM 
+ – 7:30 PM Trail Work Location: Davidson River Trail Meetup Location: Cov
+ e Creek Trailhead No trail work experience is necessary. We'll provide the
+  tools\, ins\n\nMore: https://www.pisgahareasorba.org/\n\nSource: Pisgah A
+ rea SORBA\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:75MM+66 Brevard\, North Carolina\, USA\, 75MM+66 Brevard
+URL:https://www.pisgahareasorba.org/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Rocky Knob Mountaineer Showdown
 DTSTART:20260829T040000Z
 DTEND:20260830T040000Z
-DTSTAMP:20260817T183855Z
+DTSTAMP:20260817T184718Z
 UID:fee58fd0937c36eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Volunteer Sign up: https://docs.google.com/forms/d/e/1FAIpQLSf
@@ -48,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:Betty's & Jarret's Run Trail Day
 DTSTART:20260904T120000
 DTEND:20260904T163000
-DTSTAMP:20260817T183855Z
+DTSTAMP:20260817T184718Z
 UID:e1bc6ea5ef974c01@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Project: Drain cleaning. Tread shaping.\n\nMore: https://www.g
@@ -58,10 +98,34 @@ LOCATION:Gateway Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Catalyst Summer Jam Lunch Crew
+DTSTART:20260905T113000
+DTEND:20260905T140000
+DTSTAMP:20260817T184718Z
+UID:6471d9f7df15cf50@altar.bike
+CATEGORIES:trail-work
+DESCRIPTION:We're looking for a few volunteers to help Pisgah Area SORBA c
+ ook lunch at Catalyst Sports End of Summer Jam . We'll be grilling burgers
+  and hot dogs while representing PAS\, talking trails\, recruiting volunte
+ ers\, and promoting upcoming work days. Catalyst Sports is a volunteer-led
+  nonprofit that empowers people with physical disabilities through adaptiv
+ e adventure sports\, building confidence\, community\, and healthy\, activ
+ e lives. This is a fun way to support the local riding community and help 
+ spread the word about the work we're doing on the trails. Perks: • Free 
+ Ride Kanuga bike park pass for the day • Hang out with riders\, racers\,
+  and volunteers • Help represent Pisgah Area SORBA at a great event Date
+ : Saturday\, September 4th Time: 11:30 AM – 2:00 PM Location: Ride Kanug
+ a If you're inte\n\nMore: https://www.pisgahareasorba.org/\n\nSource: Pisg
+ ah Area SORBA\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:Ride Kanuga\, Kanuga Lake Road\, Hendersonville\, NC\, USA\, Hend
+ ersonville\, NC
+URL:https://www.pisgahareasorba.org/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Lower Heartbreak Trail Day
 DTSTART:20260912T090000
 DTEND:20260912T140000
-DTSTAMP:20260817T183855Z
+DTSTAMP:20260817T184718Z
 UID:199f975dfbc75d0a@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Project: Drain cleaning. Corridor pruning & brushing.\n\nMore:
@@ -71,15 +135,62 @@ LOCATION:Allison Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Women's Bikepacking Overnight w/ Earth Mountain!
+DTSTART:20260912T110000
+DTEND:20260913T150000
+DTSTAMP:20260817T184718Z
+UID:75f2fce441c009eb@altar.bike
+CATEGORIES:trail-work
+DESCRIPTION:Women’s Overnight Bikepacking Trip with Earth Mountain! Join
+  us for a women’s overnight bikepacking adventure through Pisgah Nationa
+ l Forest with Earth Mountain! This bikepacking trip is a great opportunity
+  to learn the basics\, spend a night in the woods\, and connect with other
+  women who love riding and exploring. The total route is approximately 39 
+ miles with 3\,770 feet of climbing \, with about 1\,500 feet of climbing e
+ ach day. The route includes options for gravel and single track\, so both 
+ gravel and mountain bikes are welcome! Route : Looking Glass Loop Overnigh
+ t What to Expect: Bring the good vibes: We're always stoked to be in bikin
+ g and camping in the woods\, and even moreso to share it with a rad group 
+ of ladies. Bring your own food: You’ll be responsible for bringing your 
+ food for th\n\nMore: https://www.pisgahareasorba.org/\n\nSource: Pisgah Ar
+ ea SORBA\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:Jimmy Harris Railroad Depot Park\, Railroad Avenue\, Brevard\, NC
+ \, USA\, Brevard\, NC
+URL:https://www.pisgahareasorba.org/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Brevard Dig Day w/ CMC
+DTSTART:20261009T083000
+DTEND:20261009T140000
+DTSTAMP:20260817T184718Z
+UID:500d1546ec2f74d1@altar.bike
+CATEGORIES:trail-work
+DESCRIPTION:Join Pisgah Area SORBA and the Carolina Mountain Club for a Tr
+ ail Work Day in Pisgah! We’ll meet at the Fish Hatchery and hike in alon
+ g Cat Gap to work on the trail. We’ll be partnering with the Carolina Mo
+ untain Club on this work day and are excited to continue working together!
+  Come lend a hand as we work together to maintain and improve the trails w
+ e all love! No experience is necessary—our crew leaders will provide the
+  tools\, guidance\, and instruction. Date: Tuesday\, October 9th Time: 8:3
+ 0 AM – 2:00 PM Trail Work Location: Cat Gap Trail Meetup Location: F ish
+  Hatchery What to Bring: Required: Long pants\, boots that cover your ankl
+ es\, safety glasses\, gloves\, hardhat (bike helmets DO NOT count\, but cl
+ imbing helmets do)\, snacks/lunch and water. Note: Hardhats\, gloves and s
+ afety glasses ca\n\nMore: https://www.pisgahareasorba.org/\n\nSource: Pisg
+ ah Area SORBA\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:1401 Fish Hatchery Rd\, Pisgah Forest\, NC\, USA\, Pisgah Forest\
+ , NC
+URL:https://www.pisgahareasorba.org/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Fall Trail Weekend!
 DTSTART:20261106T160000
 DTEND:20261108T130000
-DTSTAMP:20260817T183855Z
+DTSTAMP:20260817T184718Z
 UID:65a4e186a310b33a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:SAVE THE DATE\n\nMore: https://www.g5trailcollective.org/volun
- teer\n\nSource: G5 Trail Collective\n\nListed by Altar Cycles — altar.bi
- ke/calendar
+DESCRIPTION:More: https://www.g5trailcollective.org/volunteer\n\nSource: G
+ 5 Trail Collective\n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:Camp Grier\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
