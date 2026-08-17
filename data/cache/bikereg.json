@@ -1,5 +1,5 @@
 {
- "at": "2026-08-17T18:54:37.362269+00:00",
+ "at": "2026-08-17T19:20:56.560328+00:00",
  "events": [
   {
    "title": "Gravel Roll - The Holler in Walhalla",
@@ -316,7 +316,7 @@
    "distance_mi": 14.9
   },
   {
-   "title": "SOLD OUT !!! \u2014\u2014\u201412th Annual Dancing Bear Bike Bash Returns on September 19th, 2026",
+   "title": "12th Annual Dancing Bear Bike Bash Returns on September 19th, 2026",
    "start": "2026-09-19T04:00:00+00:00",
    "end": "2026-09-19T04:00:00+00:00",
    "all_day": false,
@@ -341,7 +341,7 @@
    "category": "race",
    "category_basis": "rule",
    "discipline": "other",
-   "uid": "66c6bdb7d78583ef",
+   "uid": "8f044efc5da3583a",
    "distance_mi": 69.4
   },
   {
