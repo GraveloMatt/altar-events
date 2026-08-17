@@ -1,5 +1,5 @@
 {
- "at": "2026-08-17T17:17:46.449922+00:00",
+ "at": "2026-08-17T17:25:35.764201+00:00",
  "events": [
   {
    "title": "Bike Love",
@@ -250,7 +250,7 @@
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
    "description": "Annual recurring event",
-   "venue": "",
+   "venue": "New Belgium",
    "city": "Asheville",
    "state": "NC",
    "cost": "Free",
@@ -425,7 +425,7 @@
    "end": "2026-08-22T00:00:00",
    "all_day": false,
    "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Celebrate 20 years of Asheville on Bikes! Annual event featuring pop-up bike park, check-in, and guided rides in three route options: Cruiser Ride (5 miles, family-friendly), Main Ride (7 miles, downtown), and Ride More (18 miles, gravel). Post-ride festivities included.",
+   "description": "Celebrate 20 years of Asheville on Bikes! Features Pop-Up Bike Park (2-7 pm), Summer Cycle Check-In (3:30-4 pm), ride start at 4 pm with three route options: Cruiser Ride (5 miles), Main Ride (7 miles), and Ride More (18 miles), plus Post-Ride Festivities (5-7 pm). Waiver required to ride.",
    "venue": "New Belgium Brewing",
    "city": "Asheville",
    "state": "NC",
@@ -438,30 +438,8 @@
    "bucket": "local",
    "category": "festival",
    "category_basis": "rule",
-   "discipline": "gravel",
-   "uid": "e6662d6251819fff"
-  },
-  {
-   "title": "Pumpkin Pedaller",
-   "start": "2026-10-01",
-   "end": "2026-10-01",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Annual recurring event in October. See website for details.",
-   "venue": "None",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": null,
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "group-ride",
-   "category_basis": "default",
    "discipline": "other",
-   "uid": "b7bf4ed64dac0469"
+   "uid": "e6662d6251819fff"
   }
  ]
 }

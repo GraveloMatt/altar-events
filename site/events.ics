@@ -8,119 +8,32 @@ X-WR-CALNAME:WNC Cycling — by Altar Cycles
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260816T150000
-DTEND:20260816T210000
-DTSTAMP:20260817T171925Z
-UID:1d1daa1184640c63@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-08-16/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-08-16/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Trek Tuesday - Kitsuma Trail Day
 DTSTART:20260818T100000
 DTEND:20260818T140000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:7ddb518d25384c3a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Project: Tread repairs & improvements. Optional ride after\, b
- ring your bike!\n\nMore: https://www.g5trailcollective.org/volunteer\n\nSo
- urce: G5 Trail Collective\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Tread repairs & improvements. Optional ride after\, bring your
+  bike!\n\nMore: https://www.g5trailcollective.org/volunteer\n\nSource: G5 
+ Trail Collective\n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:Kitsuma Peak Trailhead\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260819T150000
-DTEND:20260819T210000
-DTSTAMP:20260817T171925Z
-UID:e4b935c1dd219e66@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-08-19/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-08-19/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260821T150000
-DTEND:20260821T210000
-DTSTAMP:20260817T171925Z
-UID:0687e8cf7d5a015c@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-08-21/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-08-21/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Summer Cycle 2026
 DTSTART:20260822T000000
 DTEND:20260822T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:e6662d6251819fff@altar.bike
 CATEGORIES:festival
-DESCRIPTION:Celebrate 20 years of Asheville on Bikes! Annual event featuri
- ng pop-up bike park\, check-in\, and guided rides in three route options: 
- Cruiser Ride (5 miles\, family-friendly)\, Main Ride (7 miles\, downtown)\
- , and Ride More (18 miles\, gravel). Post-ride festivities included.\n\nMo
- re: https://ashevilleonbikes.com/events/asheville-summer-cycle\n\nSource: 
- Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Celebrate 20 years of Asheville on Bikes! Features Pop-Up Bike
+  Park (2-7 pm)\, Summer Cycle Check-In (3:30-4 pm)\, ride start at 4 pm wi
+ th three route options: Cruiser Ride (5 miles)\, Main Ride (7 miles)\, and
+  Ride More (18 miles)\, plus Post-Ride Festivities (5-7 pm). Waiver requir
+ ed to ride.\n\nMore: https://ashevilleonbikes.com/events/asheville-summer-
+ cycle\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:New Belgium Brewing\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events/asheville-summer-cycle
 END:VEVENT
@@ -128,7 +41,7 @@ BEGIN:VEVENT
 SUMMARY:Gravel Roll - The Holler in Walhalla
 DTSTART:20260822T040000Z
 DTEND:20260822T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:a10bb3a380a81314@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Gravel Roll is BACK! Hollerin' for more in Walhalla in 202
@@ -152,7 +65,7 @@ BEGIN:VEVENT
 SUMMARY:Go Nuts Enduro Round 2 - Sugar Mountain\, USA
 DTSTART:20260823T040000Z
 DTEND:20260823T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:2b5c2eaa1337a28b@altar.bike
 CATEGORIES:race
 DESCRIPTION:TIME & LOCATION Sugar Mountain Bike Park 1009 Sugar Mountain D
@@ -178,7 +91,7 @@ BEGIN:VEVENT
 SUMMARY:DARC August 23 Road Social Ride
 DTSTART:20260823T040000Z
 DTEND:20260823T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:6f8e1cab2507d835@altar.bike
 CATEGORIES:clinic
 DESCRIPTION:Meet at Gravelo Workshop (793 Merrimon Ave\, Asheville\, NC 28
@@ -197,7 +110,7 @@ BEGIN:VEVENT
 SUMMARY:Asheville Youth Cycling CX Practice August 23rd
 DTSTART:20260823T040000Z
 DTEND:20260823T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:891342d6da276d11@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Join Asheville Youth Cycling for a fun Cyclocross practice for
@@ -211,39 +124,10 @@ LOCATION:79 Wyoming Rd\, Asheville\, NC
 URL:http://www.BikeReg.com/asheville-youth-cycling-cx-practice-august-23
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260823T150000
-DTEND:20260823T210000
-DTSTAMP:20260817T171925Z
-UID:b60bc9906116f35e@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-08-23/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-08-23/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Long Distance Training Presented by ASICS
 DTSTART:20260824T000000
 DTEND:20261114T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:94ddab525c843bc9@altar.bike
 CATEGORIES:race
 DESCRIPTION:Go the distance with Fleet Feet Knoxville and ASICS! This Fall
@@ -263,68 +147,10 @@ LOCATION:11619 Parkside Dr\, Knoxville\, TN
 URL:https://runsignup.com/Race/TN/Knoxville/FallLongDistanceTraining
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260826T150000
-DTEND:20260826T210000
-DTSTAMP:20260817T171925Z
-UID:4b2d1c501b1fffa1@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-08-26/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-08-26/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260828T150000
-DTEND:20260828T210000
-DTSTAMP:20260817T171925Z
-UID:7eee50209fa1925f@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-08-28/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-08-28/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Asheville Craft Beer Half Marathon & 10K/5K
 DTSTART:20260829T000000
 DTEND:20260829T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:bbceabc020b44bdf@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the Asheville Craft Beer Half Marathon – 10K – 
@@ -348,7 +174,7 @@ BEGIN:VEVENT
 SUMMARY:Rocky Knob Mountaineer Showdown
 DTSTART:20260829T040000Z
 DTEND:20260830T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:fee58fd0937c36eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Volunteer Sign up: https://docs.google.com/forms/d/e/1FAIpQLSf
@@ -369,137 +195,38 @@ LOCATION:285 Mountain Bike Wy\, Boone\, NC
 URL:http://www.BikeReg.com/rocky-knob-ruckus
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Trails Less Traveled: Charlies Bunion
-DTSTART:20260829T143000
-DTEND:20260829T200000
-DTSTAMP:20260817T171925Z
-UID:98c726998e55adfc@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Join us for this 8-Mile out and back hike with an elevation ga
- in of 1\,640 feet to one of the most scenic vistas in The Great Smokies. L
- eaving from the Newfound Gap parking lot\, this hike follows a gorgeous st
- retch of the Appalachian Trail through the highest closed-forest zone of R
- ed Spruce and Fraser Fir in the Smokies while offering outstanding views o
- f the North Carolina Smokies to the south and the legendary Mt. LeConte an
- d Myrtle Point culminating with the expansive views from Charlies Bunion. 
- This hike is recommended for experienced hikers only.\n\nMore: https://www
- .blueridgeheritage.com/event/trails-less-traveled-charlies-bunion/\n\nSour
- ce: Blue Ridge National Heritage Area\n\nListed by Altar Cycles — altar.
- bike/calendar
-LOCATION:Swannanoa Valley Museum\, Black Mountain\, NC
-URL:https://www.blueridgeheritage.com/event/trails-less-traveled-charlies-
- bunion/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260830T150000
-DTEND:20260830T210000
-DTSTAMP:20260817T171925Z
-UID:6351c367e60b7275@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-08-30/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-08-30/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260902T150000
-DTEND:20260902T210000
-DTSTAMP:20260817T171925Z
-UID:52dc37ec344d8f13@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-02/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-02/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Betty's & Jarret's Run Trail Day
 DTSTART:20260904T120000
 DTEND:20260904T163000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:e1bc6ea5ef974c01@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Project: Drain cleaning. Tread shaping.\n\nMore: https://www.g
- 5trailcollective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by
-  Altar Cycles — altar.bike/calendar
+DESCRIPTION:Drain cleaning. Tread shaping.\n\nMore: https://www.g5trailcol
+ lective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by Altar Cy
+ cles — altar.bike/calendar
 LOCATION:Gateway Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260904T150000
-DTEND:20260904T210000
-DTSTAMP:20260817T171925Z
-UID:a825d9f5e8b3180a@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-04/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-04/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Dirt Diggler Gravel Grinder
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260905
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:53b43bf11b736a76@altar.bike
 CATEGORIES:race
-DESCRIPTION:Featured Event\n\nMore: https://darccycling.com/calendar\n\nSo
- urce: Downtown Asheville Racing Club\n\nListed by Altar Cycles — altar.b
- ike/calendar
+DESCRIPTION:NC Gravel Series New for 2026 is the NC Gravel Series. We're e
+ xcited to bring these races together for a 3 race points series with our s
+ ister company\, Trans-Sylvania Productions. Other Races February 22\, 2026
+  - Uwharrie Forest Gravel Grinder www.bikereg.com/ufgg March 28\, 2026 - H
+ olly Shelter Gravel Grinder www.bikereg.com/hsgg For more series informati
+ on\, go to www.trans-sylvaniaproductions.com/ncgs Routes Long Course: http
+ s://ridewithgps.com/routes/45085620 Short Course: https://ridewithgps.com/
+ routes/43546626 Schedule Friday\, September 4\, 2026 4:00-6:00 PM Packet P
+ ickup/Registration @ REEB Ranch (aka start/finish) Saturday\, September 5\
+ , 2026 7:00 AM -- Registration Opens 8:15 AM -- Long Course Racer Meeting 
+ At Start 8:30 AM -- Registration Closes 8:30 AM -- LONG COURSE RACE START 
+ 8:45 A\n\nMore: https://darccycling.com/calendar\n\nSource: Downtown Ashev
+ ille Racing Club\n\nListed by Altar Cycles — altar.bike/calendar
 GEO:35.2325798;-82.5969679
 LOCATION:315 Shoals Falls Rd\, Hendersonville\, NC
 URL:https://darccycling.com/calendar
@@ -508,7 +235,7 @@ BEGIN:VEVENT
 SUMMARY:End of Summer Jam
 DTSTART:20260905T040000Z
 DTEND:20260906T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:6628b3d67771c40f@altar.bike
 CATEGORIES:race
 DESCRIPTION:Come out to Ride Kanuga on Labor Day weekend for a few days of
@@ -529,68 +256,10 @@ LOCATION:1249 Kanuga Lake Rd\, Hendersonville\, NC
 URL:http://www.BikeReg.com/end-of-summer-jam
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260906T150000
-DTEND:20260906T210000
-DTSTAMP:20260817T171925Z
-UID:d1febe7b6bd19db4@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-06/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-06/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260909T150000
-DTEND:20260909T210000
-DTSTAMP:20260817T171925Z
-UID:5d65f0774433f1f5@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-09/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-09/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Blue Ridge Relay
 DTSTART:20260910T000000
 DTEND:20260912T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:104702416f26c92b@altar.bike
 CATEGORIES:race
 DESCRIPTION:Thank YOU 2025 Runners! Hope to see you in 2026... as we begin
@@ -613,7 +282,7 @@ BEGIN:VEVENT
 SUMMARY:Lakeside Double Sprint Triathlon
 DTSTART:20260911T000000
 DTEND:20260911T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:068c7053fbf4f8ee@altar.bike
 CATEGORIES:race
 DESCRIPTION:2026 DATE UPDATED - THE NEW DATE WILL BE FRIDAY\, SEPTEMBER 11
@@ -634,39 +303,10 @@ LOCATION:Lakeside Park / 7th Inning Splash\, Greenville\, SC
 URL:https://runsignup.com/Race/SC/Greenville/LakesideDoubleSprintTriathlon
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260911T150000
-DTEND:20260911T210000
-DTSTAMP:20260817T171925Z
-UID:122ab61bf693b578@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-11/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-11/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Jones Gap Trail Half Marathon
 DTSTART:20260912T000000
 DTEND:20260912T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:da06ac0f530674cf@altar.bike
 CATEGORIES:race
 DESCRIPTION:Jones Gap Half Marathon – A Scenic Journey Through the Mount
@@ -690,7 +330,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Monster-Cross Challenge
 DTSTART:20260912T040000Z
 DTEND:20260912T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:005472d939111204@altar.bike
 CATEGORIES:festival
 DESCRIPTION:The Pisgah Monster-Cross Challenge is the premiere all-road ra
@@ -715,7 +355,7 @@ BEGIN:VEVENT
 SUMMARY:Gravity Carolinas DH RD 3 Ride Rock Creek
 DTSTART:20260912T040000Z
 DTEND:20260913T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:1446d149ac9ba226@altar.bike
 CATEGORIES:race
 DESCRIPTION:EVENT CAPACITY 200 Racers Registration for each event will onl
@@ -734,12 +374,12 @@ BEGIN:VEVENT
 SUMMARY:Lower Heartbreak Trail Day
 DTSTART:20260912T090000
 DTEND:20260912T140000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:199f975dfbc75d0a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Project: Drain cleaning. Corridor pruning & brushing.\n\nMore:
-  https://www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Collectiv
- e\n\nListed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Drain cleaning. Corridor pruning & brushing.\n\nMore: https://
+ www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Collective\n\nList
+ ed by Altar Cycles — altar.bike/calendar
 LOCATION:Allison Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
@@ -747,7 +387,7 @@ BEGIN:VEVENT
 SUMMARY:Lake Davidson Sprint Triathlon
 DTSTART:20260913T000000
 DTEND:20260913T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:7c47ab8a970c2b67@altar.bike
 CATEGORIES:race
 DESCRIPTION:We are excited to bring you the Lake Davidson Sprint Triathlon
@@ -770,7 +410,7 @@ BEGIN:VEVENT
 SUMMARY:Lake Summit 10 Mile Run/Hike
 DTSTART:20260913T000000
 DTEND:20260913T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:7ec6591403e59f3f@altar.bike
 CATEGORIES:race
 DESCRIPTION:🏞️ Lake Summit 10 Mile Trail Race Tuxedo\, North Carolina
@@ -794,7 +434,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-Season Skills Clinics 2026
 DTSTART:20260913T040000Z
 DTEND:20260913T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:bbf6b38b2e5ea38d@altar.bike
 CATEGORIES:clinic
 DESCRIPTION:Learn all about cyclocross and the skills needed to compete wi
@@ -815,40 +455,11 @@ LOCATION:125 Idlewood Dr\, Asheville\, NC
 URL:http://www.BikeReg.com/nccx-pre-season-skills-clinic-2026
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260913T150000
-DTEND:20260913T210000
-DTSTAMP:20260817T171925Z
-UID:691db58f60d5d185@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-13/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-13/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Light the Trail 5K and Fun Run presented by Indigo Advisors & Part
  ners
 DTSTART:20260915T000000
 DTEND:20260920T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:f2476daaf91a6d82@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Benefiting the Green Crescent Trail and a more walkable\, bike
@@ -871,7 +482,7 @@ BEGIN:VEVENT
 SUMMARY:2026 Tuesday Night Cyclocross Training Series
 DTSTART:20260915T040000Z
 DTEND:20260929T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:2c8aa0d648484ac3@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Group C: Men Novice\, Women Novice\, Women CX4\, & Juniors (20
@@ -893,69 +504,11 @@ LOCATION:328 Banner Farm Rd\, Mills River\, NC
 URL:http://www.BikeReg.com/tuesday-night-cyclocross-training-series
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260916T150000
-DTEND:20260916T210000
-DTSTAMP:20260817T171925Z
-UID:6dc2aba573744d34@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-16/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-16/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260918T150000
-DTEND:20260918T210000
-DTSTAMP:20260817T171925Z
-UID:2e840ff947c9d882@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-18/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-18/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:SOLD OUT !!! ———12th Annual Dancing Bear Bike Bash Returns o
  n September 19th\, 2026
 DTSTART:20260919T040000Z
 DTEND:20260919T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:66c6bdb7d78583ef@altar.bike
 CATEGORIES:race
 DESCRIPTION:The best recreational cycling event in the Smokies region retu
@@ -979,7 +532,7 @@ BEGIN:VEVENT
 SUMMARY:Gravity Carolinas DH RD 4 WIldside
 DTSTART:20260919T040000Z
 DTEND:20260920T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:74961cf476e0181f@altar.bike
 CATEGORIES:race
 DESCRIPTION:200 Racers Registration for each event will only be available 
@@ -998,7 +551,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-season - Ride Rock Creek
 DTSTART:20260920T040000Z
 DTEND:20260920T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:3a00b4b477eb29e6@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
@@ -1019,68 +572,10 @@ LOCATION:298 W Rock Creek Rd\, Zirconia\, NC
 URL:http://www.BikeReg.com/nccx-pre-season-ride-rock-creek
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260920T150000
-DTEND:20260920T210000
-DTSTAMP:20260817T171925Z
-UID:76962d03b4354f08@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-20/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-20/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260923T150000
-DTEND:20260923T210000
-DTSTAMP:20260817T171925Z
-UID:450c3f615ae79f82@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-23/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-23/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Half-Moon Outfitters Moonshiner 5k Night Trail Race
 DTSTART:20260925T000000
 DTEND:20260925T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:64466adbea3f059e@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Moonshiner 5K Night Race is BACK and being hosted by Half-
@@ -1105,7 +600,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Bikeboom 2026
 DTSTART:20260925T040000Z
 DTEND:20260927T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:7ea8cf13a1f20b18@altar.bike
 CATEGORIES:race
 DESCRIPTION:Update on 7/10/26 Due to low registration number\, we have dec
@@ -1126,55 +621,26 @@ LOCATION:11 Mama's Pl\, Brevard\, NC
 URL:http://www.BikeReg.com/bikeboom-2026
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260925T150000
-DTEND:20260925T210000
-DTSTAMP:20260817T171925Z
-UID:af3f35be98e04c99@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-25/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-25/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:CRAFTED The Bicycle & Gear Show
 DTSTART:20260926T000000
 DTEND:20260927T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:b6eff59b8929c1ed@altar.bike
 CATEGORIES:festival
 DESCRIPTION:A Bicycle and Gear Show celebrating handmade craft and indepen
  dent makers across the Southeast. Saturday 10 a.m. to 5 p.m.\, Sunday 10 a
  .m. to 4 p.m. Features group rides\, tours\, live music\, tattoos\, food\,
-  libations\, and kid-friendly skills course. Admission is free and open to
-  the public.\n\nMore: https://www.craftedbikeshow.com\n\nSource: Downtown 
- Asheville Racing Club\n\nListed by Altar Cycles — altar.bike/calendar
+  libations\, and kid- and family-friendly skills course.\n\nMore: https://
+ darccycling.com/calendar\n\nSource: Downtown Asheville Racing Club\n\nList
+ ed by Altar Cycles — altar.bike/calendar
 LOCATION:Cane Creek Cycling Components\, Fletcher\, NC
-URL:https://www.craftedbikeshow.com
+URL:https://darccycling.com/calendar
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:2026 Ride to the Rock
 DTSTART:20260926T040000Z
 DTEND:20260926T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:f386287547fbc4ba@altar.bike
 CATEGORIES:race
 DESCRIPTION:SATURDAY\, SEPTEMBER 26\, 2026 Pickens\, SC Presented by the R
@@ -1198,7 +664,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-season - Cane Creek
 DTSTART:20260927T040000Z
 DTEND:20260927T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:567c411f65a716bf@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
@@ -1219,52 +685,10 @@ LOCATION:355 Cane Creek Rd\, Fletcher\, NC
 URL:http://www.BikeReg.com/nccx-pre-season-cane-creek
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
-DTSTART:20260927T150000
-DTEND:20260927T210000
-DTSTAMP:20260817T171925Z
-UID:da8e31427d5c1132@altar.bike
-CATEGORIES:festival
-DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
- 026 will be on view at Mars Landing Arts Center in Mars Hill\, NC. The exh
- ibition features works by artists from the Blue Ridge Craft Trails. Curato
- r M. Anna Fariello created the exhibition with the vision of tying today
- ’s living traditions back to the region’s history and nature. Particip
- ants are from the Far West region of Western North Carolina\, representing
-  seven towns and the Qualla Boundary: Franklin\, Waynesville\, Dillsboro\,
-  Bryson City\, Cullowhee\, Canton\, Cherokee\, Maggie Valley\, and Brassto
- wn. The artwork consists of different mediums including clay\, fiber\, met
- al\, paper\, and wood. Artists: Myron Carter\, Susan Coe\, Laurey Faye Dea
- n\, Brad Dodson\, Gayle R. Haynie\, Karen H. Hovis\, Carol Lynn Johnson\, 
- Ilene Kay\, Joe Frank McKee\, Mike McKinney\, Paul Hornbuckle\, Janlyn Mes
- sina\, Davy Arch\, Caden Painter\, Terance Painter\, Paul Pieringer\, Will
- iam S. Rogers\, Desmond Suarez\, Gayle Barker Woody\n\nMore: https://www.b
- lueridgeheritage.com/event/connecting-to-place-ii-blue-ridge-craft-trails-
- invitational/2026-09-27/\n\nSource: Blue Ridge National Heritage Area\n\nL
- isted by Altar Cycles — altar.bike/calendar
-GEO:35.8264981;-82.5492999
-LOCATION:Mars Landing Arts Center\, Mars Hill\, NC
-URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
- dge-craft-trails-invitational/2026-09-27/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Pumpkin Pedaller
-DTSTART;VALUE=DATE:20261001
-DTEND;VALUE=DATE:20261001
-DTSTAMP:20260817T171925Z
-UID:b7bf4ed64dac0469@altar.bike
-CATEGORIES:group-ride
-DESCRIPTION:Annual recurring event in October. See website for details.\n\
- nMore: https://ashevilleonbikes.com/events/asheville-summer-cycle\n\nSourc
- e: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calendar
-LOCATION:None\, Asheville\, NC
-URL:https://ashevilleonbikes.com/events/asheville-summer-cycle
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Tour de Fat
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261003
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:e7d97791871f3304@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1277,7 +701,7 @@ BEGIN:VEVENT
 SUMMARY:Currahee Challenge 5K/10K
 DTSTART:20261003T000000
 DTEND:20261003T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:a933581cbde93581@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Currahee Challenge takes place from the base of Currahee M
@@ -1295,7 +719,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah 111 / 555
 DTSTART:20261003T040000Z
 DTEND:20261003T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:c6d05d9f51734aa6@altar.bike
 CATEGORIES:race
 DESCRIPTION:It’s time to turn the volume up to 111! The Pisgah 111 is th
@@ -1319,7 +743,7 @@ BEGIN:VEVENT
 SUMMARY:2026 Cal Tri Charlotte - 10.10.26
 DTSTART:20261010T000000
 DTEND:20261010T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:089b2d6bc9d3c34c@altar.bike
 CATEGORIES:race
 DESCRIPTION:2026 Cal Tri Charlotte - 10.10.26. Get your motor running to L
@@ -1341,7 +765,7 @@ BEGIN:VEVENT
 SUMMARY:Get There Asheville
 DTSTART:20261014T000000
 DTEND:20261014T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:2e8a7e6ac62f5ec3@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event. 6 to 8 PM\n\nMore: https://ashevilleon
@@ -1351,24 +775,25 @@ LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Pisgah Rage Pre-season
+SUMMARY:Pisgah Rage Pre-season Social Events and Activities
 DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261231
-DTSTAMP:20260817T171925Z
-UID:2115f0c8d04aeced@altar.bike
+DTEND;VALUE=DATE:20261215
+DTSTAMP:20260817T172753Z
+UID:c7b67b727e798d39@altar.bike
 CATEGORIES:youth
-DESCRIPTION:Pre-season activities including social events\, rider assessme
- nt\, bike shop night\, parent meeting\, and adventure rides in Bent Creek 
- or Dupont\n\nMore: https://www.pisgahrage.com/\n\nSource: Pisgah Rage (NIC
- A composite team)\n\nListed by Altar Cycles — altar.bike/calendar
-LOCATION:Asheville\, Asheville\, NC
+DESCRIPTION:Pre-season events including 2-3 social events to get to know e
+ ach other\, rider assessment\, bike shop night\, parent meeting\, and 1-2 
+ adventure rides in Bent Creek or Dupont\n\nMore: https://www.pisgahrage.co
+ m/\n\nSource: Pisgah Rage (NICA composite team)\n\nListed by Altar Cycles 
+ — altar.bike/calendar
+LOCATION:Bent Creek/Dupont area\, Asheville\, NC
 URL:https://www.pisgahrage.com/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:2026 Gran Fondo Hincapie-Greenville
 DTSTART:20261017T040000Z
 DTEND:20261017T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:f2acb77c16a22d1c@altar.bike
 CATEGORIES:race
 DESCRIPTION:Not sure which distance is right for you? Visit our website to
@@ -1384,7 +809,7 @@ BEGIN:VEVENT
 SUMMARY:Women + Trail Skills Workshop
 DTSTART:20261017T090000
 DTEND:20261017T150000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:f25b655f83100d84@altar.bike
 CATEGORIES:clinic
 DESCRIPTION:Intro Class: Trail Maintenance 101. G5 Community Education Pro
@@ -1398,7 +823,7 @@ BEGIN:VEVENT
 SUMMARY:Pumpkin Pedaller
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261024
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:60082930d5a19ae1@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1411,7 +836,7 @@ BEGIN:VEVENT
 SUMMARY:2nd Annual TALI Sadlers Creek Off-Road Duathlon
 DTSTART:20261024T000000
 DTEND:20261024T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:3af782bc3f7c49f2@altar.bike
 CATEGORIES:race
 DESCRIPTION:Whether you’re an experienced mountain biker or new to the s
@@ -1436,7 +861,7 @@ BEGIN:VEVENT
 SUMMARY:2026 BRAGco Cycling Event
 DTSTART:20261025T040000Z
 DTEND:20261025T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:743ac628878c17c6@altar.bike
 CATEGORIES:race
 DESCRIPTION:Below are the STRAVA links for the routes. The Classic - 68 Mi
@@ -1453,7 +878,7 @@ BEGIN:VEVENT
 SUMMARY:1000 Mile BikeWalk for Prevention
 DTSTART:20261031T000000
 DTEND:20261031T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:ca69c113117cd0e8@altar.bike
 CATEGORIES:race
 DESCRIPTION:The 1000 Mile BikeWalk for Prevention to be held October 31\, 
@@ -1477,7 +902,7 @@ BEGIN:VEVENT
 SUMMARY:Color Me Mutt 5K & 1 Mile Color Walk/Run
 DTSTART:20261031T000000
 DTEND:20261031T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:248483aa7aaaf245@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join us for the 11th Annual Color Me Mutt® 5K and 1-Mile Fun 
@@ -1501,7 +926,7 @@ BEGIN:VEVENT
 SUMMARY:HalloWine 5k
 DTSTART:20261031T000000
 DTEND:20261031T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:904d737b840f6ace@altar.bike
 CATEGORIES:race
 DESCRIPTION:Come join us for our 5th Annual HalloWine 5k! We are a winery 
@@ -1521,10 +946,10 @@ LOCATION:507 Beaver Dam Road\, Marietta\, SC
 URL:https://runsignup.com/Race/SC/Marietta/KFWHalloWine5K
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Fall Trail Weekend!
+SUMMARY:Fall Trail Weekend
 DTSTART:20261106T160000
 DTEND:20261108T130000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:65a4e186a310b33a@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:SAVE THE DATE\n\nMore: https://www.g5trailcollective.org/volun
@@ -1537,7 +962,7 @@ BEGIN:VEVENT
 SUMMARY:GTC Paris Mountain Trails 16K
 DTSTART:20261107T000000
 DTEND:20261107T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:5ebfa1e1fda3cd26@altar.bike
 CATEGORIES:race
 DESCRIPTION:This is a very challenging course as it includes the long clim
@@ -1556,7 +981,7 @@ BEGIN:VEVENT
 SUMMARY:Couch Potato
 DTSTART:20261107T050000Z
 DTEND:20261107T050000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:2e02b8a758b849f1@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 14th Annual Couch Potato race! We're very excit
@@ -1580,7 +1005,7 @@ BEGIN:VEVENT
 SUMMARY:Cades Cove Loop Lope
 DTSTART:20261108T000000
 DTEND:20261108T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:84556b4fd9946b07@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Cades Cove Loop Lope is the only organized footrace held i
@@ -1604,7 +1029,7 @@ BEGIN:VEVENT
 SUMMARY:Swank 65
 DTSTART:20261108T050000Z
 DTEND:20261108T050000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:808d5262f339b592@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 28th Annual Swank 65! We're very excited for an
@@ -1628,7 +1053,7 @@ BEGIN:VEVENT
 SUMMARY:Dollywood's Light The Way 5k
 DTSTART:20261113T000000
 DTEND:20261114T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:67f31013dccd97bb@altar.bike
 CATEGORIES:festival
 DESCRIPTION:There is nothing quite like Dollywood at Christmas. Experience
@@ -1652,7 +1077,7 @@ BEGIN:VEVENT
 SUMMARY:We Shred Rock Creek
 DTSTART:20261114T050000Z
 DTEND:20261114T050000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:0a67e54dee113b1a@altar.bike
 CATEGORIES:race
 DESCRIPTION:We Shred Rock Creek is back for 2026 – and it is shaping up 
@@ -1676,7 +1101,7 @@ BEGIN:VEVENT
 SUMMARY:Fall Frenzy 5K
 DTSTART:20261121T000000
 DTEND:20261121T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:e34f73cb983d8858@altar.bike
 CATEGORIES:advocacy
 DESCRIPTION:Join us for our 2nd annual Iredell Crosby Scholars 5K! Date: S
@@ -1700,7 +1125,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah DOUBLE DARE
 DTSTART:20261121T050000Z
 DTEND:20261122T050000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:59bf1e39a66ae34b@altar.bike
 CATEGORIES:race
 DESCRIPTION:Every year an event comes along that tests mental and physical
@@ -1724,7 +1149,7 @@ BEGIN:VEVENT
 SUMMARY:Go Nuts Biking Nut Gobbler XC
 DTSTART:20261122T050000Z
 DTEND:20261122T050000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:5d605450c7d6e77a@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Time & Location November 22\, 2026 - Stumphouse Mountain Bike 
@@ -1748,7 +1173,7 @@ BEGIN:VEVENT
 SUMMARY:Black Mountain Turkey Trot 5k
 DTSTART:20261126T000000
 DTEND:20261126T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:59b8b9ec44408293@altar.bike
 CATEGORIES:race
 DESCRIPTION:Black Mountain Turkey Trot: A Mountain Thanksgiving Tradition 
@@ -1769,26 +1194,10 @@ LOCATION:102 E State St\, Black Mountain\, NC
 URL:https://runsignup.com/Race/NC/BlackMountain/blackmountainTurkeyTrot
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Pisgah Rage Regular Season
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20270530
-DTSTAMP:20260817T171925Z
-UID:670937aa0418b08a@altar.bike
-CATEGORIES:race
-DESCRIPTION:Regular season with practices and races. January: 2-4 indoor t
- raining opportunities. February: 1 weekend practice per week for 2 hours. 
- March-May: 2 rides per week with races starting in early March\, typically
-  5-6 races across North Carolina through end of May\n\nMore: https://www.p
- isgahrage.com/\n\nSource: Pisgah Rage (NICA composite team)\n\nListed by A
- ltar Cycles — altar.bike/calendar
-LOCATION:Asheville\, Asheville\, NC
-URL:https://www.pisgahrage.com/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Green Wave Jingle Jam 5k
 DTSTART:20261205T000000
 DTEND:20261205T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:af18b64667f6c3e3@altar.bike
 CATEGORIES:youth
 DESCRIPTION:On Saturday December 5th\, 2026 the Green Wave Jingle Jam will
@@ -1811,7 +1220,7 @@ BEGIN:VEVENT
 SUMMARY:GTC Paris Mountain Road Race
 DTSTART:20261205T000000
 DTEND:20261205T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:2d18572c3f635eaa@altar.bike
 CATEGORIES:race
 DESCRIPTION:General Race Information The Paris Mountain Road Race 10k is a
@@ -1833,7 +1242,7 @@ BEGIN:VEVENT
 SUMMARY:Hartness Half Marathon & 5K
 DTSTART:20261212T000000
 DTEND:20261212T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:da7f0d923ed46587@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Hartness Half Marathon & 5K presented brings a cross-count
@@ -1853,23 +1262,50 @@ LOCATION:500 Hartness Drive\, Greenville\, SC
 URL:https://runsignup.com/Race/SC/Greenville/HartnessHalf
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Pisgah Rage Indoor Training
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270131
+DTSTAMP:20260817T172753Z
+UID:5f1ec0adff9813eb@altar.bike
+CATEGORIES:youth
+DESCRIPTION:2-4 indoor training opportunities on spin bikes and gym exerci
+ ses on the weekend\n\nMore: https://www.pisgahrage.com/\n\nSource: Pisgah 
+ Rage (NICA composite team)\n\nListed by Altar Cycles — altar.bike/calend
+ ar
+LOCATION:Indoor facility\, Asheville\, NC
+URL:https://www.pisgahrage.com/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Brevard Dig Day w/ CMC
 DTSTART:20270122T000000
 DTEND:20270122T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:b251c494bcad690a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Volunteer trail work day with Carolina Mountain Club\n\nMore: 
- https://www.pisgahareasorba.org/events-volunteer\n\nSource: Pisgah Area SO
- RBA\n\nListed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Trail maintenance work day with Carolina Mountain Club\n\nMore
+ : https://www.pisgahareasorba.org/events-volunteer\n\nSource: Pisgah Area 
+ SORBA\n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:Pisgah Ranger Station/Visitor Center\, Brevard\, NC
+URL:https://www.pisgahareasorba.org/events-volunteer
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Galentine's Womens Work Day
+DTSTART:20270214T000000
+DTEND:20270214T000000
+DTSTAMP:20260817T172753Z
+UID:815072c101428329@altar.bike
+CATEGORIES:trail-work
+DESCRIPTION:Women's trail work day\n\nMore: https://www.pisgahareasorba.or
+ g/events-volunteer\n\nSource: Pisgah Area SORBA\n\nListed by Altar Cycles 
+ — altar.bike/calendar
+LOCATION:Earth Mountain Bicycle\, Brevard\, NC
 URL:https://www.pisgahareasorba.org/events-volunteer
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Bike Love
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270221
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:84d324a581bba013@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1882,7 +1318,7 @@ BEGIN:VEVENT
 SUMMARY:2nd Annual TALI Croft State Park Off-Road Duathlon
 DTSTART:20270227T000000
 DTEND:20270227T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:0cf4220b71877604@altar.bike
 CATEGORIES:race
 DESCRIPTION:Come showcase your ability at the TALI Croft State Park Off-Ro
@@ -1907,7 +1343,7 @@ BEGIN:VEVENT
 SUMMARY:Greenville Half Marathon & 5K
 DTSTART:20270227T000000
 DTEND:20270227T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:4e91db40eb54e3fe@altar.bike
 CATEGORIES:race
 DESCRIPTION:VISIT THE OFFICIAL RACE WEB SITE FOR ALL DETAILS - www.SwampRa
@@ -1926,7 +1362,7 @@ BEGIN:VEVENT
 SUMMARY:Color The View 5K
 DTSTART:20270306T000000
 DTEND:20270307T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:82b1c07c915f73e7@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Color the View 5K – A Smoky Mountain Family Adventure Lace u
@@ -1950,7 +1386,7 @@ BEGIN:VEVENT
 SUMMARY:Conquer the Rock 25k & 50k
 DTSTART:20270306T000000
 DTEND:20270306T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:7c8362898e390129@altar.bike
 CATEGORIES:race
 DESCRIPTION:🏞️ Welcome to the Mountain’s Challenge So\, you wish to
@@ -1974,7 +1410,7 @@ BEGIN:VEVENT
 SUMMARY:Hiawassee Half Marathon & 5K
 DTSTART:20270313T000000
 DTEND:20270313T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:dc83ff9ccd82819b@altar.bike
 CATEGORIES:race
 DESCRIPTION:Conveniently located just two hours north of Atlanta\, we welc
@@ -1998,7 +1434,7 @@ BEGIN:VEVENT
 SUMMARY:Spring Out
 DTSTART;VALUE=DATE:20270329
 DTEND;VALUE=DATE:20270329
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:42077d50b8d9df1a@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2012,7 +1448,7 @@ SUMMARY:Covenant Health Knoxville Marathon\, Half Marathon\, Relays\, 5k a
  nd Kids Run
 DTSTART:20270410T000000
 DTEND:20270411T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:efdb88ab0e335440@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join us for the 2027 Covenant Health Knoxville Marathon! We ha
@@ -2036,7 +1472,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART:20270417T000000
 DTEND:20270417T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:3a30355473fa12d2@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event. 5 pm – 9 pm\n\nMore: https://ashevil
@@ -2049,7 +1485,7 @@ BEGIN:VEVENT
 SUMMARY:Bootlegger
 DTSTART:20270417T040000Z
 DTEND:20270417T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:f0fa19e43a2adce0@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Bootlegger is one of the most challenging and scenic grave
@@ -2073,7 +1509,7 @@ BEGIN:VEVENT
 SUMMARY:Lake Norman State Park Sprint Triathlon
 DTSTART:20270424T000000
 DTEND:20270424T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:3a0109067fcf1137@altar.bike
 CATEGORIES:race
 DESCRIPTION:Round 3 of the North Carolina Triathlon Series . * Convenientl
@@ -2092,7 +1528,7 @@ BEGIN:VEVENT
 SUMMARY:Get in Gear Fest
 DTSTART:20270425T000000
 DTEND:20270425T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:afe3b78c6fb38d0b@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Annual recurring event. Includes Bike Valet. 12 pm – 5 pm\n\
@@ -2105,7 +1541,7 @@ BEGIN:VEVENT
 SUMMARY:Bear's Smokehouse BBQ Community Rides
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270831
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:28081717435d5842@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event. Weekly on Wednesdays in Summer\n\nMore
@@ -2118,7 +1554,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Mountain Bike Adventure Race
 DTSTART:20270501T040000Z
 DTEND:20270501T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:996261671a499518@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Pisgah Mountain Bike Adventure Race (PMBAR) is the absolut
@@ -2143,7 +1579,7 @@ BEGIN:VEVENT
 SUMMARY:Fiddlin' 5k Run/Walk for the Arts
 DTSTART:20270508T000000
 DTEND:20270508T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:43debe8acb62aa1e@altar.bike
 CATEGORIES:race
 DESCRIPTION:Enjoy the fine tunes of local musicians as you run or walk on 
@@ -2163,7 +1599,7 @@ BEGIN:VEVENT
 SUMMARY:Little River Rush Half Marathon
 DTSTART:20270514T000000
 DTEND:20270515T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:a0891c679c35eeb3@altar.bike
 CATEGORIES:race
 DESCRIPTION:Experience one of the fastest and most scenic half marathons i
@@ -2187,7 +1623,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270515
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:ab08b437baf781f7@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2200,7 +1636,7 @@ BEGIN:VEVENT
 SUMMARY:Roll Outta Work
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270515
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:0bac6aff0668c35b@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2213,7 +1649,7 @@ BEGIN:VEVENT
 SUMMARY:Carolina Reaper Road Race
 DTSTART:20270515T040000Z
 DTEND:20270515T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:6cb81637a4faee67@altar.bike
 CATEGORIES:race
 DESCRIPTION:Please visit www.reaperroadrace.com for more information.\n\nM
@@ -2227,7 +1663,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Forestry Camp
 DTSTART;VALUE=DATE:20270516
 DTEND;VALUE=DATE:20270516
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:f081edfad7afbbd3@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2240,7 +1676,7 @@ BEGIN:VEVENT
 SUMMARY:Biltmore Kiwanis Classic
 DTSTART:20270516T000000
 DTEND:20270516T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:10def9edfe07e862@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join us for the 27th running of the Biltmore Classic. Choose f
@@ -2260,7 +1696,7 @@ BEGIN:VEVENT
 SUMMARY:Ride of Silence
 DTSTART;VALUE=DATE:20270520
 DTEND;VALUE=DATE:20270520
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:a9e0944c3b4508e2@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2273,7 +1709,7 @@ BEGIN:VEVENT
 SUMMARY:Beer City 20k Relay & 5k/10k
 DTSTART:20270529T000000
 DTEND:20270529T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:2e7ffffc4cf1d120@altar.bike
 CATEGORIES:race
 DESCRIPTION:Come celebrate Beer City USA with your running buddies! Discov
@@ -2297,7 +1733,7 @@ BEGIN:VEVENT
 SUMMARY:Cherohala Challenge
 DTSTART:20270605T000000
 DTEND:20270605T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:2c15bbb08522e30f@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Smoky Mountain Wheelmen proudly present the 24th Edition o
@@ -2320,7 +1756,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART;VALUE=DATE:20270619
 DTEND;VALUE=DATE:20270619
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:eb9b4d5fa344c6ef@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2333,7 +1769,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Forestry Camp
 DTSTART;VALUE=DATE:20270620
 DTEND;VALUE=DATE:20270620
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:ce7e1626335c6ad9@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2346,20 +1782,20 @@ BEGIN:VEVENT
 SUMMARY:New Belgium 35th Anniversary Ride
 DTSTART;VALUE=DATE:20270627
 DTEND;VALUE=DATE:20270627
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:427d98b3c4566f4f@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
  vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
  ke/calendar
-LOCATION:Asheville\, NC
+LOCATION:New Belgium\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:The Lennie Antonelli and Jake Hill Memorial Ride
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270701
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:0c2b50b0e423e7a5@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2373,7 +1809,7 @@ SUMMARY:2027 Gran Fondo Asheville\, p/b Applewood Manor Foundation\, a SEN
  A Gran Fondo National Series event
 DTSTART:20270718T040000Z
 DTEND:20270718T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:19cc3e2cb7f4ed33@altar.bike
 CATEGORIES:race
 DESCRIPTION:THIS REGISTRATION IS FOR 2027 THESE DETAILS ARE FOR 2026 EVENT
@@ -2397,7 +1833,7 @@ BEGIN:VEVENT
 SUMMARY:Gran Fondo AVL
 DTSTART;VALUE=DATE:20270719
 DTEND;VALUE=DATE:20270719
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:ff576b5052181618@altar.bike
 CATEGORIES:race
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2410,7 +1846,7 @@ BEGIN:VEVENT
 SUMMARY:HARDford 50 and HARDERford 75
 DTSTART:20270801T040000Z
 DTEND:20270801T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:fbb7b952544d9b16@altar.bike
 CATEGORIES:race
 DESCRIPTION:Riders have two course options: The HARDford 50 and the HARDER
@@ -2434,7 +1870,7 @@ BEGIN:VEVENT
 SUMMARY:2027 Boone Gran Fondo\, a SENA Gran Fondo National Series event
 DTSTART:20270808T040000Z
 DTEND:20270808T040000Z
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:eaf10f6e0cd70f9a@altar.bike
 CATEGORIES:race
 DESCRIPTION:THIS REGISTRATION IS FOR THE 2027 EVENT DETAILS BELOW SUBJECT 
@@ -2458,7 +1894,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART;VALUE=DATE:20270821
 DTEND;VALUE=DATE:20270821
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:7037f9eff5e41388@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2471,7 +1907,7 @@ BEGIN:VEVENT
 SUMMARY:Summer Cycle
 DTSTART;VALUE=DATE:20270822
 DTEND;VALUE=DATE:20270822
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:2db110e2b5eae1f7@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -2484,7 +1920,7 @@ BEGIN:VEVENT
 SUMMARY:GTC Upville Mile
 DTSTART:20270828T000000
 DTEND:20270828T000000
-DTSTAMP:20260817T171925Z
+DTSTAMP:20260817T172753Z
 UID:e681f27e029816fc@altar.bike
 CATEGORIES:race
 DESCRIPTION:Why run down when you can run up ? GTC Upville Mile is a 1-mil

@@ -1,15 +1,15 @@
 {
- "generated": "2026-08-17T17:19:25.570957+00:00",
- "total": 117,
+ "generated": "2026-08-17T17:27:53.530988+00:00",
+ "total": 97,
  "world": 22,
  "needs_attention": [],
  "sources": {
   "asheville-on-bikes": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 23,
-   "kept": 21,
-   "at": "2026-08-17T17:17:46.450467+00:00"
+   "fetched": 22,
+   "kept": 20,
+   "at": "2026-08-17T17:25:35.764758+00:00"
   },
   "asheville-on-bikes-rwgps": {
    "status": "failed",
@@ -25,7 +25,7 @@
    "adapter": "llm",
    "fetched": 2,
    "kept": 2,
-   "at": "2026-08-17T17:17:49.971225+00:00"
+   "at": "2026-08-17T17:25:39.063515+00:00"
   },
   "blue-ridge-bicycle-club": {
    "status": "failed",
@@ -40,29 +40,29 @@
    "status": "ok",
    "adapter": "llm",
    "fetched": 3,
-   "kept": 1,
-   "at": "2026-08-17T17:17:58.901073+00:00"
+   "kept": 2,
+   "at": "2026-08-17T17:25:47.917257+00:00"
   },
   "g5-trail-collective": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 6,
    "kept": 5,
-   "at": "2026-08-17T17:18:06.061572+00:00"
+   "at": "2026-08-17T17:25:55.037612+00:00"
   },
   "nica-nc": {
    "status": "ok",
    "adapter": "jsonld",
    "fetched": 6,
    "kept": 0,
-   "at": "2026-08-17T17:18:06.546429+00:00"
+   "at": "2026-08-17T17:25:55.621730+00:00"
   },
   "pisgah-rage": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 2,
+   "fetched": 4,
    "kept": 2,
-   "at": "2026-08-17T17:18:10.152358+00:00"
+   "at": "2026-08-17T17:26:01.479304+00:00"
   },
   "ic-imagine-cycling": {
    "status": "failed",
@@ -78,28 +78,30 @@
    "adapter": "bikereg",
    "fetched": 45,
    "kept": 31,
-   "at": "2026-08-17T17:18:15.261665+00:00"
+   "at": "2026-08-17T17:26:13.030135+00:00"
   },
   "runsignup": {
    "status": "ok",
    "adapter": "runsignup",
    "fetched": 250,
    "kept": 36,
-   "at": "2026-08-17T17:18:17.526202+00:00"
+   "at": "2026-08-17T17:26:15.531405+00:00"
   },
   "uci": {
-   "status": "ok",
-   "adapter": "llm",
-   "fetched": 22,
-   "kept": 22,
-   "at": "2026-08-17T17:19:09.714490+00:00"
+   "status": "cached",
+   "errors": [
+    "llm: https://api.anthropic.com/v1/messages: HTTPSConnectionPool(host='api.anthropic.com', port=443): Read timed out. (read timeout=25)"
+   ],
+   "cached_events": 22,
+   "cache_age_days": 0,
+   "optional": true
   },
   "blue-ridge-heritage": {
    "status": "ok",
    "adapter": "tribe",
    "fetched": 500,
-   "kept": 32,
-   "at": "2026-08-17T17:19:25.312125+00:00"
+   "kept": 0,
+   "at": "2026-08-17T17:27:52.496059+00:00"
   }
  }
 }
