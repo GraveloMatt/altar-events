@@ -11,7 +11,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260816T150000
 DTEND:20260816T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:1d1daa1184640c63@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -40,7 +40,7 @@ BEGIN:VEVENT
 SUMMARY:Trek Tuesday - Kitsuma Trail Day
 DTSTART:20260818T100000
 DTEND:20260818T140000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:7ddb518d25384c3a@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Project: Tread repairs & improvements. Optional ride after\, b
@@ -54,7 +54,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260819T150000
 DTEND:20260819T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:e4b935c1dd219e66@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -83,7 +83,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260821T150000
 DTEND:20260821T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:0687e8cf7d5a015c@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -112,15 +112,15 @@ BEGIN:VEVENT
 SUMMARY:Summer Cycle 2026
 DTSTART:20260822T000000
 DTEND:20260822T000000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:e6662d6251819fff@altar.bike
 CATEGORIES:festival
-DESCRIPTION:Celebrate 20 years of Asheville on Bikes with pop-up bike park
- \, check-in\, and group rides. Multiple route options: Cruiser Ride (5 mil
- es)\, Main Ride (7 miles)\, and Ride More (18 miles). Post-ride festivitie
- s included.\n\nMore: https://ashevilleonbikes.com/events/asheville-summer-
- cycle\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
- ke/calendar
+DESCRIPTION:Celebrate 20 years of Asheville on Bikes! Annual event featuri
+ ng pop-up bike park\, check-in\, and guided rides in three route options: 
+ Cruiser Ride (5 miles\, family-friendly)\, Main Ride (7 miles\, downtown)\
+ , and Ride More (18 miles\, gravel). Post-ride festivities included.\n\nMo
+ re: https://ashevilleonbikes.com/events/asheville-summer-cycle\n\nSource: 
+ Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:New Belgium Brewing\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events/asheville-summer-cycle
 END:VEVENT
@@ -128,7 +128,7 @@ BEGIN:VEVENT
 SUMMARY:Gravel Roll - The Holler in Walhalla
 DTSTART:20260822T040000Z
 DTEND:20260822T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:a10bb3a380a81314@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Gravel Roll is BACK! Hollerin' for more in Walhalla in 202
@@ -152,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:Go Nuts Enduro Round 2 - Sugar Mountain\, USA
 DTSTART:20260823T040000Z
 DTEND:20260823T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:2b5c2eaa1337a28b@altar.bike
 CATEGORIES:race
 DESCRIPTION:TIME & LOCATION Sugar Mountain Bike Park 1009 Sugar Mountain D
@@ -178,7 +178,7 @@ BEGIN:VEVENT
 SUMMARY:DARC August 23 Road Social Ride
 DTSTART:20260823T040000Z
 DTEND:20260823T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:6f8e1cab2507d835@altar.bike
 CATEGORIES:clinic
 DESCRIPTION:Meet at Gravelo Workshop (793 Merrimon Ave\, Asheville\, NC 28
@@ -197,7 +197,7 @@ BEGIN:VEVENT
 SUMMARY:Asheville Youth Cycling CX Practice August 23rd
 DTSTART:20260823T040000Z
 DTEND:20260823T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:891342d6da276d11@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Join Asheville Youth Cycling for a fun Cyclocross practice for
@@ -214,7 +214,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260823T150000
 DTEND:20260823T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:b60bc9906116f35e@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -240,10 +240,33 @@ URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
  dge-craft-trails-invitational/2026-08-23/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Long Distance Training Presented by ASICS
+DTSTART:20260824T000000
+DTEND:20261114T000000
+DTSTAMP:20260817T171925Z
+UID:94ddab525c843bc9@altar.bike
+CATEGORIES:race
+DESCRIPTION:Go the distance with Fleet Feet Knoxville and ASICS! This Fall
+ \, we have a 12-week training program to get you ready for the iconic Loop
+  Lope 10 Miler in the Great Smoky Mountain National Park on Sunday\, Novem
+ ber 8th! Challenge yourself along the way and join the Veterans Salute 5k 
+ and 10k on November 7th and the Secret City Half Marathon on November 14th
+ - your goal race options are many and we are here to help you achieve all 
+ your goals. Please note that there are 30 guaranteed spots into Loop Lope.
+  These will be secured by registration order - first come\, first serve. Y
+ ou do not have to participate in the goal races to join the program. Train
+ ing program fee does not include goal race entry fees. Training for a big 
+ race takes more than logging miles. It takes a smart plan\, the right supp
+ or\n\nMore: https://runsignup.com/Race/TN/Knoxville/FallLongDistanceTraini
+ ng\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:11619 Parkside Dr\, Knoxville\, TN
+URL:https://runsignup.com/Race/TN/Knoxville/FallLongDistanceTraining
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260826T150000
 DTEND:20260826T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:4b2d1c501b1fffa1@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -272,7 +295,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260828T150000
 DTEND:20260828T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:7eee50209fa1925f@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -298,10 +321,34 @@ URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
  dge-craft-trails-invitational/2026-08-28/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Asheville Craft Beer Half Marathon & 10K/5K
+DTSTART:20260829T000000
+DTEND:20260829T000000
+DTSTAMP:20260817T171925Z
+UID:bbceabc020b44bdf@altar.bike
+CATEGORIES:race
+DESCRIPTION:Welcome to the Asheville Craft Beer Half Marathon – 10K – 
+ 5K! One of the greatest destination races in North Carolina just got even 
+ better. Asheville is truly an American treasure—now paired with one of t
+ he most vibrant craft beer scenes in the country. From world-class breweri
+ es and local taprooms to incredible food\, arts\, and mountain views\, thi
+ s is the ultimate run + reward experience. Runners will not only take in t
+ he beauty of Asheville but also celebrate at the finish with local craft b
+ eer from some of the area’s best breweries . This is more than a race—
+ it’s a full Asheville experience. The Asheville Craft Beer Half Marathon
+  – 10K – 5K begins and ends in Pack Square on August 29\, 2026 . Start
+ ing at 7:00 AM\, the course showcases the very best of the city. You’ll 
+ run through the Brewe\n\nMore: https://runsignup.com/Race/NC/Asheville/Ash
+ evilleHalfMarathon10K\n\nSource: RunSignup\n\nListed by Altar Cycles — a
+ ltar.bike/calendar
+LOCATION:80 Court Plaza\, Asheville\, NC
+URL:https://runsignup.com/Race/NC/Asheville/AshevilleHalfMarathon10K
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Rocky Knob Mountaineer Showdown
 DTSTART:20260829T040000Z
 DTEND:20260830T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:fee58fd0937c36eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Volunteer Sign up: https://docs.google.com/forms/d/e/1FAIpQLSf
@@ -325,7 +372,7 @@ BEGIN:VEVENT
 SUMMARY:Trails Less Traveled: Charlies Bunion
 DTSTART:20260829T143000
 DTEND:20260829T200000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:98c726998e55adfc@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Join us for this 8-Mile out and back hike with an elevation ga
@@ -347,7 +394,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260830T150000
 DTEND:20260830T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:6351c367e60b7275@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -376,7 +423,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260902T150000
 DTEND:20260902T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:52dc37ec344d8f13@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -405,7 +452,7 @@ BEGIN:VEVENT
 SUMMARY:Betty's & Jarret's Run Trail Day
 DTSTART:20260904T120000
 DTEND:20260904T163000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:e1bc6ea5ef974c01@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Project: Drain cleaning. Tread shaping.\n\nMore: https://www.g
@@ -418,7 +465,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260904T150000
 DTEND:20260904T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:a825d9f5e8b3180a@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -447,12 +494,12 @@ BEGIN:VEVENT
 SUMMARY:Dirt Diggler Gravel Grinder
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260905
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:53b43bf11b736a76@altar.bike
 CATEGORIES:race
-DESCRIPTION:Featured Event for DARC members\n\nMore: https://darccycling.c
- om/calendar\n\nSource: Downtown Asheville Racing Club\n\nListed by Altar C
- ycles — altar.bike/calendar
+DESCRIPTION:Featured Event\n\nMore: https://darccycling.com/calendar\n\nSo
+ urce: Downtown Asheville Racing Club\n\nListed by Altar Cycles — altar.b
+ ike/calendar
 GEO:35.2325798;-82.5969679
 LOCATION:315 Shoals Falls Rd\, Hendersonville\, NC
 URL:https://darccycling.com/calendar
@@ -461,7 +508,7 @@ BEGIN:VEVENT
 SUMMARY:End of Summer Jam
 DTSTART:20260905T040000Z
 DTEND:20260906T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:6628b3d67771c40f@altar.bike
 CATEGORIES:race
 DESCRIPTION:Come out to Ride Kanuga on Labor Day weekend for a few days of
@@ -485,7 +532,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260906T150000
 DTEND:20260906T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:d1febe7b6bd19db4@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -514,7 +561,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260909T150000
 DTEND:20260909T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:5d65f0774433f1f5@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -540,10 +587,57 @@ URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
  dge-craft-trails-invitational/2026-09-09/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Blue Ridge Relay
+DTSTART:20260910T000000
+DTEND:20260912T000000
+DTSTAMP:20260817T171925Z
+UID:104702416f26c92b@altar.bike
+CATEGORIES:race
+DESCRIPTION:Thank YOU 2025 Runners! Hope to see you in 2026... as we begin
+  the 3rd decade of running the breathtaking Blue Ridge Mountains! Septembe
+ r 11-12\, 2026 (Fri. - Sat.) The Blue Ridge Relay ( BRR )\, which is one o
+ f the longest running relay races in the United States\, takes place in th
+ e picturesque Blue Ridge Mountains of Virginia and North Carolina. BRR con
+ sists of maximum 12 person (4 person minimum) teams that rotate through 36
+  transition areas as they cover the approximate 208 mile distance of the r
+ ace. The Start! BRR starts in Grayson Highlands State Pa rk \, VA a t an e
+ levation of 4920′\, near the base of Mount Rogers (5729′)\, the highes
+ t peak in Virginia. The Highlands’ defining feature are the high elevati
+ on balds that are spotted with stands of native Fraser Fir\, boulder field
+ s and a her\n\nMore: https://runsignup.com/Race/NC/Asheville/blueridgerela
+ y\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:Blue Ridge Mountains...VA - NC\, USA\, Asheville\, NC
+URL:https://runsignup.com/Race/NC/Asheville/blueridgerelay
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lakeside Double Sprint Triathlon
+DTSTART:20260911T000000
+DTEND:20260911T000000
+DTSTAMP:20260817T171925Z
+UID:068c7053fbf4f8ee@altar.bike
+CATEGORIES:race
+DESCRIPTION:2026 DATE UPDATED - THE NEW DATE WILL BE FRIDAY\, SEPTEMBER 11
+ \, 2026 SWIM: 250 Yards (Pool) BIKE: 8 Miles RUN: 2 Miles SWIM: 250 Yards 
+ (Pool) BIKE: 8 Miles RUN: 2 Miles Join us on Friday\, September 11\, 2026 
+ at 6PM for the South Carolina Triathlon Series' only evening triathlon eve
+ nt! This DOUBLE SPRINT triathlon will feature a 250 yard swim\, 8 mile bik
+ e\, 2 mile run followed by another 250 yard swim\, 8 mile bike\, 2 mile ru
+ n. Held at the newly updated 7th Inning Splash at Lakeside Park just minut
+ es away from downtown Greenville\, SC this unique evening event will be lo
+ ads of fun\, and a great way to test out your speed on these short\, quick
+  segments. The swim will be held in the 7th Inning Splash outdoor pool whi
+ le the bike will be one loop on rural roads around Greenville County. The 
+ run will \n\nMore: https://runsignup.com/Race/SC/Greenville/LakesideDouble
+ SprintTriathlon\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.b
+ ike/calendar
+LOCATION:Lakeside Park / 7th Inning Splash\, Greenville\, SC
+URL:https://runsignup.com/Race/SC/Greenville/LakesideDoubleSprintTriathlon
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260911T150000
 DTEND:20260911T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:122ab61bf693b578@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -569,10 +663,34 @@ URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
  dge-craft-trails-invitational/2026-09-11/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Jones Gap Trail Half Marathon
+DTSTART:20260912T000000
+DTEND:20260912T000000
+DTSTAMP:20260817T171925Z
+UID:da06ac0f530674cf@altar.bike
+CATEGORIES:race
+DESCRIPTION:Jones Gap Half Marathon – A Scenic Journey Through the Mount
+ ain Bridge Wilderness Area 🌲 The Upstate Race Series invites you to the
+  breathtaking Jones Gap State Park for the Annual Jones Gap Half Marathon!
+  Get ready for an unforgettable 13.1-mile adventure through one of South C
+ arolina’s most serene natural settings. This year’s course takes you o
+ n an awe-inspiring route that showcases the stunning Rainbow Falls 🌈\, 
+ a section of the Rim of the Gap Trail 🌄\, and the iconic Little Pinnacl
+ e Mountain 🏔️—all set against the backdrop of the Mountain Bridge W
+ ilderness Area. Jones Gap State Park offers a peaceful retreat deep within
+  the mountains 🏞️. Nestled within 13\,000 acres of pristine woodlands
+  🌳\, the park is part of the larger Mountain Bridge Wilderness Area\, w
+ hich connects with Caesar’s Head \n\nMore: https://runsignup.com/Race/SC
+ /Marietta/JonesGapHalfMarathon\n\nSource: RunSignup\n\nListed by Altar Cyc
+ les — altar.bike/calendar
+LOCATION:River Falls Lodge Rd\, Marietta\, SC
+URL:https://runsignup.com/Race/SC/Marietta/JonesGapHalfMarathon
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Pisgah Monster-Cross Challenge
 DTSTART:20260912T040000Z
 DTEND:20260912T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:005472d939111204@altar.bike
 CATEGORIES:festival
 DESCRIPTION:The Pisgah Monster-Cross Challenge is the premiere all-road ra
@@ -597,7 +715,7 @@ BEGIN:VEVENT
 SUMMARY:Gravity Carolinas DH RD 3 Ride Rock Creek
 DTSTART:20260912T040000Z
 DTEND:20260913T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:1446d149ac9ba226@altar.bike
 CATEGORIES:race
 DESCRIPTION:EVENT CAPACITY 200 Racers Registration for each event will onl
@@ -616,7 +734,7 @@ BEGIN:VEVENT
 SUMMARY:Lower Heartbreak Trail Day
 DTSTART:20260912T090000
 DTEND:20260912T140000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:199f975dfbc75d0a@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Project: Drain cleaning. Corridor pruning & brushing.\n\nMore:
@@ -626,10 +744,57 @@ LOCATION:Allison Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Lake Davidson Sprint Triathlon
+DTSTART:20260913T000000
+DTEND:20260913T000000
+DTSTAMP:20260817T171925Z
+UID:7c47ab8a970c2b67@altar.bike
+CATEGORIES:race
+DESCRIPTION:We are excited to bring you the Lake Davidson Sprint Triathlon
+  presented by Trane Technolgies! This is a USAT sanctioned event in Davids
+ on\, NC. It features a 750 meter swim\, 12.7 mile bike\, and a 5K run. Loc
+ ated on the beautiful campus of Trane Technologies\, it's a great triathlo
+ n for beginners and seasoned triathletes alike. Swim: The 750 meter swim f
+ eatures an in-water start with the water temperature historically being in
+  the low 80’s so wetsuits are hardly ever permitted. The rectangular sha
+ ped course starts right at the lake front at the Trane Technologies Campus
+  with the swim finish located only about 50 yards down the shore from the 
+ start location. The water is usually very flat as the course is situated i
+ n a protected area of the lake that is sheltered from the wind. Participan
+ ts w\n\nMore: https://runsignup.com/Race/NC/Davidson/LakeDavidsonSprintTri
+ \n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:Trane Technologies Campus\, Davidson\, NC
+URL:https://runsignup.com/Race/NC/Davidson/LakeDavidsonSprintTri
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lake Summit 10 Mile Run/Hike
+DTSTART:20260913T000000
+DTEND:20260913T000000
+DTSTAMP:20260817T171925Z
+UID:7ec6591403e59f3f@altar.bike
+CATEGORIES:race
+DESCRIPTION:🏞️ Lake Summit 10 Mile Trail Race Tuxedo\, North Carolina
+  Where mountain views meet lakeside charm Join us for a breathtaking 10-mi
+ le run around the sparkling shores of Lake Summit\, nestled in the heart o
+ f the Southern Appalachian Mountains\, just south of historic Flat Rock\, 
+ NC. This scenic course weaves along packed dirt roads through the quiet co
+ mmunity of Tuxedo\, offering runners a peaceful\, nature-filled experience
+  you won’t soon forget. 🌄 What to Expect As you circle the lake in a 
+ counter-clockwise direction\, you’ll take in stunning views of clear blu
+ e waters\, charming lakefront homes\, and the rolling backdrop of the Blue
+  Ridge Mountains\, dressed in vibrant fall foliage. With 90% of the course
+  on well-maintained gravel roads\, it’s the perfect mix of beauty and ch
+ allenge. A single short\n\nMore: https://runsignup.com/Race/NC/Zirconia/La
+ keSummit10Mile\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
+LOCATION:1299 Old US 25 Hwy\, Zirconia\, NC
+URL:https://runsignup.com/Race/NC/Zirconia/LakeSummit10Mile
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:NCCX Pre-Season Skills Clinics 2026
 DTSTART:20260913T040000Z
 DTEND:20260913T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:bbf6b38b2e5ea38d@altar.bike
 CATEGORIES:clinic
 DESCRIPTION:Learn all about cyclocross and the skills needed to compete wi
@@ -653,7 +818,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260913T150000
 DTEND:20260913T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:691db58f60d5d185@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -679,10 +844,34 @@ URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
  dge-craft-trails-invitational/2026-09-13/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Light the Trail 5K and Fun Run presented by Indigo Advisors & Part
+ ners
+DTSTART:20260915T000000
+DTEND:20260920T000000
+DTSTAMP:20260817T171925Z
+UID:f2476daaf91a6d82@altar.bike
+CATEGORIES:festival
+DESCRIPTION:Benefiting the Green Crescent Trail and a more walkable\, bike
+ able greater Clemson area! Join us for a lively evening of movement\, comm
+ unity and celebration at the inaugural Light the Trail 5K and 1-Mile Famil
+ y Fun Run presented by Indigo Advisors & Partners in Clemson’s Patrick S
+ quare community\, Thursday\, September 17\, 2026. (Rain date: September 24
+ \, 2026.) Held just before Clemson University’s Parents Weekend\, this f
+ amily-friendly event invites area runners and walkers\, University student
+ s and their parents\, alumni\, neighbors and trail supporters of all ages 
+ to move together and support the Green Crescent Trail and its bold 15×30 
+ vision: creating 15 connected miles of trail across Clemson\, Central and 
+ Pendleton by 2030. Participants will enjoy a scenic evening course through
+  the streets o\n\nMore: https://runsignup.com/Race/SC/Clemson/LightTheTrai
+ l5K\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:108 Thomas Green Blvd\, Clemson\, SC
+URL:https://runsignup.com/Race/SC/Clemson/LightTheTrail5K
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:2026 Tuesday Night Cyclocross Training Series
 DTSTART:20260915T040000Z
 DTEND:20260929T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:2c8aa0d648484ac3@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Group C: Men Novice\, Women Novice\, Women CX4\, & Juniors (20
@@ -707,7 +896,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260916T150000
 DTEND:20260916T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:6dc2aba573744d34@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -736,7 +925,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260918T150000
 DTEND:20260918T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:2e840ff947c9d882@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -766,7 +955,7 @@ SUMMARY:SOLD OUT !!! ———12th Annual Dancing Bear Bike Bash Returns o
  n September 19th\, 2026
 DTSTART:20260919T040000Z
 DTEND:20260919T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:66c6bdb7d78583ef@altar.bike
 CATEGORIES:race
 DESCRIPTION:The best recreational cycling event in the Smokies region retu
@@ -790,7 +979,7 @@ BEGIN:VEVENT
 SUMMARY:Gravity Carolinas DH RD 4 WIldside
 DTSTART:20260919T040000Z
 DTEND:20260920T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:74961cf476e0181f@altar.bike
 CATEGORIES:race
 DESCRIPTION:200 Racers Registration for each event will only be available 
@@ -809,7 +998,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-season - Ride Rock Creek
 DTSTART:20260920T040000Z
 DTEND:20260920T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:3a00b4b477eb29e6@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
@@ -833,7 +1022,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260920T150000
 DTEND:20260920T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:76962d03b4354f08@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -862,7 +1051,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260923T150000
 DTEND:20260923T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:450c3f615ae79f82@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -888,10 +1077,35 @@ URL:https://www.blueridgeheritage.com/event/connecting-to-place-ii-blue-ri
  dge-craft-trails-invitational/2026-09-23/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Half-Moon Outfitters Moonshiner 5k Night Trail Race
+DTSTART:20260925T000000
+DTEND:20260925T000000
+DTSTAMP:20260817T171925Z
+UID:64466adbea3f059e@altar.bike
+CATEGORIES:race
+DESCRIPTION:The Moonshiner 5K Night Race is BACK and being hosted by Half-
+ Moon Outfitters on Friday\, Sept. 25th\, at 8 p.m. at Paris Mountain State
+  Park. The Moonshiner 5K will cover trails in Paris Mountain State Park. T
+ he Mission of the Moonshiner 5K is to provide a fun\, safe and competitive
+  experience for runners while raising money for trail construction and mai
+ ntenance at Paris Mountain State Park. The race is a night trail race - th
+ e first of its kind in the Southeast. All of the proceeds from the race wi
+ ll be donated to Paris Mountain State Park. Shirt sizes are unisex: S\, M\
+ , L\, XL and XXL. REGISTRATION Online race registration ends Friday\, Sept
+ . 25th at 5 p.m or until sold out. Register in person at Half-Moon Outfitt
+ ers all day Friday until 5 p.m or until sold out. Race-day registration at
+  the \n\nMore: https://runsignup.com/Race/SC/Greenville/HalfMoonOutfitters
+ Moonshiner5kNightTrailRace\n\nSource: RunSignup\n\nListed by Altar Cycles 
+ — altar.bike/calendar
+LOCATION:2401 State Park Rd\, Greenville\, SC
+URL:https://runsignup.com/Race/SC/Greenville/HalfMoonOutfittersMoonshiner5
+ kNightTrailRace
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Pisgah Bikeboom 2026
 DTSTART:20260925T040000Z
 DTEND:20260927T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:7ea8cf13a1f20b18@altar.bike
 CATEGORIES:race
 DESCRIPTION:Update on 7/10/26 Due to low registration number\, we have dec
@@ -915,7 +1129,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260925T150000
 DTEND:20260925T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:af3f35be98e04c99@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -944,15 +1158,15 @@ BEGIN:VEVENT
 SUMMARY:CRAFTED The Bicycle & Gear Show
 DTSTART:20260926T000000
 DTEND:20260927T000000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:b6eff59b8929c1ed@altar.bike
 CATEGORIES:festival
 DESCRIPTION:A Bicycle and Gear Show celebrating handmade craft and indepen
- dent makers across the Southeast. Saturday 10am-5pm\, Sunday 10am-4pm. Fea
- tures group rides\, tours\, live music\, tattoos\, food\, libations\, and 
- kid- and family-friendly skills course. Admission is free and open to the 
- public.\n\nMore: https://www.craftedbikeshow.com\n\nSource: Downtown Ashev
- ille Racing Club\n\nListed by Altar Cycles — altar.bike/calendar
+ dent makers across the Southeast. Saturday 10 a.m. to 5 p.m.\, Sunday 10 a
+ .m. to 4 p.m. Features group rides\, tours\, live music\, tattoos\, food\,
+  libations\, and kid-friendly skills course. Admission is free and open to
+  the public.\n\nMore: https://www.craftedbikeshow.com\n\nSource: Downtown 
+ Asheville Racing Club\n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:Cane Creek Cycling Components\, Fletcher\, NC
 URL:https://www.craftedbikeshow.com
 END:VEVENT
@@ -960,7 +1174,7 @@ BEGIN:VEVENT
 SUMMARY:2026 Ride to the Rock
 DTSTART:20260926T040000Z
 DTEND:20260926T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:f386287547fbc4ba@altar.bike
 CATEGORIES:race
 DESCRIPTION:SATURDAY\, SEPTEMBER 26\, 2026 Pickens\, SC Presented by the R
@@ -984,7 +1198,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-season - Cane Creek
 DTSTART:20260927T040000Z
 DTEND:20260927T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:567c411f65a716bf@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
@@ -1008,7 +1222,7 @@ BEGIN:VEVENT
 SUMMARY:Connecting to Place II: Blue Ridge Craft Trails Invitational
 DTSTART:20260927T150000
 DTEND:20260927T210000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:da8e31427d5c1132@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Connecting to Place II: Blue Ridge Craft Trails Invitational 2
@@ -1037,12 +1251,12 @@ BEGIN:VEVENT
 SUMMARY:Pumpkin Pedaller
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261001
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:b7bf4ed64dac0469@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual recurring event. October community bike ride.\n\nMore: 
- https://ashevilleonbikes.com/events/asheville-summer-cycle\n\nSource: Ashe
- ville on Bikes\n\nListed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Annual recurring event in October. See website for details.\n\
+ nMore: https://ashevilleonbikes.com/events/asheville-summer-cycle\n\nSourc
+ e: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:None\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events/asheville-summer-cycle
 END:VEVENT
@@ -1050,20 +1264,38 @@ BEGIN:VEVENT
 SUMMARY:Tour de Fat
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261003
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:e7d97791871f3304@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Currahee Challenge 5K/10K
+DTSTART:20261003T000000
+DTEND:20261003T000000
+DTSTAMP:20260817T171925Z
+UID:a933581cbde93581@altar.bike
+CATEGORIES:race
+DESCRIPTION:The Currahee Challenge takes place from the base of Currahee M
+ ountain on the Colonel Robert Sink Trail\, the training site of the 501st\
+ , 506th\, 511th and 517th Parachute Infantry Regiments seen in Band of Bro
+ thers\, Saving Private Ryan & The Dirty Dozen. Come and join us for an exc
+ ellent and challenging 5K run/walk or 10K hill run. PLEASE NOTE: the finis
+ h line will remain open until 11:30am.\n\nMore: https://runsignup.com/Race
+ /GA/Toccoa/CurraheeChallenge5K10K\n\nSource: RunSignup\n\nListed by Altar 
+ Cycles — altar.bike/calendar
+LOCATION:2129 Ayersville Road\, Toccoa\, GA
+URL:https://runsignup.com/Race/GA/Toccoa/CurraheeChallenge5K10K
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Pisgah 111 / 555
 DTSTART:20261003T040000Z
 DTEND:20261003T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:c6d05d9f51734aa6@altar.bike
 CATEGORIES:race
 DESCRIPTION:It’s time to turn the volume up to 111! The Pisgah 111 is th
@@ -1084,15 +1316,37 @@ LOCATION:1284 Pisgah Hwy\, Pisgah Forest\, NC
 URL:http://www.BikeReg.com/2026-pisgah-111-555
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:2026 Cal Tri Charlotte - 10.10.26
+DTSTART:20261010T000000
+DTEND:20261010T000000
+DTSTAMP:20260817T171925Z
+UID:089b2d6bc9d3c34c@altar.bike
+CATEGORIES:race
+DESCRIPTION:2026 Cal Tri Charlotte - 10.10.26. Get your motor running to L
+ ake Norman State Park in North Carolina just 38 miles north of Charlotte. 
+ 12 EVENT OPTIONS. 6 Olympic distance events (Triathlon\, RunBikeRun\, Swim
+ Bike\, SwimRun\, 1640 Yard Swim & 10K Run) and 6 Sprint distance events (T
+ riathlon\, RunBikeRun\, SwimBike\, SwimRun\, 400 yard Swim & 5K Run) Triat
+ hlon = swim + bike + run. Check out the course maps for more detailed info
+ rmation. TO DO. NASCAR Hall of Fame. Freedom Park. Discovery Place Science
+ . AIRPORT. Charlotte Douglas (CLT) AIR TEMPERATURE (AVG). 59 F / 77 F WATE
+ R TEMPERATURE (AVG). 69 F. Wetsuit recommended. Use the 20% 2026CALTRI dis
+ count code at blueseventy. Note: Fusion wetsuits not eligible for discount
+ .\n\nMore: https://runsignup.com/Race/NC/Statesville/CalTriCharlotte\n\nSo
+ urce: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:Lake Norman Picnic Ground\, Statesville\, NC
+URL:https://runsignup.com/Race/NC/Statesville/CalTriCharlotte
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Get There Asheville
 DTSTART:20261014T000000
 DTEND:20261014T000000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:2e8a7e6ac62f5ec3@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\, 6 to 8 PM\n\nMore: https://ashevilleonbikes.com
- /events\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.
- bike/calendar
+DESCRIPTION:Annual recurring event. 6 to 8 PM\n\nMore: https://ashevilleon
+ bikes.com/events\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles 
+ — altar.bike/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1100,21 +1354,21 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Rage Pre-season
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261231
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:2115f0c8d04aeced@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Pre-season activities including social events\, rider assessme
  nt\, bike shop night\, parent meeting\, and adventure rides in Bent Creek 
  or Dupont\n\nMore: https://www.pisgahrage.com/\n\nSource: Pisgah Rage (NIC
  A composite team)\n\nListed by Altar Cycles — altar.bike/calendar
-LOCATION:Asheville area\, Asheville\, NC
+LOCATION:Asheville\, Asheville\, NC
 URL:https://www.pisgahrage.com/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:2026 Gran Fondo Hincapie-Greenville
 DTSTART:20261017T040000Z
 DTEND:20261017T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:f2acb77c16a22d1c@altar.bike
 CATEGORIES:race
 DESCRIPTION:Not sure which distance is right for you? Visit our website to
@@ -1130,7 +1384,7 @@ BEGIN:VEVENT
 SUMMARY:Women + Trail Skills Workshop
 DTSTART:20261017T090000
 DTEND:20261017T150000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:f25b655f83100d84@altar.bike
 CATEGORIES:clinic
 DESCRIPTION:Intro Class: Trail Maintenance 101. G5 Community Education Pro
@@ -1144,20 +1398,45 @@ BEGIN:VEVENT
 SUMMARY:Pumpkin Pedaller
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261024
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:60082930d5a19ae1@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2nd Annual TALI Sadlers Creek Off-Road Duathlon
+DTSTART:20261024T000000
+DTEND:20261024T000000
+DTSTAMP:20260817T171925Z
+UID:3af782bc3f7c49f2@altar.bike
+CATEGORIES:race
+DESCRIPTION:Whether you’re an experienced mountain biker or new to the s
+ port\, we’ve got a race you will find enjoyable and challenging. Many ar
+ e familiar with triathlons competed on paved roads\; however\, fewer athle
+ tes have challenged themselves with an off-road duathlon. The transition a
+ rea will be set up in the grassy field near the main park office. You’ll
+  start and finish each leg of the duathlon from here. The first leg will b
+ e a 5k trail run that will wind through the trails going to the boat ramp.
+  The trails are wide single track and should be a pleasant trail run. You
+ ’ll circle back to the transition area and get your bike for the second 
+ leg. The bike leg will enter the trail system from the beach to the left/e
+ ast of the main office. Your ride will take you along the water's edge and
+  through t\n\nMore: https://runsignup.com/Race/SC/Anderson/2ndAnnualTALISa
+ dlersCreekOffRoadDuathlon\n\nSource: RunSignup\n\nListed by Altar Cycles 
+ — altar.bike/calendar
+LOCATION:940 Sadlers Creek Rd\, Anderson\, SC
+URL:https://runsignup.com/Race/SC/Anderson/2ndAnnualTALISadlersCreekOffRoa
+ dDuathlon
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:2026 BRAGco Cycling Event
 DTSTART:20261025T040000Z
 DTEND:20261025T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:743ac628878c17c6@altar.bike
 CATEGORIES:race
 DESCRIPTION:Below are the STRAVA links for the routes. The Classic - 68 Mi
@@ -1171,22 +1450,113 @@ LOCATION:115 Academy St\, Greeneville\, TN
 URL:http://www.BikeReg.com/bragco-cycling-event
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Fall Trail Weekend
+SUMMARY:1000 Mile BikeWalk for Prevention
+DTSTART:20261031T000000
+DTEND:20261031T000000
+DTSTAMP:20260817T171925Z
+UID:ca69c113117cd0e8@altar.bike
+CATEGORIES:race
+DESCRIPTION:The 1000 Mile BikeWalk for Prevention to be held October 31\, 
+ 2026\, Halloween morning. THIS IS A NEW DATE. The " Spooktacular " 1000 Mi
+ ler is a regional fun ride/walk/run for kids\, teens\, adults... the whole
+  family... to enjoy a fun and healthy morning while helping a good cause. 
+ Not a timed race\, the 1000 Miler will record the distances traveled by ev
+ ery runner and rider to reach the cumulative event goal of 1000 miles. It'
+ s Halloween! Costumes and bike decorations are highly encouraged. Teams\, 
+ too. Long and short biking and walking circuits of 15 and 5 miles and 1 mi
+ le\, respectively\, over semi-closed roadways\, plus a 1/2 mile sidewalk-o
+ nly Jr. BikeWaker route for kids. grandparents\, etc.. Prizes will be awar
+ ded in each of several classifications for the greatest distance travelled
+  during \n\nMore: https://runsignup.com/Race/TN/Morristown/1000MileBikeWal
+ kForPrevention\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
+LOCATION:4355 Durham Landing Morristown\, Morristown\, TN
+URL:https://runsignup.com/Race/TN/Morristown/1000MileBikeWalkForPrevention
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Color Me Mutt 5K & 1 Mile Color Walk/Run
+DTSTART:20261031T000000
+DTEND:20261031T000000
+DTSTAMP:20260817T171925Z
+UID:248483aa7aaaf245@altar.bike
+CATEGORIES:race
+DESCRIPTION:Join us for the 11th Annual Color Me Mutt® 5K and 1-Mile Fun 
+ Run/Walk on Saturday\, October 31\, 2026\, at NASCAR SpeedPark Smoky Mount
+ ains in Sevierville\, TN! 🐾 Celebrate the 11th Annual Color Me Mutt\, w
+ here wagging tails\, vibrant color\, and meaningful impact come together f
+ or an unforgettable day of fun! Whether you're a seasoned runner or simply
+  looking for a colorful stroll\, this pet-friendly event welcomes particip
+ ants of all ages—with or without a dog. Hosted by the PARC Foundation\, 
+ the charitable arm of NASCAR SpeedPark\, Color Me Mutt is a family-friendl
+ y\, community-driven event that promotes active lifestyles and the special
+  bond between pets and their people. Proceeds will benefit the PARC Founda
+ tion. (Beneficiaries will be announced soon!) 🎨 Race Details Start Time
+ : 5K Color Run and\n\nMore: https://runsignup.com/Race/TN/Sevierville/Colo
+ rMeMutt\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/cale
+ ndar
+LOCATION:NASCAR SpeedPark Smoky Mountains\, Sevierville\, TN
+URL:https://runsignup.com/Race/TN/Sevierville/ColorMeMutt
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HalloWine 5k
+DTSTART:20261031T000000
+DTEND:20261031T000000
+DTSTAMP:20260817T171925Z
+UID:904d737b840f6ace@altar.bike
+CATEGORIES:race
+DESCRIPTION:Come join us for our 5th Annual HalloWine 5k! We are a winery 
+ located in the upstate of South Carolina where you can enjoy some deliciou
+ s wines and enjoy the views of the Blue Ridge Mountains. Costumes are not 
+ required but strongly recommend\, as you can have the chance to win a priz
+ e for best dressed! Each registration includes the race registration\, chi
+ p timing\, a glass of wine to follow the race\, a goody bag\, and a medal 
+ for each participant. $35.00 entry fee until July 15 $40.00 entry fee from
+  July 16-August 15 $45.00 entry fee from August 16 until race date. T-shir
+ ts and medals included . Also water stations\, snacks\, goody bags for all
+  ages\, costume contest prizes ( furry friends included - dress your well 
+ behaved furry friend on leashes and/or your dress up your adorable child/c
+ hildre\n\nMore: https://runsignup.com/Race/SC/Marietta/KFWHalloWine5K\n\nS
+ ource: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:507 Beaver Dam Road\, Marietta\, SC
+URL:https://runsignup.com/Race/SC/Marietta/KFWHalloWine5K
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fall Trail Weekend!
 DTSTART:20261106T160000
 DTEND:20261108T130000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:65a4e186a310b33a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:More: https://www.g5trailcollective.org/volunteer\n\nSource: G
- 5 Trail Collective\n\nListed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:SAVE THE DATE\n\nMore: https://www.g5trailcollective.org/volun
+ teer\n\nSource: G5 Trail Collective\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Camp Grier\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:GTC Paris Mountain Trails 16K
+DTSTART:20261107T000000
+DTEND:20261107T000000
+DTSTAMP:20260817T171925Z
+UID:5ebfa1e1fda3cd26@altar.bike
+CATEGORIES:race
+DESCRIPTION:This is a very challenging course as it includes the long clim
+ b to the top of the mountain as well as encompassing North Lake. Direction
+ s (for the run): Start at park entrance\; Right at Mountain Creek\; Left o
+ n Sulphur Springs\; Continue past the pavilion and reservoir\; Left on Fir
+ etower\; Left on Kanuga\; Left on North Lake\; Left on Pipsissewa\; Right 
+ on Brissy Ridge\; Cross Buckhorn parking lot\; Continue down Sulphur Sprin
+ gs\; Continue on Mountain Lake\; Finish at Ranger Station pavilion.\n\nMor
+ e: https://runsignup.com/Race/SC/Greenville/ParisMountainTrails16K\n\nSour
+ ce: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:2401 State Park Rd\, Greenville\, SC
+URL:https://runsignup.com/Race/SC/Greenville/ParisMountainTrails16K
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Couch Potato
 DTSTART:20261107T050000Z
 DTEND:20261107T050000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:2e02b8a758b849f1@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 14th Annual Couch Potato race! We're very excit
@@ -1207,10 +1577,34 @@ LOCATION:1600 Pisgah Hwy\, Pisgah Forest\, NC
 URL:http://www.BikeReg.com/couchpotato
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Cades Cove Loop Lope
+DTSTART:20261108T000000
+DTEND:20261108T000000
+DTSTAMP:20260817T171925Z
+UID:84556b4fd9946b07@altar.bike
+CATEGORIES:race
+DESCRIPTION:The Cades Cove Loop Lope is the only organized footrace held i
+ nside Great Smoky Mountains National Park \, to benefit Friends of the Smo
+ kies . All funds raised benefit park projects and programs such as histori
+ c preservation\, wildlife conservation\, native plant and grassland restor
+ ation\, and so much more. There are two course options\, a 5K or a USATF C
+ ertified 10-Mile Loop. Participation is limited to 750 total runners. This
+  race sells out fast\, so please don't wait to register! You can pick up y
+ our race day packets and race bibs at either of the following times/locati
+ ons: Thursday\, November 5\, 2026\, 3-6pm at River Sports Outfitters – 2
+ 918 Sutherland Ave\, Knoxville\, TN Saturday\, November 7\, 2026\, from 2-
+ 5pm at the Townsend Visitor Center – 7906 E Lamar\, Alexander Pkwy\, Tow
+ nsend\, TN Carpooli\n\nMore: https://runsignup.com/Race/TN/Townsend/CadesC
+ oveLoopLope\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/
+ calendar
+LOCATION:Cades Cove Loop Road\, Townsend\, TN
+URL:https://runsignup.com/Race/TN/Townsend/CadesCoveLoopLope
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Swank 65
 DTSTART:20261108T050000Z
 DTEND:20261108T050000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:808d5262f339b592@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 28th Annual Swank 65! We're very excited for an
@@ -1231,10 +1625,34 @@ LOCATION:1600 Pisgah Hwy\, Pisgah Forest\, NC
 URL:http://www.BikeReg.com/swank65
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Dollywood's Light The Way 5k
+DTSTART:20261113T000000
+DTEND:20261114T000000
+DTSTAMP:20260817T171925Z
+UID:67f31013dccd97bb@altar.bike
+CATEGORIES:festival
+DESCRIPTION:There is nothing quite like Dollywood at Christmas. Experience
+  a nighttime run in the nation’s most beautiful holiday park during the 
+ Smoky Mountain Christmas festival by registering for the 13th annual Light
+  the Way 5K! This year’s event will take place on Friday\, November 13 b
+ eginning at 11 p.m. We are excited to announce that this year’s race is 
+ being facilitated by the Knoxville Track Club (ktc.org). KTC will chip-tim
+ e the event and work with the event team to provide runners with the best 
+ experience possible. In 2024\, the event course was re-certified to provid
+ e the best race experience. It will start in a different location for a mo
+ re streamlined course route that will eliminate runners having to make a s
+ econd loop on park. More than half of the course for this year's race will
+  be of\n\nMore: https://runsignup.com/Race/TN/PigeonForge/DollywoodsLightT
+ heWay5k\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/cale
+ ndar
+LOCATION:2700 Dollywood Parks Blvd\, Pigeon Forge\, TN
+URL:https://runsignup.com/Race/TN/PigeonForge/DollywoodsLightTheWay5k
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:We Shred Rock Creek
 DTSTART:20261114T050000Z
 DTEND:20261114T050000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:0a67e54dee113b1a@altar.bike
 CATEGORIES:race
 DESCRIPTION:We Shred Rock Creek is back for 2026 – and it is shaping up 
@@ -1255,10 +1673,34 @@ LOCATION:298 W Rock Creek Rd\, Zirconia\, NC
 URL:http://www.BikeReg.com/we-shred-rock-creek
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Fall Frenzy 5K
+DTSTART:20261121T000000
+DTEND:20261121T000000
+DTSTAMP:20260817T171925Z
+UID:e34f73cb983d8858@altar.bike
+CATEGORIES:advocacy
+DESCRIPTION:Join us for our 2nd annual Iredell Crosby Scholars 5K! Date: S
+ aturday\, November 21\, 2026 Time: Race Check-In: 7:30-8:45AM. Race Begins
+ : 9:00AM Parking: Gravel lot across from the Troutman Town Hall or Troutma
+ n ESC Park. No parking permitted at the Troutman Town Hall lot. This will 
+ be a chip timed event by New and Old-Timers LLC and a new race course!!! E
+ vent is rain or shine!!! Walkers\, joggers\, strollers and pets are welcom
+ e! Pets must be on a leash at all times. ♥ We want to give every Iredell
+  County student an opportunity to participate! If the registration fee pre
+ sents a financial hardship to you or your family\, please contact Jennifer
+  Christian at jchristian@crosbyscholarsiredell.org for a coupon code♥ Al
+ l runners registered before 10/24/26 are guaranteed our race t-shirt!!! **
+ Come jo\n\nMore: https://runsignup.com/Race/NC/Troutman/IredellCrosbySchol
+ ars5K\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calend
+ ar
+LOCATION:400 North Eastway Drive\, Troutman\, NC
+URL:https://runsignup.com/Race/NC/Troutman/IredellCrosbyScholars5K
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Pisgah DOUBLE DARE
 DTSTART:20261121T050000Z
 DTEND:20261122T050000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:59bf1e39a66ae34b@altar.bike
 CATEGORIES:race
 DESCRIPTION:Every year an event comes along that tests mental and physical
@@ -1282,7 +1724,7 @@ BEGIN:VEVENT
 SUMMARY:Go Nuts Biking Nut Gobbler XC
 DTSTART:20261122T050000Z
 DTEND:20261122T050000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:5d605450c7d6e77a@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Time & Location November 22\, 2026 - Stumphouse Mountain Bike 
@@ -1303,31 +1745,123 @@ LOCATION:105 Stumphouse Tunnel Rd\, Walhalla\, SC
 URL:http://www.BikeReg.com/go-nuts-stumphouse
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Black Mountain Turkey Trot 5k
+DTSTART:20261126T000000
+DTEND:20261126T000000
+DTSTAMP:20260817T171925Z
+UID:59b8b9ec44408293@altar.bike
+CATEGORIES:race
+DESCRIPTION:Black Mountain Turkey Trot: A Mountain Thanksgiving Tradition 
+ Get ready for an unforgettable Thanksgiving morning at the 2nd annual Blac
+ k Mountain Turkey Trot! Imagine crisp mountain air filling your lungs as g
+ olden autumn leaves crunch beneath your feet. Transform your Thanksgiving 
+ morning with a tradition of community\, health\, and gratitude. This North
+  Carolina Turkey Trot is only 20 minutes from Downtown Asheville\, located
+  in the the beautiful town of Black Mountain\, North Carolina\, a small\, 
+ artistic town in Buncombe County known for its scenic mountain setting\, c
+ reative energy\, and historic downtown - also named one of "America's Pret
+ tiest Small Towns" by TripAdvisor! Two Perfect Ways to Join Us The Black M
+ ountain 5K Turkey Trot - Challenge yourself on our professionally designed
+  5K co\n\nMore: https://runsignup.com/Race/NC/BlackMountain/blackmountainT
+ urkeyTrot\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/ca
+ lendar
+LOCATION:102 E State St\, Black Mountain\, NC
+URL:https://runsignup.com/Race/NC/BlackMountain/blackmountainTurkeyTrot
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Pisgah Rage Regular Season
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20270530
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:670937aa0418b08a@altar.bike
 CATEGORIES:race
-DESCRIPTION:Regular season with indoor training (January)\, weekend practi
- ces (February onwards)\, and 5-6 races across North Carolina starting in M
- arch. Races held on Saturdays (pre-ride) and Sundays (racing). Multiple we
- ekly rides March-May.\n\nMore: https://www.pisgahrage.com/\n\nSource: Pisg
- ah Rage (NICA composite team)\n\nListed by Altar Cycles — altar.bike/cal
- endar
-LOCATION:Asheville area and across North Carolina\, Asheville\, NC
+DESCRIPTION:Regular season with practices and races. January: 2-4 indoor t
+ raining opportunities. February: 1 weekend practice per week for 2 hours. 
+ March-May: 2 rides per week with races starting in early March\, typically
+  5-6 races across North Carolina through end of May\n\nMore: https://www.p
+ isgahrage.com/\n\nSource: Pisgah Rage (NICA composite team)\n\nListed by A
+ ltar Cycles — altar.bike/calendar
+LOCATION:Asheville\, Asheville\, NC
 URL:https://www.pisgahrage.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Green Wave Jingle Jam 5k
+DTSTART:20261205T000000
+DTEND:20261205T000000
+DTSTAMP:20260817T171925Z
+UID:af18b64667f6c3e3@altar.bike
+CATEGORIES:youth
+DESCRIPTION:On Saturday December 5th\, 2026 the Green Wave Jingle Jam will
+  be held at Easley High School in Easley\, SC. This 5k will be an evening 
+ race and will be lit up all throughout the course along campus. It is most
+ ly flat with minimal hills and has an entire downhill finish to the Track.
+  The entire community is welcome to attend this fun event! NEW THIS YEAR: 
+ Kid's Reindeer 1 Mile. There will be a costume contest before the start of
+  the Kid's Mile\, music throughout the course\, hot chocolate after the ra
+ ce\, & awards directly following the race Registration: $10 for the Kid's 
+ Reindeer Run $25 for the Green Wave Jingle Jam 5k Everyone who enters befo
+ re November 22nd\, will be guaranteed a t-shirt. All proceeds go to the en
+ tire Track & Field program at Easley High School You will be able to regis
+ ter \n\nMore: https://runsignup.com/Race/SC/Easley/GreenWaveJingleJam5k\n\
+ nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:154 Green Wave Blvd\, Easley\, SC
+URL:https://runsignup.com/Race/SC/Easley/GreenWaveJingleJam5k
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:GTC Paris Mountain Road Race
+DTSTART:20261205T000000
+DTEND:20261205T000000
+DTSTAMP:20260817T171925Z
+UID:2d18572c3f635eaa@altar.bike
+CATEGORIES:race
+DESCRIPTION:General Race Information The Paris Mountain Road Race 10k is a
+  hilly run around the base of Paris Mountain starting and finishing at Red
+ eemer Presbyterian Church at 6150 Old Buncombe Rd.\, Greenville\, SC. The 
+ total elevation gain over the 10K distance is roughly 1500 feet. With over
+  2500 vertical feet of elevation gain\, 89 curves\, and some hills at 15% 
+ grade\, the Paris Mountain Road Race 20k lives up to its billing as the TO
+ UGHEST RACE IN THE SOUTH. The race starts at Redeemer Presbyterian Church\
+ , ascends the north side of Paris Mountain\, descends on the south side\, 
+ and uses the hilly back roads at the base of the mountain to return. Sorry
+ \, but strollers and dogs are not permitted in the Paris Mountain Road Rac
+ es.\n\nMore: https://runsignup.com/Race/SC/Greenville/ParisMountainRoadRac
+ e\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:Redeemer Presbyterian Church\, Greenville\, SC
+URL:https://runsignup.com/Race/SC/Greenville/ParisMountainRoadRace
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hartness Half Marathon & 5K
+DTSTART:20261212T000000
+DTEND:20261212T000000
+DTSTAMP:20260817T171925Z
+UID:da7f0d923ed46587@altar.bike
+CATEGORIES:race
+DESCRIPTION:The Hartness Half Marathon & 5K presented brings a cross-count
+ ry style half marathon and 5K into Greenville\, SC. Held on the Hartness P
+ roperty just off Pelham Road near Interstate 85\, these two great 9th year
+  events give athletes the ability to race on pavement\, trails\, dirt road
+ s\, gravel roads and grass fields. Both the Half Marathon and 5K showcase 
+ the beautiful Hartness property that is currently being transformed from a
+ n industrial plot to a multi-use paradise\, complete with living and recre
+ ational opportunities. To learn more about Hartness Living visit their web
+  site HERE . While being run cross-country style\, all surfaces will be we
+ ll kept and this event is perfect for first-timers or Elite athletes alike
+ . “Hartness will embody the ideal hamlet ~ classic architecture\, great 
+ urbanism\n\nMore: https://runsignup.com/Race/SC/Greenville/HartnessHalf\n\
+ nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:500 Hartness Drive\, Greenville\, SC
+URL:https://runsignup.com/Race/SC/Greenville/HartnessHalf
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Brevard Dig Day w/ CMC
 DTSTART:20270122T000000
 DTEND:20270122T000000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:b251c494bcad690a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Trail maintenance work day with Carolina Mountain Club\n\nMore
- : https://www.pisgahareasorba.org/events-volunteer\n\nSource: Pisgah Area 
- SORBA\n\nListed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Volunteer trail work day with Carolina Mountain Club\n\nMore: 
+ https://www.pisgahareasorba.org/events-volunteer\n\nSource: Pisgah Area SO
+ RBA\n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:Pisgah Ranger Station/Visitor Center\, Brevard\, NC
 URL:https://www.pisgahareasorba.org/events-volunteer
 END:VEVENT
@@ -1335,38 +1869,179 @@ BEGIN:VEVENT
 SUMMARY:Bike Love
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270221
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:84d324a581bba013@altar.bike
 CATEGORIES:festival
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2nd Annual TALI Croft State Park Off-Road Duathlon
+DTSTART:20270227T000000
+DTEND:20270227T000000
+DTSTAMP:20260817T171925Z
+UID:0cf4220b71877604@altar.bike
+CATEGORIES:race
+DESCRIPTION:Come showcase your ability at the TALI Croft State Park Off-Ro
+ ad Duathlon. The Adult race takes you on a 3.5-mile trail run where you wi
+ ll be running where horses still roam\, watch out for those horse pies 
+ 😊. Then its off to the mountain bike trail course with plenty of climbi
+ ng\, drops and water crossings to make you feel as if you are riding on a 
+ bronco. Once on the trail you will do two loops equally 10 miles for total
+  distance of ~11 miles. Finish with a 1.5 mile out and back dash through a
+  wooded area along the trails of Croft. The Youth race will begin on the 1
+ -mile nature trail flowing through mixed pine and hardwood trees and wind 
+ along the Fairforest creek. Then its off to the mountain bike trail course
+  with plenty of climbing and drops to make you feel as if you are riding o
+ n a br\n\nMore: https://runsignup.com/Race/SC/Spartanburg/CroftStateParkOf
+ fRoadDuathlon\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bik
+ e/calendar
+LOCATION:450 Croft State Park Road\, Spartanburg\, SC
+URL:https://runsignup.com/Race/SC/Spartanburg/CroftStateParkOffRoadDuathlo
+ n
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Greenville Half Marathon & 5K
+DTSTART:20270227T000000
+DTEND:20270227T000000
+DTSTAMP:20260817T171925Z
+UID:4e91db40eb54e3fe@altar.bike
+CATEGORIES:race
+DESCRIPTION:VISIT THE OFFICIAL RACE WEB SITE FOR ALL DETAILS - www.SwampRa
+ bbitRace.com The Greenville Half Marathon & 5K is a net downhill half mara
+ thon and 5K run. The half marathon starts in Travelers Rest\, SC and ends 
+ on the TD Stage at the Peace Center in downtown Greenville\, SC. The 5K st
+ arts at the Swamp Rabbit Cafe and follows the Swamp Rabbit Trail to the sa
+ me finish line on the TD Stage at the Peace Center. 2027 marks the 15th ru
+ nning of the this great event.\n\nMore: https://runsignup.com/Race/SC/Gree
+ nville/swamprabbitrace\n\nSource: RunSignup\n\nListed by Altar Cycles — 
+ altar.bike/calendar
+LOCATION:300 S. Main Street\, Greenville\, SC
+URL:https://runsignup.com/Race/SC/Greenville/swamprabbitrace
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Color The View 5K
+DTSTART:20270306T000000
+DTEND:20270307T000000
+DTSTAMP:20260817T171925Z
+UID:82b1c07c915f73e7@altar.bike
+CATEGORIES:festival
+DESCRIPTION:Color the View 5K – A Smoky Mountain Family Adventure Lace u
+ p your shoes and get ready for a one-of-a-kind race experience through the
+  breathtaking backdrop of the Smoky Mountains! The Color the View 5K is mo
+ re than just a run – it’s a celebration of family\, fun\, and communit
+ y. As you make your way along the scenic course\, you’ll be surrounded b
+ y mountain views and bursts of color at every turn. Whether you run\, jog\
+ , or walk\, this event is designed for participants of all ages and fitnes
+ s levels. Families\, kids\, and groups of friends are encouraged to join i
+ n and create memories that will last long after the finish line. Expect la
+ ughter\, color powder stations\, music\, and plenty of photo-worthy moment
+ s. Don’t forget to wear white so you can cross the finish line in a rain
+ bow of colors! Come\n\nMore: https://runsignup.com/Race/TN/Kodak/ColorTheV
+ iew5KNIS\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/cal
+ endar
+LOCATION:3293 Douglas Dam Rd\, Kodak\, TN
+URL:https://runsignup.com/Race/TN/Kodak/ColorTheView5KNIS
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Conquer the Rock 25k & 50k
+DTSTART:20270306T000000
+DTEND:20270306T000000
+DTSTAMP:20260817T171925Z
+UID:7c8362898e390129@altar.bike
+CATEGORIES:race
+DESCRIPTION:🏞️ Welcome to the Mountain’s Challenge So\, you wish to
+  walk among the clouds? ☁️ Then lace up\, for this journey takes you o
+ ver the mighty backs of Pinnacle Mountain and the legendary Table Rock\, t
+ wo of South Carolina’s tallest guardians of stone. 🗻 These trails? Th
+ ey ain't gentle. They're steep\, rocky\, and relentless—but also stunnin
+ gly beautiful. 🌄 Every switchback\, every climb\, every gasping moment 
+ rewards you with panoramic views most only dream of. And when your legs tr
+ emble at the summit\, the mountains whisper: You are strong. You are worth
+ y. 🥾 Why You’ll Love (and Respect) This Race 🐻 Bear Crawl 25k – 
+ One brutal loop 🐐 Foothills 50k – Two soul-shaping laps 🪨 16\,000 
+ feet of elevation change 🏔️ Summits of Pinnacle & Table Rock 🌲 A t
+ ight-knit tribe of trail runners to share the journey \n\nMore: https://ru
+ nsignup.com/Race/SC/Pickens/ConquertheRock\n\nSource: RunSignup\n\nListed 
+ by Altar Cycles — altar.bike/calendar
+LOCATION:W. Gate Road\, Pickens\, SC
+URL:https://runsignup.com/Race/SC/Pickens/ConquertheRock
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hiawassee Half Marathon & 5K
+DTSTART:20270313T000000
+DTEND:20270313T000000
+DTSTAMP:20260817T171925Z
+UID:dc83ff9ccd82819b@altar.bike
+CATEGORIES:race
+DESCRIPTION:Conveniently located just two hours north of Atlanta\, we welc
+ ome you to the heart of the North Georgia mountains for the 2nd Annual Hia
+ wassee Half Marathon & 5K! Starting and finishing in the charming Hiawasse
+ e Town Square\, this scenic road race showcases the beauty of our mountain
+ -lake community. Both courses feature stunning views of Lake Chatuge\, wit
+ h the half marathon offering a full 360-degree tour around its sparkling s
+ horeline. With moderately hilly terrain and well-maintained road surfaces\
+ , runners of all experience levels can enjoy a smooth\, fast course surrou
+ nded by breathtaking scenery. Half Marathon: 7:30 am Start\; 4 hour time l
+ imit (18 min 20 sec mile) 5K: 8:30 am Start Pricing 5K - Registration $35 
+ ($45 after January 31\, 2027) Half Marathon - Registration $85 ($95 after 
+ Janua\n\nMore: https://runsignup.com/Race/GA/Hiawassee/HiawasseeHalfMarath
+ on5K\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calenda
+ r
+LOCATION:19 S. Main St\, Hiawassee\, GA
+URL:https://runsignup.com/Race/GA/Hiawassee/HiawasseeHalfMarathon5K
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Spring Out
 DTSTART;VALUE=DATE:20270329
 DTEND;VALUE=DATE:20270329
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:42077d50b8d9df1a@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Covenant Health Knoxville Marathon\, Half Marathon\, Relays\, 5k a
+ nd Kids Run
+DTSTART:20270410T000000
+DTEND:20270411T000000
+DTSTAMP:20260817T171925Z
+UID:efdb88ab0e335440@altar.bike
+CATEGORIES:race
+DESCRIPTION:Join us for the 2027 Covenant Health Knoxville Marathon! We ha
+ ve something for everyone: Marathon\, Half marathon\, 4-Person Relay\, 5K\
+ , and Covenant Health Kids Run! Saturday\, April 10\, 2027 5:30 pm – Cov
+ enant Health Kids Run 7:00 pm – Covenant Health 5K Sunday\, April 11\, 2
+ 027 7:27 am – Wheelchair & Handcycle Participants Start 7:30 am – Mara
+ thon\, Half Marathon\, & 4-Person Relay Start ***Back this year\, sign up 
+ for one of our two challenges! The Knox Hills Challenge includes the Satur
+ day 5K and the Sunday Marathon. The Marble City Challenge includes the Sat
+ urday 5K and the Sunday Half Marathon. Both challenges include an extra me
+ dal and swag item to finishers!*** Virtual Option: We will offer an in-per
+ son race experience AND a Virtual Option. For those wishing to participate
+  in the live\, in-\n\nMore: https://runsignup.com/Race/TN/Knoxville/Knoxvi
+ lleMarathon\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/
+ calendar
+LOCATION:Clinch Ave & World's Fair Park Dr\, Knoxville\, TN
+URL:https://runsignup.com/Race/TN/Knoxville/KnoxvilleMarathon
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART:20270417T000000
 DTEND:20270417T000000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:3a30355473fa12d2@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\, 5 pm – 9 pm\n\nMore: https://ashevilleonbikes
- .com/events\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — al
- tar.bike/calendar
+DESCRIPTION:Annual recurring event. 5 pm – 9 pm\n\nMore: https://ashevil
+ leonbikes.com/events\n\nSource: Asheville on Bikes\n\nListed by Altar Cycl
+ es — altar.bike/calendar
 LOCATION:Downtown After Five\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1374,7 +2049,7 @@ BEGIN:VEVENT
 SUMMARY:Bootlegger
 DTSTART:20270417T040000Z
 DTEND:20270417T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:f0fa19e43a2adce0@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Bootlegger is one of the most challenging and scenic grave
@@ -1395,15 +2070,34 @@ LOCATION:100 Boundary St NW\, Lenoir\, NC
 URL:http://www.BikeReg.com/bootlegger-2027
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Lake Norman State Park Sprint Triathlon
+DTSTART:20270424T000000
+DTEND:20270424T000000
+DTSTAMP:20260817T171925Z
+UID:3a0109067fcf1137@altar.bike
+CATEGORIES:race
+DESCRIPTION:Round 3 of the North Carolina Triathlon Series . * Convenientl
+ y located just 6 miles from the Mooresville Exit off I-77 * Lake Norman St
+ ate Park provides Charlotte area participants with a race that's close-by 
+ yet rural in nature. * Participants will be able to park immediately adjac
+ ent to the main race site. * The park boasts one of the regions largest mo
+ untain biking network\, offering over 30 miles of single-track trail and a
+ lso contains a family campground with 32 sites.\n\nMore: https://runsignup
+ .com/Race/NC/Troutman/LakeNormanStateParkSprint\n\nSource: RunSignup\n\nLi
+ sted by Altar Cycles — altar.bike/calendar
+LOCATION:Lake Norman State Park\, Troutman\, NC
+URL:https://runsignup.com/Race/NC/Troutman/LakeNormanStateParkSprint
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Get in Gear Fest
 DTSTART:20270425T000000
 DTEND:20270425T000000
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:afe3b78c6fb38d0b@altar.bike
 CATEGORIES:festival
-DESCRIPTION:Annual event\, 12 pm – 5 pm. Includes Bike Valet\n\nMore: ht
- tps://ashevilleonbikes.com/events\n\nSource: Asheville on Bikes\n\nListed 
- by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Annual recurring event. Includes Bike Valet. 12 pm – 5 pm\n\
+ nMore: https://ashevilleonbikes.com/events\n\nSource: Asheville on Bikes\n
+ \nListed by Altar Cycles — altar.bike/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1411,7 +2105,7 @@ BEGIN:VEVENT
 SUMMARY:Bear's Smokehouse BBQ Community Rides
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270831
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:28081717435d5842@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event. Weekly on Wednesdays in Summer\n\nMore
@@ -1424,7 +2118,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Mountain Bike Adventure Race
 DTSTART:20270501T040000Z
 DTEND:20270501T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:996261671a499518@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Pisgah Mountain Bike Adventure Race (PMBAR) is the absolut
@@ -1446,15 +2140,59 @@ LOCATION:1284 Pisgah Hwy\, Pisgah Forest\, NC
 URL:http://www.BikeReg.com/pisgah-mountain-bike-adventure-race-2027
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Fiddlin' 5k Run/Walk for the Arts
+DTSTART:20270508T000000
+DTEND:20270508T000000
+DTSTAMP:20260817T171925Z
+UID:43debe8acb62aa1e@altar.bike
+CATEGORIES:race
+DESCRIPTION:Enjoy the fine tunes of local musicians as you run or walk on 
+ our beautiful 5k route in Mars Hill\, North Carolina. Just north of Ashevi
+ lle\, the Fiddlin' 5k is a local favorite and it's easy to understand why.
+  The course starts and finishes on the beautiful Otis Duck Greenway where 
+ participants will be treated to wholesome snacks and spectacular mountain 
+ and rural views. Also\, please add us to your e-mail contact list so our i
+ mportant e-mails won't end up in your spam folder! Fiddlin5Krun@gmail.com 
+ *** Sign up by April 15 to guarantee your T-shirt ***\n\nMore: https://run
+ signup.com/Race/NC/MarsHill/Fiddlin5k\n\nSource: RunSignup\n\nListed by Al
+ tar Cycles — altar.bike/calendar
+LOCATION:248 Bailey street\, Mars Hill\, NC
+URL:https://runsignup.com/Race/NC/MarsHill/Fiddlin5k
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Little River Rush Half Marathon
+DTSTART:20270514T000000
+DTEND:20270515T000000
+DTSTAMP:20260817T171925Z
+UID:a0891c679c35eeb3@altar.bike
+CATEGORIES:race
+DESCRIPTION:Experience one of the fastest and most scenic half marathons i
+ n East Tennessee. The Little River Rush Half Marathon offers a unique poin
+ t-to-point course through the peaceful back roads of Townsend\, surrounded
+  by breathtaking mountain views and free from the congestion of busier rac
+ e locations. Starting at the Smoky Mountain Heritage Center\, the course t
+ ravels one direction to Heritage High School\, showcasing over 600 feet of
+  total descent and more than 200 feet of net downhill\, making this a trul
+ y fast and rewarding race experience\, It's really downhill\, like actuall
+ y\, check the course profile down below! This course is USATF Certified fo
+ r Age Group\, National records or for using to get into other races requir
+ ing a time standard: Race Details Runner Check-In & Packet Pickup: All par
+ ticipa\n\nMore: https://runsignup.com/Race/TN/Maryville/TownsendDownsHalfM
+ arathon\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/cale
+ ndar
+LOCATION:3741 E Lamar Alexander Pkwy\, Maryville\, TN
+URL:https://runsignup.com/Race/TN/Maryville/TownsendDownsHalfMarathon
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270515
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:ab08b437baf781f7@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Downtown After Five\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1462,12 +2200,12 @@ BEGIN:VEVENT
 SUMMARY:Roll Outta Work
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270515
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:0bac6aff0668c35b@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1475,7 +2213,7 @@ BEGIN:VEVENT
 SUMMARY:Carolina Reaper Road Race
 DTSTART:20270515T040000Z
 DTEND:20270515T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:6cb81637a4faee67@altar.bike
 CATEGORIES:race
 DESCRIPTION:Please visit www.reaperroadrace.com for more information.\n\nM
@@ -1489,38 +2227,105 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Forestry Camp
 DTSTART;VALUE=DATE:20270516
 DTEND;VALUE=DATE:20270516
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:f081edfad7afbbd3@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Forestry Camp\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Biltmore Kiwanis Classic
+DTSTART:20270516T000000
+DTEND:20270516T000000
+DTSTAMP:20260817T171925Z
+UID:10def9edfe07e862@altar.bike
+CATEGORIES:race
+DESCRIPTION:Join us for the 27th running of the Biltmore Classic. Choose f
+ rom the 5k or 15k distances. This race deserves to be on every runners buc
+ ket-list and will indeed be on every runners “best race” list. Nestled
+  in the blue ridge mountains\, the Biltmore Estate was built for George Wa
+ shington Vanderbilt II between 1889 and 1895 and holds the record of being
+  the largest privately owned house in the United States. The Biltmore-Kiwa
+ nis Classic 15k and 5k races have been running on the estate since 1997 an
+ d act as the biggest fundraiser for Asheville’s Kiwanis Club.\n\nMore: h
+ ttps://runsignup.com/Race/NC/Asheville/BiltmoreKiwanisClassic\n\nSource: R
+ unSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:207 Dairy Rd\, Asheville\, NC
+URL:https://runsignup.com/Race/NC/Asheville/BiltmoreKiwanisClassic
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Ride of Silence
 DTSTART;VALUE=DATE:20270520
 DTEND;VALUE=DATE:20270520
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:a9e0944c3b4508e2@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Beer City 20k Relay & 5k/10k
+DTSTART:20270529T000000
+DTEND:20270529T000000
+DTSTAMP:20260817T171925Z
+UID:2e7ffffc4cf1d120@altar.bike
+CATEGORIES:race
+DESCRIPTION:Come celebrate Beer City USA with your running buddies! Discov
+ er Asheville\, North Carolina\, nestled in the picturesque Blue Ridge Moun
+ tains\, where clean mountain water flows and a rich beer brewing legacy th
+ rives. Experience a beer lover’s paradise with over 30 craft breweries\,
+  making it home to some of the finest breweries in the nation. Embraced by
+  enthusiasts\, Asheville tops many must-visit lists for its exceptional br
+ ews and captivating mountain charm\, attracting runners\, bikers\, and hik
+ ers alike. Don’t miss the highly anticipated Beer City Relay\, where the
+  spirit of running and craft beer converge. The esteemed host for this yea
+ r’s event is none other than New Belgium Brewing. Originating in Fort Co
+ llins CO\, New Belgium brought their east coast hub to Asheville in 2016. 
+ We are proud t\n\nMore: https://runsignup.com/Race/NC/Asheville/BeerCityRa
+ cesNC\n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calend
+ ar
+LOCATION:21 Craven St\, Asheville\, NC
+URL:https://runsignup.com/Race/NC/Asheville/BeerCityRacesNC
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Cherohala Challenge
+DTSTART:20270605T000000
+DTEND:20270605T000000
+DTSTAMP:20260817T171925Z
+UID:2c15bbb08522e30f@altar.bike
+CATEGORIES:race
+DESCRIPTION:The Smoky Mountain Wheelmen proudly present the 24th Edition o
+ f the Cherohala Challenge. The event offers three distinctive rides that a
+ lmost anyone can find a ride that will fit their skill level with rides of
+  35\, 62\, and 115 miles. Join us Saturday\, June 6\, for breathtaking vie
+ ws and pride inducing climbs on one of three world class routes. The 2026 
+ edition moves the start/finish to Vonore to enhance\, safety\, new routes\
+ , and a new overall experience! The title event\, the Cherohala Challenge 
+ Century\, is not for the faint of heart. This once in a lifetime ride test
+ s riders with 115 miles and 10\,350ft of climbing across two states. Rider
+ s begin in Vonore heading climb to Deals Gap and brave the fabled 318 curv
+ es of the Tail of the Dragon. After besting the beast\, riders will descen
+ d the mou\n\nMore: https://runsignup.com/Race/TN/Vonore/CherohalaChallenge
+ \n\nSource: RunSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:414 Hall St\, Vonore\, TN
+URL:https://runsignup.com/Race/TN/Vonore/CherohalaChallenge
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART;VALUE=DATE:20270619
 DTEND;VALUE=DATE:20270619
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:eb9b4d5fa344c6ef@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Downtown After Five\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1528,12 +2333,12 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Forestry Camp
 DTSTART;VALUE=DATE:20270620
 DTEND;VALUE=DATE:20270620
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:ce7e1626335c6ad9@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Forestry Camp\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1541,12 +2346,12 @@ BEGIN:VEVENT
 SUMMARY:New Belgium 35th Anniversary Ride
 DTSTART;VALUE=DATE:20270627
 DTEND;VALUE=DATE:20270627
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:427d98b3c4566f4f@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1554,12 +2359,12 @@ BEGIN:VEVENT
 SUMMARY:The Lennie Antonelli and Jake Hill Memorial Ride
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270701
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:0c2b50b0e423e7a5@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1568,7 +2373,7 @@ SUMMARY:2027 Gran Fondo Asheville\, p/b Applewood Manor Foundation\, a SEN
  A Gran Fondo National Series event
 DTSTART:20270718T040000Z
 DTEND:20270718T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:19cc3e2cb7f4ed33@altar.bike
 CATEGORIES:race
 DESCRIPTION:THIS REGISTRATION IS FOR 2027 THESE DETAILS ARE FOR 2026 EVENT
@@ -1592,12 +2397,12 @@ BEGIN:VEVENT
 SUMMARY:Gran Fondo AVL
 DTSTART;VALUE=DATE:20270719
 DTEND;VALUE=DATE:20270719
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:ff576b5052181618@altar.bike
 CATEGORIES:race
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1605,7 +2410,7 @@ BEGIN:VEVENT
 SUMMARY:HARDford 50 and HARDERford 75
 DTSTART:20270801T040000Z
 DTEND:20270801T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:fbb7b952544d9b16@altar.bike
 CATEGORIES:race
 DESCRIPTION:Riders have two course options: The HARDford 50 and the HARDER
@@ -1629,7 +2434,7 @@ BEGIN:VEVENT
 SUMMARY:2027 Boone Gran Fondo\, a SENA Gran Fondo National Series event
 DTSTART:20270808T040000Z
 DTEND:20270808T040000Z
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:eaf10f6e0cd70f9a@altar.bike
 CATEGORIES:race
 DESCRIPTION:THIS REGISTRATION IS FOR THE 2027 EVENT DETAILS BELOW SUBJECT 
@@ -1653,12 +2458,12 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART;VALUE=DATE:20270821
 DTEND;VALUE=DATE:20270821
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:7037f9eff5e41388@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Downtown After Five\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1666,13 +2471,35 @@ BEGIN:VEVENT
 SUMMARY:Summer Cycle
 DTSTART;VALUE=DATE:20270822
 DTEND;VALUE=DATE:20270822
-DTSTAMP:20260817T170725Z
+DTSTAMP:20260817T171925Z
 UID:2db110e2b5eae1f7@altar.bike
 CATEGORIES:festival
-DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
- ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
- r
+DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
+ vents\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:GTC Upville Mile
+DTSTART:20270828T000000
+DTEND:20270828T000000
+DTSTAMP:20260817T171925Z
+UID:e681f27e029816fc@altar.bike
+CATEGORIES:race
+DESCRIPTION:Why run down when you can run up ? GTC Upville Mile is a 1-mil
+ e\, uphill-only road race in Paris Mountain State Park\, on the steepest p
+ art of Paris Mountain State Park Road. The route is one of the toughest\, 
+ if not the toughest uphill 1-mile road segments in the Upstate\, including
+  nearby Altamont Road\, and the road going up Sassafras Mountain. If you l
+ ike a running challenge\, this event may be just the ticket for you. Don't
+  be surprised though if you find it necessary to do at least a couple shor
+ t walk breaks. It's recommended you practice on this route before you race
+  on it. With an average grade of 8.2%\, and elevation gain of 460 feet in 
+ just a mile\, it surely will not disappoint. John Hart\, Race Director\n\n
+ More: https://runsignup.com/Race/SC/Greenville/GTCUpvilleMile\n\nSource: R
+ unSignup\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:2401 State Park Rd\, Greenville\, SC
+URL:https://runsignup.com/Race/SC/Greenville/GTCUpvilleMile
 END:VEVENT
 END:VCALENDAR

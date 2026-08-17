@@ -1,18 +1,15 @@
 {
- "generated": "2026-08-17T17:07:25.651838+00:00",
- "total": 81,
- "world": 21,
- "needs_attention": [
-  "nica-nc",
-  "runsignup"
- ],
+ "generated": "2026-08-17T17:19:25.570957+00:00",
+ "total": 117,
+ "world": 22,
+ "needs_attention": [],
  "sources": {
   "asheville-on-bikes": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 23,
    "kept": 21,
-   "at": "2026-08-17T17:05:41.533453+00:00"
+   "at": "2026-08-17T17:17:46.450467+00:00"
   },
   "asheville-on-bikes-rwgps": {
    "status": "failed",
@@ -28,7 +25,7 @@
    "adapter": "llm",
    "fetched": 2,
    "kept": 2,
-   "at": "2026-08-17T17:05:44.804419+00:00"
+   "at": "2026-08-17T17:17:49.971225+00:00"
   },
   "blue-ridge-bicycle-club": {
    "status": "failed",
@@ -44,31 +41,28 @@
    "adapter": "llm",
    "fetched": 3,
    "kept": 1,
-   "at": "2026-08-17T17:05:53.114682+00:00"
+   "at": "2026-08-17T17:17:58.901073+00:00"
   },
   "g5-trail-collective": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 6,
    "kept": 5,
-   "at": "2026-08-17T17:06:01.135016+00:00"
+   "at": "2026-08-17T17:18:06.061572+00:00"
   },
   "nica-nc": {
-   "status": "failed",
-   "errors": [
-    "jsonld: https://northcarolinamtb.org/schedule/: 404 Client Error: Not Found for url: https://northcarolinamtb.org/schedule/",
-    "llm: https://northcarolinamtb.org/schedule/: 404 Client Error: Not Found for url: https://northcarolinamtb.org/schedule/"
-   ],
-   "cached_events": 0,
-   "cache_age_days": null,
-   "optional": false
+   "status": "ok",
+   "adapter": "jsonld",
+   "fetched": 6,
+   "kept": 0,
+   "at": "2026-08-17T17:18:06.546429+00:00"
   },
   "pisgah-rage": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 2,
    "kept": 2,
-   "at": "2026-08-17T17:06:12.064418+00:00"
+   "at": "2026-08-17T17:18:10.152358+00:00"
   },
   "ic-imagine-cycling": {
    "status": "failed",
@@ -84,30 +78,28 @@
    "adapter": "bikereg",
    "fetched": 45,
    "kept": 31,
-   "at": "2026-08-17T17:06:17.143541+00:00"
+   "at": "2026-08-17T17:18:15.261665+00:00"
   },
   "runsignup": {
-   "status": "failed",
-   "errors": [
-    "runsignup: returned 0 events"
-   ],
-   "cached_events": 0,
-   "cache_age_days": null,
-   "optional": false
+   "status": "ok",
+   "adapter": "runsignup",
+   "fetched": 250,
+   "kept": 36,
+   "at": "2026-08-17T17:18:17.526202+00:00"
   },
   "uci": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 21,
-   "kept": 21,
-   "at": "2026-08-17T17:07:07.938862+00:00"
+   "fetched": 22,
+   "kept": 22,
+   "at": "2026-08-17T17:19:09.714490+00:00"
   },
   "blue-ridge-heritage": {
    "status": "ok",
    "adapter": "tribe",
    "fetched": 500,
    "kept": 32,
-   "at": "2026-08-17T17:07:24.676869+00:00"
+   "at": "2026-08-17T17:19:25.312125+00:00"
   }
  }
 }
