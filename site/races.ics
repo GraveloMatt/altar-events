@@ -1,0 +1,574 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Altar Cycles//WNC Cycling Calendar//EN
+METHOD:PUBLISH
+X-WR-CALDESC:WNC Bike Racing. altar.bike
+X-WR-CALNAME:WNC Bike Racing — Altar Cycles
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+SUMMARY:Gravel Roll - The Holler in Walhalla
+DTSTART:20260822T040000Z
+DTEND:20260822T040000Z
+DTSTAMP:20260817T170725Z
+UID:a10bb3a380a81314@altar.bike
+CATEGORIES:race
+DESCRIPTION:The Gravel Roll is BACK! Hollerin' for more in Walhalla in 202
+ 6! Guaranteed to make you whoop\, The Holler in Walhalla is our mountain g
+ ravel race for the Gravel Roll in 2025. If you've ridden the Valley of the
+  Giants in the past\, the road surface composition will be very similar an
+ d is representative of what mountain gravel with the U.S. Forest Service r
+ oad system is like. There'll be some smooth crush\, some chunky\, and of c
+ ourse a dash of our usual Gravel Roll fun. Like for you Bosses out there\,
+  we've got a little “bonus” for y'all. Like most of our mountain grave
+ l rides\, this one doesn't meet our usual 70% threshold for paved to unpav
+ ed\, but we think you'll welcome the smooth but swoopy tarmac when you enc
+ ounter it\, and rip it all the same. Afterwards\, hang around at the Walha
+ lla Depot f\n\nMore: http://www.BikeReg.com/the-holler\n\nSource: BikeReg\
+ n\nListed by Altar Cycles — altar.bike/calendar
+GEO:34.762378;-83.0661084
+LOCATION:211 S College St\, Walhalla\, SC
+URL:http://www.BikeReg.com/the-holler
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Go Nuts Enduro Round 2 - Sugar Mountain\, USA
+DTSTART:20260823T040000Z
+DTEND:20260823T040000Z
+DTSTAMP:20260817T170725Z
+UID:2b5c2eaa1337a28b@altar.bike
+CATEGORIES:race
+DESCRIPTION:TIME & LOCATION Sugar Mountain Bike Park 1009 Sugar Mountain D
+ rive Banner Elk\, NC 28604 Sugar Mountain is located in the heart of North
+  Carolina’s high country \, offering unparalleled mountain views and tec
+ hnical challenges for riders of all levels. The park is easily accessible\
+ , just a short drive from the town of Banner Elk \, and approximately two 
+ hours from Asheville \, making it a prime destination for both racers and 
+ spectators alike. DESCRIPTION Sugar Mountain Bike Park\, North Carolina 
+ – Stop #2 Get ready for the Go Nuts Biking International Enduro Series a
+ s it heads to the Sugar Mountain Bike Park in Banner Elk\, North Carolina 
+ \, for Stop #3 of the season! Situated in the scenic Blue Ridge Mountains 
+ \, Sugar Mountain offers an exceptional backdrop for a thrilling race. Kno
+ wn for its di\n\nMore: http://www.BikeReg.com/go-nuts-biking-no-nuts-no-gl
+ ory-enduro-2026-aug-2\n\nSource: BikeReg\n\nListed by Altar Cycles — alt
+ ar.bike/calendar
+GEO:36.1300568;-81.8592166
+LOCATION:1009 Sugar Mountain Drive\, Sugar Mountain\, NC
+URL:http://www.BikeReg.com/go-nuts-biking-no-nuts-no-glory-enduro-2026-aug
+ -2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dirt Diggler Gravel Grinder
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260905
+DTSTAMP:20260817T170725Z
+UID:53b43bf11b736a76@altar.bike
+CATEGORIES:race
+DESCRIPTION:Featured Event for DARC members\n\nMore: https://darccycling.c
+ om/calendar\n\nSource: Downtown Asheville Racing Club\n\nListed by Altar C
+ ycles — altar.bike/calendar
+GEO:35.2325798;-82.5969679
+LOCATION:315 Shoals Falls Rd\, Hendersonville\, NC
+URL:https://darccycling.com/calendar
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:End of Summer Jam
+DTSTART:20260905T040000Z
+DTEND:20260906T040000Z
+DTSTAMP:20260817T170725Z
+UID:6628b3d67771c40f@altar.bike
+CATEGORIES:race
+DESCRIPTION:Come out to Ride Kanuga on Labor Day weekend for a few days of
+  fun! There are many events including an Adaptive Mountain Bike Race\, Red
+  Bull Whip Off\, E-Bike Challenge\, Jump Jam\, GoPro contest\, and more! C
+ elebrate the end of summer at Ride Kanuga! Event Schedule: September 5\, S
+ aturday: 10:00am-5:00pm: GoPro Rental Cameras Available 10:00am-2:00pm: E-
+ Bike Challenge Practice 2:00: E-Bike Challenge Finals 4:00pm: Red Bull Bes
+ t Whip Practice (Southeast Style/Big Brutus) 4:30pm: Red Bull Best Whip Co
+ ntest | Note: Full-face helmets will be required during official competiti
+ on practice and finals August 31\, Sunday: 9:00am-9:30am: Registration (Ad
+ aptive Race) / Race Meeting 9:30am-12:30pm: Adaptive Mountain Bike Race (C
+ OMBINED TIME of multiple race runs) 10:00am-5:00pm: GoPro Rental Cameras A
+ vaila\n\nMore: http://www.BikeReg.com/end-of-summer-jam\n\nSource: BikeReg
+ \n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.2668674;-82.5143338
+LOCATION:1249 Kanuga Lake Rd\, Hendersonville\, NC
+URL:http://www.BikeReg.com/end-of-summer-jam
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gravity Carolinas DH RD 3 Ride Rock Creek
+DTSTART:20260912T040000Z
+DTEND:20260913T040000Z
+DTSTAMP:20260817T170725Z
+UID:1446d149ac9ba226@altar.bike
+CATEGORIES:race
+DESCRIPTION:EVENT CAPACITY 200 Racers Registration for each event will onl
+ y be available online. There is NO ONSITE REGISTRATION. Race registration 
+ will close at 11:59pm thursday night before the race. Number plates/timing
+  chips will be available for pickup at rider check in. For all other event
+  details https://www.gravitycarolinas.com/downhill ***Please email info@di
+ aledevents.com for other Gravity Carolinas sponsor opportunities. Presente
+ d by Dialed Events\n\nMore: http://www.BikeReg.com/gravitycarolinasdh3\n\n
+ Source: BikeReg\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.1990482;-82.5074104
+LOCATION:298 W Rock Creek Rd\, Zirconia\, NC
+URL:http://www.BikeReg.com/gravitycarolinasdh3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:SOLD OUT !!! ———12th Annual Dancing Bear Bike Bash Returns o
+ n September 19th\, 2026
+DTSTART:20260919T040000Z
+DTEND:20260919T040000Z
+DTSTAMP:20260817T170725Z
+UID:66c6bdb7d78583ef@altar.bike
+CATEGORIES:race
+DESCRIPTION:The best recreational cycling event in the Smokies region retu
+ rns on Saturday September 19th\, 2026! The 12th annual 2026 Dancing Bear B
+ ike Bash is open for registration! We will have three (tweaked) rides of 2
+ 5\, 37 and 45 miles with full support. A staple of our event--the famous p
+ ost ride gourmet lunch curated by Executive Chef Jeff Carter will be bette
+ r than ever ---with fabulous spread\, live music and complimentary Peacefu
+ l Side Brewery beer. Packet pick up starts on Friday evening 9/19/26 at Pe
+ aceful Side Social from 5:00-6:30 Pm and resumes on Saturday morning of Ra
+ ce Day (9/20/26) at 7:30 Am at the Dancing Bean Coffee House. All rides le
+ ave around 8:50 Am. Once again\, we will ride through the curves with a fu
+ ll police escort! Post ride gourmet lunch starts at 10:30 Am and ends at 1
+ :4\n\nMore: http://www.BikeReg.com/11th-annual-dancing-bear-bike-bash\n\nS
+ ource: BikeReg\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.6787608;-83.7823541
+LOCATION:7140 E Lamar Alexander Parkway\, Townsend\, TN
+URL:http://www.BikeReg.com/11th-annual-dancing-bear-bike-bash
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gravity Carolinas DH RD 4 WIldside
+DTSTART:20260919T040000Z
+DTEND:20260920T040000Z
+DTSTAMP:20260817T170725Z
+UID:74961cf476e0181f@altar.bike
+CATEGORIES:race
+DESCRIPTION:200 Racers Registration for each event will only be available 
+ online. There is NO ONSITE REGISTRATION. Race registration will close at 1
+ 1:59pm thursday night before the race. Number plates/timing chips will be 
+ available for pickup at rider check in. For all other event details https:
+ //www.gravitycarolinas.com/downhill ***Please email info@dialedevents.com 
+ for other Gravity Carolinas sponsor opportunities. Presented by Dialed Eve
+ nts\n\nMore: http://www.BikeReg.com/gravitycarolinasdh4\n\nSource: BikeReg
+ \n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.7504715;-83.5754291
+LOCATION:1099 Laurel Lick Rd\, Pigeon Forge\, TN
+URL:http://www.BikeReg.com/gravitycarolinasdh4
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:NCCX Pre-season - Ride Rock Creek
+DTSTART:20260920T040000Z
+DTEND:20260920T040000Z
+DTSTAMP:20260817T170725Z
+UID:3a00b4b477eb29e6@altar.bike
+CATEGORIES:race
+DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
+ es to try cyclocross for the first time\, get ready for the season\, or te
+ st your fitness and skills! All are welcome! Sunday\, Sept 20 - Ride Rock 
+ Creek Sunday\, Sept 27 - hosted by CRAFTED at Cane Creek HQ Race Entry: $3
+ 0. $15 second race. Fees include a day license if needed. Awards for the t
+ op three in each category. All juniors (racing or not) are invited to a FR
+ EE INTRO to CX Skills at 9am on each race day for a preview of the course 
+ and introduction to cyclocross-specific skills and strategy. Access to Rid
+ e Rock Creek is for the event only. Additional downhill riding at Ride Roc
+ k Creek is available with purchase of a pass from the venue. All races are
+  sanctioned by USA Cycling. Annual or one-day license suggested (one day i
+ nc\n\nMore: http://www.BikeReg.com/nccx-pre-season-ride-rock-creek\n\nSour
+ ce: BikeReg\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.1990482;-82.5074104
+LOCATION:298 W Rock Creek Rd\, Zirconia\, NC
+URL:http://www.BikeReg.com/nccx-pre-season-ride-rock-creek
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pisgah Bikeboom 2026
+DTSTART:20260925T040000Z
+DTEND:20260927T040000Z
+DTSTAMP:20260817T170725Z
+UID:7ea8cf13a1f20b18@altar.bike
+CATEGORIES:race
+DESCRIPTION:Update on 7/10/26 Due to low registration number\, we have dec
+ ided to change this to an informal pop-up event which means we will NOT be
+  covering the cost of anything. All transportation\, bike rentals\, and ho
+ tel/camping will be at your discretion. We believe that many of you still 
+ want to show up and ride given your love and passion for mountain biking! 
+ Camping/hotel recommendations remain the same. We will leave the orginial 
+ program up for ride group and schedules. We will NOT be providing guides a
+ nd we remind you to prioritize saftey when you're out riding. Campgrounds 
+ will not be provided at this event\, but we have some recommendations belo
+ w: For this year’s bikeboom event\, we will not be providing campsites\;
+  however\, below are some recommendations that we have gotten from locals\
+ ; we enc\n\nMore: http://www.BikeReg.com/bikeboom-2026\n\nSource: BikeReg\
+ n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.2745931;-82.7055264
+LOCATION:11 Mama's Pl\, Brevard\, NC
+URL:http://www.BikeReg.com/bikeboom-2026
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2026 Ride to the Rock
+DTSTART:20260926T040000Z
+DTEND:20260926T040000Z
+DTSTAMP:20260817T170725Z
+UID:f386287547fbc4ba@altar.bike
+CATEGORIES:race
+DESCRIPTION:SATURDAY\, SEPTEMBER 26\, 2026 Pickens\, SC Presented by the R
+ otary Club of Pickens Registration opens 7:30 AM | Ride 9 AM ALL PROCEEDS 
+ BENEFIT THE PICKENS AREA COMMUNITY Presented by Join us for our 14th annua
+ l fundraising event\, Ride to the Rock\, on Saturday\, September 26\, 2026
+  in Pickens\, SC. We have 4 great routes this year routes this year and we
+  are excited to host you and your friends & family! Sponsored by The Picke
+ ns Rotary Club\, the ride begins at the Pickens Ampitheater and challenges
+  riders with 4 routes from which to choose . A complimentary RIDE TO THE R
+ OCK t-shirt will be included for all pre-registered riders. BARBEQUE AND A
+  BEER GARDEN After the ride enjoy a complimentary barbeque lunch & beer ga
+ rden. 2026 Ride to the Rock Course Maps (subject to change) RIDE SCHEDULE 
+ 7:30 AM\n\nMore: http://www.BikeReg.com/ridetotherock\n\nSource: BikeReg\n
+ \nListed by Altar Cycles — altar.bike/calendar
+GEO:34.8844193;-82.7096116
+LOCATION:114 W Main St\, Pickens\, SC
+URL:http://www.BikeReg.com/ridetotherock
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:NCCX Pre-season - Cane Creek
+DTSTART:20260927T040000Z
+DTEND:20260927T040000Z
+DTSTAMP:20260817T170725Z
+UID:567c411f65a716bf@altar.bike
+CATEGORIES:race
+DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
+ es to try cyclocross for the first time\, get ready for the season\, or te
+ st your fitness and skills! All are welcome! Sunday\, Sept 20 - Ride Rock 
+ Creek Sunday\, Sept 27 - hosted by CRAFTED at Cane Creek HQ Race Entry: $3
+ 0. $15 second race. Fees include a day license if needed. Awards for the t
+ op three in each category. All juniors (racing or not) are invited to a FR
+ EE INTRO to CX Skills at 9am on each race day for a preview of the course 
+ and introduction to cyclocross-specific skills and strategy. Access to Rid
+ e Rock Creek is for the event only. Additional downhill riding at Ride Roc
+ k Creek is available with purchase of a pass from the venue. All races are
+  sanctioned by USA Cycling. Annual or one-day license suggested (one day i
+ nc\n\nMore: http://www.BikeReg.com/nccx-pre-season-cane-creek\n\nSource: B
+ ikeReg\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.4439797;-82.4900063
+LOCATION:355 Cane Creek Rd\, Fletcher\, NC
+URL:http://www.BikeReg.com/nccx-pre-season-cane-creek
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pisgah 111 / 555
+DTSTART:20261003T040000Z
+DTEND:20261003T040000Z
+DTSTAMP:20260817T170725Z
+UID:c6d05d9f51734aa6@altar.bike
+CATEGORIES:race
+DESCRIPTION:It’s time to turn the volume up to 111! The Pisgah 111 is th
+ e quintessential crusher of a cross-country endurance MTB race. Racers fol
+ low a 65.1 mile course with 10\,200' feet of climbing along the most iconi
+ c trails and gravel roads known in Pisgah National Forest. Just peek at th
+ e course map and list of trails and you’ll immediately get chills just t
+ hinking about the epic scenery and terrain you’ll encounter. This is a t
+ rue mountain bike race with no map reading skills required\, just follow t
+ he arrows. Think of it as the most exciting (and grueling) tour of Pisgah 
+ you can imagine during the peak of the leaves changing in the forest. It c
+ ertainly wouldn’t hurt to study the map and cue sheets to know what you
+ ’re getting yourself into\, as some of these trails will test your lungs
+  and your le\n\nMore: http://www.BikeReg.com/2026-pisgah-111-555\n\nSource
+ : BikeReg\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.2830246;-82.7218935
+LOCATION:1284 Pisgah Hwy\, Pisgah Forest\, NC
+URL:http://www.BikeReg.com/2026-pisgah-111-555
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2026 Gran Fondo Hincapie-Greenville
+DTSTART:20261017T040000Z
+DTEND:20261017T040000Z
+DTSTAMP:20260817T170725Z
+UID:f2acb77c16a22d1c@altar.bike
+CATEGORIES:race
+DESCRIPTION:Not sure which distance is right for you? Visit our website to
+  read the course descriptions and check out the maps to help you decide. B
+ e sure to check out the new Grandito course option!\n\nMore: http://www.Bi
+ keReg.com/gran-fondo-hincapie-greenville-2026\n\nSource: BikeReg\n\nListed
+  by Altar Cycles — altar.bike/calendar
+GEO:35.1036532;-82.4438033
+LOCATION:10 Road of Vines\, Travelers Rest\, SC
+URL:http://www.BikeReg.com/gran-fondo-hincapie-greenville-2026
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2026 BRAGco Cycling Event
+DTSTART:20261025T040000Z
+DTEND:20261025T040000Z
+DTSTAMP:20260817T170725Z
+UID:743ac628878c17c6@altar.bike
+CATEGORIES:race
+DESCRIPTION:Below are the STRAVA links for the routes. The Classic - 68 Mi
+ les: https://www.strava.com/routes/3523364347191326162 The Roadrunner - 41
+  Miles: https://www.strava.com/routes/3523365976376653266 The Sprint - 23 
+ Miles: https://www.strava.com/routes/3523365976381818322\n\nMore: http://w
+ ww.BikeReg.com/bragco-cycling-event\n\nSource: BikeReg\n\nListed by Altar 
+ Cycles — altar.bike/calendar
+GEO:36.1623862;-82.8286381
+LOCATION:115 Academy St\, Greeneville\, TN
+URL:http://www.BikeReg.com/bragco-cycling-event
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Couch Potato
+DTSTART:20261107T050000Z
+DTEND:20261107T050000Z
+DTSTAMP:20260817T170725Z
+UID:2e02b8a758b849f1@altar.bike
+CATEGORIES:race
+DESCRIPTION:Welcome to the 14th Annual Couch Potato race! We're very excit
+ ed for another year of racing in the Brevard\, North Carolina area. Route 
+ Click the link below to go to our interactive course map. https://ridewith
+ gps.com/routes/44682748 Schedule Friday\, November 6\, 2026 3:00-5:00 PM P
+ acket Pickup/Registration At Black Mountain Trailhead AKA Start/Finish Sat
+ urday\, November 7\, 2026 7:00 AM -- Registration Opens 8:30 AM -- Registr
+ ation Closes 8:45 AM -- Racer Meeting At Start 9:00 AM -- RACE START 11:00
+  AM -- Cutoff for Aid Station #1 (Mile 6.5) 11:30 AM -- Post-Race Meal Beg
+ ins 12:30 PM -- Awards Ceremony #1 1:00 PM -- Cutoff for Aid Station #2 (M
+ ile 17) 1:30 PM -- Awards Ceremony #2 *Times are subject to change Include
+ d With Registration Event Shirt - NEW FOR 2026 Well-Marked Course Stocked 
+ Aid\n\nMore: http://www.BikeReg.com/couchpotato\n\nSource: BikeReg\n\nList
+ ed by Altar Cycles — altar.bike/calendar
+GEO:35.2848615;-82.7269817
+LOCATION:1600 Pisgah Hwy\, Pisgah Forest\, NC
+URL:http://www.BikeReg.com/couchpotato
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Swank 65
+DTSTART:20261108T050000Z
+DTEND:20261108T050000Z
+DTSTAMP:20260817T170725Z
+UID:808d5262f339b592@altar.bike
+CATEGORIES:race
+DESCRIPTION:Welcome to the 28th Annual Swank 65! We're very excited for an
+ other year of racing in the Brevard\, North Carolina area. Route We're goi
+ ng to have a NEW route in 2026 out of the Cove Creek Group Campground area
+ . As of making the registration page we are still finalizing that route. O
+ nce we get it figured out\, we will update it on here. That's if we rememb
+ er to do that\, we can be easily distracted at times. lol. We will for sur
+ e update it on the website so CLICK HERE to go to our race page. Schedule 
+ Friday\, November 6\, 2026 3:00-5:00 PM Packet Pickup/Registration At Blac
+ k Mountain Trailhead AKA Start/Finish Saturday\, November 7\, 2026 3:00-5:
+ 00 PM Packet Pickup/Registration At Black Mountain Trailhead AKA Start/Fin
+ ish Sunday\, November 8\, 2026 7:00 AM -- Registration Opens 8:30 AM -- Re
+ gistrat\n\nMore: http://www.BikeReg.com/swank65\n\nSource: BikeReg\n\nList
+ ed by Altar Cycles — altar.bike/calendar
+GEO:35.2848615;-82.7269817
+LOCATION:1600 Pisgah Hwy\, Pisgah Forest\, NC
+URL:http://www.BikeReg.com/swank65
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:We Shred Rock Creek
+DTSTART:20261114T050000Z
+DTEND:20261114T050000Z
+DTSTAMP:20260817T170725Z
+UID:0a67e54dee113b1a@altar.bike
+CATEGORIES:race
+DESCRIPTION:We Shred Rock Creek is back for 2026 – and it is shaping up 
+ to be one heck of a good time on bikes. Whether you’re looking to progre
+ ss\, try a new trail\, ride Rock Creek (or any bike park!) for the first t
+ ime\, or just hang out and have a beverage with other rad women+\, this ev
+ ent is for you! Women+ and Girls Take Over Rock Creek! No matter your skil
+ l level\, showing up and riding any mountain bike park can be a little int
+ imidating\, especially if you don't have a friend to ride with. That’s w
+ hy we’re extending an invite out to women+ of all ages to join us at Roc
+ k Creek – without racing or egos – to have fun on the trails and progr
+ ess at your own pace. Join pro downhill racer/ MTB skills coach/ mom Carol
+ ine Washam for a chill day of doing what we all love: riding bikes\, talki
+ ng about bikes\, a\n\nMore: http://www.BikeReg.com/we-shred-rock-creek\n\n
+ Source: BikeReg\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.1997867;-82.5085187
+LOCATION:298 W Rock Creek Rd\, Zirconia\, NC
+URL:http://www.BikeReg.com/we-shred-rock-creek
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pisgah DOUBLE DARE
+DTSTART:20261121T050000Z
+DTEND:20261122T050000Z
+DTSTAMP:20260817T170725Z
+UID:59bf1e39a66ae34b@altar.bike
+CATEGORIES:race
+DESCRIPTION:Every year an event comes along that tests mental and physical
+  strengths of its racers like no other. Pisgah Productions proudly present
+ s the hardest (and most fun) thing you will do this year….. the DOUBLE D
+ ARE. Teams of two riders will race to reach up to 10 checkpoints (CPs) per
+  day\, two days in a row. The race begins at 10AM on Saturday and every te
+ am must be back before 10PM. The race resumes at 6AM Sunday with 10 brand 
+ new checkpoints. Every team must finish before 6PM on Sunday. Teams ‘in 
+ the running’ should expect up to 70 miles of riding with 12\,000-15\,000
+  feet of climbing each day. SINGLE-DARE! The one-day category at Double-Da
+ re!!! Teams of two riders will race up to 10 checkpoints\, in any order\, 
+ and return to the start/finish the fastest. Checkpoint locations will rema
+ in secret\n\nMore: http://www.BikeReg.com/pisgah-double-dare-2026\n\nSourc
+ e: BikeReg\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.2844925407938;-82.8203944998303
+LOCATION:1 Davidson River Circle\, Brevard\, NC
+URL:http://www.BikeReg.com/pisgah-double-dare-2026
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pisgah Rage Regular Season
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20270530
+DTSTAMP:20260817T170725Z
+UID:670937aa0418b08a@altar.bike
+CATEGORIES:race
+DESCRIPTION:Regular season with indoor training (January)\, weekend practi
+ ces (February onwards)\, and 5-6 races across North Carolina starting in M
+ arch. Races held on Saturdays (pre-ride) and Sundays (racing). Multiple we
+ ekly rides March-May.\n\nMore: https://www.pisgahrage.com/\n\nSource: Pisg
+ ah Rage (NICA composite team)\n\nListed by Altar Cycles — altar.bike/cal
+ endar
+LOCATION:Asheville area and across North Carolina\, Asheville\, NC
+URL:https://www.pisgahrage.com/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bootlegger
+DTSTART:20270417T040000Z
+DTEND:20270417T040000Z
+DTSTAMP:20260817T170725Z
+UID:f0fa19e43a2adce0@altar.bike
+CATEGORIES:race
+DESCRIPTION:The Bootlegger is one of the most challenging and scenic grave
+ l events of the year! There are two route choices (58 and 85 miles) that b
+ oth start and finish in downtown Lenoir\, NC and travel through the beauti
+ ful and rugged Wilson Creek Gorge. The 58 mile route has approximately 450
+ 0 feet of climbing while the 85 includes approximately 7250 feet of climbi
+ ng. Be sure to keep your head up and enjoy the scenery as the Bootlegger 1
+ 00 takes you from historic downtown Lenoir and into the heart of the “ot
+ her Pisgah\,” also known as the Grandfather Ranger District. Both the 85
+  and 58 mile options roll through the countryside before delivering you to
+  a gravel wonderland with plenty of challenging terrain. Just after you pa
+ ss Coffey’s General Store and Museum\, the two routes split\, and the lo
+ ng cours\n\nMore: http://www.BikeReg.com/bootlegger-2027\n\nSource: BikeRe
+ g\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.9132554;-81.5406276
+LOCATION:100 Boundary St NW\, Lenoir\, NC
+URL:http://www.BikeReg.com/bootlegger-2027
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pisgah Mountain Bike Adventure Race
+DTSTART:20270501T040000Z
+DTEND:20270501T040000Z
+DTSTAMP:20260817T170725Z
+UID:996261671a499518@altar.bike
+CATEGORIES:race
+DESCRIPTION:The Pisgah Mountain Bike Adventure Race (PMBAR) is the absolut
+ e pinnacle of MTB Adventure Racing. A mix of brutal and beautiful\, this t
+ est of spirit and camaraderie tasks teams of two racers to reach 4 of 5 ch
+ eckpoints\, in any order\, and return to the start/finish as fast as possi
+ ble. The team with the lowest overall time wins. Checkpoint locations rema
+ in secret until start-time and there is no suggested route. Routes vary be
+ tween 50-80 miles\, include 9\,000-15\,000 feet of climbing\, and take 7-1
+ 4 hours to complete. PMBAR is held deep in the Pisgah National Forest\, on
+ e of the most beautiful\, rugged\, and unforgiving areas in the nation. Th
+ ere will be little to no water or food support on course. Once you leave t
+ he start/finish you are on your own. There will be no drops\, sag wagons\,
+  or other \n\nMore: http://www.BikeReg.com/pisgah-mountain-bike-adventure-
+ race-2027\n\nSource: BikeReg\n\nListed by Altar Cycles — altar.bike/cale
+ ndar
+GEO:35.2830246;-82.7218935
+LOCATION:1284 Pisgah Hwy\, Pisgah Forest\, NC
+URL:http://www.BikeReg.com/pisgah-mountain-bike-adventure-race-2027
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Carolina Reaper Road Race
+DTSTART:20270515T040000Z
+DTEND:20270515T040000Z
+DTSTAMP:20260817T170725Z
+UID:6cb81637a4faee67@altar.bike
+CATEGORIES:race
+DESCRIPTION:Please visit www.reaperroadrace.com for more information.\n\nM
+ ore: http://www.BikeReg.com/carolina-reaper-road-race-2027\n\nSource: Bike
+ Reg\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:34.7588238864549;-82.3814146429841
+LOCATION:198 Perimeter Rd\, Greenville\, SC
+URL:http://www.BikeReg.com/carolina-reaper-road-race-2027
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2027 Gran Fondo Asheville\, p/b Applewood Manor Foundation\, a SEN
+ A Gran Fondo National Series event
+DTSTART:20270718T040000Z
+DTEND:20270718T040000Z
+DTSTAMP:20260817T170725Z
+UID:19cc3e2cb7f4ed33@altar.bike
+CATEGORIES:race
+DESCRIPTION:THIS REGISTRATION IS FOR 2027 THESE DETAILS ARE FOR 2026 EVENT
+  DETAILS HERE SUBJECT TO CHANGE For most up to date details\, visit: https
+ ://www.granfondonationalseries.com/gran-fondo-asheville Presented By The A
+ pplewood Manor Foundation Asheville\, North Carolina DATE: Sunday\, July 1
+ 9\, 2026 Click here to add to your google calendar Event Start Finish: Ash
+ eville Yards - 75 Coxe Ave\, Asheville\, NC 28801 3 Distances to Choose Fr
+ om: Maps 4 Timed Sections in the Gran Route – Best Combined Time Wins Co
+ mplete event details available at https://www.granfondonationalseries.com/
+ gran-fondo-asheville Event Open to All from Beginner to Elite Discover all
+ uring Asheville\, from the unique perspective of your handlebars. Experien
+ ce Asheville\, North Carolina\, Lonely Planet’s top U.S. travel destinat
+ ion . Your \n\nMore: http://www.BikeReg.com/asheville-gfns\n\nSource: Bike
+ Reg\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.5920832;-82.5553572
+LOCATION:75 Coxe Ave\, Asheville\, NC
+URL:http://www.BikeReg.com/asheville-gfns
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gran Fondo AVL
+DTSTART;VALUE=DATE:20270719
+DTEND;VALUE=DATE:20270719
+DTSTAMP:20260817T170725Z
+UID:ff576b5052181618@altar.bike
+CATEGORIES:race
+DESCRIPTION:Annual event\n\nMore: https://ashevilleonbikes.com/events\n\nS
+ ource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/calenda
+ r
+LOCATION:Asheville\, NC
+URL:https://ashevilleonbikes.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HARDford 50 and HARDERford 75
+DTSTART:20270801T040000Z
+DTEND:20270801T040000Z
+DTSTAMP:20260817T170725Z
+UID:fbb7b952544d9b16@altar.bike
+CATEGORIES:race
+DESCRIPTION:Riders have two course options: The HARDford 50 and the HARDER
+ ford 75. Both fully-supported courses are 50+ miles and 6\,500 ft. of clim
+ bing\, and 75 miles and 10\,300 ft. of climbing (respectively) through Che
+ rokee and Pisgah National Forests. CX and MTB are both appropriate. The ro
+ utes are 70% gravel\, 10% dirt\, and the remainder on pavement. There will
+  be two fully stocked aid stops along the H50 course\, and three along the
+  H75. Start/Finish: Rapid Expeditions\, 3605 Hartford Rd\, Hartford\, TN 3
+ 7753 When: Sunday\, August 1\, 2027 at 8am (7:45am rider meeting at the st
+ arting line) Maps: Riders are responsible for downloading and using the pr
+ ovided maps. Course will not be marked. Click here for link to course map.
+  Categories: Women’s and Men’s Open Single Speed Junior Women's and Me
+ n's (under ag\n\nMore: http://www.BikeReg.com/hardford-50-and-harderford-7
+ 5\n\nSource: BikeReg\n\nListed by Altar Cycles — altar.bike/calendar
+GEO:35.8157562;-83.1448639
+LOCATION:3605 Hartford Rd\, Hartford\, TN
+URL:http://www.BikeReg.com/hardford-50-and-harderford-75
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2027 Boone Gran Fondo\, a SENA Gran Fondo National Series event
+DTSTART:20270808T040000Z
+DTEND:20270808T040000Z
+DTSTAMP:20260817T170725Z
+UID:eaf10f6e0cd70f9a@altar.bike
+CATEGORIES:race
+DESCRIPTION:THIS REGISTRATION IS FOR THE 2027 EVENT DETAILS BELOW SUBJECT 
+ TO CHANGE For most up to date details\, visit: https://www.granfondonation
+ alseries.com/gran-fondo-boone BOONE GRAN FONDO Boone\, NC August 2\, 2026 
+ Click here to add to calendar Event Open to All from Beginner to Elite 3 L
+ oops to Choose From 4 Timed Sections in the 80 mile loop – Best Combined
+  Time Wins Age Group Categories Awards and Winners jerseys for Gran Route 
+ Awards for Medio and Piccolo Age Winners Ride with your friends\, Race wit
+ h your friends Fully Stocked Aid Stations to keep you going Come Challenge
+  Yourself Packet pick up: (Watch for updated Information on these dates an
+ d locations the below is from 2025 but will likely be the same) Saturday f
+ rom 2:00PM to 6:00PM - 164 S Depot St\, Boone\, NC 28607 Sunday from 6:00 
+ AM to \n\nMore: http://www.BikeReg.com/boone-gfns\n\nSource: BikeReg\n\nLi
+ sted by Altar Cycles — altar.bike/calendar
+GEO:36.21792;-81.68479
+LOCATION:164 South Depot Street\, Boone\, NC
+URL:http://www.BikeReg.com/boone-gfns
+END:VEVENT
+END:VCALENDAR

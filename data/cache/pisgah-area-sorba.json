@@ -1,0 +1,27 @@
+{
+ "at": "2026-08-17T17:05:53.114523+00:00",
+ "events": [
+  {
+   "title": "Brevard Dig Day w/ CMC",
+   "start": "2027-01-22T00:00:00",
+   "end": "2027-01-22T00:00:00",
+   "all_day": false,
+   "url": "https://www.pisgahareasorba.org/events-volunteer",
+   "description": "Trail maintenance work day with Carolina Mountain Club",
+   "venue": "Pisgah Ranger Station/Visitor Center",
+   "city": "Brevard",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "source": "pisgah-area-sorba",
+   "source_name": "Pisgah Area SORBA",
+   "source_url": "https://www.pisgahareasorba.org/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "trail-work",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "b251c494bcad690a"
+  }
+ ]
+}
