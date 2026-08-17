@@ -89,6 +89,19 @@ button:disabled{opacity:.45;cursor:wait}
         </select></label>
     </div>
 
+    <div class="row">
+      <label><span class="lab">Does it repeat</span>
+        <select id="f-repeat">
+          <option value="">Just the once</option>
+          <option value="weekly">Every week</option>
+          <option value="biweekly">Every other week</option>
+          <option value="monthly">Every month</option>
+        </select></label>
+      <label><span class="lab">Repeats until</span>
+        <input id="f-until" type="date">
+        <span class="hint">Leave blank and we'll list the next 12</span></label>
+    </div>
+
     <label><span class="lab">Where <i>*</i></span>
       <input id="f-venue" required placeholder="Camp Grier, 985 Camp Grier Rd"></label>
 
@@ -147,6 +160,8 @@ $("go").onclick = async () => {
     end:    $("f-end").value || "",
     time:   $("f-time").value || "",
     category: $("f-cat").value,
+    repeat: $("f-repeat").value,
+    repeat_until: $("f-until").value || "",
     venue:  $("f-venue").value.trim(),
     city:   $("f-city").value.trim(),
     state: ($("f-state").value || "NC").trim().toUpperCase(),
