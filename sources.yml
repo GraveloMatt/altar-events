@@ -324,5 +324,21 @@ sources:
     # contribute a handful of events at most, and only ones nobody else has.
     # If it ever 404s, TEC also exposes /calendar/list/?ical=1, which the
     # plain `ics` adapter could read.
-    require_keywords: [bike, bicycle, cycl, mtb, trail, gravel, pedal]
+    # CORRECTED 2026-08-17 from the live site. The bare keyword `trail` used to
+    # be in this list and it was far too loose for a *cultural* heritage feed:
+    # it matched "Connecting to Place II: Blue Ridge Craft Trails Invitational"
+    # — a clay/fiber/metal/paper/wood craft exhibition — which then published
+    # ELEVEN times (once per exhibition day) plus "Trails Less Traveled:
+    # Charlies Bunion", an 8-mile hike. Thirteen non-cycling events on the
+    # shop's calendar, all classified `mtb`. `trail` is safe on G5 and Pisgah
+    # Area SORBA because those are trail-work orgs with their own
+    # default_category; it is not safe on an aggregator that also covers
+    # basket weaving. Require an actual cycling word here.
+    require_keywords: [bike, bicycle, cycl, mtb, gravel, pedal, fondo]
+    # Belt and braces: this feed's whole catalogue is craft, music, hiking and
+    # studio tours, so even a cycling keyword in a description can drag in the
+    # wrong thing. Anything titled like an art or hiking event goes regardless.
+    drop_if_titled: [craft, studio tour, basket, quilt, pottery, weaving,
+                     gallery, exhibition, hike, hiking, paddle, birding,
+                     storytelling, heritage trail]
     optional: true

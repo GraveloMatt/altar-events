@@ -228,6 +228,34 @@ check("region rung uses Southeast (the region NC is in)",
 check("no rung uses a hyphenated region name",
       any("-" in str(s.get("region", "")) for s in shapes), False)
 
+print("\nblue-ridge-heritage keyword filter (regression from the live site)")
+# These titles came off calendar.altar.bike on launch day, where 13 non-cycling
+# events had published. Cause: `trail` was in require_keywords, and this feed is
+# a CULTURAL heritage calendar — "Blue Ridge Craft Trails" is a craft
+# exhibition, "Trails Less Traveled" is a hike. `trail` stays safe on G5 and
+# Pisgah Area SORBA, which are trail-work orgs; it is not safe here.
+BRH = {
+    "id": "blue-ridge-heritage", "name": "Blue Ridge National Heritage Area",
+    "trust": 40, "default_category": "festival",
+    "org_url": "https://www.blueridgeheritage.com/",
+    "require_keywords": ["bike", "bicycle", "cycl", "mtb", "gravel", "pedal", "fondo"],
+    "drop_if_titled": ["craft", "studio tour", "basket", "quilt", "pottery",
+                       "weaving", "gallery", "exhibition", "hike", "hiking",
+                       "paddle", "birding", "storytelling", "heritage trail"],
+}
+for title, keep in [
+    ("Connecting to Place II: Blue Ridge Craft Trails Invitational", False),
+    ("Trails Less Traveled: Charlies Bunion", False),
+    ("Weaving our Heritage: Cherokee Baskets", False),
+    ("Come To Leicester Annual Studio Tour", False),
+    ("Blue Ridge Bike Fest", True),
+    ("Gravel Grinder Fundraiser", True),
+]:
+    got = normalize.prepare(
+        [{"title": title, "start": soon(20), "description": ""}],
+        BRH, HOME, R)
+    check(("keeps " if keep else "drops ") + title[:38], bool(got), keep)
+
 print("\nreal-world titles from live sources (2026-08-17)")
 # Captured from g5trailcollective.org/volunteer. G5 defaults to trail-work;
 # the workshop must still land in clinic via category_basis, and "Trail Day"
