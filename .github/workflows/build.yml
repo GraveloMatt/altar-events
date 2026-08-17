@@ -40,6 +40,13 @@ jobs:
       - name: Build calendar
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # A repo secret is NOT automatically an environment variable — it has
+          # to be mapped here explicitly. These two were saved in Settings and
+          # the build still reported "ridewithgps needs RWGPS_API_KEY", because
+          # this block did not mention them. If you add a secret for a new
+          # source, add the line here too or nothing will change.
+          RWGPS_API_KEY: ${{ secrets.RWGPS_API_KEY }}
+          RWGPS_AUTH_TOKEN: ${{ secrets.RWGPS_AUTH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python build.py
