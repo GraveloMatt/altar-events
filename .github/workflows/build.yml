@@ -1,0 +1,90 @@
+name: Build events calendar
+
+on:
+  schedule:
+    - cron: "17 9 * * *"        # 05:17 ET daily — before the shop opens
+  workflow_dispatch:             # "Run workflow" button, for when you can't wait
+  push:
+    branches: [main]
+    paths:
+      - "sources.yml"
+      - "data/manual.yml"
+      - "*.py"
+      - "site/**"
+  issues:
+    types: [labeled, unlabeled, edited]   # approving a submission rebuilds
+
+permissions:
+  contents: write
+  issues: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: events-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build calendar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python build.py
+
+      - name: Commit results
+        run: |
+          git config user.name  "altar-events-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A site data/cache
+          if git diff --staged --quiet; then
+            echo "No change."
+          else
+            git commit -m "events: $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Flag broken sources
+        run: |
+          python - <<'PY'
+          import json, os, pathlib
+          r = json.loads(pathlib.Path("site/build-report.json").read_text())
+          bad = r.get("needs_attention", [])
+          summary = pathlib.Path(os.environ["GITHUB_STEP_SUMMARY"])
+          lines = [f"### {r['total']} events published\n"]
+          for sid, info in r["sources"].items():
+              mark = {"ok": "ok", "cached": "stale", "failed": "down"}.get(info["status"], "?")
+              lines.append(f"- **{sid}** — {mark}"
+                           + (f" ({info.get('kept')} events via {info.get('adapter')})"
+                              if info["status"] == "ok" else
+                              f" — {(info.get('errors') or ['-'])[-1][:120]}"))
+          summary.write_text("\n".join(lines))
+          if bad:
+              print(f"::warning::Sources needing attention: {', '.join(bad)}")
+          PY
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
