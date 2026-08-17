@@ -7,6 +7,10 @@
 #
 # Only `title` and `start` are required. Dates are ISO: 2026-09-05
 # Add a time with 2026-09-05T18:00:00 — leave it off for an all-day event.
+#
+# STANDING RIDES: add `repeat` and one row becomes many dates.
+#   repeat: weekly | biweekly | monthly
+#   repeat_until: 2026-12-31   (optional)
 
 events: []
 
