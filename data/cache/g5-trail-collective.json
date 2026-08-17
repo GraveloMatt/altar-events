@@ -1,5 +1,5 @@
 {
- "at": "2026-08-17T17:25:55.037314+00:00",
+ "at": "2026-08-17T17:59:16.893186+00:00",
  "events": [
   {
    "title": "Trek Tuesday - Kitsuma Trail Day",
@@ -7,7 +7,7 @@
    "end": "2026-08-18T14:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Tread repairs & improvements. Optional ride after, bring your bike!",
+   "description": "Project: Tread repairs & improvements. Optional ride after, bring your bike!",
    "venue": "Kitsuma Peak Trailhead",
    "city": "Old Fort",
    "state": "NC",
@@ -29,7 +29,7 @@
    "end": "2026-09-04T16:30:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Drain cleaning. Tread shaping.",
+   "description": "Project: Drain cleaning. Tread shaping.",
    "venue": "Gateway Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -51,7 +51,7 @@
    "end": "2026-09-12T14:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Drain cleaning. Corridor pruning & brushing.",
+   "description": "Project: Drain cleaning. Corridor pruning & brushing.",
    "venue": "Allison Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -74,7 +74,7 @@
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
    "description": "Intro Class: Trail Maintenance 101. G5 Community Education Program. Registration Opens First Week of Sept.",
-   "venue": "Location TBD",
+   "venue": "Location is TBD",
    "city": "",
    "state": "",
    "cost": null,
@@ -90,12 +90,12 @@
    "uid": "f25b655f83100d84"
   },
   {
-   "title": "Fall Trail Weekend",
+   "title": "Fall Trail Weekend!",
    "start": "2026-11-06T16:00:00",
    "end": "2026-11-08T13:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "SAVE THE DATE",
+   "description": "",
    "venue": "Camp Grier",
    "city": "Old Fort",
    "state": "NC",

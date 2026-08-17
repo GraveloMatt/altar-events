@@ -1,5 +1,5 @@
 {
- "at": "2026-08-17T17:25:35.764201+00:00",
+ "at": "2026-08-17T17:58:32.727823+00:00",
  "events": [
   {
    "title": "Bike Love",
@@ -73,7 +73,7 @@
    "end": "2027-04-25T00:00:00",
    "all_day": false,
    "url": "https://ashevilleonbikes.com/events",
-   "description": "Annual recurring event. Includes Bike Valet. 12 pm \u2013 5 pm",
+   "description": "Annual recurring event. 12 pm \u2013 5 pm. Includes Bike Valet",
    "venue": "",
    "city": "Asheville",
    "state": "NC",
@@ -250,7 +250,7 @@
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
    "description": "Annual recurring event",
-   "venue": "New Belgium",
+   "venue": "",
    "city": "Asheville",
    "state": "NC",
    "cost": "Free",
@@ -297,7 +297,7 @@
    "venue": "",
    "city": "Asheville",
    "state": "NC",
-   "cost": null,
+   "cost": "Free",
    "extracted_by": "llm",
    "source": "asheville-on-bikes",
    "source_name": "Asheville on Bikes",
@@ -425,7 +425,7 @@
    "end": "2026-08-22T00:00:00",
    "all_day": false,
    "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Celebrate 20 years of Asheville on Bikes! Features Pop-Up Bike Park (2-7 pm), Summer Cycle Check-In (3:30-4 pm), ride start at 4 pm with three route options: Cruiser Ride (5 miles), Main Ride (7 miles), and Ride More (18 miles), plus Post-Ride Festivities (5-7 pm). Waiver required to ride.",
+   "description": "Annual community ride event celebrating Asheville on Bikes. Multiple route options: Cruiser Ride (5 miles, family-friendly greenway loop), Main Ride (7 miles, downtown flow), and Ride More (18 miles, gravel/mountain). Activities include Pop-Up Bike Park, check-in, and post-ride festivities. Waiver required.",
    "venue": "New Belgium Brewing",
    "city": "Asheville",
    "state": "NC",
@@ -438,8 +438,30 @@
    "bucket": "local",
    "category": "festival",
    "category_basis": "rule",
-   "discipline": "other",
+   "discipline": "gravel",
    "uid": "e6662d6251819fff"
+  },
+  {
+   "title": "Gran Fondo Asheville",
+   "start": "2027-07-19",
+   "end": "2027-07-19",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events/gran-fondo-asheville",
+   "description": "Gran Fondo Asheville is part of the Gran Fondo National Series, offering multiple route options (100-, 60-, and 30-mile) through scenic roads of north and west Asheville. The unique timed-segment format lets riders of all abilities regroup and enjoy the ride together. Annual event.",
+   "venue": "Asheville Yards Amphitheater",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "road",
+   "uid": "be48ced4f38fd61e"
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-17T17:27:53.530988+00:00",
- "total": 97,
+ "generated": "2026-08-17T18:01:04.248649+00:00",
+ "total": 64,
  "world": 22,
  "needs_attention": [],
  "sources": {
@@ -8,8 +8,8 @@
    "status": "ok",
    "adapter": "llm",
    "fetched": 22,
-   "kept": 20,
-   "at": "2026-08-17T17:25:35.764758+00:00"
+   "kept": 21,
+   "at": "2026-08-17T17:58:32.728359+00:00"
   },
   "asheville-on-bikes-rwgps": {
    "status": "failed",
@@ -25,7 +25,21 @@
    "adapter": "llm",
    "fetched": 2,
    "kept": 2,
-   "at": "2026-08-17T17:25:39.063515+00:00"
+   "at": "2026-08-17T17:58:36.026598+00:00"
+  },
+  "blue-ridge-dirt-skrrts": {
+   "status": "ok",
+   "adapter": "llm",
+   "fetched": 5,
+   "kept": 4,
+   "at": "2026-08-17T17:58:42.836898+00:00"
+  },
+  "velosports-ring-of-fire": {
+   "status": "ok",
+   "adapter": "llm",
+   "fetched": 8,
+   "kept": 0,
+   "at": "2026-08-17T17:58:58.645034+00:00"
   },
   "blue-ridge-bicycle-club": {
    "status": "failed",
@@ -40,29 +54,29 @@
    "status": "ok",
    "adapter": "llm",
    "fetched": 3,
-   "kept": 2,
-   "at": "2026-08-17T17:25:47.917257+00:00"
+   "kept": 0,
+   "at": "2026-08-17T17:59:08.065300+00:00"
   },
   "g5-trail-collective": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 6,
    "kept": 5,
-   "at": "2026-08-17T17:25:55.037612+00:00"
+   "at": "2026-08-17T17:59:16.893500+00:00"
   },
   "nica-nc": {
    "status": "ok",
    "adapter": "jsonld",
    "fetched": 6,
    "kept": 0,
-   "at": "2026-08-17T17:25:55.621730+00:00"
+   "at": "2026-08-17T17:59:17.560320+00:00"
   },
   "pisgah-rage": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 4,
+   "fetched": 2,
    "kept": 2,
-   "at": "2026-08-17T17:26:01.479304+00:00"
+   "at": "2026-08-17T17:59:21.507604+00:00"
   },
   "ic-imagine-cycling": {
    "status": "failed",
@@ -78,14 +92,14 @@
    "adapter": "bikereg",
    "fetched": 45,
    "kept": 31,
-   "at": "2026-08-17T17:26:13.030135+00:00"
+   "at": "2026-08-17T17:59:26.842976+00:00"
   },
   "runsignup": {
    "status": "ok",
    "adapter": "runsignup",
    "fetched": 250,
-   "kept": 36,
-   "at": "2026-08-17T17:26:15.531405+00:00"
+   "kept": 1,
+   "at": "2026-08-17T17:59:29.083104+00:00"
   },
   "uci": {
    "status": "cached",
@@ -101,7 +115,7 @@
    "adapter": "tribe",
    "fetched": 500,
    "kept": 0,
-   "at": "2026-08-17T17:27:52.496059+00:00"
+   "at": "2026-08-17T18:01:03.868173+00:00"
   }
  }
 }
