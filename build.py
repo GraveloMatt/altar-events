@@ -191,7 +191,13 @@ def parse_issue_body(body: str) -> dict:
             "start time": "_time", "location": "venue", "city": "city",
             "state": "state", "link": "url", "website": "url",
             "details": "description", "description": "description",
-            "cost": "cost", "category": "_category"}
+            "cost": "cost", "category": "category_hint",
+            "what is it": "category_hint",
+            # Recurring events. "Repeats" is a dropdown, "Repeats until" a date.
+            "repeats": "repeat", "repeat": "repeat",
+            "how often": "repeat", "recurrence": "repeat",
+            "repeats until": "repeat_until", "repeat until": "repeat_until",
+            "last date": "repeat_until"}
     out, current = {}, None
     for line in body.splitlines():
         line = line.strip()
@@ -204,8 +210,13 @@ def parse_issue_body(body: str) -> dict:
     else:
         out.pop("_time", None)
         out["all_day"] = True
-    if out.pop("_category", None):
-        pass
+    # The submitter's own answer to "what is it" used to be parsed and then
+    # thrown away by a `pass`. It is the best category signal we get — the
+    # person running the ride knows whether it is a race — so keep it. It is a
+    # *hint*: normalize.classify still gets the final say, because submitters
+    # pick "Race" for anything competitive-sounding.
+    if out.get("category_hint"):
+        out["category_hint"] = out["category_hint"].strip().lower()
     return out
 
 

@@ -292,6 +292,13 @@ sources:
     url: https://www.icimaginecycling.org/
     drop_if_titled: [practice, parent meeting, team meeting]
     optional: true          # don't fail the build if the domain moves
+    # 2026-08-17: the domain has refused connections on EVERY live build so far
+    # ("Max retries exceeded", not a 404 — nothing is answering on 443). It is
+    # a NICA team site, so it would be seasonally empty until November anyway
+    # and there is no urgency. DECIDE IN NOVEMBER: if it is still dead when the
+    # spring season is announced, delete this source outright rather than leave
+    # a permanent `down` in the report — a build summary people learn to ignore
+    # is worse than one source fewer. The league schedule comes via nica-nc.
 
   # ------------------------------------------------- registration platforms
   # These two are the highest-yield sources in the whole file. Nearly every

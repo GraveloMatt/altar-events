@@ -1,211 +1,166 @@
 # Altar Cycles — WNC Cycling Calendar
 
-Pulls cycling events from thirteen sources, merges them into one calendar, and
-publishes it as a web page plus a subscribable `.ics` feed.
+Every cycling event within about 75 miles of the shop, in one place.
 
-Runs itself daily on GitHub Actions. Costs nothing except a few cents a month
-in Claude API calls.
+**Live: https://calendar.altar.bike** — rebuilds itself every morning at
+05:17 ET. Subscribable as `.ics`. Runs on GitHub Actions for free, apart from a
+few cents a month in Claude API calls.
 
-> Picking this up in Cowork or a fresh session? Read **`CLAUDE.md`** first —
-> it has current state, what's verified vs. guessed, and the task order.
+| | |
+|---|---|
+| The calendar | https://calendar.altar.bike |
+| Subscribe — everything | https://calendar.altar.bike/events.ics |
+| Subscribe — races | https://calendar.altar.bike/races.ics |
+| Subscribe — dig days | https://calendar.altar.bike/trail-work.ics |
+| Submit an event | https://calendar.altar.bike/submit.html |
 
----
+The `.ics` links work in Google Calendar, Apple Calendar and Outlook — "add
+calendar by URL". That's what goes on altar.bike.
 
-## Setup
-
-```bash
-cd altar-events
-./bootstrap.sh
-```
-
-That creates the repo, pushes, sets your API key as a secret, enables GitHub
-Pages, and kicks off the first build. It's safe to re-run. You need `git` and
-`gh` (`brew install gh`, then `gh auth login`) and your Anthropic API key.
-
-Then the one step that still needs you:
-
-```bash
-python3 -m pip install -r requirements.txt
-python3 probe.py --check
-```
-
-**Don't skip this.** It tests all thirteen sources against the live sites and
-prints which endpoints are wrong. I couldn't reach those domains from the
-sandbox I built this in, so several are still educated guesses. For anything
-that says FAIL:
-
-```bash
-python3 probe.py https://darccycling.com/calendar
-```
-
-It reports the platform, any declared feeds, and every endpoint that returned
-events. Put the winner in `sources.yml`, commit, done.
-
-### Point altar.bike at it
-
-**Embed** — the page is responsive and self-contained:
-
-```html
-<iframe src="https://altarcycles.github.io/altar-events/"
-        style="width:100%;height:1400px;border:0" title="WNC Cycling Calendar"></iframe>
-```
-
-**Subdomain** (better — no iframe scroll weirdness): `bootstrap.sh` already
-sets this up. It writes `site/CNAME` and registers `calendar.altar.bike` as the
-Pages custom domain, so the only part left for you is the DNS record at the
-registrar:
-
-```
-type    CNAME
-name    calendar
-value   altarcycles.github.io
-```
-
-Both halves are needed. `site/CNAME` is what stops the custom domain being
-dropped on the next deploy; the Pages setting is what makes GitHub answer for
-that hostname. To stay on the github.io address instead, run
-`DOMAIN= ./bootstrap.sh`. Turn on **Enforce HTTPS** under Settings → Pages once
-DNS resolves — the certificate can take up to an hour.
-
-### Subscribe on your phone
-
-Google Calendar → **Other calendars → + → From URL**:
-
-```
-https://calendar.altar.bike/events.ics
-```
-
-Google re-reads it every few hours by itself. Same URL works in Apple Calendar
-and Outlook. Three feeds: `events.ics` (everything), `races.ics`,
-`trail-work.ics`.
-
-### Submissions (optional)
-
-Out of the box the form opens a pre-filled email, which works. For a real
-queue, deploy `worker.js` to Cloudflare Workers (instructions in the file) and
-paste the worker URL into `ENDPOINT` at the top of `site/submit.html`.
-Submissions become GitHub issues — **add the `approved` label and the next
-build publishes it.**
+**Running the shop and something looks wrong?** Read
+[DEPLOY.md](DEPLOY.md) — it's the day-to-day guide, written for clicking.
+**Picking this up as an agent or a new developer?** Read
+[CLAUDE.md](CLAUDE.md) first — current state, what's verified versus guessed,
+and the task order. It is the most important file here.
 
 ---
 
-## Why it's built this way
+## How it works
 
-**Why not store events in Google Calendar?** You suggested it, and I went the
-other way. Writing to Google Calendar means holding sync state — knowing which
-of the 300 events you already created, updating the ones that moved, deleting
-the ones that got cancelled. Every bug there is a duplicate or a ghost event
-on someone's phone.
+```
+sources.yml     15 sources and how to read each one
+   ↓
+adapters.py     one function per platform, Claude as the last rung
+   ↓
+normalize.py    expand recurrence, tidy titles, geofence, classify,
+                dedupe, cap
+   ↓
+build.py        cache, merge, write site/
+```
 
-Publishing an `.ics` file inverts it. The file is regenerated from scratch
-every night, so there's no state to corrupt. And Google Calendar can
-*subscribe* to it — so you still get a Google Calendar, plus Apple Calendar,
-Outlook, and anything else, from the same file. Step 6 takes ten seconds.
+Fifteen sources, three shapes. Some publish real structured data, some publish
+nothing machine-readable, and some are the same underlying calendar. So each
+source is a **ladder**: try the exact feed, fall back to schema.org markup,
+fall back to Claude reading the page. The last rung means a site redesign
+degrades the data instead of breaking the build.
 
-**Nine sources, three shapes.** Three of the sites you listed publish real
-structured data, three publish nothing machine-readable, and three are the
-same underlying calendar. So the fetcher is a ladder: try the real feed, fall
-back to schema.org markup, fall back to Claude reading the page. The last rung
-means a site redesign degrades the data slightly instead of breaking the build.
+A source that fails serves its **last good events from cache**, so nothing
+disappears from the calendar because someone's website had a bad morning.
 
-**The two sources you didn't list matter most.** BikeReg and RunSignup handle
-registration for nearly every regional race. They'll surface the Pisgah Stage
-Race, Old Fort Fifty, Dirt Diggler, NCCX and the UCI weekend at Rock Creek
-weeks before the promoters update their own sites.
+### Why an .ics file and not Google Calendar
 
----
+Writing into Google Calendar means holding sync state — which of 300 events you
+already created, which moved, which got cancelled. Every bug there is a
+duplicate or a ghost event on somebody's phone.
 
-## What I verified, and what I didn't
-
-Honest inventory, because the difference matters when something fails.
-
-| Source | Platform | How | Status |
-|---|---|---|---|
-| Pisgah Area SORBA | Squarespace | `?format=json` | **Confirmed** |
-| DARC | GoDaddy Builder | Claude reads it | **Confirmed** — hand-typed prose, no feed exists |
-| RunSignup | — | public REST | **Confirmed** — documented, no key needed |
-| Asheville on Bikes | WordPress | Claude reads hub + event pages | **Corrected** — there is no Events Calendar feed; `/events` is a static annual list |
-| AoB community rides | Ride with GPS | v1 API | **Corrected** — needs an API key, list renders in JS. Inert until `RWGPS_API_KEY` is set |
-| G5 Trail Collective | Wix | JSON-LD → Claude | Likely — Wix confirmed, markup inferred |
-| Blue Ridge Bicycle Club | ClubExpress | iCal handler | Likely — club_id 285841 confirmed, feed path inferred |
-| NICA NC | WordPress | JSON-LD → Claude | Likely |
-| BikeReg | — | GraphQL search | **Unverified** — the API is real and documented, the endpoint URL is a guess. Falls back to Claude reading the state listing |
-
-`python probe.py --check` resolves every "likely" and "unverified" row in
-about a minute.
-
-Two more things worth knowing:
-
-- **Pisgah Rage and IC Imagine are NICA teams, not race promoters.** Their
-  calendars are the NICA NC league schedule plus team-only practices. They're
-  configured at low trust so league listings win, and practices get filtered
-  out. Not much unique signal there.
-- **UCI is in a separate bucket.** Nobody plans a Saturday around a World Cup
-  in Andorra. Those events are kept out of the local calendar and tagged
-  `watch` — useful if you ever want a "showing it at the shop" list.
+Publishing a file inverts it. It's regenerated from scratch every night, so
+there's no state to corrupt — and Google Calendar can subscribe to it, so you
+get Google Calendar anyway, plus Apple Calendar and Outlook, from one file.
 
 ---
 
-## Running it day to day
+## Day to day
 
-**Add something by hand** — edit `data/manual.yml`, commit. Highest trust, so
-it overrides a scraped version of the same event. Use it for Altar's own rides
-and for fixing anything that came through wrong.
+**Add an event by hand** — edit [`data/manual.yml`](data/manual.yml) and
+commit. Highest trust in the system, so it overrides a scraped version of the
+same event. Use it for Altar's own rides and for correcting anything that came
+through wrong.
 
-**Something's missing** — check `site/build-report.json`, or the Actions run
-summary, which lists every source and what it returned.
+Standing rides use `repeat: weekly | biweekly | monthly` with an optional
+`repeat_until`. One row becomes many dates. With no `repeat_until` you get the
+next 12 and then it stops — deliberate, so a ride that quietly ended doesn't
+sit on the calendar until next year.
 
-**A source broke** — the build keeps serving that source's last good events
-from cache, so nothing disappears. Fix it when you get to it:
-`python probe.py <their events page>`.
+**Submissions are gated.** The public form files a GitHub issue labelled
+`event-submission`. Nothing publishes until you also add the **`approved`**
+label; remove the label and it comes back down on the next build.
 
-**Test locally without touching anything:**
+**Something's missing** — check the Actions run summary or
+`site/build-report.json`. Both list every source and what it returned.
+
+**Test locally:**
 
 ```bash
 python build.py --only darc      # one source
 python build.py --offline        # rebuild from cache, no network
-python test_pipeline.py          # 38 checks
-python test_integration.py       # 30 checks
+python test_pipeline.py          # offline checks
+python test_integration.py       # adapter and end-to-end checks
 ```
+
+Both suites should be green before anything ships.
 
 ---
 
-## Tuning
+## Sources that look broken but aren't
 
-Everything lives in `sources.yml`.
+The build summary always shows a few `down`. These are understood, and they are
+written up with dates and evidence in `sources.yml` and `CLAUDE.md`.
 
-- **Too many club rides?** Lower `max_per_week` on Blue Ridge Bicycle Club.
-  It's at 4 — without a cap they're roughly 70% of the calendar.
-- **Wrong radius?** `defaults.radius_miles`, currently 75. Events outside it
-  are dropped unless the source is bucketed `world`.
-- **Add a source?** Run `probe.py` against it, then copy the closest existing
-  block. Set `trust` — 80 for the org's own site, 60 for a registration
-  platform, 40 for an aggregator.
-- **Something miscategorised?** `CATEGORY_RULES` in `normalize.py`. Matching
-  is on word boundaries, not substrings — that's deliberate. A bare `camp`
-  once filed the Old Fort Fifty as a clinic, because it starts at Camp Grier.
+| Source | Why |
+|---|---|
+| Blue Ridge Bicycle Club | Ride calendar is a **paid member benefit**. Not scraping past that. Their public races arrive via BikeReg anyway. |
+| Ride with GPS | Closed. **Both** clubs use it as a route library, not an event calendar — AoB's last event there was May 2024, BRBC's is empty. Not a fixable bug. |
+| NICA / Pisgah Rage / Ring of Fire | **Seasonal.** NC is a spring league (Jan–Jun, registration opens 1 Nov); the velodrome series runs May–June. Empty the rest of the year by design. |
+| RunSignup | Mostly a running-race platform. Publishes here only when a title carries an actual cycling word — without that rule you get turkey trots. |
+| IC Imagine | Domain not answering. Decide in November whether to delete it. |
+
+---
+
+## Adding or fixing a source
+
+`probe.py` reports what feed a site actually has:
+
+```bash
+python probe.py https://example.org/events
+```
+
+Then copy the closest existing block in `sources.yml`. Set `trust`: 100
+hand-entered, 80 the org's own site, 60 a registration platform, 40 an
+aggregator.
+
+Three things the codebase has learned the hard way, all of them the same
+mistake in different clothes:
+
+1. **A source returning zero is not evidence it works.** RunSignup reported
+   "0 events" for weeks because it was being sent the wrong date format and the
+   error came back as an empty list.
+2. **Never trust a filter param you haven't verified.** BikeReg silently
+   ignores unrecognised filters and serves the national list, which looks
+   exactly like success.
+3. **Read the live site, not just the build log.** A craft exhibition published
+   eleven times under `blue-ridge-heritage — ok (32 events)` because the
+   keyword `trail` matched "Craft Trails".
+
+Every finding is a dated comment in `sources.yml`, and every bug that reached
+the live site is pinned as a test with the real title that shipped.
 
 ---
 
 ## Files
 
-```
-CLAUDE.md           handoff brief — read first in a new session
-bootstrap.sh        one-shot deploy: repo, secrets, Pages, first build
-sources.yml         the thirteen sources and how to read each one
-adapters.py         one function per platform, plus the Claude fallback
-normalize.py        categorise, geofence, cap, dedupe
-build.py            orchestrates, caches, writes events.json + the .ics feeds
-probe.py            "what feed does this site have" — run when adding or fixing
-site/index.html     the calendar
-site/submit.html    the submission form
-worker.js           optional: submissions → GitHub issues
-data/manual.yml     hand-entered events
-```
+| | |
+|---|---|
+| `CLAUDE.md` | handoff brief — **read first** |
+| `DEPLOY.md` | running it day to day, written for Matt |
+| `sources.yml` | the fifteen sources, with dated findings on each |
+| `adapters.py` | one function per platform, plus the Claude fallback |
+| `normalize.py` | recurrence, titles, categories, geofence, dedupe, caps |
+| `build.py` | orchestrates, caches, writes `events.json` and the feeds |
+| `probe.py` | "what feed does this site have" |
+| `site/index.html` | the calendar |
+| `site/submit.html` | the submission form |
+| `data/manual.yml` | hand-entered events |
+| `worker.js` | optional: submissions → GitHub issues without email |
+| `bootstrap.sh` | original one-shot deploy. **Already done** — kept for reference |
 
-Brand: Forge Black `#111111`, Ash White `#CCCCCC`, Altar Rust `#B85C2A`,
-Trail Earth `#4A3728`, Pisgah Shadow `#2C4A5A`. Big Shoulders Display 900 for
-display, Lora for body, Space Mono for dates and distances. The year-profile
-strip at the top of the calendar is the one flourish — event density drawn as
-an elevation profile, which is how riders read a route anyway. Sarah should
-sign off on it before it goes on altar.bike.
+---
+
+## Brand
+
+Forge Black `#111111`, Ash White `#CCCCCC`, Altar Rust `#B85C2A`, Trail Earth
+`#4A3728`, Pisgah Shadow `#2C4A5A`. Big Shoulders Display 900 for display, Lora
+for body, Space Mono for dates and distances.
+
+The year-profile strip at the top of the calendar is the one flourish — event
+density drawn as an elevation profile, which is how riders read a route anyway.
+Signed off by Sarah Cearley, 2026-08-17.

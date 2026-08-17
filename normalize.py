@@ -83,6 +83,12 @@ def _compile(rules):
 
 
 _CATEGORY = _compile(CATEGORY_RULES)
+
+# The categories the submission form and issue template are allowed to assert.
+# Kept in sync with the <select> in site/submit.html.
+CATEGORIES = {name for name, _ in CATEGORY_RULES} | {
+    "race", "group-ride", "trail-work", "festival", "clinic", "youth",
+    "advocacy", "watch"}
 _DISCIPLINE = _compile(DISCIPLINE_RULES)
 
 
@@ -103,6 +109,13 @@ def classify(event: dict, default: str) -> tuple[str, str]:
     for category, pattern in _CATEGORY:
         if pattern.search(hay):
             return category, "rule"
+    # No keyword matched. Before falling back to the source's blunt default,
+    # use the submitter's own answer to "what is it" if there is one — the
+    # person running the ride knows what it is better than our default does.
+    # Ranked below the keyword rules on purpose: submitters over-pick "Race".
+    hint = str(event.get("category_hint") or "").strip().lower()
+    if hint in CATEGORIES:
+        return hint, "rule"
     return default, "default"
 
 
@@ -182,6 +195,51 @@ def in_region(event: dict, home: dict, radius: int) -> bool:
 _NOISE = re.compile(
     r"\b(20\d\d|the|a|an|presented by|p/b|pb|presents|annual|\d+(st|nd|rd|th)|"
     r"race|event|series|round|rd)\b")
+
+
+_SHOUT_LEAD = re.compile(
+    r"^\s*(?:sold\s*out|new|updated|announcing|register\s+now|last\s+chance|"
+    r"final\s+call|don'?t\s+miss(?:\s+out)?|hurry|act\s+fast)\b[\s!.:;,–—-]*",
+    re.I)
+_DASH_RUN = re.compile(r"[–—-]{2,}")
+
+
+def tidy_title(title: str) -> str:
+    """
+    Take the shouting out of promoter-supplied titles.
+
+    Registration platforms pass through whatever the promoter typed, and some
+    of it is marketing rather than a name. Live example from the calendar on
+    launch day:
+
+        "SOLD OUT !!! ———12TH ANNUAL DANCING BEAR BIKE BASH RETURNS ON
+         SEPTEMBER 19TH, 2026"
+
+    Strips a leading marketing shout, collapses runs of dashes and bangs, and
+    de-shouts an all-caps title. Deliberately conservative: it only lowercases
+    when the title is *entirely* caps, so "NCCX", "UCI" and "WNC Flyer" are
+    left alone, and it never touches the middle of a title.
+    """
+    t = re.sub(r"\s+", " ", str(title or "")).strip()
+    if not t:
+        return t
+    prev = None
+    while prev != t:                       # "SOLD OUT !!! NEW! ..." — peel each
+        prev = t
+        t = _SHOUT_LEAD.sub("", t).strip()
+    t = _DASH_RUN.sub(" — ", t)
+    t = re.sub(r"!{2,}", "!", t)
+    t = re.sub(r"\s+", " ", t).strip(" -–—:;,")
+
+    letters = [c for c in t if c.isalpha()]
+    if letters and all(c.isupper() for c in letters) and len(letters) > 6:
+        t = t.title()
+        # title() mangles the common ordinals and small words; put them back.
+        t = re.sub(r"\b(\d+)(St|Nd|Rd|Th)\b", lambda m: m.group(1) + m.group(2).lower(), t)
+        t = re.sub(r"\b(And|Of|The|On|At|For|To|In|A|An)\b",
+                   lambda m: m.group(1).lower(), t)
+        t = t[0].upper() + t[1:] if t else t
+    return t
 
 
 def slug(title: str) -> str:
@@ -283,6 +341,97 @@ def uid(event: dict) -> str:
     return hashlib.sha1(basis.encode()).hexdigest()[:16]
 
 
+# --------------------------------------------------------------------------
+# recurrence
+# --------------------------------------------------------------------------
+
+# What people actually type in a form field, mapped to a step in days.
+# Monthly is handled separately because 4 weeks is not a month.
+_REPEAT_DAYS = {
+    "weekly": 7, "every week": 7, "each week": 7, "1 week": 7, "7 days": 7,
+    "biweekly": 14, "bi-weekly": 14, "fortnightly": 14, "every two weeks": 14,
+    "every other week": 14, "2 weeks": 14,
+}
+_REPEAT_MONTHLY = {"monthly", "every month", "each month", "1 month"}
+_REPEAT_NONE = {"", "none", "no", "once", "one-off", "one off", "single",
+                "just once", "n/a", "-"}
+
+# A weekly ride with no end date would otherwise publish ~57 entries across the
+# 400-day horizon and swamp everything else. Cap it, and make the shop
+# re-submit — a "weekly forever" claim goes stale faster than anyone updates it.
+RECUR_DEFAULT_COUNT = 12
+RECUR_MAX_COUNT = 60
+
+
+def _add_months(d, n):
+    """Same day-of-month n months on, clamped to the month's length."""
+    month = d.month - 1 + n
+    year = d.year + month // 12
+    month = month % 12 + 1
+    day = min(d.day, [31, 29 if year % 4 == 0 and (year % 100 or year % 400 == 0)
+                      else 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month - 1])
+    return d.replace(year=year, month=month, day=day)
+
+
+def expand_recurrence(event: dict, horizon_days: int = 400) -> list[dict]:
+    """
+    Turn one event carrying `repeat` into the individual dated events it means.
+
+    Reads `repeat` (weekly / biweekly / monthly) and optional `repeat_until`
+    (YYYY-MM-DD). Anything without a recognised `repeat` comes back unchanged,
+    so this is safe to call on every event from every source.
+
+    Each occurrence keeps the original's time-of-day and duration. The first
+    occurrence keeps the original's exact `start` string so a one-off and the
+    first of a series produce the same uid, which means a series can be
+    corrected later by a hand-entered event on the same title and date.
+    """
+    rule = str(event.get("repeat") or "").strip().lower()
+    if rule in _REPEAT_NONE:
+        return [event]
+    step = _REPEAT_DAYS.get(rule)
+    monthly = rule in _REPEAT_MONTHLY
+    if not step and not monthly:
+        return [event]                      # unrecognised: treat as one-off
+
+    try:
+        start = datetime.fromisoformat(str(event["start"]))
+    except (ValueError, KeyError, TypeError):
+        return [event]
+
+    span = None
+    if event.get("end"):
+        try:
+            span = datetime.fromisoformat(str(event["end"])) - start
+        except (ValueError, TypeError):
+            span = None
+
+    horizon = datetime.now() + timedelta(days=horizon_days)
+    until = horizon
+    if event.get("repeat_until"):
+        try:
+            until = min(datetime.fromisoformat(str(event["repeat_until"])[:10]
+                                               + "T23:59:59"), horizon)
+        except (ValueError, TypeError):
+            pass
+    limit = RECUR_MAX_COUNT if event.get("repeat_until") else RECUR_DEFAULT_COUNT
+
+    out, when, n = [], start, 0
+    while when <= until and n < min(limit, RECUR_MAX_COUNT):
+        copy = dict(event)
+        copy.pop("repeat", None)
+        copy.pop("repeat_until", None)
+        copy["start"] = event["start"] if n == 0 else when.isoformat(sep=" " if " " in str(event["start"]) else "T")
+        if span is not None:
+            copy["end"] = (when + span).isoformat(
+                sep=" " if " " in str(event.get("end", "")) else "T")
+        copy["recurring"] = rule
+        out.append(copy)
+        n += 1
+        when = _add_months(start, n) if monthly else start + timedelta(days=step * n)
+    return out or [event]
+
+
 def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict]:
     """Everything that happens to one source's events before the global merge."""
     now = datetime.now()
@@ -292,6 +441,12 @@ def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict
     blocked = [b.lower() for b in source.get("drop_if_titled", [])]
     required = [k.lower() for k in source.get("require_keywords", [])]
     is_world = source.get("bucket") == "world"
+
+    # A submitted or hand-entered weekly ride is ONE row that means many dates.
+    # Expand before anything else so each occurrence gets its own geofence
+    # check, category, uid and horizon test, exactly like a one-off would.
+    # Sources that never set `repeat` pass through untouched.
+    raw = [occurrence for e in raw for occurrence in expand_recurrence(e)]
 
     out = []
     for e in raw:
@@ -319,6 +474,12 @@ def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict
             if not any(k in hay for k in required):
                 continue
 
+        # Tidy the title AFTER the drop/keyword filters above, so those still
+        # match on whatever the promoter actually wrote, and before the uid and
+        # dedupe below, so the published title and the dedupe key agree.
+        e["title"] = tidy_title(e["title"])
+        if not e["title"]:
+            continue
         e["source"] = source["id"]
         e["source_name"] = source["name"]
         e["source_url"] = source.get("org_url", "")

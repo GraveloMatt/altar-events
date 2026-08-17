@@ -228,6 +228,90 @@ check("region rung uses Southeast (the region NC is in)",
 check("no rung uses a hyphenated region name",
       any("-" in str(s.get("region", "")) for s in shapes), False)
 
+print("\ntitle tidying")
+# The first case is verbatim from calendar.altar.bike on launch day.
+for messy, want in [
+    ("SOLD OUT !!! ———12TH ANNUAL DANCING BEAR BIKE BASH RETURNS ON SEPTEMBER 19TH, 2026",
+     "12th Annual Dancing Bear Bike Bash Returns on September 19th, 2026"),
+    ("NEW! Old Fort Fifty", "Old Fort Fifty"),
+    ("REGISTER NOW - Pisgah Stage Race", "Pisgah Stage Race"),
+    # Acronyms and normal titles must survive untouched.
+    ("NCCX Race #3", "NCCX Race #3"),
+    ("WNC Flyer", "WNC Flyer"),
+    ("UCI World Cup", "UCI World Cup"),
+    ("Old Fort Fifty", "Old Fort Fifty"),
+    ("Gravel Roll — The Holler in Walhalla", "Gravel Roll — The Holler in Walhalla"),
+]:
+    check(messy[:44], normalize.tidy_title(messy), want)
+check("tidying happens before the uid is taken",
+      normalize.prepare(
+          [{"title": "NEW! Bent Creek Dig Day", "start": soon(9),
+            "city": "Asheville"}],
+          {"id": "t", "name": "T", "trust": 80, "default_category": "trail-work",
+           "org_url": "https://x"}, HOME, R)[0]["title"],
+      "Bent Creek Dig Day")
+
+print("\nrecurring events")
+_wk = normalize.expand_recurrence(
+    {"title": "Altar Shop Ride", "start": soon(5) + "T18:00:00", "repeat": "weekly"})
+check("weekly with no end date is capped", len(_wk), normalize.RECUR_DEFAULT_COUNT)
+check("first occurrence keeps the exact original start",
+      _wk[0]["start"], soon(5) + "T18:00:00")
+check("occurrences are 7 days apart",
+      (datetime.fromisoformat(_wk[1]["start"])
+       - datetime.fromisoformat(_wk[0]["start"])).days, 7)
+check("time of day is preserved", _wk[-1]["start"][-8:], "18:00:00")
+check("the repeat key is consumed, not published", "repeat" in _wk[0], False)
+check("occurrences are tagged recurring", _wk[0]["recurring"], "weekly")
+
+check("repeat_until bounds the series",
+      len(normalize.expand_recurrence(
+          {"title": "X", "start": soon(5) + "T18:00:00", "repeat": "weekly",
+           "repeat_until": soon(33)})), 5)
+
+# Monthly must be calendar months, not 28 days — a ride on the 31st has to
+# land on the 30th in September, not drift backwards every month.
+check("monthly clamps to short months",
+      [e["start"][:10] for e in normalize.expand_recurrence(
+          {"title": "X", "start": "2026-08-31T10:00:00", "repeat": "monthly",
+           "repeat_until": "2026-12-31"})],
+      ["2026-08-31", "2026-09-30", "2026-10-31", "2026-11-30", "2026-12-31"])
+
+check("each occurrence keeps the original duration",
+      all(e["end"][-8:] == "12:00:00" for e in normalize.expand_recurrence(
+          {"title": "X", "start": soon(5) + "T09:00:00",
+           "end": soon(5) + "T12:00:00", "repeat": "weekly",
+           "repeat_until": soon(20)})), True)
+
+check("a one-off is returned untouched",
+      len(normalize.expand_recurrence({"title": "X", "start": soon(5)})), 1)
+check("an unrecognised repeat value is treated as a one-off",
+      len(normalize.expand_recurrence(
+          {"title": "X", "start": soon(5), "repeat": "whenever"})), 1)
+check("a junk start date cannot crash the expansion",
+      len(normalize.expand_recurrence(
+          {"title": "X", "start": "not a date", "repeat": "weekly"})), 1)
+check("prepare() expands recurrence end to end",
+      len(normalize.prepare(
+          [{"title": "Altar Shop Ride", "start": soon(5) + "T18:00:00",
+            "repeat": "weekly", "city": "Asheville"}],
+          {"id": "altar", "name": "Altar", "trust": 100,
+           "default_category": "group-ride", "org_url": "https://altar.bike"},
+          HOME, R)), normalize.RECUR_DEFAULT_COUNT)
+
+print("\nsubmitter's category answer is used, not discarded")
+check("category_hint fills in when no keyword matches",
+      normalize.classify({"title": "Thursday Evening Spin", "description": "",
+                          "category_hint": "group-ride"}, "race")[0],
+      "group-ride")
+check("keyword rules still outrank the submitter's hint",
+      normalize.classify({"title": "Old Fort Fifty Race", "description": "",
+                          "category_hint": "clinic"}, "festival")[0] == "clinic",
+      False)
+check("a junk hint falls through to the default",
+      normalize.classify({"title": "Something", "description": "",
+                          "category_hint": "banana"}, "festival")[0], "festival")
+
 print("\nrunsignup filter (regression: 23 running races reached the live site)")
 # Every one of these published on calendar.altar.bike on 2026-08-17 after the
 # date-format fix took this source from 0 events to 23. Two causes: keywords

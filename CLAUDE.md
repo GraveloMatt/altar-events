@@ -86,8 +86,8 @@ curl -sS -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/user
 Two suites, both green (2026-08-17). Run them after any change:
 
 ```bash
-python test_pipeline.py      # 76 checks
-python test_integration.py   # 47 checks
+python test_pipeline.py      # 117 checks
+python test_integration.py   # 56 checks
 ```
 
 `sources.yml` (registry) -> `adapters.py` (one function per platform) ->
@@ -295,7 +295,23 @@ events page, click any "click Here!" button, read the domain off the address
 bar. VolunteerHub exposes iCal, which turns a dead source into an exact `ics`
 feed and brings back their dig days.
 
-**2b. Multi-day events publish once per day.** Blue Ridge Heritage's craft
+**2. Recurring events — DONE 2026-08-17.** `normalize.expand_recurrence`
+turns one row carrying `repeat: weekly|biweekly|monthly` (+ optional
+`repeat_until`) into the dated occurrences it means. Wired into `prepare()`, so
+it works for `data/manual.yml`, the submission form and the issue template
+alike. With no `repeat_until` it publishes `RECUR_DEFAULT_COUNT` (12) and
+stops, on purpose — a weekly ride over the 400-day horizon would be ~57 entries
+and would swamp everything else, and standing rides go stale faster than anyone
+updates them. Monthly walks calendar months, not 28 days, and clamps (31 Aug ->
+30 Sep). Every case is pinned in `test_pipeline.py`.
+
+**2c. Submissions now actually gate on approval.** The code always filtered on
+`labels=approved,event-submission`, but **neither label existed in the repo**,
+so the gate was untestable and the issue template's `labels:` line was a no-op.
+Both labels created 2026-08-17. Nothing from the public form reaches the
+calendar until Matt adds `approved`; removing it takes the event down again.
+
+**2d. Multi-day events publish once per day.** Blue Ridge Heritage's craft
 exhibition appeared ELEVEN times before the keyword fix removed it entirely.
 The underlying behaviour is still there and will bite any future source whose
 feed emits one entry per day of a multi-day event. Nothing currently in
