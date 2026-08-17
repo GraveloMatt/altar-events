@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WNC Cycling Calendar — Altar Cycles</title>
+<meta name="description" content="Every race, group ride, trail work day and festival within about 75 miles of Asheville. Kept current by Altar Cycles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Lora:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forge:#111111;      /* Forge Black   */
+  --ash:#CCCCCC;        /* Ash White     */
+  --rust:#B85C2A;       /* Altar Rust    */
+  --earth:#4A3728;      /* Trail Earth   */
+  --shadow:#2C4A5A;     /* Pisgah Shadow */
+  --raise:#181818;
+  --hair:#282828;
+  --dim:#7d7d7d;
+  --display:"Big Shoulders Display",Arial Black,sans-serif;
+  --body:"Lora",Georgia,serif;
+  --mono:"Space Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--forge);color:var(--ash);
+  font-family:var(--body);font-size:16px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:940px;margin:0 auto;padding:0 20px}
+a{color:var(--ash);text-decoration-color:var(--rust);text-underline-offset:3px}
+a:hover{color:#fff}
+:focus-visible{outline:2px solid var(--rust);outline-offset:3px}
+
+/* ---------------------------------------------------------- masthead */
+header{border-bottom:1px solid var(--hair);padding:34px 0 0}
+.brandline{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;margin-bottom:18px;
+}
+h1{
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:clamp(2.6rem,9vw,4.6rem);line-height:.86;letter-spacing:-.012em;
+  margin:0;color:#fff;
+}
+h1 em{font-style:normal;color:var(--rust)}
+.kicker{
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--dim);
+}
+.standfirst{max-width:44ch;margin:14px 0 22px;color:var(--ash)}
+
+/* ------------------------------------------ signature: season profile */
+/* The year read the way a rider reads a route: as terrain. Each ridge is
+   a week; height is how much is happening. Click a ridge to jump there. */
+.profile{position:relative;margin:6px 0 0;border-top:1px solid var(--hair);padding-top:10px}
+.profile-head{
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--dim);margin-bottom:6px;
+}
+#profile{display:block;width:100%;height:88px;cursor:crosshair;touch-action:pan-y}
+#profile .ridge{fill:var(--rust);fill-opacity:.22;stroke:var(--rust);stroke-width:1.5;
+  stroke-linejoin:round;transition:fill-opacity .25s}
+.profile:hover #profile .ridge{fill-opacity:.34}
+#profile .base{stroke:var(--hair);stroke-width:1}
+#profile .tick{fill:var(--dim);font-family:var(--mono);font-size:8.5px;letter-spacing:.12em}
+#profile .now{stroke:#fff;stroke-width:1;stroke-dasharray:2 3}
+#profile .hit{fill:transparent;cursor:pointer}
+#profile .hit:hover~.marker,#profile .hit:focus~.marker{opacity:1}
+#profile .peak{fill:var(--rust)}
+.readout{
+  position:absolute;pointer-events:none;background:var(--forge);
+  border:1px solid var(--rust);padding:3px 7px;font-family:var(--mono);
+  font-size:.62rem;color:#fff;white-space:nowrap;opacity:0;transition:opacity .12s;
+  transform:translate(-50%,-100%);z-index:5;
+}
+
+/* ------------------------------------------------------------ filters */
+.controls{
+  position:sticky;top:0;z-index:20;background:var(--forge);
+  border-bottom:1px solid var(--hair);padding:12px 0;margin-bottom:8px;
+}
+.chips{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.chip{
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;
+  text-transform:uppercase;background:transparent;color:var(--dim);
+  border:1px solid var(--hair);border-radius:0;padding:6px 11px;
+  cursor:pointer;transition:.15s;line-height:1.4;
+}
+.chip:hover{color:var(--ash);border-color:var(--dim)}
+.chip[aria-pressed="true"]{background:var(--rust);border-color:var(--rust);color:#fff}
+.chip .n{opacity:.6;margin-left:5px}
+.chip.ghost[aria-pressed="true"]{background:var(--shadow);border-color:var(--shadow)}
+.count{font-family:var(--mono);font-size:.66rem;color:var(--dim);margin-left:auto;
+  letter-spacing:.1em;white-space:nowrap}
+
+/* ------------------------------------------------------------- agenda */
+.month{
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:1.55rem;letter-spacing:.02em;color:var(--dim);
+  margin:34px 0 2px;padding-bottom:6px;border-bottom:1px solid var(--hair);
+  display:flex;justify-content:space-between;align-items:baseline;
+}
+.month span{font-family:var(--mono);font-size:.62rem;font-weight:400;letter-spacing:.16em}
+
+.ev{border-bottom:1px solid var(--hair);display:grid;
+  grid-template-columns:76px 1fr;gap:0 18px;align-items:start}
+.ev:hover{background:var(--raise)}
+.ev.open{background:var(--raise)}
+.date{
+  grid-row:1/3;font-family:var(--mono);text-align:center;padding:18px 0 18px;
+  border-right:1px solid var(--hair);align-self:stretch;
+}
+.dow{display:block;font-size:.6rem;letter-spacing:.16em;color:var(--dim);text-transform:uppercase}
+.dnum{display:block;font-size:1.85rem;line-height:1.15;color:#fff;font-weight:700}
+.drange{display:block;font-size:.58rem;color:var(--rust);letter-spacing:.08em}
+.body{padding:16px 0 17px;min-width:0}
+.head{
+  all:unset;display:block;cursor:pointer;width:100%;
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:clamp(1.18rem,3.6vw,1.5rem);line-height:1.05;color:#fff;
+  letter-spacing:.004em;
+}
+.ev:hover .head,.ev.open .head{color:var(--rust)}
+.meta{
+  font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;color:var(--dim);
+  margin-top:7px;display:flex;gap:9px;flex-wrap:wrap;align-items:center;
+}
+.tag{border:1px solid var(--hair);padding:1px 6px;text-transform:uppercase}
+.tag.race{border-color:var(--rust);color:var(--rust)}
+.tag.trail-work{border-color:#6b8f4e;color:#8fb26e}
+.tag.group-ride{border-color:var(--shadow);color:#6d97ad}
+.tag.youth{border-color:#8a6fa8;color:#ab8ac9}
+.tag.festival{border-color:var(--earth);color:#b08d6c}
+.tag.clinic,.tag.advocacy{border-color:var(--hair);color:var(--dim)}
+.detail{display:none;padding:2px 0 6px;max-width:60ch}
+.ev.open .detail{display:block}
+.detail p{margin:.5em 0 1em;font-size:.95rem;color:var(--ash)}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+.act{
+  font-family:var(--mono);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;
+  border:1px solid var(--rust);color:var(--rust);padding:7px 12px;
+  text-decoration:none;display:inline-block;transition:.15s;background:transparent;cursor:pointer;
+}
+.act:hover{background:var(--rust);color:#fff}
+.act.sub{border-color:var(--hair);color:var(--dim)}
+.act.sub:hover{background:var(--hair);color:var(--ash)}
+.credit{font-family:var(--mono);font-size:.58rem;color:#5c5c5c;margin-top:11px;letter-spacing:.06em}
+
+.empty{padding:56px 0;text-align:center;color:var(--dim)}
+.empty strong{
+  display:block;font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:1.5rem;color:var(--ash);margin-bottom:6px;
+}
+
+/* -------------------------------------------------------------- panel */
+.panel{
+  border:1px solid var(--hair);background:var(--raise);
+  padding:24px;margin:44px 0 0;
+}
+.panel h2{
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:1.6rem;margin:0 0 8px;color:#fff;letter-spacing:.01em;
+}
+.panel p{margin:0 0 16px;max-width:56ch;font-size:.95rem}
+.feedrow{
+  font-family:var(--mono);font-size:.68rem;background:var(--forge);
+  border:1px solid var(--hair);padding:10px 12px;margin:10px 0 16px;
+  overflow-x:auto;white-space:nowrap;color:var(--ash);
+}
+footer{
+  border-top:1px solid var(--hair);margin-top:52px;padding:22px 0 46px;
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:#5c5c5c;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;text-transform:uppercase;
+}
+.banner{
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:var(--earth);
+  border:1px dashed var(--earth);padding:8px 12px;margin:14px 0 0;text-transform:uppercase;
+}
+@media(max-width:620px){
+  .ev{grid-template-columns:60px 1fr;gap:0 13px}
+  .date{padding:15px 0}
+  .dnum{font-size:1.5rem}
+  #profile{height:70px}
+  .controls{padding:10px 0}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brandline">
+      <h1>WNC<br>Cycling<br><em>Calendar</em></h1>
+      <div class="kicker">Altar Cycles<br>River Arts District</div>
+    </div>
+    <p class="standfirst">Races, group rides, dig days and festivals inside about 75 miles
+      of the shop. Pulled from the people who run them, checked daily.</p>
+
+    <div class="profile">
+      <div class="profile-head"><span>The season, by week</span><span id="profile-hint">Tap a ridge to jump</span></div>
+      <svg id="profile" role="img" aria-label="Event density across the coming six months. Taller ridges are busier weeks."></svg>
+      <div class="readout" id="readout"></div>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="chips" id="filters" role="group" aria-label="Filter events"></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div id="list" aria-live="polite"></div>
+
+  <section class="panel">
+    <h2>Put it on your phone</h2>
+    <p>Subscribe once and it updates itself — new races show up without you doing anything.
+      In Google Calendar go to <em>Other calendars → From URL</em> and paste this:</p>
+    <div class="feedrow" id="feedurl">https://altar.bike/calendar/events.ics</div>
+    <div class="acts">
+      <a class="act" id="gcal" href="#">Add to Google Calendar</a>
+      <a class="act sub" id="icsdl" href="events.ics">Download .ics</a>
+      <a class="act sub" href="races.ics">Races only</a>
+      <a class="act sub" href="trail-work.ics">Trail work only</a>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Running something?</h2>
+    <p>If it involves a bike and it's within a couple hours of Asheville, we'll list it.
+      Free, no catch, and you don't have to be a customer.</p>
+    <div class="acts"><a class="act" href="submit.html">Submit an event</a></div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>Altar Cycles · altar.bike</span>
+  <span id="stamp"></span>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------ data */
+/* Falls back to a sample set so the page still renders if the feed is down
+   or you're previewing this file straight off disk. */
+const SAMPLE = {generated:"2026-08-16T11:00:00Z", events:[
+ {uid:"s01",title:"Summer Cycle 2026",start:"2026-08-22T14:00:00",end:"2026-08-22T19:00:00",category:"festival",discipline:"commuter",venue:"New Belgium Brewing",city:"Asheville",state:"NC",distance_mi:1.2,source_name:"Asheville on Bikes",url:"https://ashevilleonbikes.com/events/asheville-summer-cycle",description:"Twenty years of AoB. Pop-up bike park, group rides at three paces, fundraising and a party in the RAD."},
+ {uid:"s02",title:"Women's Dig Night — Lower Bennett Gap",start:"2026-08-27T17:30:00",end:"2026-08-27T20:30:00",category:"trail-work",discipline:"mtb",venue:"The Hub & Pisgah Tavern",city:"Pisgah Forest",state:"NC",distance_mi:24.1,source_name:"Pisgah Area SORBA",url:"https://www.pisgahareasorba.org/events-volunteer",description:"Brushing and drain clearing on Lower Bennett Gap. No experience needed. Pizza at The Hub after."},
+ {uid:"s03",title:"Dirt Diggler Gravel Grinder",start:"2026-09-05",all_day:true,category:"race",discipline:"gravel",city:"Hendersonville",state:"NC",distance_mi:22.4,source_name:"DARC",also_listed_by:["BikeReg"],url:"https://darccycling.com/calendar",description:"DARC featured event. Wear the kit."},
+ {uid:"s04",title:"Pisgah Monster Cross",start:"2026-09-12",all_day:true,category:"race",discipline:"gravel",city:"Brevard",state:"NC",distance_mi:33.0,source_name:"BikeReg",url:"https://www.bikereg.com/",description:"Long-running Pisgah gravel classic out of Brevard."},
+ {uid:"s05",title:"Trek Trail Day — Upper Bernard Mountain",start:"2026-09-15T10:00:00",end:"2026-09-15T14:30:00",category:"trail-work",discipline:"mtb",venue:"Upper Bernard Trailhead",city:"Old Fort",state:"NC",distance_mi:26.8,source_name:"G5 Trail Collective",url:"https://www.g5trailcollective.org/volunteer",description:"Third Tuesday of every month with the Trek AVL crew. Grandfather District."},
+ {uid:"s06",title:"CRAFTED Bicycle & Gear Show",start:"2026-09-26",end:"2026-09-27",all_day:true,category:"festival",discipline:"other",venue:"Cane Creek Cycling Components",city:"Fletcher",state:"NC",distance_mi:13.6,source_name:"DARC",url:"https://www.craftedbikeshow.com/",description:"Inaugural handmade bike and gear show for the Southeast. Free admission. Group rides, makers, food, music."},
+ {uid:"s07",title:"National Public Lands Day Dig — Bent Creek",start:"2026-09-26T09:00:00",category:"trail-work",discipline:"mtb",venue:"Bent Creek",city:"Asheville",state:"NC",distance_mi:6.4,source_name:"Pisgah Area SORBA",url:"https://www.pisgahareasorba.org/events-volunteer",description:"With the Ford Bronco Wild Fund. Tools and PPE provided."},
+ {uid:"s08",title:"Tuesday Social Ride",start:"2026-09-01T18:00:00",category:"group-ride",discipline:"road",venue:"Blue Ridge Beer Garden",city:"Hendersonville",state:"NC",distance_mi:21.0,source_name:"Blue Ridge Bicycle Club",url:"https://brbcnc.clubexpress.com/",description:"Meet 5:30, roll 6:00. Social pace, plus a hilly loop for the anti-social."},
+ {uid:"s09",title:"Tuesday Social Ride",start:"2026-09-08T18:00:00",category:"group-ride",discipline:"road",venue:"Blue Ridge Beer Garden",city:"Hendersonville",state:"NC",distance_mi:21.0,source_name:"Blue Ridge Bicycle Club",url:"https://brbcnc.clubexpress.com/",description:"Meet 5:30, roll 6:00."},
+ {uid:"s10",title:"NICA NC Race #2 — Tryon International",start:"2026-10-03",end:"2026-10-04",all_day:true,category:"youth",discipline:"mtb",venue:"Tryon International Equestrian Center",city:"Mill Spring",state:"NC",distance_mi:41.2,source_name:"NC Interscholastic Cycling League",also_listed_by:["Pisgah Rage"],url:"https://northcarolinamtb.org/",description:"Middle and high school racing. Pisgah Rage and IC Imagine both field teams."},
+ {uid:"s11",title:"Fall Trail Weekend",start:"2026-10-16",end:"2026-10-18",all_day:true,category:"trail-work",discipline:"mtb",venue:"Camp Grier",city:"Old Fort",state:"NC",distance_mi:26.5,source_name:"G5 Trail Collective",url:"https://www.g5trailcollective.org/",description:"Free lodging and camping, dinner and beer Saturday. Trail work all levels, bike demos, shuttle laps, bonfire."},
+ {uid:"s12",title:"Old Fort Fifty",start:"2026-10-24",all_day:true,category:"race",discipline:"mtb",venue:"Camp Grier",city:"Old Fort",state:"NC",distance_mi:26.5,source_name:"G5 Trail Collective",also_listed_by:["BikeReg"],url:"https://www.g5trailcollective.org/",description:"30.4 miles, 4,874 feet of climbing. Gateway flow into Star Gap and Heckle Rock. Open to riders and runners."},
+ {uid:"s13",title:"Smart Cycling Class",start:"2026-10-10T09:00:00",category:"clinic",discipline:"commuter",city:"Asheville",state:"NC",distance_mi:2.0,source_name:"Asheville on Bikes",url:"https://ashevilleonbikes.com/events",description:"Free. Traffic skills and confidence for riding around town."},
+ {uid:"s14",title:"NC Grand Prix — Cyclocross",start:"2026-11-14",end:"2026-11-15",all_day:true,category:"race",discipline:"cx",city:"Hendersonville",state:"NC",distance_mi:22.0,source_name:"BikeReg",url:"https://www.nccyclocross.com/races",description:"UCI cyclocross weekend. Series numbers required."},
+ {uid:"s15",title:"Bike Love 2027 Kickoff Meeting",start:"2026-11-05T18:00:00",category:"advocacy",discipline:"other",city:"Asheville",state:"NC",distance_mi:1.8,source_name:"Asheville on Bikes",url:"https://ashevilleonbikes.com/",description:"Volunteer planning for the annual gala."}
+]};
+
+const CATS=[["race","Races"],["trail-work","Trail work"],["group-ride","Group rides"],
+            ["youth","Youth"],["festival","Festivals"],["clinic","Clinics"],["advocacy","Advocacy"]];
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const MONTHF=["January","February","March","April","May","June","July",
+              "August","September","October","November","December"];
+const DOW=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+
+let EVENTS=[], active=new Set(), nearOnly=false, live=false;
+
+/* ---------------------------------------------------------------- utils */
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const D=e=>new Date(e.start.length===10?e.start+"T12:00:00":e.start);
+const key=d=>d.getFullYear()+"-"+String(d.getMonth()).padStart(2,"0");
+
+function timeLabel(e){
+  if(e.all_day||e.start.length===10)return "All day";
+  const d=D(e),h=d.getHours(),m=d.getMinutes();
+  return ((h%12)||12)+(m?":"+String(m).padStart(2,"0"):"")+(h<12?"am":"pm");
+}
+function spanLabel(e){
+  if(!e.end)return "";
+  const a=D(e),b=new Date(e.end.length===10?e.end+"T12:00:00":e.end);
+  const days=Math.round((b-a)/864e5);
+  return days>=1?"→ "+(b.getMonth()!==a.getMonth()?MON[b.getMonth()]+" ":"")+b.getDate():"";
+}
+
+/* ------------------------------------------------ signature: the profile */
+function drawProfile(){
+  const svg=document.getElementById("profile");
+  const W=1000,H=88,PAD=14,FLOOR=H-17;
+  const start=new Date();start.setHours(0,0,0,0);
+  start.setDate(start.getDate()-start.getDay());
+  const WEEKS=26, buckets=new Array(WEEKS).fill(0);
+
+  EVENTS.forEach(e=>{
+    const w=Math.floor((D(e)-start)/6048e5);
+    if(w>=0&&w<WEEKS)buckets[w]++;
+  });
+  const peak=Math.max(2,...buckets);
+  const x=i=>PAD+i*(W-PAD*2)/(WEEKS-1);
+  const y=v=>FLOOR-(v/peak)*(FLOOR-PAD);
+
+  /* Ridge line: a route profile, not a chart. Midpoints keep it looking
+     like terrain rather than a sawtooth. */
+  let d=`M ${x(0)} ${FLOOR}`;
+  for(let i=0;i<WEEKS;i++){
+    const px=x(i),py=y(buckets[i]);
+    if(i===0){d+=` L ${px} ${py}`;continue;}
+    const prev=x(i-1),mid=(prev+px)/2;
+    d+=` L ${mid} ${y(buckets[i-1])} L ${mid} ${py} L ${px} ${py}`;
+  }
+  d+=` L ${x(WEEKS-1)} ${FLOOR} Z`;
+
+  let ticks="",lastMon=-1;
+  for(let i=0;i<WEEKS;i++){
+    const dt=new Date(start.getTime()+i*6048e5);
+    if(dt.getMonth()!==lastMon){
+      lastMon=dt.getMonth();
+      ticks+=`<text class="tick" x="${x(i)}" y="${H-4}">${MON[lastMon].toUpperCase()}</text>`;
+    }
+  }
+  const hits=buckets.map((v,i)=>
+    `<rect class="hit" x="${x(i)-(W-PAD*2)/(WEEKS-1)/2}" y="0" width="${(W-PAD*2)/(WEEKS-1)}"
+      height="${FLOOR}" data-w="${i}" data-n="${v}"><title>${v} event${v===1?"":"s"}</title></rect>`
+  ).join("");
+  const peaks=buckets.map((v,i)=>v===peak&&v>0
+    ? `<circle class="peak" cx="${x(i)}" cy="${y(v)}" r="2.6"/>`:"").join("");
+
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  svg.setAttribute("preserveAspectRatio","none");
+  svg.innerHTML=`<path class="ridge" d="${d}"/>
+    <line class="base" x1="${PAD}" y1="${FLOOR}" x2="${W-PAD}" y2="${FLOOR}"/>
+    <line class="now" x1="${x(0)}" y1="${PAD-8}" x2="${x(0)}" y2="${FLOOR}"/>
+    ${peaks}${ticks}${hits}`;
+
+  const readout=document.getElementById("readout");
+  svg.querySelectorAll(".hit").forEach(r=>{
+    r.addEventListener("mousemove",ev=>{
+      const w=+r.dataset.w,n=+r.dataset.n;
+      const dt=new Date(start.getTime()+w*6048e5);
+      readout.textContent=`${MON[dt.getMonth()]} ${dt.getDate()} — ${n} event${n===1?"":"s"}`;
+      readout.style.opacity=1;
+      const box=svg.getBoundingClientRect(),host=svg.parentElement.getBoundingClientRect();
+      readout.style.left=(ev.clientX-host.left)+"px";
+      readout.style.top=(box.top-host.top+8)+"px";
+    });
+    r.addEventListener("mouseleave",()=>readout.style.opacity=0);
+    r.addEventListener("click",()=>{
+      const dt=new Date(start.getTime()+ +r.dataset.w*6048e5);
+      const target=document.getElementById("m-"+key(dt));
+      if(target)target.scrollIntoView({behavior:"smooth",block:"start"});
+    });
+  });
+}
+
+/* -------------------------------------------------------------- filters */
+function drawFilters(){
+  const host=document.getElementById("filters");
+  const counts={};EVENTS.forEach(e=>counts[e.category]=(counts[e.category]||0)+1);
+  host.innerHTML=CATS.filter(([id])=>counts[id])
+    .map(([id,label])=>`<button class="chip" data-cat="${id}" aria-pressed="${active.has(id)}">
+      ${label}<span class="n">${counts[id]}</span></button>`).join("")
+    +`<button class="chip ghost" id="near" aria-pressed="${nearOnly}">Under 30 mi</button>
+      <span class="count" id="count"></span>`;
+
+  host.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{
+    const c=b.dataset.cat;active.has(c)?active.delete(c):active.add(c);drawFilters();render();
+  });
+  document.getElementById("near").onclick=()=>{nearOnly=!nearOnly;drawFilters();render();};
+}
+
+function visible(){
+  return EVENTS.filter(e=>
+    (!active.size||active.has(e.category)) &&
+    (!nearOnly||(e.distance_mi!=null&&e.distance_mi<=30)));
+}
+
+/* --------------------------------------------------------------- agenda */
+function render(){
+  const list=document.getElementById("list"),rows=visible();
+  const c=document.getElementById("count");
+  if(c)c.textContent=rows.length+(rows.length===1?" event":" events");
+
+  if(!rows.length){
+    list.innerHTML=`<div class="empty"><strong>Nothing here</strong>
+      Loosen a filter and it'll turn up.</div>`;
+    return;
+  }
+  let html="",month="";
+  rows.forEach(e=>{
+    const d=D(e),mk=key(d);
+    if(mk!==month){
+      month=mk;
+      const n=rows.filter(x=>key(D(x))===mk).length;
+      html+=`<h2 class="month" id="m-${mk}">${MONTHF[d.getMonth()]} ${d.getFullYear()}
+        <span>${n}</span></h2>`;
+    }
+    const where=[e.venue,e.city].filter(Boolean).join(", ")||e.city||"";
+    const span=spanLabel(e);
+    const also=e.also_listed_by&&e.also_listed_by.length
+      ? ` · also via ${esc(e.also_listed_by.join(", "))}`:"";
+    html+=`<article class="ev" id="e-${esc(e.uid)}">
+      <div class="date">
+        <span class="dow">${DOW[d.getDay()]}</span>
+        <span class="dnum">${d.getDate()}</span>
+        ${span?`<span class="drange">${esc(span)}</span>`:""}
+      </div>
+      <div class="body">
+        <button class="head" aria-expanded="false" data-uid="${esc(e.uid)}">${esc(e.title)}</button>
+        <div class="meta">
+          <span class="tag ${esc(e.category)}">${esc(e.category.replace("-"," "))}</span>
+          <span>${esc(timeLabel(e))}</span>
+          ${where?`<span>${esc(where)}</span>`:""}
+          ${e.distance_mi!=null?`<span>${e.distance_mi} mi</span>`:""}
+        </div>
+        <div class="detail">
+          ${e.description?`<p>${esc(e.description)}</p>`:"<p></p>"}
+          <div class="acts">
+            ${e.register_url?`<a class="act" href="${esc(e.register_url)}" target="_blank" rel="noopener">Register</a>`:""}
+            ${e.url?`<a class="act" href="${esc(e.url)}" target="_blank" rel="noopener">Event page</a>`:""}
+            <button class="act sub" data-add="${esc(e.uid)}">Add to my calendar</button>
+          </div>
+          <div class="credit">Listed by ${esc(e.source_name||"Altar")}${also}</div>
+        </div>
+      </div>
+    </article>`;
+  });
+  list.innerHTML=html;
+
+  list.querySelectorAll(".head").forEach(b=>b.onclick=()=>{
+    const row=b.closest(".ev"),open=row.classList.toggle("open");
+    b.setAttribute("aria-expanded",open);
+  });
+  list.querySelectorAll("[data-add]").forEach(b=>b.onclick=()=>downloadOne(b.dataset.add));
+}
+
+/* Per-event .ics, built client-side so one event doesn't need a round trip. */
+function downloadOne(uid){
+  const e=EVENTS.find(x=>x.uid===uid);if(!e)return;
+  const fmt=(s,allDay)=>{
+    const d=new Date(s.length===10?s+"T12:00:00":s);
+    return allDay?d.getFullYear()+String(d.getMonth()+1).padStart(2,"0")+String(d.getDate()).padStart(2,"0")
+      :d.toISOString().replace(/[-:]/g,"").split(".")[0]+"Z";
+  };
+  const ad=e.all_day||e.start.length===10;
+  const esc2=s=>String(s||"").replace(/([,;\\])/g,"\\$1").replace(/\n/g,"\\n");
+  const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Altar Cycles//EN","BEGIN:VEVENT",
+    "UID:"+e.uid+"@altar.bike",
+    "DTSTAMP:"+new Date().toISOString().replace(/[-:]/g,"").split(".")[0]+"Z",
+    (ad?"DTSTART;VALUE=DATE:":"DTSTART:")+fmt(e.start,ad),
+    e.end?((ad?"DTEND;VALUE=DATE:":"DTEND:")+fmt(e.end,ad)):"",
+    "SUMMARY:"+esc2(e.title),
+    "LOCATION:"+esc2([e.venue,e.city,e.state].filter(Boolean).join(", ")),
+    "DESCRIPTION:"+esc2((e.description||"")+"\n\n"+(e.url||"")),
+    e.url?"URL:"+e.url:"",
+    "END:VEVENT","END:VCALENDAR"].filter(Boolean).join("\r\n");
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));
+  a.download=(e.title||"event").toLowerCase().replace(/[^a-z0-9]+/g,"-").slice(0,50)+".ics";
+  a.click();URL.revokeObjectURL(a.href);
+}
+
+/* ----------------------------------------------------------------- boot */
+function boot(data){
+  EVENTS=(data.events||[]).filter(e=>e&&e.start&&e.title)
+    .sort((a,b)=>a.start.localeCompare(b.start));
+  drawProfile();drawFilters();render();
+
+  const feed=location.origin+location.pathname.replace(/[^/]*$/,"")+"events.ics";
+  if(location.protocol.startsWith("http")){
+    document.getElementById("feedurl").textContent=feed;
+    document.getElementById("gcal").href=
+      "https://calendar.google.com/calendar/r?cid="+encodeURIComponent(feed);
+  }else{
+    document.getElementById("gcal").href="https://calendar.google.com/calendar/r";
+  }
+  const when=data.generated?new Date(data.generated):new Date();
+  document.getElementById("stamp").textContent=
+    (live?"Updated ":"Sample data · ")+when.toLocaleDateString("en-US",
+      {month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});
+  if(!live){
+    const b=document.createElement("div");b.className="banner";
+    b.textContent="Preview — showing sample events. The live page reads events.json.";
+    document.querySelector("header .wrap").appendChild(b);
+  }
+}
+
+fetch("events.json",{cache:"no-store"})
+  .then(r=>{if(!r.ok)throw 0;return r.json();})
+  .then(d=>{live=true;boot(d);})
+  .catch(()=>boot(SAMPLE));
+</script>
+</body>
+</html>

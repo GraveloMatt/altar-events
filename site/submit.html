@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit an event — Altar Cycles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Lora:ital,wght@0,400;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--forge:#111;--ash:#CCC;--rust:#B85C2A;--earth:#4A3728;--shadow:#2C4A5A;
+  --raise:#181818;--hair:#282828;--dim:#7d7d7d;
+  --display:"Big Shoulders Display",Arial Black,sans-serif;
+  --body:"Lora",Georgia,serif;--mono:"Space Mono",monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--forge);color:var(--ash);font-family:var(--body);
+  font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:640px;margin:0 auto;padding:38px 20px 70px}
+a{color:var(--ash);text-decoration-color:var(--rust);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--rust);outline-offset:2px}
+.back{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--dim);text-decoration:none;display:inline-block;margin-bottom:24px}
+.back:hover{color:var(--rust)}
+h1{font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:clamp(2.3rem,8vw,3.4rem);line-height:.9;margin:0 0 12px;color:#fff}
+.intro{max-width:46ch;margin:0 0 6px}
+.rules{font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;color:var(--dim);
+  border-left:2px solid var(--earth);padding:8px 0 8px 13px;margin:22px 0 30px}
+label{display:block;margin:20px 0 0}
+.lab{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ash);display:block;margin-bottom:6px}
+.lab i{font-style:normal;color:var(--rust)}
+.hint{font-family:var(--mono);font-size:.6rem;color:var(--dim);letter-spacing:.04em;
+  display:block;margin-top:4px}
+input,textarea,select{
+  width:100%;background:var(--raise);border:1px solid var(--hair);color:var(--ash);
+  font-family:var(--body);font-size:1rem;padding:11px 12px;border-radius:0}
+input[type=date],input[type=time],select{font-family:var(--mono);font-size:.9rem}
+input:focus,textarea:focus,select:focus{border-color:var(--rust);outline:none}
+textarea{min-height:110px;resize:vertical;line-height:1.6}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+button{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  background:var(--rust);border:1px solid var(--rust);color:#fff;padding:13px 24px;
+  cursor:pointer;margin-top:30px;transition:.15s}
+button:hover:not(:disabled){background:transparent;color:var(--rust)}
+button:disabled{opacity:.45;cursor:wait}
+.msg{margin-top:22px;padding:14px 16px;font-family:var(--mono);font-size:.68rem;
+  letter-spacing:.05em;display:none;line-height:1.6}
+.msg.ok{display:block;border:1px solid var(--rust);color:var(--ash)}
+.msg.bad{display:block;border:1px solid var(--earth);color:#c99}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← Back to the calendar</a>
+  <h1>Submit<br>an event</h1>
+  <p class="intro">Anything on two wheels within a couple hours of Asheville. Races, group
+    rides, dig days, swaps, film nights. Free to list, and you don't have to be a customer.</p>
+  <div class="rules">
+    A human reads every one. Expect it on the calendar within a day or two.<br>
+    Recurring series: submit it once and say so in the details.
+  </div>
+
+  <div id="form">
+    <label><span class="lab">Event name <i>*</i></span>
+      <input id="f-title" required maxlength="120" placeholder="Dirt Diggler Gravel Grinder"></label>
+
+    <div class="row">
+      <label><span class="lab">Date <i>*</i></span><input id="f-date" type="date" required></label>
+      <label><span class="lab">End date</span>
+        <input id="f-end" type="date"><span class="hint">Only for multi-day</span></label>
+    </div>
+
+    <div class="row">
+      <label><span class="lab">Start time</span>
+        <input id="f-time" type="time"><span class="hint">Leave blank for all day</span></label>
+      <label><span class="lab">What is it <i>*</i></span>
+        <select id="f-cat">
+          <option value="race">Race</option>
+          <option value="group-ride">Group ride</option>
+          <option value="trail-work">Trail work</option>
+          <option value="festival">Festival / show</option>
+          <option value="clinic">Clinic / class</option>
+          <option value="youth">Youth</option>
+          <option value="advocacy">Advocacy</option>
+        </select></label>
+    </div>
+
+    <label><span class="lab">Where <i>*</i></span>
+      <input id="f-venue" required placeholder="Camp Grier, 985 Camp Grier Rd"></label>
+
+    <div class="row">
+      <label><span class="lab">City <i>*</i></span><input id="f-city" required placeholder="Old Fort"></label>
+      <label><span class="lab">State</span><input id="f-state" value="NC" maxlength="2"></label>
+    </div>
+
+    <label><span class="lab">Link <i>*</i></span>
+      <input id="f-url" type="url" required placeholder="https://">
+      <span class="hint">Registration page, or wherever people get details</span></label>
+
+    <label><span class="lab">Details</span>
+      <textarea id="f-desc" maxlength="900" placeholder="Distance, terrain, cost, what to bring, whether it's a drop ride."></textarea></label>
+
+    <div class="row">
+      <label><span class="lab">Your name <i>*</i></span><input id="f-who" required></label>
+      <label><span class="lab">Your email <i>*</i></span>
+        <input id="f-email" type="email" required>
+        <span class="hint">Only if we need to check something</span></label>
+    </div>
+
+    <div class="hp"><label>Leave blank<input id="f-hp" tabindex="-1" autocomplete="off"></label></div>
+
+    <button id="go">Send it over</button>
+  </div>
+
+  <div class="msg" id="msg"></div>
+</div>
+
+<script>
+/* Point this at your endpoint. See README step 5 — either the Cloudflare
+   Worker (opens a GitHub issue) or a Formspree form ID. Left empty, the
+   form falls back to a pre-filled email so it never silently drops
+   somebody's submission. */
+const ENDPOINT = "";
+const FALLBACK_EMAIL = "events@altar.bike";
+
+const $ = id => document.getElementById(id);
+const msg = $("msg");
+
+function show(kind, text){ msg.className = "msg " + kind; msg.textContent = text; }
+
+$("go").onclick = async () => {
+  if ($("f-hp").value) return;                    // bot
+
+  const required = {title:"an event name", date:"a date", venue:"a location",
+                    city:"a city", url:"a link", who:"your name", email:"your email"};
+  for (const [k, label] of Object.entries(required)) {
+    if (!$("f-" + k).value.trim()) { show("bad", "Still need " + label + "."); $("f-" + k).focus(); return; }
+  }
+
+  const payload = {
+    title:  $("f-title").value.trim(),
+    date:   $("f-date").value,
+    end:    $("f-end").value || "",
+    time:   $("f-time").value || "",
+    category: $("f-cat").value,
+    venue:  $("f-venue").value.trim(),
+    city:   $("f-city").value.trim(),
+    state: ($("f-state").value || "NC").trim().toUpperCase(),
+    url:    $("f-url").value.trim(),
+    description: $("f-desc").value.trim(),
+    submitter: $("f-who").value.trim(),
+    email:  $("f-email").value.trim()
+  };
+
+  if (!ENDPOINT) {
+    const body = Object.entries(payload).map(([k, v]) => k + ": " + v).join("\n");
+    location.href = "mailto:" + FALLBACK_EMAIL
+      + "?subject=" + encodeURIComponent("Event: " + payload.title)
+      + "&body=" + encodeURIComponent(body);
+    show("ok", "Opening your email app — hit send and we'll take it from there.");
+    return;
+  }
+
+  const btn = $("go");
+  btn.disabled = true; btn.textContent = "Sending…";
+  try {
+    const r = await fetch(ENDPOINT, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(payload)
+    });
+    if (!r.ok) throw new Error(r.status);
+    $("form").style.display = "none";
+    show("ok", "Got it. " + payload.title + " is in the queue — we'll have it up in a day or two.");
+  } catch (err) {
+    btn.disabled = false; btn.textContent = "Send it over";
+    show("bad", "That didn't go through. Email " + FALLBACK_EMAIL + " and we'll add it by hand.");
+  }
+};
+</script>
+</body>
+</html>
