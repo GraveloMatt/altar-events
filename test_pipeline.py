@@ -228,6 +228,57 @@ check("region rung uses Southeast (the region NC is in)",
 check("no rung uses a hyphenated region name",
       any("-" in str(s.get("region", "")) for s in shapes), False)
 
+print("\nrunsignup filter (regression: 23 running races reached the live site)")
+# Every one of these published on calendar.altar.bike on 2026-08-17 after the
+# date-format fix took this source from 0 events to 23. Two causes: keywords
+# were matched against the DESCRIPTION too (running races mention "bike valet"
+# and "no bikes on course"), and the bare keyword `mountain` matched place
+# names like Paris Mountain and Black Mountain. Captured verbatim.
+RSU = {
+    "id": "runsignup", "name": "RunSignup", "trust": 60,
+    "default_category": "race", "org_url": "https://runsignup.com/",
+    "require_in_title": True,
+    "require_keywords": ["bike", "bicycle", "cycl", "mtb", "gravel",
+                         "gran fondo", "criterium", "cyclocross", "enduro",
+                         "downhill", "fondo", "pedal"],
+    "drop_if_titled": ["5k", "10k", "half marathon", "marathon", "turkey trot",
+                       "fun run", "color run", "walk/run", "run/hike", "relay",
+                       "triathlon", "duathlon", "tri charlotte", "jingle",
+                       "hallowine"],
+}
+# A running-race description that name-drops bikes — the exact shape that
+# defeated the old title-or-description match.
+RUNNY = "Join us! Bike valet available. Packet pickup at the bike shop."
+for title in ["Asheville Craft Beer Half Marathon & 10K/5K",
+              "Black Mountain Turkey Trot 5k",
+              "GTC Paris Mountain Road Race",
+              "GTC Paris Mountain Trails 16K",
+              "Lakeside Double Sprint Triathlon",
+              "2nd Annual TALI Sadlers Creek Off-Road Duathlon",
+              "Color Me Mutt 5K & 1 Mile Color Walk/Run",
+              "Blue Ridge Relay",
+              "Lake Summit 10 Mile Run/Hike",
+              "HalloWine 5k",
+              "Cades Cove Loop Lope"]:
+    check("drops " + title[:40],
+          bool(normalize.prepare(
+              [{"title": title, "start": soon(30), "description": RUNNY,
+                "pre_geofenced": True}], RSU, HOME, 100)), False)
+# ...while genuine cycling still gets through on a title keyword.
+for title in ["Old Fort Fifty Gravel Grinder", "Asheville Criterium",
+              "Gran Fondo Asheville", "Pisgah MTB Stage Race"]:
+    check("keeps " + title[:40],
+          bool(normalize.prepare(
+              [{"title": title, "start": soon(30), "description": "",
+                "pre_geofenced": True}], RSU, HOME, 100)), True)
+# The flag must be opt-in: without it, a description match still counts.
+check("require_in_title is opt-in, not the default",
+      bool(normalize.prepare(
+          [{"title": "Autumn Classic", "start": soon(30),
+            "description": "A gravel race.", "pre_geofenced": True}],
+          {**RSU, "require_in_title": False, "drop_if_titled": []},
+          HOME, 100)), True)
+
 print("\nblue-ridge-heritage keyword filter (regression from the live site)")
 # These titles came off calendar.altar.bike on launch day, where 13 non-cycling
 # events had published. Cause: `trail` was in require_keywords, and this feed is

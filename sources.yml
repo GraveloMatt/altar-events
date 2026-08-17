@@ -75,6 +75,65 @@ sources:
     adapter: llm
     url: https://darccycling.com/calendar
 
+  - id: blue-ridge-dirt-skrrts
+    name: Blue Ridge Dirt Skrrts
+    org_url: https://www.dirtskrrts.com/
+    trust: 80
+    default_category: group-ride
+    # ADDED 2026-08-17 at Matt's request. Women's/non-binary MTB nonprofit in
+    # Asheville, and one of the few sources that actually publishes recurring
+    # GROUP RIDES — the thinnest category on the calendar now that BRBC is
+    # walled off and AoB's weeklies need an RWGPS key.
+    # VERIFIED 2026-08-17: Squarespace. /schedule renders the full list
+    # server-side with date, start and end time, and venue — confirmed events
+    # through December: monthly group rides on 12 Sep (Fonta Flora State
+    # Trail, Morganton), 10 Oct (Gateway Trails, Old Fort), 14 Nov (Pisgah
+    # Forest) and 12 Dec (Hot Springs), plus one-offs like Wash N' Whisky at
+    # Liberty Bikes and a Test + Tune with Cane Creek at Bent Creek.
+    # NOT using the `squarespace` adapter: ?format=json is disallowed by their
+    # robots.txt, exactly as with pisgah-area-sorba. The llm rung reads the
+    # rendered page instead, which is clean here.
+    # Registration runs through Eventbrite; if a real feed is ever wanted,
+    # eventbrite.com/o/blue-ridge-dirt-skrrts is the organiser page.
+    adapter: llm
+    url: https://www.dirtskrrts.com/schedule
+    hint: >
+      This is a mountain bike club's ride calendar. Each entry has a date, a
+      start and end time and a venue. Some entries are social or skills events
+      rather than rides (a tire clinic, a self-defense class, a bike wash) —
+      include them, they are club events, but do not call them races.
+    drop_if_titled: [membership, donate, volunteer application]
+
+  - id: velosports-ring-of-fire
+    name: Ring of Fire — Asheville Velodrome
+    org_url: https://www.velosportsracing.com/
+    trust: 80
+    default_category: race
+    optional: true
+    # ADDED 2026-08-17 at Matt's request. Track racing at the Carrier Park
+    # velodrome (the "Mellowdrome"), 500 Amboy Rd, run by VeloSports Racing
+    # with Cane Creek.
+    # IMPORTANT — VERIFIED 2026-08-17: the 2026 season is ALREADY OVER. It ran
+    # **6 May to 24 June 2026**, every Wednesday, 7-race points series, first
+    # race 5:30pm. So this source correctly returns nothing from July until the
+    # 2027 season is announced — a FAIL here in autumn is seasonal, like
+    # nica-nc, not broken.
+    # Also note entry is "MUST REGISTER ON BikeReg - NO ONSITE REGISTRATION",
+    # so once 2027 registration opens the series should arrive through the
+    # bikereg source anyway. This entry exists to catch the series listing
+    # earlier than that, and to name the venue properly. Marked optional so it
+    # can never fail the build.
+    # Wix site; no iCal and no JSON-LD, so the llm rung reads the page.
+    adapter: llm
+    url: https://www.velosportsracing.com/ring-of-fire
+    hint: >
+      This is a weekly track racing series at the Asheville Velodrome in
+      Carrier Park. The page may describe the series as a date RANGE with a
+      weekday (for example "May 6 - June 24, every Wednesday"). If so, emit one
+      event per weekday date in that range, not a single multi-week event.
+      Venue is Asheville Velodrome, Carrier Park, 500 Amboy Rd, Asheville NC.
+      If only a past season is listed, return an empty list.
+
   - id: blue-ridge-bicycle-club
     name: Blue Ridge Bicycle Club
     org_url: https://brbcnc.clubexpress.com/
@@ -262,9 +321,35 @@ sources:
     adapter: runsignup
     category_authority: true
     radius_miles: 100
-    require_keywords: [bike, bicycle, cycl, mtb, mountain, gravel, gran fondo,
-                       criterium, cyclocross, enduro, downhill, fondo, pedal]
     # RunSignup is mostly running races; without this filter it's 95% 5Ks.
+    # TIGHTENED 2026-08-17 (second pass) after Matt reported non-cycling events
+    # on the live site. Fixing the date format above took this source from 0 to
+    # 23 events — and essentially ALL 23 were running: Black Mountain Turkey
+    # Trot, Asheville Craft Beer Half Marathon, HalloWine 5k, Color Me Mutt 5K,
+    # Blue Ridge Relay, two sprint triathlons, Dollywood's Light The Way 5k.
+    # Two separate causes, both fixed here:
+    #  1. Keywords were matched against title AND description, and running-race
+    #     descriptions mention bikes constantly (bike valet, no bikes on
+    #     course, packet pickup at the bike shop). `require_in_title` below
+    #     forces the cycling word into the title itself.
+    #  2. The bare keyword `mountain` matched PLACE NAMES — "GTC Paris Mountain
+    #     Trails 16K", "GTC Paris Mountain Road Race" (a running club's road
+    #     race), "Black Mountain Turkey Trot". Removed; `mtb` and `bike` already
+    #     cover mountain biking, since "mountain bike" contains "bike".
+    # Accept that this also drops the occasional genuine gravel race whose
+    # title carries no cycling word (e.g. "Old Fort Fifty"). That is the right
+    # trade: BikeReg is the registration authority and carries those anyway,
+    # and a turkey trot on the shop's cycling calendar is far worse than a
+    # missing duplicate.
+    require_in_title: true
+    require_keywords: [bike, bicycle, cycl, mtb, gravel, gran fondo,
+                       criterium, cyclocross, enduro, downhill, fondo, pedal]
+    # Belt and braces for the ones that would still slip through on a cycling
+    # word in the title — a duathlon and a triathlon both have a bike leg, but
+    # nobody browsing the shop's calendar is looking for them.
+    drop_if_titled: [5k, 10k, half marathon, marathon, turkey trot, fun run,
+                     color run, walk/run, run/hike, relay, triathlon, duathlon,
+                     tri charlotte, jingle, hallowine]
     # VERIFIED 2026-08-17: answers anonymously, no key. zipcode+radius ARE
     # honoured server-side — radius=5 around 28801 returned 10 races all in
     # Asheville/Woodfin, radius=100 reached Statesville and Jonesborough TN —

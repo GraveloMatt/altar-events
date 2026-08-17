@@ -305,7 +305,17 @@ def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict
         if any(b in title_l for b in blocked):
             continue
         if required:
-            hay = f"{title_l} {e.get('description','')[:400].lower()}"
+            # By default a keyword may appear in the title OR the description,
+            # which is right for an org that writes vague titles. It is WRONG
+            # for a general-purpose registration platform: RunSignup is mostly
+            # running races, and running-race descriptions mention bikes
+            # constantly ("bike valet", "no bikes on course", "packet pickup at
+            # the bike shop"). On 2026-08-17 that put 23 events on the live
+            # calendar — turkey trots, half marathons, a triathlon, a 5K colour
+            # run — and not one genuine bike race. Sources that set
+            # `require_in_title` must carry the keyword in the title itself.
+            hay = (title_l if source.get("require_in_title")
+                   else f"{title_l} {e.get('description','')[:400].lower()}")
             if not any(k in hay for k in required):
                 continue
 
