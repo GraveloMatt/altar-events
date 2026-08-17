@@ -11,7 +11,7 @@ body:
     id: name
     attributes: {label: Event name, placeholder: Dirt Diggler Gravel Grinder}
     validations: {required: true}
-  - type: input
+          **Nothing here is published automatically.** Matt reviews every submission. Add the `approved` label and the next build picks it up; remove the label and it comes back down.
     id: date
     attributes: {label: Date, description: "YYYY-MM-DD", placeholder: "2026-09-05"}
     validations: {required: true}
@@ -21,6 +21,12 @@ body:
   - type: input
     id: time
     attributes: {label: Start time, description: "HH:MM, 24h. Blank = all day"}
+  - type: dropdown
+    id: repeat
+    attributes: {label: Repeats, description: "For a standing ride. The Date above is the first occurrence.", options: ["Just the once", "Weekly", "Biweekly", "Monthly"]}
+  - type: input
+    id: repeat_until
+    attributes: {label: Repeats until, description: "YYYY-MM-DD. Blank on a repeating event publishes the next 12."}
   - type: input
     id: location
     attributes: {label: Location}
