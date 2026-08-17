@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-17T19:22:33.960746+00:00",
- "count": 67,
+ "generated": "2026-08-17T19:39:13.863900+00:00",
+ "count": 70,
  "events": [
   {
    "title": "Trek Tuesday - Kitsuma Trail Day",
@@ -50,7 +50,7 @@
    "end": "2026-08-22T00:00:00",
    "all_day": false,
    "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Celebrate 20 years of Asheville on Bikes! Event includes Pop-Up Bike Park (2-7pm), Summer Cycle Check-In (3:30-4pm), ride start (4pm), and Post-Ride Festivities (5-7pm). Three route options: Cruiser Ride (5 miles, family-friendly greenway), Main Ride (7 miles, downtown), and Ride More (18 miles, gravel). Waiver required.",
+   "description": "Celebrate 20 years of Asheville on Bikes! Event includes Pop-Up Bike Park (2-7pm), Summer Cycle Check-In (3:30-4pm), ride start (4pm), and Post-Ride Festivities (5-7pm). Three route options: Cruiser Ride (5 mi, family-friendly greenway), Main Ride (7 mi, downtown), and Ride More (18 mi, gravel and mountain). Waiver required to ride.",
    "venue": "New Belgium Brewing",
    "city": "Asheville",
    "state": "NC",
@@ -63,7 +63,7 @@
    "bucket": "local",
    "category": "festival",
    "category_basis": "rule",
-   "discipline": "commuter",
+   "discipline": "gravel",
    "uid": "e6662d6251819fff"
   },
   {
@@ -101,7 +101,7 @@
    "end": "2026-08-22T13:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Join Dirt Skrrts for an hour at Underdog Martial Arts for an informative self defense class. Learn basic skills for protecting ourselves with other women. Space for 20, open to all women.",
+   "description": "Join Dirt Skrrts for an hour at Underdog Martial Arts for an informative self defense class! Learn basic skills for protecting ourselves with other women. Open to all women.",
    "venue": "Underdog Martial Arts",
    "city": "",
    "state": "",
@@ -278,7 +278,7 @@
    "end": "2026-09-05",
    "all_day": true,
    "url": "https://darccycling.com/calendar",
-   "description": "Featured Event",
+   "description": "Featured Event for DARC members",
    "venue": "315 Shoals Falls Rd",
    "city": "Hendersonville",
    "state": "NC",
@@ -626,7 +626,7 @@
    "end": "2026-09-27T00:00:00",
    "all_day": false,
    "url": "https://www.craftedbikeshow.com",
-   "description": "A Bicycle and Gear Show celebrating handmade craft and independent makers across the Southeast. Saturday September 26 from 10 a.m. to 5 p.m., Sunday September 27 from 10 a.m. to 4 p.m. Features group rides, tours, live music, tattoos, food, libations, and kid- and family-friendly skills course. Admission is free and open to the public.",
+   "description": "A Bicycle and Gear Show celebrating handmade craft and independent makers across the Southeast. Saturday 10am-5pm, Sunday 10am-4pm. Features group rides, tours, live music, tattoos, food, and libations. Kid- and family-friendly skills course. Free admission.",
    "venue": "Cane Creek Cycling Components",
    "city": "Fletcher",
    "state": "NC",
@@ -707,7 +707,7 @@
    "end": "2026-10-01",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Annual recurring event in October. Annual Asheville on Bikes community ride.",
+   "description": "Annual recurring event",
    "venue": "None",
    "city": "Asheville",
    "state": "NC",
@@ -719,9 +719,31 @@
    "trust": 80,
    "bucket": "local",
    "category": "group-ride",
-   "category_basis": "rule",
+   "category_basis": "default",
    "discipline": "other",
    "uid": "b7bf4ed64dac0469"
+  },
+  {
+   "title": "Tour de Fat",
+   "start": "2026-10-03",
+   "end": "2026-10-03",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "Annual recurring event",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "default",
+   "discipline": "other",
+   "uid": "e7d97791871f3304"
   },
   {
    "title": "Pisgah 111 / 555",
@@ -778,7 +800,7 @@
    "end": "2026-10-10T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in and around Old Fort. This location does not allow e-bikes. Sign up opens Thursday, October 1 at 7 pm. Open to all women.",
+   "description": "Riding in and around Old Fort. Please note that this location does not allow e-bikes. Sign up goes live Thursday, October 1 at 7 pm. Open to all women.",
    "venue": "Gateway Trails",
    "city": "Old Fort",
    "state": "NC",
@@ -793,6 +815,28 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b150ddbea280cbb5"
+  },
+  {
+   "title": "Get There Asheville",
+   "start": "2026-10-14T00:00:00",
+   "end": "2026-10-14T00:00:00",
+   "all_day": false,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "Annual recurring event. 6 to 8 PM",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "default",
+   "discipline": "other",
+   "uid": "2e8a7e6ac62f5ec3"
   },
   {
    "title": "Pisgah Rage Pre-season",
@@ -867,6 +911,28 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "f25b655f83100d84"
+  },
+  {
+   "title": "Pumpkin Pedaller",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "Annual recurring event",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "default",
+   "discipline": "other",
+   "uid": "60082930d5a19ae1"
   },
   {
    "title": "2026 BRAGco Cycling Event",
@@ -1034,9 +1100,9 @@
    "end": "2026-11-14T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Pisgah. This location does not allow e-bikes. Post-ride social is at Oskar Blues Brewery, 342 Mountain Industrial Dr, Brevard, NC 28712. Sign up opens Sunday, November 1 at 7 pm. Open to all women.",
+   "description": "Riding in Pisgah. Please note that this location does not allow e-bikes. Post-ride social is at Oskar Blues Brewery (342 Mountain Industrial Dr, Brevard, NC 28712). Sign up goes live Sunday, November 1 at 7 pm. Open to all women.",
    "venue": "Pisgah",
-   "city": "Pisgah Forest",
+   "city": "Brevard",
    "state": "NC",
    "cost": null,
    "extracted_by": "llm",
@@ -1136,7 +1202,7 @@
    "end": "2026-12-12T15:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Hot Springs. This location does not allow e-bikes. Post-ride social is at Big Pillow Brewing, 25-27 N Andrews Avenue, Hot Springs, NC 28743-9231. Sign up opens Tuesday, December 1 at 7 pm. Open to all women.",
+   "description": "Riding in Hot Springs. Please note that this location does not allow e-bikes. Post-ride social is at Big Pillow Brewing (25-27 N Andrews Avenue, Hot Springs, NC 28743-9231). Sign up goes live Tuesday, December 1 at 7 pm. Open to all women.",
    "venue": "Hot Springs",
    "city": "Hot Springs",
    "state": "NC",
@@ -1253,7 +1319,7 @@
    "end": "2027-04-25T00:00:00",
    "all_day": false,
    "url": "https://ashevilleonbikes.com/events",
-   "description": "Annual recurring event. 12 pm \u2013 5 pm. Includes Bike Valet",
+   "description": "Annual recurring event. Includes Bike Valet. 12 pm \u2013 5 pm",
    "venue": "",
    "city": "Asheville",
    "state": "NC",
@@ -1486,7 +1552,7 @@
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
    "description": "Annual recurring event",
-   "venue": "",
+   "venue": "New Belgium",
    "city": "Asheville",
    "state": "NC",
    "cost": "Free",
@@ -1524,35 +1590,6 @@
    "uid": "0c2b50b0e423e7a5"
   },
   {
-   "title": "2027 Gran Fondo Asheville, p/b Applewood Manor Foundation, a SENA Gran Fondo National Series event",
-   "start": "2027-07-18T04:00:00+00:00",
-   "end": "2027-07-18T04:00:00+00:00",
-   "all_day": false,
-   "url": "http://www.BikeReg.com/asheville-gfns",
-   "description": "THIS REGISTRATION IS FOR 2027 THESE DETAILS ARE FOR 2026 EVENT DETAILS HERE SUBJECT TO CHANGE For most up to date details, visit: https://www.granfondonationalseries.com/gran-fondo-asheville Presented By The Applewood Manor Foundation Asheville, North Carolina DATE: Sunday, July 19, 2026 Click here to add to your google calendar Event Start Finish: Asheville Yards - 75 Coxe Ave, Asheville, NC 28801 3 Distances to Choose From: Maps 4 Timed Sections in the Gran Route \u2013 Best Combined Time Wins Complete event details available at https://www.granfondonationalseries.com/gran-fondo-asheville Event Open to All from Beginner to Elite Discover alluring Asheville, from the unique perspective of your handlebars. Experience Asheville, North Carolina, Lonely Planet\u2019s top U.S. travel destination . Your ",
-   "venue": "75 Coxe Ave",
-   "city": "Asheville",
-   "state": "NC",
-   "lat": 35.5920832,
-   "lng": -82.5553572,
-   "image": "/BR/VirtualImages/EventLogos/cr-ad14f57b-a237-475e-8c44-ff9517943a62.jpg",
-   "discipline_hint": "Gran Fondo",
-   "tags": [
-    "Gran Fondo",
-    "Road Race"
-   ],
-   "source": "bikereg",
-   "source_name": "BikeReg",
-   "source_url": "https://www.bikereg.com/",
-   "trust": 60,
-   "bucket": "local",
-   "category": "race",
-   "category_basis": "rule",
-   "discipline": "road",
-   "uid": "19cc3e2cb7f4ed33",
-   "distance_mi": 0.3
-  },
-  {
    "title": "Gran Fondo AVL",
    "start": "2027-07-19",
    "end": "2027-07-19",
@@ -1562,7 +1599,7 @@
    "venue": "",
    "city": "Asheville",
    "state": "NC",
-   "cost": "Free",
+   "cost": null,
    "extracted_by": "llm",
    "source": "asheville-on-bikes",
    "source_name": "Asheville on Bikes",
@@ -1573,6 +1610,34 @@
    "category_basis": "rule",
    "discipline": "road",
    "uid": "ff576b5052181618"
+  },
+  {
+   "title": "Gran Fondo Asheville",
+   "start": "2027-07-19",
+   "end": "2027-07-19",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events/gran-fondo-asheville",
+   "description": "Annual cycling event. Part of Gran Fondo National Series with multiple route options (100-, 60-, and 30-mile courses). Timed-segment format allows riders of all abilities to regroup and ride together.",
+   "venue": "Asheville Yards Amphitheater",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Registration required",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "road",
+   "uid": "be48ced4f38fd61e",
+   "lat": 35.5920832,
+   "lng": -82.5553572,
+   "image": "/BR/VirtualImages/EventLogos/cr-ad14f57b-a237-475e-8c44-ff9517943a62.jpg",
+   "also_listed_by": [
+    "BikeReg"
+   ]
   },
   {
    "title": "HARDford 50 and HARDERford 75",
@@ -1698,8 +1763,7 @@
    "category": "watch",
    "category_basis": "default",
    "discipline": "mtb",
-   "uid": "5f0c4cdeb8850d3c",
-   "from_cache": true
+   "uid": "5f0c4cdeb8850d3c"
   },
   {
    "title": "Grand Raid BCVS",
@@ -1707,9 +1771,9 @@
    "end": "2026-08-22",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class (HC)",
    "venue": "",
-   "city": "Verbier\u2013Grimentz",
+   "city": "Verbier \u2013 Grimentz",
    "state": "",
    "cost": null,
    "extracted_by": "llm",
@@ -1721,8 +1785,7 @@
    "category": "watch",
    "category_basis": "default",
    "discipline": "other",
-   "uid": "eff04c1124ba365c",
-   "from_cache": true
+   "uid": "eff04c1124ba365c"
   },
   {
    "title": "Crankworx - Mont-Saint-Anne Canada Cup - DHI/XCC/XCO",
@@ -1730,7 +1793,7 @@
    "end": "2026-09-07",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class (HC)",
    "venue": "",
    "city": "Mont-Sainte-Anne",
    "state": "",
@@ -1744,8 +1807,7 @@
    "category": "watch",
    "category_basis": "default",
    "discipline": "other",
-   "uid": "ff826ef0397ce294",
-   "from_cache": true
+   "uid": "ff826ef0397ce294"
   },
   {
    "title": "Skoda Swiss Bike Cup - XCO",
@@ -1753,7 +1815,7 @@
    "end": "2026-09-06",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class (HC)",
    "venue": "",
    "city": "Huttwil",
    "state": "",
@@ -1767,8 +1829,7 @@
    "category": "watch",
    "category_basis": "default",
    "discipline": "other",
-   "uid": "a136015d151cd5d3",
-   "from_cache": true
+   "uid": "a136015d151cd5d3"
   },
   {
    "title": "UCI Mountain Bike Continental Series - iXS European Downhill Cup Verbier",
@@ -1776,7 +1837,7 @@
    "end": "2026-09-13",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class (HC)",
    "venue": "",
    "city": "Verbier",
    "state": "",
@@ -1790,8 +1851,7 @@
    "category": "race",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "975aee90f5008d12",
-   "from_cache": true
+   "uid": "975aee90f5008d12"
   },
   {
    "title": "Skoda Swiss Bike Cup Gr\u00e4nichen",
@@ -1799,7 +1859,7 @@
    "end": "2026-09-12",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class (HC)",
    "venue": "",
    "city": "Gr\u00e4nichen",
    "state": "",
@@ -1813,8 +1873,7 @@
    "category": "watch",
    "category_basis": "default",
    "discipline": "other",
-   "uid": "4bfbc331956a4a28",
-   "from_cache": true
+   "uid": "4bfbc331956a4a28"
   },
   {
    "title": "La Forestiere - XCM",
@@ -1822,7 +1881,7 @@
    "end": "2026-09-19",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class (HC)",
    "venue": "",
    "city": "La Pesse",
    "state": "",
@@ -1836,8 +1895,7 @@
    "category": "watch",
    "category_basis": "default",
    "discipline": "other",
-   "uid": "d5f3ed6b7af30730",
-   "from_cache": true
+   "uid": "d5f3ed6b7af30730"
   }
  ],
  "sources": [
