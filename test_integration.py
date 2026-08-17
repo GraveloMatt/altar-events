@@ -5,6 +5,7 @@ parsing code is exercised without touching the network.
     python test_integration.py
 """
 import json
+import re
 from datetime import datetime, timedelta
 from types import SimpleNamespace
 
@@ -149,6 +150,27 @@ patch({"races": [{"race": {
 }}]})
 check("coerces string coords to float when present",
       adapters.runsignup({}, {"zip": "28801"}, 100)[0]["lat"] == 35.6293)
+
+# Regression, 2026-08-17. Live build run #2 reported "runsignup: returned 0
+# events". Cause: dates were sent as MM/DD/YYYY and RunSignup answers
+# {"error": "Invalid parameters", ... "param_datatype_mismatch"} — "expected
+# Date datatype, received string" — which the adapter saw as an empty list, so
+# a broken call looked like a quiet season. It wants ISO. BikeReg wants the
+# opposite. Pin both so nobody "consistently" formats them the same way.
+sent = {}
+adapters.http = lambda url, *a, **k: (sent.update(k.get("params") or {}),
+                                      FakeResponse({"races": []}))[1]
+adapters.runsignup({}, {"zip": "28801"}, 100)
+check("runsignup sends ISO YYYY-MM-DD dates",
+      re.fullmatch(r"\d{4}-\d{2}-\d{2}", sent.get("start_date", "")) is not None,
+      sent.get("start_date"))
+check("runsignup end_date is ISO too",
+      re.fullmatch(r"\d{4}-\d{2}-\d{2}", sent.get("end_date", "")) is not None,
+      sent.get("end_date"))
+check("bikereg still sends MM/DD/YYYY (the opposite)",
+      re.fullmatch(r"\d{2}/\d{2}/\d{4}",
+                   adapters._bikereg_filters({"lat": 1, "lng": 2}, 100)[0]["startDate"])
+      is not None)
 
 # ----------------------------------------------------------------- bikereg
 print("\nbikereg — filter ladder and paging")

@@ -270,8 +270,14 @@ def runsignup(source: dict, home: dict, radius: int) -> list[dict]:
     and let normalize.in_region() accept it. The source's own radius_miles
     (100 in sources.yml) is what gets enforced, which is the intent.
     """
-    today = datetime.now().strftime("%m/%d/%Y")
-    end = (datetime.now() + timedelta(days=400)).strftime("%m/%d/%Y")
+    # ISO, NOT MM/DD/YYYY. Confirmed live 2026-08-17: sending MM/DD/YYYY gets
+    # {"error": "Invalid parameters", ... "param_datatype_mismatch"} — "expected
+    # Date datatype, received string" — and the adapter then reports "returned 0
+    # events" rather than an error, so it looks like a quiet season instead of a
+    # broken call. That is exactly what run #2 of the live build showed.
+    # BikeReg wants MM/DD/YYYY and RunSignup wants ISO; do not unify them.
+    today = datetime.now().strftime("%Y-%m-%d")
+    end = (datetime.now() + timedelta(days=400)).strftime("%Y-%m-%d")
     r = http("https://runsignup.com/rest/races", params={
         "format": "json",
         "zipcode": home["zip"],

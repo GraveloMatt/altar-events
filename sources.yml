@@ -166,9 +166,19 @@ sources:
     trust: 80
     default_category: youth
     adapter: jsonld
-    url: https://northcarolinamtb.org/schedule/
+    url: https://northcarolinamtb.org/event-weekends
     # VERIFIED 2026-08-17: domain confirmed correct against NICA's own league
-    # directory (nationalmtb.org/nica-leagues). Feed shape still unverified.
+    # directory (nationalmtb.org/nica-leagues).
+    # CORRECTED 2026-08-17 after live build run #2: /schedule/ does NOT exist —
+    # it returned "404 Client Error: Not Found" in the build log. The real page
+    # is /event-weekends. Confirmed by fetching it: it lists the Season 10
+    # (2026) calendar — Sue May Lewis Singletrack Celebration (Feb 28, Browns
+    # Creek), Y2K Panic (Mar 14, Tryon), Mayodan Mosh (Mar 28), Dark Disco
+    # (Apr 11), Hair Metal Pedal (Apr 25), Decade of Dirt (May 9). All six are
+    # in the past as of August, and NO 2027 dates are posted yet — which is the
+    # documented seasonal pattern below, not a fault. There is no JSON-LD on
+    # the page, so the jsonld rung will find nothing and the llm fallback is
+    # what will actually read it once 2027 dates go up.
     # IMPORTANT: NC is a SPRING league — racing runs late Jan/early Feb to
     # June, athlete registration opens Nov 1. So from roughly July to November
     # this source legitimately returns nothing, and a probe.py FAIL in that
@@ -176,7 +186,7 @@ sources:
     # ic-imagine below, whose calendars mirror the league schedule.
     fallback:
       - adapter: llm
-        url: https://northcarolinamtb.org/schedule/
+        url: https://northcarolinamtb.org/event-weekends
 
   # Pisgah Rage and IC Imagine are NICA *teams*, not race promoters. Their
   # public calendars are the NICA NC league schedule plus team practices.
@@ -265,6 +275,15 @@ sources:
     # event fell through to normalize's REGION_TOWNS name match and anything
     # in a town not on that list was silently dropped. Fixed by trusting the
     # server-side radius via a `pre_geofenced` flag; see adapters.runsignup.
+    # CORRECTED 2026-08-17 after live build run #2, which reported "returned 0
+    # events": the adapter was sending start_date/end_date as MM/DD/YYYY, and
+    # RunSignup rejects that with {"error":"Invalid parameters", ...
+    # "param_datatype_mismatch"} — "expected Date datatype, received string".
+    # It wants ISO YYYY-MM-DD. Worse, the rejection surfaced as an empty result
+    # set rather than an error, so a broken call read as a quiet season. Note
+    # BikeReg wants the OPPOSITE format (MM/DD/YYYY) — do not unify them.
+    # Even fixed, expect very little here: of the ~15 races inside 100 miles,
+    # only a triathlon and a charity BikeWalk match require_keywords.
 
   # ------------------------------------------------------------------- world
   # Matt asked for UCI. Nobody in Asheville plans a weekend around a World Cup
