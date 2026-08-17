@@ -171,9 +171,32 @@ sources:
     org_url: https://www.pisgahareasorba.org/
     trust: 80
     default_category: trail-work
-    adapter: squarespace
+    adapter: volunteerhub
+    portal: https://pas.volunteerhub.com
     url: https://www.pisgahareasorba.org/events-volunteer
     optional: true
+    # RESOLVED 2026-08-17 (second pass). Matt supplied the events page and the
+    # browser exposed what a plain fetch could not: the page links out to
+    # **pas.volunteerhub.com** (the earlier guess, pisgahareasorba.volunteerhub
+    # .com, was wrong) plus ~21 signupgenius.com links.
+    # Re-checked the Squarespace page properly this time by reading all 60
+    # <time> elements rather than a truncated fetch: the latest date anywhere
+    # on it is **2026-02-21**. The "stale" finding below was right, and the
+    # `squarespace`/`llm` rungs correctly returned 0 for weeks.
+    # The VolunteerHub portal is the live system and needs NO sign-in. Its JSON
+    # answered anonymously with 8 upcoming events: Women in Trail Leadership
+    # Panel (18 Aug), Brevard Womens Work Day (24 Aug), Catalyst Summer Jam
+    # Lunch Crew (5 Sep), Dirt Skrrts Bent Creek Work Day (10 Sep), Women's
+    # Bikepacking Overnight w/ Earth Mountain (12 Sep), Bent Creek Dig-In
+    # (25-26 Sep), Brevard Dig Day w/ CMC (9 Oct).
+    # See adapters.volunteerhub for the caveat: it is an *internalapi* route,
+    # undocumented and liable to change, which is why this stays `optional`
+    # with the old page kept below as a fallback.
+    # WORTH ASKING PAS DIRECTLY: they clearly want volunteers, and a shop-to-
+    # club email asking whether they publish a feed (or would rather we link
+    # than read the portal) is cheap and more durable than any endpoint.
+    # NOTE some events are signups on signupgenius.com instead; those are not
+    # in the portal JSON and are not covered here.
     # VERIFIED 2026-08-17: the page is real and reachable, but it is STALE and
     # it is not the system of record. Findings:
     #  1. The furthest-future event listed anywhere on /events-volunteer is

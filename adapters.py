@@ -473,6 +473,73 @@ def _within(event: dict, home: dict, radius: int) -> bool:
     return haversine(home["lat"], home["lng"], event["lat"], event["lng"]) <= radius
 
 
+def volunteerhub(source: dict) -> list[dict]:
+    """
+    VolunteerHub volunteer portals — where trail orgs actually keep dig days.
+
+    VERIFIED 2026-08-17 against pas.volunteerhub.com. Pisgah Area SORBA's
+    Squarespace events page is abandoned (last entry 21 Feb 2026) and this is
+    their live system of record. It needs NO sign-in: the portal renders a
+    public list, and the JSON behind it answered anonymously with eight real
+    upcoming events including "Dirt Skrrts Bent Creek Work Day" and a
+    "Women's Bikepacking Overnight".
+
+    CAVEAT, read before relying on this: the endpoint is
+    `/internalapi/volunteerview/view/index`, and the vendor named it
+    *internalapi* for a reason — it is the portal's own SPA backend, not a
+    documented public API, so VolunteerHub may change or remove it without
+    notice. That is why this adapter is used on an `optional` source and falls
+    back rather than raising. It reads only what the public page already shows
+    and sends no credentials. If a source ever needs auth to see the list,
+    stop — that is the BRBC situation and we do not go there.
+
+    Shape: {days: [{date, events: [{name, sTime, eTime, location,
+    shortDescription, longDescription, id, ...}]}], nextBlockUrl}
+    Times are naive local ISO ("2026-08-18T17:30:00").
+    """
+    base = source["portal"].rstrip("/")
+    out, url, seen = [], f"{base}/internalapi/volunteerview/view/index", set()
+
+    for _ in range(VOLUNTEERHUB_MAX_BLOCKS):
+        try:
+            r = http(url, headers={"Accept": "application/json"})
+            payload = r.json()
+        except (SourceError, ValueError, AttributeError) as exc:
+            if out:
+                break               # keep what we already have
+            raise SourceError(f"volunteerhub {base}: {exc}")
+
+        for day in payload.get("days") or []:
+            for e in day.get("events") or []:
+                eid = e.get("id") or e.get("guid")
+                if eid in seen:
+                    continue
+                seen.add(eid)
+                desc = _clean(text_of(e.get("longDescription")
+                                      or e.get("shortDescription") or ""))
+                out.append({
+                    "title": _clean(e.get("name", "")),
+                    "start": iso(e.get("sTime")),
+                    "end": iso(e.get("eTime")),
+                    "all_day": False,
+                    "url": source.get("org_url", base),
+                    "description": desc[:800],
+                    "venue": _clean(e.get("location") or ""),
+                    "city": _city_from(e.get("location") or ""),
+                    "state": _state_from(e.get("location") or ""),
+                })
+
+        nxt = payload.get("nextBlockUrl")
+        if not nxt:
+            break
+        url = nxt if nxt.startswith("http") else f"{base}{nxt}"
+
+    return [e for e in out if e["title"] and e["start"]]
+
+
+VOLUNTEERHUB_MAX_BLOCKS = 6     # hard stop; the portal pages by date block
+
+
 def ridewithgps(source: dict) -> list[dict]:
     """
     Ride with GPS club events — where most clubs actually keep group rides.
@@ -724,8 +791,22 @@ def _state_from(addr: str) -> str:
     return m.group(1) if m else ""
 
 
+_COUNTRY_TAIL = {"usa", "us", "u.s.", "u.s.a.", "united states",
+                 "united states of america"}
+
+
 def _city_from(addr: str) -> str:
-    parts = [p.strip() for p in (addr or "").split(",")]
+    """
+    Second-to-last comma segment, after dropping a trailing country.
+
+    VolunteerHub writes Google-style addresses that end in the country —
+    "31 Schenck Pkwy, Asheville, NC 28803, USA" — and without the strip the
+    naive parts[-2] returns "NC 28803" as the city, which then fails the
+    REGION_TOWNS geofence for any event with no coordinates.
+    """
+    parts = [p.strip() for p in (addr or "").split(",") if p.strip()]
+    if parts and parts[-1].lower() in _COUNTRY_TAIL:
+        parts = parts[:-1]
     return parts[-2] if len(parts) >= 2 else ""
 
 
@@ -737,6 +818,7 @@ REGISTRY = {
     "runsignup": runsignup,
     "bikereg": bikereg,
     "ridewithgps": ridewithgps,
+    "volunteerhub": volunteerhub,
     "wix": wix,
     "jsonld": jsonld,
     "rss": rss,

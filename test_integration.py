@@ -172,6 +172,49 @@ check("bikereg still sends MM/DD/YYYY (the opposite)",
                    adapters._bikereg_filters({"lat": 1, "lng": 2}, 100)[0]["startDate"])
       is not None)
 
+# ------------------------------------------------------------ volunteerhub
+print("\nvolunteerhub — Pisgah Area SORBA's live portal")
+# Captured verbatim from pas.volunteerhub.com's own JSON on 2026-08-17.
+patch({"days": [{"date": "2026-08-18T00:00:00", "events": [{
+    "id": 26323094,
+    "guid": "0e74bfd9-2cb9-4b8c-81bd-801f9572d4c8",
+    "name": "Women in Trail Leadership Panel - FREE!",
+    "sTime": "2026-08-18T17:30:00",
+    "eTime": "2026-08-18T19:30:00",
+    "location": "31 Schenck Pkwy, Asheville, NC 28803, USA",
+    "shortDescription": "<p>Women are shaping the future of our trails.&nbsp;</p>",
+    "longDescription": "<p>Join us at REI Biltmore Park.</p>",
+}]}], "nextBlockUrl": None})
+got = adapters.volunteerhub({"portal": "https://pas.volunteerhub.com",
+                             "org_url": "https://www.pisgahareasorba.org/"})
+check("reads the day/event nesting", len(got) == 1, len(got))
+check("title", got[0]["title"] == "Women in Trail Leadership Panel - FREE!")
+check("naive local ISO start kept", got[0]["start"].startswith("2026-08-18"))
+check("end time read", got[0]["end"].startswith("2026-08-18"))
+check("html stripped from description",
+      "<p>" not in got[0]["description"] and "&nbsp;" not in got[0]["description"],
+      got[0]["description"])
+check("city parsed from the location string", got[0]["city"] == "Asheville",
+      got[0]["city"])
+check("state parsed", got[0]["state"] == "NC", got[0]["state"])
+
+# A portal that hands back the same block forever must not spin to the cap.
+calls = {"n": 0}
+
+
+def fake_loop(url, *a, **k):
+    calls["n"] += 1
+    return FakeResponse({"days": [{"date": "2026-08-18T00:00:00", "events": [
+        {"id": 1, "name": "Bent Creek Dig-In", "sTime": "2026-09-25T09:00:00"}]}],
+        "nextBlockUrl": "/internalapi/volunteerview/view/index?block=2"})
+
+
+adapters.http = fake_loop
+got = adapters.volunteerhub({"portal": "https://pas.volunteerhub.com"})
+check("paging stops at the block cap", calls["n"] <= adapters.VOLUNTEERHUB_MAX_BLOCKS,
+      calls["n"])
+check("repeated event not duplicated", len(got) == 1, len(got))
+
 # ----------------------------------------------------------------- bikereg
 print("\nbikereg — filter ladder and paging")
 BR_HOME = {"lat": 35.5951, "lng": -82.5515, "zip": "28801"}
