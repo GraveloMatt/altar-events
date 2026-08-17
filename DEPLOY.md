@@ -1,201 +1,134 @@
-# Putting the calendar live
+# Running the calendar
 
-Written for Matt. **No terminal, no installs.** Everything here happens in a
-browser, on github.com plus one stop at your domain registrar.
+The calendar is live at **https://calendar.altar.bike**. It rebuilds itself
+every morning at 5:17am, before the shop opens. Nobody has to do anything to
+keep it running.
 
-Total time: about 15 minutes, plus waiting for DNS.
+This is the page to come back to when you want to change something or when
+something looks wrong. Written for clicking, not for a terminal.
 
-You'll need: the `altar-events` folder unzipped on your computer, and your
-Anthropic API key on the clipboard when you get to step 3.
-
----
-
-## Before you start
-
-Unzip `altar-events.zip`. You should end up with a folder called
-`altar-events` containing `sources.yml`, `build.py`, a `site` folder, and so
-on. **Open that folder** — the files inside it are what you'll be dragging.
-Don't drag the folder itself.
-
-One thing to know up front: **the repository has to be public.** GitHub Pages
-won't serve a website from a private repository unless you're on a paid plan.
-There's nothing secret in here — it's a list of public bike events — and your
-API key is stored separately, not in the files. But it's a hard stop at the end
-if you set it to private now, so set it to public in step 2.
+*(Deployment is done. If you're looking for the original setup steps, they're
+in the repo's git history — this file replaced them on 2026-08-17.)*
 
 ---
 
-## 1. Make the repository
+## The links
 
-1. Go to **https://github.com/new**
-2. **Repository name:** `altar-events`
-3. Leave the description blank (or write "WNC cycling calendar").
-4. Select **Public**. ← this is the one that matters
-5. **Do not** tick "Add a README file," and leave the .gitignore and license
-   dropdowns on None. The folder already has these.
-6. Click **Create repository**.
-
-You'll land on a mostly empty page with some setup instructions. Ignore all of
-it.
-
----
-
-## 2. Upload the files
-
-1. On that page, find the link **"uploading an existing file"** — it's in the
-   grey text under the setup instructions. Click it.
-2. Open your `altar-events` folder in a File Explorer window next to the
-   browser.
-3. Select **everything inside** the folder — click one file, then Ctrl+A — and
-   drag it all onto the browser window.
-
-   Make sure you're dragging the *contents*, not the folder. When it's right,
-   GitHub lists individual files like `build.py`, `sources.yml`,
-   `requirements.txt`.
-
-4. Windows hides folders whose names start with a dot, and **two of them
-   matter**: `.github` (which contains the daily build job) and `.gitignore`.
-   In File Explorer, go to the **View** tab and tick **Hidden items**, then
-   drag those two in as well.
-
-   To check it worked: after uploading, the file list should include a
-   `.github` folder. If it doesn't, the calendar will never build itself.
-
-5. Scroll to the bottom, leave the commit message as-is, and click
-   **Commit changes**.
-
----
-
-## 3. Add your API key
-
-This is what lets the calendar read the event pages that don't publish a proper
-feed — Asheville on Bikes, DARC, and a few others.
-
-1. In your repository, click **Settings** (the tab along the top, far right).
-2. In the left sidebar: **Secrets and variables** -> **Actions**.
-3. Click the green **New repository secret** button.
-4. **Name:** `ANTHROPIC_API_KEY` — exactly that, all caps with underscores.
-5. **Secret:** paste your key.
-6. Click **Add secret**.
-
-Once saved, GitHub will never show you the key again, and it does not appear in
-the public files. That's the point — it's why the repository can be public.
-
----
-
-## 4. Turn on the website
-
-1. Still in **Settings**, click **Pages** in the left sidebar.
-2. Under **Build and deployment** -> **Source**, change the dropdown from
-   "Deploy from a branch" to **GitHub Actions**.
-3. A **Custom domain** box appears further down. Type `calendar.altar.bike`
-   and click **Save**.
-
-GitHub will show a warning that the domain isn't verified yet. That's expected
-— it'll clear once you do step 6.
-
----
-
-## 5. Run the first build
-
-1. Click the **Actions** tab at the top of the repository.
-2. In the left sidebar, click **Build events calendar**.
-3. On the right, click the **Run workflow** dropdown, then the green
-   **Run workflow** button.
-4. Wait a minute, then refresh. You'll see a run appear. Click into it.
-
-**What to expect:** a green tick, and a summary at the top of the page reading
-something like *"31 events published"* with a line for each source marked
-`ok`, `stale` or `down`.
-
-Some sources **will** say `down`, and that's fine — the notes below explain
-which ones are known to be empty or blocked right now. What matters is that the
-run itself finishes green and the number of events isn't zero.
-
-From here it rebuilds itself every morning at 5:17am, before the shop opens.
-
----
-
-## 6. Point the domain (the only non-GitHub step)
-
-At whoever you registered `altar.bike` with, add one DNS record:
-
-| field | value |
+| what | where |
 |---|---|
-| Type | `CNAME` |
-| Name / Host | `calendar` |
-| Value / Points to | `GraveloMatt.github.io` |
-| TTL | leave default |
+| The calendar | https://calendar.altar.bike |
+| Subscribe — everything | https://calendar.altar.bike/events.ics |
+| Subscribe — races only | https://calendar.altar.bike/races.ics |
+| Subscribe — dig days only | https://calendar.altar.bike/trail-work.ics |
+| Submit an event | https://calendar.altar.bike/submit.html |
+| The code | https://github.com/GraveloMatt/altar-events |
 
-Some registrars want the name as `calendar.altar.bike` instead of just
-`calendar` — if it complains, try the other form.
-
-DNS usually takes 10-30 minutes, occasionally a few hours. When it's live,
-`calendar.altar.bike` will load the calendar.
-
-**Then go back one last time:** Settings -> Pages, and tick **Enforce HTTPS**.
-This checkbox is greyed out until the domain resolves, which is why it's last.
+The `.ics` links work in Google Calendar, Apple Calendar and Outlook — "add
+calendar by URL." That's what Walsh wants for the altar.bike embed.
 
 ---
 
-## Done. What you should see
+## Adding an event by hand
 
-- `calendar.altar.bike` — the calendar page
-- `calendar.altar.bike/events.ics` — the subscribe link, works in Google
-  Calendar, Apple Calendar and Outlook
-- `calendar.altar.bike/races.ics` and `/trail-work.ics` — filtered versions
-- `calendar.altar.bike/submit.html` — the "add your event" form
+Use this for Altar's own rides, demo days, clinics and film nights, for
+anything a promoter texts you before it's online, and to correct a scraped
+event that came through wrong.
 
-Hand the `.ics` link to Walsh for the altar.bike embed.
+1. Go to **https://github.com/GraveloMatt/altar-events/blob/main/data/manual.yml**
+2. Click the **pencil icon** (top right of the file).
+3. Add your event following the commented example at the bottom of the file.
+   Only `title` and `start` are required.
+4. Click **Commit changes** twice.
 
----
+That's it — saving triggers a rebuild, and the calendar updates in about three
+minutes.
 
-## Reading the first build honestly
+Hand-entered events beat everything. If a scraped event has the wrong time or a
+mangled title, add a correct one here with the **same title and date** and yours
+wins.
 
-**Expect it to look thinner than you're hoping.** Two of the biggest sources
-are not contributing, for reasons that are understood and written down:
-
-- **Blue Ridge Bicycle Club** is behind a members-only wall. They sell advance
-  ride notice as a paid member benefit, so their ride calendar isn't public.
-  We're not going to scrape past that. Their public events (WNC Flyer, Tour de
-  Transylvania) still show up via BikeReg and RunSignup.
-- **Pisgah Area SORBA's** events page hasn't been updated since February — they
-  run their actual signups through a system called VolunteerHub. **If you can
-  get me that VolunteerHub link** (click any "click Here!" button on their
-  events page and read the address bar) it becomes a proper feed and their
-  trail days start appearing automatically.
-
-Also seasonal, not broken: the three youth/NICA sources are empty from July
-through November because North Carolina is a *spring* league. They'll fill in
-around November 1.
-
-**The one thing that would most change how full it looks** is a Ride with GPS
-API key — it's free and self-serve at `ridewithgps.com/api/v1/doc`. That single
-key unlocks Asheville on Bikes' Thursday rides and is the realistic way to
-reach BRBC's 600+ club routes. Same steps as step 3 above, but name the secret
-`RWGPS_API_KEY`.
+Watch the indentation — YAML cares. If the build goes red after an edit, that's
+almost always why.
 
 ---
 
-## If something goes wrong
+## Checking on it
 
-**The Actions tab is empty / no workflow appears.** The `.github` folder didn't
-upload. Redo step 2 part 4 — turn on Hidden items in File Explorer and drag it
-in.
+**https://github.com/GraveloMatt/altar-events/actions**
 
-**The run is red.** Click into it and open the failed step. If it mentions
-`ANTHROPIC_API_KEY`, the secret name is misspelled — it must be exactly
-`ANTHROPIC_API_KEY`.
+Each morning's run appears here. Click the top one and you get a summary like:
 
-**Pages says "must be public to deploy."** The repository got created as
-private. Settings -> scroll to the bottom -> Danger Zone -> Change visibility.
+> **97 events published**
+> - asheville-on-bikes — ok (21 events via llm)
+> - bikereg — ok (31 events via bikereg)
+> - blue-ridge-bicycle-club — down — …
 
-**The site 404s after DNS resolves.** Give it another 20 minutes, then check
-Settings -> Pages still shows `calendar.altar.bike` in the custom domain box —
-it occasionally clears itself on the first deploy. Re-enter and save.
+A green tick means it worked. **Some sources always say `down`,** and that's
+expected — see the next section. What matters is that the run is green and the
+event count is in the right ballpark.
 
-**An event is wrong, or one you know about is missing.** Don't fight the
-scraper. Open `data/manual.yml` in GitHub (click the file, then the pencil
-icon), add the event by hand following the commented example at the bottom, and
-commit. Hand-entered events outrank everything and a matching title+date will
-overwrite a bad scrape. Saving triggers a rebuild on its own.
+---
+
+## Sources that are *supposed* to look broken
+
+Don't chase these. They're understood and written down.
+
+**Blue Ridge Bicycle Club — permanently blocked.** They sell advance ride notice
+as a paid member benefit, so their calendar is behind a member wall. We're not
+going to scrape past that. Their public events (WNC Flyer, Tour de
+Transylvania) still arrive via BikeReg and RunSignup.
+
+**Pisgah Area SORBA — stale page.** Their events page hasn't been updated since
+February; they run signups through VolunteerHub. **If you can get me that
+VolunteerHub link** it becomes a proper feed and their dig days come back. Open
+their events page, click any "click Here!" button, and read the address bar.
+
+**The three youth/NICA sources — seasonal.** North Carolina is a *spring*
+league: racing runs late January to June, and registration opens November 1.
+They're legitimately empty from July to November.
+
+**Asheville on Bikes' Thursday rides — missing.** Those live on Ride with GPS,
+which needs a free API key. See below; it's the single biggest improvement
+available.
+
+---
+
+## The one upgrade worth doing
+
+A **Ride with GPS API key** unlocks Asheville on Bikes' weekly rides and is the
+realistic route to Blue Ridge Bicycle Club's 600+ club routes. Group rides are
+the thinnest part of the calendar right now, and this fixes most of that.
+
+It's free and self-serve at **ridewithgps.com/api/v1/doc**. Once you have it:
+
+1. https://github.com/GraveloMatt/altar-events/settings/secrets/actions
+2. **New repository secret**
+3. Name: `RWGPS_API_KEY` — paste the key as the value
+4. Actions tab → **Build events calendar** → **Run workflow**
+
+---
+
+## When something's wrong
+
+**An event is wrong or missing.** Don't fight the scraper — add it to
+`data/manual.yml` (see above). That's what it's for.
+
+**The morning run is red.** Click into it and read the failed step.
+- If it mentions YAML or a parse error, it's an edit to `manual.yml` or
+  `sources.yml` — check the indentation.
+- If `build` is green but `deploy` failed, that's usually GitHub, not us.
+  Check **githubstatus.com**, then use **Re-run jobs → Re-run failed jobs**.
+  This happened on launch day; it cleared on its own.
+
+**The site won't load.** Check
+https://github.com/GraveloMatt/altar-events/settings/pages still shows
+`calendar.altar.bike` under Custom domain with a green "DNS check successful".
+The Squarespace record it depends on is: type `CNAME`, host `calendar`, data
+`gravelomatt.github.io`.
+
+**Something non-cycling is on the calendar.** It got through a keyword filter.
+Tell me which event and I'll tighten it — this happened on day one with a craft
+exhibition that matched the word "trail".
+
+**You want it rebuilt right now.** Actions tab → **Build events calendar** →
+**Run workflow** → green **Run workflow** button. Takes about three minutes.

@@ -6,7 +6,12 @@ session; see "Environment reality" below and **verify, do not trust**.
 
 Project: aggregate every cycling event within 75 miles of the shop into one
 calendar, published at `calendar.altar.bike`, embedded on altar.bike, and
-subscribable as `.ics`. Built and tested. **Not yet deployed.**
+subscribable as `.ics`.
+
+**LIVE as of 2026-08-17.** https://calendar.altar.bike — repo
+`GraveloMatt/altar-events` (public), GitHub Pages via Actions, HTTPS enforced,
+DNS CNAME `calendar` -> `gravelomatt.github.io` at Squarespace. Rebuilds every
+morning at 05:17 ET. First green run published 97 events.
 
 ---
 
@@ -48,10 +53,28 @@ curl -sS -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/user
   honours robots.txt, which blocks some URLs outright.
 - **GitHub identity exists but is read-only and unbound.** `$GH_TOKEN` is
   proxy-injected and `api.github.com/user` answers as **GraveloMatt**. But
-  `/user/repos` returns *"sessions are bound to their configured repositories"*
-  and every `repos/GraveloMatt/*` path returns 403, so there is no repo to push
-  to. `git ls-remote` fails on credentials. **You still cannot create the repo,
-  push, set secrets or enable Pages.** Do not promise Matt that you can.
+  `/user/repos`, `POST /user/repos`, `/user/installations` and every
+  `repos/GraveloMatt/*` path return 403 *"sessions are bound to their
+  configured repositories"*, and `git` auth fails with *"Password
+  authentication is not supported"*. Creating the repo did NOT unlock it — the
+  binding is fixed when the session starts. **You cannot push from the shell.**
+- **BUT: drive Chrome instead.** This is the lesson of the deploy session.
+  Matt's browser is reachable through the `mcp__claude-in-chrome__*` tools and
+  is signed in as GraveloMatt, so the entire GitHub UI is available — the repo,
+  the uploads, Pages settings, Actions, re-runs. "No API access" is NOT "no
+  access"; check the browser before writing anyone a manual click-guide.
+  Practical notes for that path:
+    * `file_upload` needs files under the session working directory, and it
+      does NOT preserve folder structure — but `/upload/main/<any/new/path>`
+      works even when the directory does not exist yet, so upload one
+      directory at a time and let the URL place them.
+    * Take a fresh screenshot before clicking a button and use ITS coordinates.
+      Stale `ref_` ids from an earlier page silently no-op — three commits were
+      lost that way before it was noticed.
+    * Do not type into GitHub pages with `computer:type` without focusing a
+      real field first; loose keystrokes hit GitHub's single-key shortcuts and
+      navigate you to Copilot. Use `form_input` with a ref.
+    * Never enter the API key. Fill the secret's *name*, then hand over.
 - `gh` is not installed. There is no `ANTHROPIC_API_KEY` in the environment.
 - **Do not ask Matt to paste a token or API key into chat.** Direct him to
   enter secrets himself in GitHub's UI.
@@ -63,8 +86,8 @@ curl -sS -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/user
 Two suites, both green (2026-08-17). Run them after any change:
 
 ```bash
-python test_pipeline.py      # 70 checks
-python test_integration.py   # 44 checks
+python test_pipeline.py      # 76 checks
+python test_integration.py   # 47 checks
 ```
 
 `sources.yml` (registry) -> `adapters.py` (one function per platform) ->
@@ -87,15 +110,15 @@ still exits 0, writes every `site/` file, and lists each failure under
 | asheville-on-bikes-rwgps | ridewithgps | 75 | needs `RWGPS_API_KEY`, optional |
 | darc | llm | 80 | needs `ANTHROPIC_API_KEY` |
 | blue-ridge-bicycle-club | clubexpress | 80 | **BLOCKED**, optional |
-| pisgah-area-sorba | squarespace | 80 | **STALE — expect zero**, optional |
+| pisgah-area-sorba | squarespace | 80 | **STALE**, optional; 1 event via llm |
 | g5-trail-collective | wix | 80 | **VERIFIED working** |
-| nica-nc | jsonld | 80 | domain confirmed; empty Jul-Nov by design |
+| nica-nc | jsonld | 80 | **URL corrected**; empty Jul-Nov by design |
 | pisgah-rage | llm | 50 | seasonal, mirrors NICA |
 | ic-imagine-cycling | llm | 50 | seasonal, optional |
-| bikereg | bikereg | 60 | **VERIFIED against real API docs** |
-| runsignup | runsignup | 60 | **VERIFIED; coord bug fixed** |
+| bikereg | bikereg | 60 | **VERIFIED**; 31 events |
+| runsignup | runsignup | 60 | **coord + date bugs fixed**; 36 events |
 | uci | llm | 60 | cosmetic, optional |
-| blue-ridge-heritage | tribe | 40 | **VERIFIED, route serves** |
+| blue-ridge-heritage | tribe | 40 | route serves; **keywords tightened** |
 
 Every finding below is also a dated comment in `sources.yml`. House rule:
 **every failure gets understood and written down, never silently dropped.**
@@ -200,42 +223,34 @@ not broken. Same for pisgah-rage and ic-imagine.
 
 ## What is left, in priority order
 
-**1. Deploy.** Still not doable from a Claude sandbox — the GitHub identity is
-read-only and unbound to any repo. Two paths:
+Deploy is DONE. What follows is what would most improve the calendar.
 
-*Clicks (Matt, no terminal):* see `DEPLOY.md`, written for this. New **public**
-repo `altar-events` on github.com -> "uploading an existing file", drag in the
-unzipped contents -> Settings -> Secrets and variables -> Actions -> new secret
-`ANTHROPIC_API_KEY` -> Settings -> Pages -> Source **GitHub Actions** -> Custom
-domain `calendar.altar.bike` -> Actions tab -> Run workflow. `site/CNAME` is
-already committed.
+**1. `RWGPS_API_KEY` — by far the highest-value remaining item.** Free and
+self-serve at `ridewithgps.com/api/v1/doc`; add it as a repo secret exactly
+like `ANTHROPIC_API_KEY`. It unlocks Asheville on Bikes' Thursday rides *and*
+is the only realistic route to BRBC's rides (they advertise 600+ club routes
+there). Group rides are currently the thinnest category on the live site — 15
+events, nearly all one-off. This single key is the biggest lever there is.
 
-*Terminal (Walsh, ~10 min):* `./bootstrap.sh` from inside the folder. It
-defaults to **public** visibility, because Pages will not serve from a private
-repo without a paid plan — that is a hard stop at the end of the process, so do
-not flip it back casually. It writes `site/CNAME`, registers
-`calendar.altar.bike` on the Pages config, sets secrets and triggers the first
-build. `DOMAIN= ./bootstrap.sh` opts out to the github.io address.
+**2. Pisgah Area SORBA's VolunteerHub URL.** One click for a human: open their
+events page, click any "click Here!" button, read the domain off the address
+bar. VolunteerHub exposes iCal, which turns a dead source into an exact `ics`
+feed and brings back their dig days.
 
-**Deploying is also how the remaining verification gets done.** GitHub Actions
-runners have full egress, so the first build's step summary and
-`site/build-report.json` answer everything `probe.py --check` would have —
-against the real endpoints, on a schedule, forever. Prefer shipping over
-hand-probing.
+**3. Multi-day events publish once per day.** Blue Ridge Heritage's craft
+exhibition appeared ELEVEN times before the keyword fix removed it entirely.
+The underlying behaviour is still there and will bite any future source whose
+feed emits one entry per day of a multi-day event. Nothing currently in
+`sources.yml` triggers it, so this is latent, not urgent — but if a stage race
+or a festival ever shows up eight days running, this is why. Fix would live in
+`normalize.dedupe`: collapse same-title consecutive-day runs from one source
+into a single event with an end date.
 
-**2. DNS.** One CNAME at the registrar: name `calendar`, value
-`GraveloMatt.github.io`. Then Settings -> Pages -> Enforce HTTPS once it
-resolves. Only Matt can do this.
-
-**3. `RWGPS_API_KEY` — highest-value remaining item.** Free and self-serve at
-`ridewithgps.com/api/v1/doc`. Unlocks AoB's Thursday rides *and* is now the only
-realistic route to BRBC's rides (they advertise 600+ club routes there). One
-key, two sources, and together they are most of what a customer means by "group
-rides." With BRBC blocked and PAS stale, this is the single biggest lever on
-how full the calendar looks.
-
-**4. Pisgah Area SORBA's VolunteerHub URL.** One click for a human, turns a
-dead source into an exact `ics` feed. See the finding above.
+**4. `ic-imagine-cycling` connection failures.** `www.icimaginecycling.org`
+refused connections on every live build ("Max retries exceeded"). It is marked
+`optional` so it cannot fail the build, and it is a seasonal youth source that
+would be empty now anyway. Check again in November; if the domain is gone,
+delete the source rather than leaving a permanent `down`.
 
 **5. Optional polish.** Cloudflare Worker for the submission form (`worker.js`
 is written; paste its URL into `ENDPOINT` in `site/submit.html`). Until then the
@@ -244,16 +259,44 @@ form falls back to a pre-filled email to `events@altar.bike` — Matt confirmed
 
 **6. Candidate extra source:** `greattrailsnc.com` (Great State Trails
 Coalition) runs The Events Calendar with iCal export and already indexes G5
-workdays with dates and times. Cheap addition at aggregator trust. Not yet
-added or verified.
+workdays. Cheap addition at aggregator trust. **Apply the Blue Ridge Heritage
+lesson if you add it:** do not put bare `trail` in its `require_keywords`.
+
+**7. Title hygiene.** Some promoter-supplied titles arrive shouting, e.g.
+"SOLD OUT !!! ———12TH ANNUAL DANCING BEAR BIKE BASH RETURNS ON SEPTEMBER 19TH,
+2026". Cosmetic, customer-facing, and the calendar page is governed by the
+`altar-brand` skill. Worth a normalisation pass on titles if it grates.
 
 ### Settled 2026-08-17 — do not re-litigate
 
 - `events@altar.bike` reaches a real inbox. Confirmed by Matt.
-- Matt has an Anthropic API key ready to paste into GitHub's secrets UI.
-- **Sarah Cearley has signed off on the elevation strip.** It ships as built.
-- BikeReg filter params — resolved above, no probe needed.
-- Blue Ridge Heritage REST route — confirmed serving, no probe needed.
+- **Sarah Cearley has signed off on the elevation strip.** It is live.
+- BikeReg filter params — resolved, no probe needed.
+- Blue Ridge Heritage REST route — confirmed serving.
+- RunSignup date format — ISO. BikeReg's is MM/DD/YYYY. Deliberately different.
+- DNS, Pages, HTTPS, the API key secret — all done.
+
+---
+
+### What the first live builds taught us
+
+Three bugs reached production that no offline test caught, and all three were
+**silent** — they looked like quiet sources, not errors:
+
+1. **RunSignup sent `MM/DD/YYYY`.** The API answered `param_datatype_mismatch`
+   and the adapter reported "returned 0 events". Fixing the format took the
+   source from 0 to 36 events and the calendar from 81 to 117.
+2. **`nica-nc` pointed at `/schedule/`, which 404s.** The real page is
+   `/event-weekends`.
+3. **`trail` in Blue Ridge Heritage's `require_keywords`** matched "Blue Ridge
+   Craft Trails" and "Trails Less Traveled", putting 13 craft-and-hiking events
+   on the shop's public calendar, classified `mtb`.
+
+The general lesson, worth keeping: **a source reporting zero is not evidence it
+is working.** Run #1 also failed on `git push` because a web-UI edit landed
+mid-build; the workflow now rebases and retries three times. And GitHub Pages
+itself returned 503 twice during an active githubstatus.com incident — when
+`deploy` fails but `build` is green, check status before touching code.
 
 ---
 
@@ -272,3 +315,10 @@ added or verified.
   (RunSignup yes, BikeReg no) — and record which.
 - Brand voice, colour and type for anything customer-facing live in the
   `altar-brand` skill. The calendar page and submission form are customer-facing.
+- **A source reporting zero events is not evidence it is working.** Three
+  separate silent failures shipped to the live site on day one, each of which
+  read as "quiet season". When a source returns nothing, check the request, not
+  just the response.
+- **Read the live site after a change, not just the build log.** The craft-fair
+  bug was invisible in the summary — "blue-ridge-heritage — ok (32 events)" —
+  and obvious the moment anyone looked at the page.
