@@ -1,5 +1,5 @@
 {
- "at": "2026-08-17T19:37:42.294849+00:00",
+ "at": "2026-08-18T09:49:13.219446+00:00",
  "events": [
   {
    "title": "Bike Love",
@@ -425,7 +425,7 @@
    "end": "2026-08-22T00:00:00",
    "all_day": false,
    "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Celebrate 20 years of Asheville on Bikes! Event includes Pop-Up Bike Park (2-7pm), Summer Cycle Check-In (3:30-4pm), ride start (4pm), and Post-Ride Festivities (5-7pm). Three route options: Cruiser Ride (5 mi, family-friendly greenway), Main Ride (7 mi, downtown), and Ride More (18 mi, gravel and mountain). Waiver required to ride.",
+   "description": "Celebrate 20 years of Asheville on Bikes! Pop-Up Bike Park (2-7pm), Summer Cycle Check-In (3:30-4pm), Ride Begins (4pm), Post-Ride Festivities (5-7pm). Multiple route options: Cruiser Ride (5 miles), Main Ride (7 miles), Ride More (18 miles). Waiver required.",
    "venue": "New Belgium Brewing",
    "city": "Asheville",
    "state": "NC",
@@ -438,52 +438,8 @@
    "bucket": "local",
    "category": "festival",
    "category_basis": "rule",
-   "discipline": "gravel",
-   "uid": "e6662d6251819fff"
-  },
-  {
-   "title": "Pumpkin Pedaller",
-   "start": "2026-10-01",
-   "end": "2026-10-01",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Annual recurring event",
-   "venue": "None",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": null,
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "group-ride",
-   "category_basis": "default",
    "discipline": "other",
-   "uid": "b7bf4ed64dac0469"
-  },
-  {
-   "title": "Gran Fondo Asheville",
-   "start": "2027-07-19",
-   "end": "2027-07-19",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events/gran-fondo-asheville",
-   "description": "Annual cycling event. Part of Gran Fondo National Series with multiple route options (100-, 60-, and 30-mile courses). Timed-segment format allows riders of all abilities to regroup and ride together.",
-   "venue": "Asheville Yards Amphitheater",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": "Registration required",
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "race",
-   "category_basis": "rule",
-   "discipline": "road",
-   "uid": "be48ced4f38fd61e"
+   "uid": "e6662d6251819fff"
   }
  ]
 }

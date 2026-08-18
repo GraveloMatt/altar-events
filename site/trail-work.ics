@@ -7,24 +7,23 @@ X-WR-CALNAME:WNC Trail Work Days — Altar Cycles
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:Trek Tuesday - Kitsuma Trail Day
+SUMMARY:Trek Tuesday - Bernard Mtn Trail Day
 DTSTART:20260818T100000
 DTEND:20260818T140000
-DTSTAMP:20260817T193913Z
-UID:7ddb518d25384c3a@altar.bike
+DTSTAMP:20260818T095104Z
+UID:4b7e7a959ee5b88b@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Project: Tread repairs & improvements. Optional ride after\, b
- ring your bike!\n\nMore: https://www.g5trailcollective.org/volunteer\n\nSo
- urce: G5 Trail Collective\n\nListed by Altar Cycles — altar.bike/calenda
- r
-LOCATION:Kitsuma Peak Trailhead\, Old Fort\, NC
+DESCRIPTION:Ride'n Work - Tread repairs & trimming\, bring your e-bike if 
+ you have one!\n\nMore: https://www.g5trailcollective.org/volunteer\n\nSour
+ ce: G5 Trail Collective\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:JPQR+MW\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Women in Trail Leadership Panel - FREE!
 DTSTART:20260818T173000
 DTEND:20260818T193000
-DTSTAMP:20260817T193913Z
+DTSTAMP:20260818T095104Z
 UID:8db4680bcde2d288@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Join us for an evening of conversation and connection at our W
@@ -41,7 +40,7 @@ BEGIN:VEVENT
 SUMMARY:Brevard Womens Work Day
 DTSTART:20260824T173000
 DTEND:20260824T193000
-DTSTAMP:20260817T193913Z
+DTSTAMP:20260818T095104Z
 UID:a7a570249b9c1518@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Join Pisgah Area SORBA for a Women's Trail Work Day on Mon day
@@ -64,7 +63,7 @@ BEGIN:VEVENT
 SUMMARY:Rocky Knob Mountaineer Showdown
 DTSTART:20260829T040000Z
 DTEND:20260830T040000Z
-DTSTAMP:20260817T193913Z
+DTSTAMP:20260818T095104Z
 UID:fee58fd0937c36eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Volunteer Sign up: https://docs.google.com/forms/d/e/1FAIpQLSf
@@ -88,12 +87,12 @@ BEGIN:VEVENT
 SUMMARY:Betty's & Jarret's Run Trail Day
 DTSTART:20260904T120000
 DTEND:20260904T163000
-DTSTAMP:20260817T193913Z
+DTSTAMP:20260818T095104Z
 UID:e1bc6ea5ef974c01@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Project: Drain cleaning. Tread shaping.\n\nMore: https://www.g
- 5trailcollective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by
-  Altar Cycles — altar.bike/calendar
+DESCRIPTION:Drain cleaning. Tread shaping.\n\nMore: https://www.g5trailcol
+ lective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by Altar Cy
+ cles — altar.bike/calendar
 LOCATION:Gateway Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
@@ -101,7 +100,7 @@ BEGIN:VEVENT
 SUMMARY:Catalyst Summer Jam Lunch Crew
 DTSTART:20260905T113000
 DTEND:20260905T140000
-DTSTAMP:20260817T193913Z
+DTSTAMP:20260818T095104Z
 UID:6471d9f7df15cf50@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:We're looking for a few volunteers to help Pisgah Area SORBA c
@@ -125,12 +124,12 @@ BEGIN:VEVENT
 SUMMARY:Lower Heartbreak Trail Day
 DTSTART:20260912T090000
 DTEND:20260912T140000
-DTSTAMP:20260817T193913Z
+DTSTAMP:20260818T095104Z
 UID:199f975dfbc75d0a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Project: Drain cleaning. Corridor pruning & brushing.\n\nMore:
-  https://www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Collectiv
- e\n\nListed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Drain cleaning. Corridor pruning & brushing.\n\nMore: https://
+ www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Collective\n\nList
+ ed by Altar Cycles — altar.bike/calendar
 LOCATION:Allison Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
@@ -138,7 +137,7 @@ BEGIN:VEVENT
 SUMMARY:Women's Bikepacking Overnight w/ Earth Mountain!
 DTSTART:20260912T110000
 DTEND:20260913T150000
-DTSTAMP:20260817T193913Z
+DTSTAMP:20260818T095104Z
 UID:75f2fce441c009eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Women’s Overnight Bikepacking Trip with Earth Mountain! Join
@@ -162,7 +161,7 @@ BEGIN:VEVENT
 SUMMARY:Brevard Dig Day w/ CMC
 DTSTART:20261009T083000
 DTEND:20261009T140000
-DTSTAMP:20260817T193913Z
+DTSTAMP:20260818T095104Z
 UID:500d1546ec2f74d1@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Join Pisgah Area SORBA and the Carolina Mountain Club for a Tr
@@ -186,11 +185,12 @@ BEGIN:VEVENT
 SUMMARY:Fall Trail Weekend!
 DTSTART:20261106T160000
 DTEND:20261108T130000
-DTSTAMP:20260817T193913Z
+DTSTAMP:20260818T095104Z
 UID:65a4e186a310b33a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:More: https://www.g5trailcollective.org/volunteer\n\nSource: G
- 5 Trail Collective\n\nListed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:SAVE THE DATE\n\nMore: https://www.g5trailcollective.org/volun
+ teer\n\nSource: G5 Trail Collective\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Camp Grier\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT

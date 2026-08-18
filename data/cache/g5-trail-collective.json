@@ -1,14 +1,14 @@
 {
- "at": "2026-08-17T19:38:29.060808+00:00",
+ "at": "2026-08-18T09:49:52.417491+00:00",
  "events": [
   {
-   "title": "Trek Tuesday - Kitsuma Trail Day",
+   "title": "Trek Tuesday - Bernard Mtn Trail Day",
    "start": "2026-08-18T10:00:00",
    "end": "2026-08-18T14:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Project: Tread repairs & improvements. Optional ride after, bring your bike!",
-   "venue": "Kitsuma Peak Trailhead",
+   "description": "Ride'n Work - Tread repairs & trimming, bring your e-bike if you have one!",
+   "venue": "JPQR+MW",
    "city": "Old Fort",
    "state": "NC",
    "cost": null,
@@ -21,7 +21,7 @@
    "category": "trail-work",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "7ddb518d25384c3a"
+   "uid": "4b7e7a959ee5b88b"
   },
   {
    "title": "Betty's & Jarret's Run Trail Day",
@@ -29,7 +29,7 @@
    "end": "2026-09-04T16:30:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Project: Drain cleaning. Tread shaping.",
+   "description": "Drain cleaning. Tread shaping.",
    "venue": "Gateway Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -51,7 +51,7 @@
    "end": "2026-09-12T14:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Project: Drain cleaning. Corridor pruning & brushing.",
+   "description": "Drain cleaning. Corridor pruning & brushing.",
    "venue": "Allison Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -95,7 +95,7 @@
    "end": "2026-11-08T13:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "",
+   "description": "SAVE THE DATE",
    "venue": "Camp Grier",
    "city": "Old Fort",
    "state": "NC",
