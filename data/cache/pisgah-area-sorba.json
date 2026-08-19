@@ -1,26 +1,6 @@
 {
- "at": "2026-08-18T09:49:47.721981+00:00",
+ "at": "2026-08-19T09:50:41.440321+00:00",
  "events": [
-  {
-   "title": "Women in Trail Leadership Panel - FREE!",
-   "start": "2026-08-18T17:30:00",
-   "end": "2026-08-18T19:30:00",
-   "all_day": false,
-   "url": "https://www.pisgahareasorba.org/",
-   "description": "Join us for an evening of conversation and connection at our Women in Trail Leadership Panel at REI Biltmore Park. RSVP your spot at https://www.rei.com/events/wtlp/pisgah-area-sorba-presents-women-in-trail-leadership-panel 5:30am - Meet and greet with light refreshments 6:00 - Panel begins 7:00 - Social Networking",
-   "venue": "31 Schenck Pkwy, Asheville, NC 28803, USA",
-   "city": "Asheville",
-   "state": "NC",
-   "source": "pisgah-area-sorba",
-   "source_name": "Pisgah Area SORBA",
-   "source_url": "https://www.pisgahareasorba.org/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "trail-work",
-   "category_basis": "default",
-   "discipline": "mtb",
-   "uid": "8db4680bcde2d288"
-  },
   {
    "title": "Brevard Womens Work Day",
    "start": "2026-08-24T17:30:00",
