@@ -2,8 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Altar Cycles//WNC Cycling Calendar//EN
 METHOD:PUBLISH
-X-WR-CALDESC:Races\, group rides\, trail work and festivals within about 7
- 5 miles of Asheville. Maintained by Altar Cycles. altar.bike
+X-WR-CALDESC:Races, group rides, trail work and festivals within about 75 
+ miles of Asheville. Maintained by Altar Cycles. altar.bike
 X-WR-CALNAME:WNC Cycling — by Altar Cycles
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-WR-TIMEZONE:America/New_York
@@ -11,16 +11,16 @@ BEGIN:VEVENT
 SUMMARY:Summer Cycle 2026
 DTSTART:20260822T000000
 DTEND:20260822T000000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:e6662d6251819fff@altar.bike
 CATEGORIES:festival
-DESCRIPTION:Community bike ride event celebrating 20 years of Asheville on
-  Bikes. Multiple route options: Cruiser Ride (5 miles\, family-friendly gr
- eenway loop)\, Main Ride (7 miles\, downtown route)\, Ride More (18 miles\
- , gravel/mountain route). Includes pop-up bike park\, check-in\, and post-
- ride festivities.\n\nMore: https://ashevilleonbikes.com/events/asheville-s
- ummer-cycle\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — al
- tar.bike/calendar
+DESCRIPTION:Celebrate 20 years of Asheville on Bikes! Event includes Pop-U
+ p Bike Park (2-7pm)\, Summer Cycle Check-In (3:30-4pm)\, ride start (4pm)
+ \, and Post-Ride Festivities (5-7pm). Multiple route options: Cruiser Ride
+  (5 miles)\, Main Ride (7 miles)\, and Ride More (18 miles). Waiver requir
+ ed to participate.\n\nMore: https://ashevilleonbikes.com/events/asheville-
+ summer-cycle\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — a
+ ltar.bike/calendar
 LOCATION:New Belgium Brewing\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events/asheville-summer-cycle
 END:VEVENT
@@ -28,7 +28,7 @@ BEGIN:VEVENT
 SUMMARY:Gravel Roll - The Holler in Walhalla
 DTSTART:20260822T040000Z
 DTEND:20260822T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:a10bb3a380a81314@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Gravel Roll is BACK! Hollerin' for more in Walhalla in 202
@@ -42,8 +42,8 @@ DESCRIPTION:The Gravel Roll is BACK! Hollerin' for more in Walhalla in 202
  l rides\, this one doesn't meet our usual 70% threshold for paved to unpav
  ed\, but we think you'll welcome the smooth but swoopy tarmac when you enc
  ounter it\, and rip it all the same. Afterwards\, hang around at the Walha
- lla Depot f\n\nMore: http://www.BikeReg.com/the-holler\n\nSource: BikeReg\
- n\nListed by Altar Cycles — altar.bike/calendar
+ lla Depot f\n\nMore: http://www.BikeReg.com/the-holler\n\nSource: BikeReg
+ \n\nListed by Altar Cycles — altar.bike/calendar
 GEO:34.762378;-83.0661084
 LOCATION:211 S College St\, Walhalla\, SC
 URL:http://www.BikeReg.com/the-holler
@@ -52,7 +52,7 @@ BEGIN:VEVENT
 SUMMARY:Self Defense Class with Underdog Martial Arts
 DTSTART:20260822T123000
 DTEND:20260822T133000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:a3aab07e8a1dbb49@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Join Dirt Skrrts for an hour at Underdog Martial Arts for an i
@@ -67,16 +67,16 @@ BEGIN:VEVENT
 SUMMARY:Go Nuts Enduro Round 2 - Sugar Mountain\, USA
 DTSTART:20260823T040000Z
 DTEND:20260823T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:2b5c2eaa1337a28b@altar.bike
 CATEGORIES:race
 DESCRIPTION:TIME & LOCATION Sugar Mountain Bike Park 1009 Sugar Mountain D
  rive Banner Elk\, NC 28604 Sugar Mountain is located in the heart of North
   Carolina’s high country \, offering unparalleled mountain views and tec
- hnical challenges for riders of all levels. The park is easily accessible\
- , just a short drive from the town of Banner Elk \, and approximately two 
- hours from Asheville \, making it a prime destination for both racers and 
- spectators alike. DESCRIPTION Sugar Mountain Bike Park\, North Carolina 
+ hnical challenges for riders of all levels. The park is easily accessible
+ \, just a short drive from the town of Banner Elk \, and approximately two
+  hours from Asheville \, making it a prime destination for both racers and
+  spectators alike. DESCRIPTION Sugar Mountain Bike Park\, North Carolina 
  – Stop #2 Get ready for the Go Nuts Biking International Enduro Series a
  s it heads to the Sugar Mountain Bike Park in Banner Elk\, North Carolina 
  \, for Stop #3 of the season! Situated in the scenic Blue Ridge Mountains 
@@ -93,7 +93,7 @@ BEGIN:VEVENT
 SUMMARY:DARC August 23 Road Social Ride
 DTSTART:20260823T040000Z
 DTEND:20260823T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:6f8e1cab2507d835@altar.bike
 CATEGORIES:clinic
 DESCRIPTION:Meet at Gravelo Workshop (793 Merrimon Ave\, Asheville\, NC 28
@@ -112,7 +112,7 @@ BEGIN:VEVENT
 SUMMARY:Asheville Youth Cycling CX Practice August 23rd
 DTSTART:20260823T040000Z
 DTEND:20260823T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:891342d6da276d11@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Join Asheville Youth Cycling for a fun Cyclocross practice for
@@ -129,7 +129,7 @@ BEGIN:VEVENT
 SUMMARY:Brevard Womens Work Day
 DTSTART:20260824T173000
 DTEND:20260824T193000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:a7a570249b9c1518@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Join Pisgah Area SORBA for a Women's Trail Work Day on Mon day
@@ -152,7 +152,7 @@ BEGIN:VEVENT
 SUMMARY:Rocky Knob Mountaineer Showdown
 DTSTART:20260829T040000Z
 DTEND:20260830T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:fee58fd0937c36eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Volunteer Sign up: https://docs.google.com/forms/d/e/1FAIpQLSf
@@ -166,8 +166,8 @@ DESCRIPTION:Volunteer Sign up: https://docs.google.com/forms/d/e/1FAIpQLSf
  August 30th: 7:30am Registration Opens 8:30-11:30am XC Short Track (Catego
  ry start times coming soon) 12-4pm Enduro 4pm Results and Podiums Courses 
  XC: https://ridewithgps.com/routes/51960777 STXC: https://ridewithgps.com/
- ro\n\nMore: http://www.BikeReg.com/rocky-knob-ruckus\n\nSource: BikeReg\n\
- nListed by Altar Cycles — altar.bike/calendar
+ ro\n\nMore: http://www.BikeReg.com/rocky-knob-ruckus\n\nSource: BikeReg\n
+ \nListed by Altar Cycles — altar.bike/calendar
 GEO:36.2201393;-81.6240583
 LOCATION:285 Mountain Bike Wy\, Boone\, NC
 URL:http://www.BikeReg.com/rocky-knob-ruckus
@@ -176,12 +176,12 @@ BEGIN:VEVENT
 SUMMARY:Betty's & Jarret's Run Trail Day
 DTSTART:20260904T120000
 DTEND:20260904T163000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:e1bc6ea5ef974c01@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Project: Drain cleaning. Tread shaping.\n\nMore: https://www.g
- 5trailcollective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by
-  Altar Cycles — altar.bike/calendar
+DESCRIPTION:Drain cleaning. Tread shaping.\n\nMore: https://www.g5trailcol
+ lective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by Altar Cy
+ cles — altar.bike/calendar
 LOCATION:Gateway Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
@@ -189,12 +189,12 @@ BEGIN:VEVENT
 SUMMARY:Dirt Diggler Gravel Grinder
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260905
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:53b43bf11b736a76@altar.bike
 CATEGORIES:race
-DESCRIPTION:Featured Event for DARC members\n\nMore: https://darccycling.c
- om/calendar\n\nSource: Downtown Asheville Racing Club\n\nListed by Altar C
- ycles — altar.bike/calendar
+DESCRIPTION:Featured Event\n\nMore: https://darccycling.com/calendar\n\nSo
+ urce: Downtown Asheville Racing Club\n\nListed by Altar Cycles — altar.b
+ ike/calendar
 GEO:35.2325798;-82.5969679
 LOCATION:315 Shoals Falls Rd\, Hendersonville\, NC
 URL:https://darccycling.com/calendar
@@ -203,7 +203,7 @@ BEGIN:VEVENT
 SUMMARY:End of Summer Jam
 DTSTART:20260905T040000Z
 DTEND:20260906T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:6628b3d67771c40f@altar.bike
 CATEGORIES:race
 DESCRIPTION:Come out to Ride Kanuga on Labor Day weekend for a few days of
@@ -227,7 +227,7 @@ BEGIN:VEVENT
 SUMMARY:Catalyst Summer Jam Lunch Crew
 DTSTART:20260905T113000
 DTEND:20260905T140000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:6471d9f7df15cf50@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:We're looking for a few volunteers to help Pisgah Area SORBA c
@@ -251,7 +251,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Monster-Cross Challenge
 DTSTART:20260912T040000Z
 DTEND:20260912T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:005472d939111204@altar.bike
 CATEGORIES:festival
 DESCRIPTION:The Pisgah Monster-Cross Challenge is the premiere all-road ra
@@ -276,7 +276,7 @@ BEGIN:VEVENT
 SUMMARY:Gravity Carolinas DH RD 3 Ride Rock Creek
 DTSTART:20260912T040000Z
 DTEND:20260913T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:1446d149ac9ba226@altar.bike
 CATEGORIES:race
 DESCRIPTION:EVENT CAPACITY 200 Racers Registration for each event will onl
@@ -295,12 +295,12 @@ BEGIN:VEVENT
 SUMMARY:Lower Heartbreak Trail Day
 DTSTART:20260912T090000
 DTEND:20260912T140000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:199f975dfbc75d0a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Project: Drain cleaning. Corridor pruning & brushing.\n\nMore:
-  https://www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Collectiv
- e\n\nListed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Drain cleaning. Corridor pruning & brushing.\n\nMore: https://
+ www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Collective\n\nList
+ ed by Altar Cycles — altar.bike/calendar
 LOCATION:Allison Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
@@ -308,7 +308,7 @@ BEGIN:VEVENT
 SUMMARY:Women's Bikepacking Overnight w/ Earth Mountain!
 DTSTART:20260912T110000
 DTEND:20260913T150000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:75f2fce441c009eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Women’s Overnight Bikepacking Trip with Earth Mountain! Join
@@ -332,7 +332,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-Season Skills Clinics 2026
 DTSTART:20260913T040000Z
 DTEND:20260913T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:bbf6b38b2e5ea38d@altar.bike
 CATEGORIES:clinic
 DESCRIPTION:Learn all about cyclocross and the skills needed to compete wi
@@ -356,7 +356,7 @@ BEGIN:VEVENT
 SUMMARY:2026 Tuesday Night Cyclocross Training Series
 DTSTART:20260915T040000Z
 DTEND:20260929T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:2c8aa0d648484ac3@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Group C: Men Novice\, Women Novice\, Women CX4\, & Juniors (20
@@ -382,7 +382,7 @@ SUMMARY:12th Annual Dancing Bear Bike Bash Returns on September 19th\, 202
  6
 DTSTART:20260919T040000Z
 DTEND:20260919T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:8f044efc5da3583a@altar.bike
 CATEGORIES:race
 DESCRIPTION:The best recreational cycling event in the Smokies region retu
@@ -406,7 +406,7 @@ BEGIN:VEVENT
 SUMMARY:Gravity Carolinas DH RD 4 WIldside
 DTSTART:20260919T040000Z
 DTEND:20260920T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:74961cf476e0181f@altar.bike
 CATEGORIES:race
 DESCRIPTION:200 Racers Registration for each event will only be available 
@@ -425,7 +425,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-season - Ride Rock Creek
 DTSTART:20260920T040000Z
 DTEND:20260920T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:3a00b4b477eb29e6@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
@@ -449,7 +449,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Bikeboom 2026
 DTSTART:20260925T040000Z
 DTEND:20260927T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:7ea8cf13a1f20b18@altar.bike
 CATEGORIES:race
 DESCRIPTION:Update on 7/10/26 Due to low registration number\, we have dec
@@ -462,9 +462,9 @@ DESCRIPTION:Update on 7/10/26 Due to low registration number\, we have dec
  nd we remind you to prioritize saftey when you're out riding. Campgrounds 
  will not be provided at this event\, but we have some recommendations belo
  w: For this year’s bikeboom event\, we will not be providing campsites\;
-  however\, below are some recommendations that we have gotten from locals\
- ; we enc\n\nMore: http://www.BikeReg.com/bikeboom-2026\n\nSource: BikeReg\
- n\nListed by Altar Cycles — altar.bike/calendar
+  however\, below are some recommendations that we have gotten from locals
+ \; we enc\n\nMore: http://www.BikeReg.com/bikeboom-2026\n\nSource: BikeReg
+ \n\nListed by Altar Cycles — altar.bike/calendar
 GEO:35.2745931;-82.7055264
 LOCATION:11 Mama's Pl\, Brevard\, NC
 URL:http://www.BikeReg.com/bikeboom-2026
@@ -473,15 +473,15 @@ BEGIN:VEVENT
 SUMMARY:CRAFTED The Bicycle & Gear Show
 DTSTART:20260926T000000
 DTEND:20260927T000000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:b6eff59b8929c1ed@altar.bike
 CATEGORIES:festival
 DESCRIPTION:A Bicycle and Gear Show celebrating handmade craft and indepen
  dent makers across the Southeast. Saturday 10 a.m. to 5 p.m.\, Sunday 10 a
  .m. to 4 p.m. Features group rides\, tours\, live music\, tattoos\, food\,
-  libations\, and kid-friendly skills course.\n\nMore: https://www.craftedb
- ikeshow.com\n\nSource: Downtown Asheville Racing Club\n\nListed by Altar C
- ycles — altar.bike/calendar
+  and libations. Kid- and family-friendly skills course.\n\nMore: https://w
+ ww.craftedbikeshow.com\n\nSource: Downtown Asheville Racing Club\n\nListed
+  by Altar Cycles — altar.bike/calendar
 LOCATION:Cane Creek Cycling Components\, Fletcher\, NC
 URL:https://www.craftedbikeshow.com
 END:VEVENT
@@ -489,7 +489,7 @@ BEGIN:VEVENT
 SUMMARY:2026 Ride to the Rock
 DTSTART:20260926T040000Z
 DTEND:20260926T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:f386287547fbc4ba@altar.bike
 CATEGORIES:race
 DESCRIPTION:SATURDAY\, SEPTEMBER 26\, 2026 Pickens\, SC Presented by the R
@@ -513,7 +513,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-season - Cane Creek
 DTSTART:20260927T040000Z
 DTEND:20260927T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:567c411f65a716bf@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
@@ -537,13 +537,13 @@ BEGIN:VEVENT
 SUMMARY:Pumpkin Pedaller
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261031
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:b7bf4ed64dac0469@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual recurring event in October. Specific date not provided 
- on page.\n\nMore: https://ashevilleonbikes.com/events/asheville-summer-cyc
- le\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — altar.bike/
- calendar
+DESCRIPTION:Annual recurring event in October. See website for specific da
+ te and details.\n\nMore: https://ashevilleonbikes.com/events/asheville-sum
+ mer-cycle\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles — alta
+ r.bike/calendar
 LOCATION:None\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events/asheville-summer-cycle
 END:VEVENT
@@ -551,7 +551,7 @@ BEGIN:VEVENT
 SUMMARY:Tour de Fat
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261003
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:e7d97791871f3304@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -564,7 +564,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah 111 / 555
 DTSTART:20261003T040000Z
 DTEND:20261003T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:c6d05d9f51734aa6@altar.bike
 CATEGORIES:race
 DESCRIPTION:It’s time to turn the volume up to 111! The Pisgah 111 is th
@@ -588,7 +588,7 @@ BEGIN:VEVENT
 SUMMARY:Brevard Dig Day w/ CMC
 DTSTART:20261009T083000
 DTEND:20261009T140000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:500d1546ec2f74d1@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Join Pisgah Area SORBA and the Carolina Mountain Club for a Tr
@@ -604,15 +604,15 @@ DESCRIPTION:Join Pisgah Area SORBA and the Carolina Mountain Club for a Tr
  imbing helmets do)\, snacks/lunch and water. Note: Hardhats\, gloves and s
  afety glasses ca\n\nMore: https://www.pisgahareasorba.org/\n\nSource: Pisg
  ah Area SORBA\n\nListed by Altar Cycles — altar.bike/calendar
-LOCATION:1401 Fish Hatchery Rd\, Pisgah Forest\, NC\, USA\, Pisgah Forest\
- , NC
+LOCATION:1401 Fish Hatchery Rd\, Pisgah Forest\, NC\, USA\, Pisgah Forest
+ \, NC
 URL:https://www.pisgahareasorba.org/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:October Group Ride + Social
 DTSTART:20261010T100000
 DTEND:20261010T123000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:b150ddbea280cbb5@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Group ride and social in and around Old Fort. Please note this
@@ -627,11 +627,11 @@ BEGIN:VEVENT
 SUMMARY:Get There Asheville
 DTSTART:20261014T000000
 DTEND:20261014T000000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:2e8a7e6ac62f5ec3@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual recurring event\, 6 to 8 PM\n\nMore: https://ashevilleo
- nbikes.com/events\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles 
+DESCRIPTION:Annual recurring event. 6 to 8 PM\n\nMore: https://ashevilleon
+ bikes.com/events\n\nSource: Asheville on Bikes\n\nListed by Altar Cycles 
  — altar.bike/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
@@ -640,13 +640,13 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Rage Pre-season
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261215
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:2115f0c8d04aeced@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Pre-season activities including social events\, rider assessme
- nt\, bike shop night\, parent meeting\, and 1-2 adventure rides in Bent Cr
- eek or Dupont\n\nMore: https://www.pisgahrage.com/\n\nSource: Pisgah Rage 
- (NICA composite team)\n\nListed by Altar Cycles — altar.bike/calendar
+ nt\, bike shop night\, parent meeting\, and adventure rides in Bent Creek 
+ or Dupont\n\nMore: https://www.pisgahrage.com/\n\nSource: Pisgah Rage (NIC
+ A composite team)\n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:Asheville\, Asheville\, NC
 URL:https://www.pisgahrage.com/
 END:VEVENT
@@ -654,7 +654,7 @@ BEGIN:VEVENT
 SUMMARY:2026 Gran Fondo Hincapie-Greenville
 DTSTART:20261017T040000Z
 DTEND:20261017T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:f2acb77c16a22d1c@altar.bike
 CATEGORIES:race
 DESCRIPTION:Not sure which distance is right for you? Visit our website to
@@ -670,7 +670,7 @@ BEGIN:VEVENT
 SUMMARY:Women + Trail Skills Workshop
 DTSTART:20261017T090000
 DTEND:20261017T150000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:f25b655f83100d84@altar.bike
 CATEGORIES:clinic
 DESCRIPTION:Intro Class: Trail Maintenance 101. G5 Community Education Pro
@@ -684,7 +684,7 @@ BEGIN:VEVENT
 SUMMARY:Pumpkin Pedaller
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261024
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:60082930d5a19ae1@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -697,7 +697,7 @@ BEGIN:VEVENT
 SUMMARY:2026 BRAGco Cycling Event
 DTSTART:20261025T040000Z
 DTEND:20261025T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:743ac628878c17c6@altar.bike
 CATEGORIES:race
 DESCRIPTION:Below are the STRAVA links for the routes. The Classic - 68 Mi
@@ -714,7 +714,7 @@ BEGIN:VEVENT
 SUMMARY:1000 Mile BikeWalk for Prevention
 DTSTART:20261031T000000
 DTEND:20261031T000000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:ca69c113117cd0e8@altar.bike
 CATEGORIES:race
 DESCRIPTION:The 1000 Mile BikeWalk for Prevention to be held October 31\, 
@@ -738,7 +738,7 @@ BEGIN:VEVENT
 SUMMARY:Fall Trail Weekend!
 DTSTART:20261106T160000
 DTEND:20261108T130000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:65a4e186a310b33a@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:More: https://www.g5trailcollective.org/volunteer\n\nSource: G
@@ -750,7 +750,7 @@ BEGIN:VEVENT
 SUMMARY:Couch Potato
 DTSTART:20261107T050000Z
 DTEND:20261107T050000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:2e02b8a758b849f1@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 14th Annual Couch Potato race! We're very excit
@@ -774,7 +774,7 @@ BEGIN:VEVENT
 SUMMARY:Swank 65
 DTSTART:20261108T050000Z
 DTEND:20261108T050000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:808d5262f339b592@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 28th Annual Swank 65! We're very excited for an
@@ -798,7 +798,7 @@ BEGIN:VEVENT
 SUMMARY:We Shred Rock Creek
 DTSTART:20261114T050000Z
 DTEND:20261114T050000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:0a67e54dee113b1a@altar.bike
 CATEGORIES:race
 DESCRIPTION:We Shred Rock Creek is back for 2026 – and it is shaping up 
@@ -822,7 +822,7 @@ BEGIN:VEVENT
 SUMMARY:November Group Ride + Social
 DTSTART:20261114T100000
 DTEND:20261114T123000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:e6ecfc09dd6c5bf2@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Group ride and social in Pisgah. Please note this location doe
@@ -838,7 +838,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah DOUBLE DARE
 DTSTART:20261121T050000Z
 DTEND:20261122T050000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:59bf1e39a66ae34b@altar.bike
 CATEGORIES:race
 DESCRIPTION:Every year an event comes along that tests mental and physical
@@ -862,7 +862,7 @@ BEGIN:VEVENT
 SUMMARY:Go Nuts Biking Nut Gobbler XC
 DTSTART:20261122T050000Z
 DTEND:20261122T050000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:5d605450c7d6e77a@altar.bike
 CATEGORIES:youth
 DESCRIPTION:Time & Location November 22\, 2026 - Stumphouse Mountain Bike 
@@ -886,23 +886,22 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Rage Regular Season
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20270530
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:670937aa0418b08a@altar.bike
 CATEGORIES:race
-DESCRIPTION:Regular season with races starting in March. Typically 5-6 rac
- es across North Carolina through end of May. January: 2-4 indoor training 
- opportunities. February: 1 weekend practice per week. March-May: 2 rides p
- er week with races on weekends.\n\nMore: https://www.pisgahrage.com/\n\nSo
- urce: Pisgah Rage (NICA composite team)\n\nListed by Altar Cycles — alta
- r.bike/calendar
-LOCATION:Asheville\, Asheville\, NC
+DESCRIPTION:Regular season with races and practices. January includes 2-4 
+ indoor training opportunities. February includes 1 weekend practice per we
+ ek. March-May includes 2 rides per week with races typically 5-6 times acr
+ oss the state.\n\nMore: https://www.pisgahrage.com/\n\nSource: Pisgah Rage
+  (NICA composite team)\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:Asheville and across North Carolina\, Asheville\, NC
 URL:https://www.pisgahrage.com/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:December Group Ride + Social
 DTSTART:20261212T130000
 DTEND:20261212T153000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:b68ee4e9e36aad4a@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Group ride and social in Hot Springs. Please note this locatio
@@ -918,7 +917,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Love
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270221
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:84d324a581bba013@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -931,7 +930,7 @@ BEGIN:VEVENT
 SUMMARY:Spring Out
 DTSTART;VALUE=DATE:20270329
 DTEND;VALUE=DATE:20270329
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:42077d50b8d9df1a@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -944,12 +943,12 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART:20270417T000000
 DTEND:20270417T000000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:3a30355473fa12d2@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual recurring event\, 5 pm – 9 pm\n\nMore: https://ashevi
- lleonbikes.com/events\n\nSource: Asheville on Bikes\n\nListed by Altar Cyc
- les — altar.bike/calendar
+DESCRIPTION:Annual recurring event. 5 pm – 9 pm\n\nMore: https://ashevil
+ leonbikes.com/events\n\nSource: Asheville on Bikes\n\nListed by Altar Cycl
+ es — altar.bike/calendar
 LOCATION:Downtown After Five\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -957,7 +956,7 @@ BEGIN:VEVENT
 SUMMARY:Bootlegger
 DTSTART:20270417T040000Z
 DTEND:20270417T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:f0fa19e43a2adce0@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Bootlegger is one of the most challenging and scenic grave
@@ -981,11 +980,11 @@ BEGIN:VEVENT
 SUMMARY:Get in Gear Fest
 DTSTART:20270425T000000
 DTEND:20270425T000000
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:afe3b78c6fb38d0b@altar.bike
 CATEGORIES:festival
-DESCRIPTION:Annual recurring event\, 12 pm – 5 pm\, includes Bike Valet\
- n\nMore: https://ashevilleonbikes.com/events\n\nSource: Asheville on Bikes
+DESCRIPTION:Annual recurring event. Includes Bike Valet. 12 pm – 5 pm\n
+ \nMore: https://ashevilleonbikes.com/events\n\nSource: Asheville on Bikes
  \n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:Asheville\, NC
 URL:https://ashevilleonbikes.com/events
@@ -994,12 +993,12 @@ BEGIN:VEVENT
 SUMMARY:Bear's Smokehouse BBQ Community Rides
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270831
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:28081717435d5842@altar.bike
 CATEGORIES:group-ride
-DESCRIPTION:Annual recurring event\, weekly on Wednesdays in Summer\n\nMor
- e: https://ashevilleonbikes.com/events\n\nSource: Asheville on Bikes\n\nLi
- sted by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Annual recurring event. Weekly on Wednesdays in Summer\n\nMore
+ : https://ashevilleonbikes.com/events\n\nSource: Asheville on Bikes\n\nLis
+ ted by Altar Cycles — altar.bike/calendar
 LOCATION:Bear's Smokehouse BBQ\, Asheville\, NC
 URL:https://ashevilleonbikes.com/events
 END:VEVENT
@@ -1007,7 +1006,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Mountain Bike Adventure Race
 DTSTART:20270501T040000Z
 DTEND:20270501T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:996261671a499518@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Pisgah Mountain Bike Adventure Race (PMBAR) is the absolut
@@ -1032,7 +1031,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270515
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:ab08b437baf781f7@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1045,7 +1044,7 @@ BEGIN:VEVENT
 SUMMARY:Roll Outta Work
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270515
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:0bac6aff0668c35b@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1058,7 +1057,7 @@ BEGIN:VEVENT
 SUMMARY:Carolina Reaper Road Race
 DTSTART:20270515T040000Z
 DTEND:20270515T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:6cb81637a4faee67@altar.bike
 CATEGORIES:race
 DESCRIPTION:Please visit www.reaperroadrace.com for more information.\n\nM
@@ -1072,7 +1071,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Forestry Camp
 DTSTART;VALUE=DATE:20270516
 DTEND;VALUE=DATE:20270516
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:f081edfad7afbbd3@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1085,7 +1084,7 @@ BEGIN:VEVENT
 SUMMARY:Ride of Silence
 DTSTART;VALUE=DATE:20270520
 DTEND;VALUE=DATE:20270520
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:a9e0944c3b4508e2@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1098,7 +1097,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART;VALUE=DATE:20270619
 DTEND;VALUE=DATE:20270619
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:eb9b4d5fa344c6ef@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1111,7 +1110,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Forestry Camp
 DTSTART;VALUE=DATE:20270620
 DTEND;VALUE=DATE:20270620
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:ce7e1626335c6ad9@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1124,7 +1123,7 @@ BEGIN:VEVENT
 SUMMARY:Belgium 35th Anniversary Ride
 DTSTART;VALUE=DATE:20270627
 DTEND;VALUE=DATE:20270627
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:c5e70d2a70f387a8@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1137,7 +1136,7 @@ BEGIN:VEVENT
 SUMMARY:The Lennie Antonelli and Jake Hill Memorial Ride
 DTSTART;VALUE=DATE:20270701
 DTEND;VALUE=DATE:20270701
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:0c2b50b0e423e7a5@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1151,7 +1150,7 @@ SUMMARY:2027 Gran Fondo Asheville\, p/b Applewood Manor Foundation\, a SEN
  A Gran Fondo National Series event
 DTSTART:20270718T040000Z
 DTEND:20270718T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:19cc3e2cb7f4ed33@altar.bike
 CATEGORIES:race
 DESCRIPTION:THIS REGISTRATION IS FOR 2027 THESE DETAILS ARE FOR 2026 EVENT
@@ -1175,7 +1174,7 @@ BEGIN:VEVENT
 SUMMARY:Gran Fondo AVL
 DTSTART;VALUE=DATE:20270719
 DTEND;VALUE=DATE:20270719
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:ff576b5052181618@altar.bike
 CATEGORIES:race
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1188,7 +1187,7 @@ BEGIN:VEVENT
 SUMMARY:HARDford 50 and HARDERford 75
 DTSTART:20270801T040000Z
 DTEND:20270801T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:fbb7b952544d9b16@altar.bike
 CATEGORIES:race
 DESCRIPTION:Riders have two course options: The HARDford 50 and the HARDER
@@ -1212,7 +1211,7 @@ BEGIN:VEVENT
 SUMMARY:2027 Boone Gran Fondo\, a SENA Gran Fondo National Series event
 DTSTART:20270808T040000Z
 DTEND:20270808T040000Z
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:eaf10f6e0cd70f9a@altar.bike
 CATEGORIES:race
 DESCRIPTION:THIS REGISTRATION IS FOR THE 2027 EVENT DETAILS BELOW SUBJECT 
@@ -1236,7 +1235,7 @@ BEGIN:VEVENT
 SUMMARY:Bike Valet at Downtown After Five
 DTSTART;VALUE=DATE:20270821
 DTEND;VALUE=DATE:20270821
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:7037f9eff5e41388@altar.bike
 CATEGORIES:group-ride
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -1249,7 +1248,7 @@ BEGIN:VEVENT
 SUMMARY:Summer Cycle
 DTSTART;VALUE=DATE:20270822
 DTEND;VALUE=DATE:20270822
-DTSTAMP:20260819T095137Z
+DTSTAMP:20260820T095305Z
 UID:2db110e2b5eae1f7@altar.bike
 CATEGORIES:festival
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
