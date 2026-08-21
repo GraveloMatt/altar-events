@@ -1,5 +1,5 @@
 {
- "at": "2026-08-21T14:04:34.375951+00:00",
+ "at": "2026-08-21T14:15:48.479224+00:00",
  "events": [
   {
    "title": "Bike Love",
@@ -337,7 +337,7 @@
    "end": "2026-08-22T00:00:00",
    "all_day": false,
    "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Celebrate 20 years of Asheville on Bikes! Annual community ride event with multiple route options: Cruiser Ride (5 miles), Main Ride (7 miles), and Ride More (18 miles). Includes Pop-Up Bike Park, check-in, and post-ride festivities.",
+   "description": "Celebrate 20 years of Asheville on Bikes! Pop-Up Bike Park (2-7pm), Summer Cycle Check-In (3:30-4pm), ride begins at 4pm, post-ride festivities (5-7pm). Three route options: Cruiser Ride (5 miles), Main Ride (7 miles), Ride More (18 miles). Waiver required.",
    "venue": "New Belgium Brewing",
    "city": "Asheville",
    "state": "NC",
@@ -352,6 +352,28 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "e6662d6251819fff"
+  },
+  {
+   "title": "Pumpkin Pedaller",
+   "start": "2026-10-01",
+   "end": "2026-10-01",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
+   "description": "Annual recurring event in October",
+   "venue": "None",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "default",
+   "discipline": "other",
+   "uid": "b7bf4ed64dac0469"
   }
  ]
 }
