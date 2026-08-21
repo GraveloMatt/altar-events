@@ -1,5 +1,5 @@
 {
- "at": "2026-08-21T13:50:21.286570+00:00",
+ "at": "2026-08-21T14:06:32.830561+00:00",
  "events": [
   {
    "title": "Gravel Roll - The Holler in Walhalla",
@@ -318,7 +318,6 @@
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
    "start": "2026-09-15T04:00:00+00:00",
-   "end": "2026-09-29T04:00:00+00:00",
    "all_day": false,
    "url": "http://www.BikeReg.com/tuesday-night-cyclocross-training-series",
    "description": "Group C: Men Novice, Women Novice, Women CX4, & Juniors (20 minutes at 6:00 pm) Group C: First-Timers 20 minutes at 6:01pm Group B: Men Novice, Men CX4, Men CX3, & Women CX1-3 (30 minutes immediately after C group) Group A: Men CX1-3 & Women CX1-2 (40 minutes immediately after B group) Race Information: *USAC Sanctioned Non-Competitive Training Series, No Awards/Prizes *$30 Entry Fee / Free for Juniors /no charge for 2nd same day race. *USA Cycling License Required (One day license available) *Registration opens at 4:45 pm, closes 15 minutes prior to start time *Mountain Bikes OK but no bar-ends, Helmets Required at all times *Mills River Brewery Google Address: 328 Banner Farm Rd, Mills River, NC *Instagram: Crosstown_Velo_Racing_Team or Facebook: Crosstown-Velo-Racing-Team for race day i",
@@ -332,6 +331,7 @@
    "tags": [
     "Cyclocross"
    ],
+   "recurring": "weekly",
    "source": "bikereg",
    "source_name": "BikeReg",
    "source_url": "https://www.bikereg.com/",
@@ -341,6 +341,62 @@
    "category_basis": "rule",
    "discipline": "cx",
    "uid": "2c8aa0d648484ac3",
+   "distance_mi": 14.9
+  },
+  {
+   "title": "2026 Tuesday Night Cyclocross Training Series",
+   "start": "2026-09-22T04:00:00+00:00",
+   "all_day": false,
+   "url": "http://www.BikeReg.com/tuesday-night-cyclocross-training-series",
+   "description": "Group C: Men Novice, Women Novice, Women CX4, & Juniors (20 minutes at 6:00 pm) Group C: First-Timers 20 minutes at 6:01pm Group B: Men Novice, Men CX4, Men CX3, & Women CX1-3 (30 minutes immediately after C group) Group A: Men CX1-3 & Women CX1-2 (40 minutes immediately after B group) Race Information: *USAC Sanctioned Non-Competitive Training Series, No Awards/Prizes *$30 Entry Fee / Free for Juniors /no charge for 2nd same day race. *USA Cycling License Required (One day license available) *Registration opens at 4:45 pm, closes 15 minutes prior to start time *Mountain Bikes OK but no bar-ends, Helmets Required at all times *Mills River Brewery Google Address: 328 Banner Farm Rd, Mills River, NC *Instagram: Crosstown_Velo_Racing_Team or Facebook: Crosstown-Velo-Racing-Team for race day i",
+   "venue": "328 Banner Farm Rd",
+   "city": "Mills River",
+   "state": "NC",
+   "lat": 35.3797074,
+   "lng": -82.5660866,
+   "image": "/BR/VirtualImages/EventLogos/66819c32-06ca-4eb3-a4bf-cf9ed94aacde.png",
+   "discipline_hint": "Cyclocross",
+   "tags": [
+    "Cyclocross"
+   ],
+   "recurring": "weekly",
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "youth",
+   "category_basis": "rule",
+   "discipline": "cx",
+   "uid": "82ab5a481026f2a7",
+   "distance_mi": 14.9
+  },
+  {
+   "title": "2026 Tuesday Night Cyclocross Training Series",
+   "start": "2026-09-29T04:00:00+00:00",
+   "all_day": false,
+   "url": "http://www.BikeReg.com/tuesday-night-cyclocross-training-series",
+   "description": "Group C: Men Novice, Women Novice, Women CX4, & Juniors (20 minutes at 6:00 pm) Group C: First-Timers 20 minutes at 6:01pm Group B: Men Novice, Men CX4, Men CX3, & Women CX1-3 (30 minutes immediately after C group) Group A: Men CX1-3 & Women CX1-2 (40 minutes immediately after B group) Race Information: *USAC Sanctioned Non-Competitive Training Series, No Awards/Prizes *$30 Entry Fee / Free for Juniors /no charge for 2nd same day race. *USA Cycling License Required (One day license available) *Registration opens at 4:45 pm, closes 15 minutes prior to start time *Mountain Bikes OK but no bar-ends, Helmets Required at all times *Mills River Brewery Google Address: 328 Banner Farm Rd, Mills River, NC *Instagram: Crosstown_Velo_Racing_Team or Facebook: Crosstown-Velo-Racing-Team for race day i",
+   "venue": "328 Banner Farm Rd",
+   "city": "Mills River",
+   "state": "NC",
+   "lat": 35.3797074,
+   "lng": -82.5660866,
+   "image": "/BR/VirtualImages/EventLogos/66819c32-06ca-4eb3-a4bf-cf9ed94aacde.png",
+   "discipline_hint": "Cyclocross",
+   "tags": [
+    "Cyclocross"
+   ],
+   "recurring": "weekly",
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "youth",
+   "category_basis": "rule",
+   "discipline": "cx",
+   "uid": "03009b517bb77e7e",
    "distance_mi": 14.9
   },
   {
