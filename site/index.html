@@ -188,6 +188,95 @@ footer{
   .controls{padding:10px 0}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------------------------------------------------------- month view */
+/* Added 2026-08-17. The agenda list stays the default: 68 events across 49
+   distinct days means most grid cells are empty, and a sparse grid reads as
+   "nothing on" rather than "quiet month". The grid earns its place for the
+   near-term question the agenda answers badly — "what's on this weekend". */
+/* Sits on the chip row when there's room, wraps beneath on narrow screens. */
+.controls .wrap{display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.controls .chips{flex:1 1 auto;min-width:0}
+.viewtoggle{display:flex;gap:0;flex:0 0 auto;margin-left:auto}
+.viewtoggle button{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;
+  background:transparent;border:1px solid var(--hair);color:var(--dim);
+  padding:6px 11px;cursor:pointer;transition:.15s;
+}
+.viewtoggle button+button{border-left:0}
+.viewtoggle button[aria-pressed="true"]{background:var(--rust);border-color:var(--rust);color:#fff}
+#grid{display:none}
+body.view-month #grid{display:block}
+body.view-month #list{display:none}
+
+.monthnav{display:flex;align-items:center;gap:14px;margin:26px 0 12px}
+.monthnav h2{
+  font-family:var(--display);font-size:clamp(1.5rem,5vw,2.1rem);
+  text-transform:uppercase;letter-spacing:.01em;margin:0;flex:1;
+}
+.monthnav h2 span{font-family:var(--mono);font-size:.6rem;color:var(--dim);
+  letter-spacing:.14em;margin-left:10px;vertical-align:middle}
+.monthnav button{
+  font-family:var(--mono);font-size:.7rem;background:transparent;
+  border:1px solid var(--hair);color:var(--ash);width:34px;height:32px;cursor:pointer;
+}
+.monthnav button:hover:not(:disabled){border-color:var(--rust);color:var(--rust)}
+.monthnav button:disabled{opacity:.3;cursor:default}
+
+.dow-head{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;margin-bottom:1px}
+.dow-head span{
+  font-family:var(--mono);font-size:.55rem;letter-spacing:.12em;color:var(--dim);
+  text-transform:uppercase;padding:4px 6px;
+}
+.cells{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--hair)}
+.cell{background:var(--forge);min-height:96px;padding:5px 6px 7px;position:relative;
+  border:0;text-align:left;font:inherit;color:inherit;cursor:default;width:100%}
+.cell.blank{background:var(--raise);opacity:.35}
+.cell.has{cursor:pointer}
+.cell.has:hover{background:var(--raise)}
+.cell.today{box-shadow:inset 0 0 0 1px var(--rust)}
+.cell.sel{background:var(--raise);box-shadow:inset 0 0 0 1px var(--dim)}
+.cell .dn{font-family:var(--mono);font-size:.68rem;color:var(--dim);display:block;margin-bottom:3px}
+.cell.today .dn{color:var(--rust)}
+.cell .pill{
+  display:block;font-size:.66rem;line-height:1.25;margin-bottom:2px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  border-left:2px solid var(--dim);padding-left:4px;
+}
+.cell .pill{color:var(--ash)}
+.cell .pill.cont{color:var(--dim);border-left-style:dotted}
+.cell .more{font-family:var(--mono);font-size:.55rem;color:var(--dim);letter-spacing:.06em}
+.dots{display:none;gap:3px;flex-wrap:wrap}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--dim);display:inline-block}
+/* Pills carry the category on the left rule only — the rest of the page uses
+   border+text colour rather than fills, and a grid of solid blocks both fights
+   that and wrecks text contrast. Dots are the opposite: they ARE the colour. */
+.pill.c-race{border-left-color:var(--rust)}
+.pill.c-trail-work{border-left-color:#6b8f4e}
+.pill.c-group-ride{border-left-color:#6d97ad}
+.pill.c-youth{border-left-color:#8a6fa8}
+.pill.c-festival{border-left-color:#b08d6c}
+.pill.c-clinic,.pill.c-advocacy,.pill.c-watch{border-left-color:var(--dim)}
+.dot.c-race{background:var(--rust)}
+.dot.c-trail-work{background:#6b8f4e}
+.dot.c-group-ride{background:#6d97ad}
+.dot.c-youth{background:#8a6fa8}
+.dot.c-festival{background:#b08d6c}
+.dot.c-clinic,.dot.c-advocacy,.dot.c-watch{background:var(--dim)}
+#dayview{margin-top:2px}
+#dayview:empty{display:none}
+#dayview .dayhead{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;color:var(--rust);
+  text-transform:uppercase;padding:12px 0 2px;border-top:1px solid var(--hair);margin-top:14px;
+}
+/* Phones: 7 columns of titles is ~50px each, so switch to category dots and
+   let a tap open the day's events underneath. */
+@media (max-width:640px){
+  .cell{min-height:56px;padding:4px}
+  .cell .pill,.cell .more{display:none}
+  .dots{display:flex}
+  .monthnav h2 span{display:none}
+}
 </style>
 </head>
 <body>
@@ -212,11 +301,16 @@ footer{
 <div class="controls">
   <div class="wrap">
     <div class="chips" id="filters" role="group" aria-label="Filter events"></div>
+    <div class="viewtoggle" role="group" aria-label="View">
+      <button id="v-agenda" aria-pressed="true">List</button>
+      <button id="v-month" aria-pressed="false">Month</button>
+    </div>
   </div>
 </div>
 
 <main class="wrap">
   <div id="list" aria-live="polite"></div>
+  <div id="grid" aria-live="polite"></div>
 
   <section class="panel">
     <h2>Put it on your phone</h2>
@@ -469,11 +563,166 @@ function downloadOne(uid){
   a.click();URL.revokeObjectURL(a.href);
 }
 
+
+/* ----------------------------------------------------------- month view */
+/* Reads the same visible() rows as the agenda, so filters apply to both.
+   State lives in the URL (#month/2026-09) so a month is shareable and the
+   back button works, rather than hiding in browser storage. */
+let cursor=null, selDay=null;
+
+const dkey=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"
+  +String(d.getDate()).padStart(2,"0");
+
+/* Inclusive day span of an event, clamped so one long entry cannot paint the
+   whole month. normalize.split_long_span should have removed the pathological
+   ones upstream; this is the belt to that pair of braces. */
+const GRID_MAX_SPAN=8;
+function daysOf(e){
+  const a=D(e); a.setHours(12,0,0,0);
+  const out=[dkey(a)];
+  if(!e.end) return out;
+  const b=new Date(e.end.length===10?e.end+"T12:00:00":e.end);
+  let n=Math.round((b-a)/864e5);
+  if(!(n>0)) return out;
+  n=Math.min(n,GRID_MAX_SPAN);
+  for(let i=1;i<=n;i++){
+    const d=new Date(a.getTime()+i*864e5); out.push(dkey(d));
+  }
+  return out;
+}
+
+function monthsWithEvents(){
+  const s=new Set(visible().flatMap(e=>daysOf(e).map(k=>k.slice(0,7))));
+  return [...s].sort();
+}
+
+function renderMonth(){
+  const host=document.getElementById("grid");
+  const rows=visible();
+  const months=monthsWithEvents();
+  if(!months.length){
+    host.innerHTML=`<div class="empty"><strong>Nothing here</strong>
+      Loosen a filter and it'll turn up.</div>`;
+    return;
+  }
+  if(!cursor||!/^\d{4}-\d{2}$/.test(cursor)) cursor=months[0];
+
+  /* Index events by day once, rather than re-scanning per cell. */
+  const byDay={};
+  rows.forEach(e=>daysOf(e).forEach((k,i)=>{
+    (byDay[k]=byDay[k]||[]).push({e,cont:i>0});
+  }));
+
+  const [Y,M]=cursor.split("-").map(Number);
+  const first=new Date(Y,M-1,1), last=new Date(Y,M,0);
+  const lead=first.getDay(), total=last.getDate();
+  const idx=months.indexOf(cursor);
+  const inMonth=Object.keys(byDay).filter(k=>k.startsWith(cursor))
+    .reduce((n,k)=>n+byDay[k].filter(x=>!x.cont).length,0);
+  const todayK=dkey(new Date());
+
+  let h=`<div class="monthnav">
+    <button id="mprev" ${idx<=0?"disabled":""} aria-label="Previous month">&#8592;</button>
+    <button id="mnext" ${idx>=months.length-1?"disabled":""} aria-label="Next month">&#8594;</button>
+    <h2>${MONTHF[M-1]} ${Y}<span>${inMonth} event${inMonth===1?"":"s"}</span></h2>
+  </div>
+  <div class="dow-head">${DOW.map(d=>`<span>${d}</span>`).join("")}</div>
+  <div class="cells">`;
+
+  for(let i=0;i<lead;i++) h+=`<div class="cell blank"></div>`;
+  for(let day=1;day<=total;day++){
+    const k=`${Y}-${String(M).padStart(2,"0")}-${String(day).padStart(2,"0")}`;
+    const hits=byDay[k]||[];
+    const cls=["cell",hits.length?"has":"",k===todayK?"today":"",
+               k===selDay?"sel":""].filter(Boolean).join(" ");
+    const tag=hits.length?"button":"div";
+    h+=`<${tag} class="${cls}"${hits.length?` data-day="${k}" aria-label="${day}, ${hits.length} event${hits.length===1?"":"s"}"`:""}>
+      <span class="dn">${day}</span>`;
+    hits.slice(0,3).forEach(({e,cont})=>{
+      h+=`<span class="pill c-${esc(e.category)}${cont?" cont":""}">${cont?"&#8230; ":""}${esc(e.title)}</span>`;
+    });
+    if(hits.length>3) h+=`<span class="more">+${hits.length-3}</span>`;
+    if(hits.length) h+=`<span class="dots">`+hits.slice(0,6)
+      .map(({e})=>`<i class="dot c-${esc(e.category)}"></i>`).join("")+`</span>`;
+    h+=`</${tag}>`;
+  }
+  h+=`</div><div id="dayview"></div>`;
+  host.innerHTML=h;
+
+  const prev=document.getElementById("mprev"),next=document.getElementById("mnext");
+  if(prev)prev.onclick=()=>{cursor=months[idx-1];selDay=null;syncHash();renderMonth();};
+  if(next)next.onclick=()=>{cursor=months[idx+1];selDay=null;syncHash();renderMonth();};
+
+  host.querySelectorAll("[data-day]").forEach(c=>c.onclick=()=>{
+    selDay=(selDay===c.dataset.day)?null:c.dataset.day;renderMonth();
+    if(selDay)document.getElementById("dayview")
+      .scrollIntoView({behavior:"smooth",block:"nearest"});
+  });
+
+  if(selDay&&byDay[selDay]) drawDay(selDay,byDay[selDay]);
+}
+
+function drawDay(k,hits){
+  const d=new Date(k+"T12:00:00");
+  const head=`${DOW[d.getDay()]} ${MONTHF[d.getMonth()]} ${d.getDate()}`;
+  const dv=document.getElementById("dayview");
+  dv.innerHTML=`<div class="dayhead">${head}</div>`+hits.map(({e,cont})=>{
+    const where=[e.venue,e.city].filter(Boolean).join(", ")||e.city||"";
+    return `<article class="ev open">
+      <div class="date"><span class="dow">${DOW[d.getDay()]}</span>
+        <span class="dnum">${d.getDate()}</span></div>
+      <div class="body">
+        <button class="head" aria-expanded="true">${esc(e.title)}${cont?" (continues)":""}</button>
+        <div class="meta">
+          <span class="tag ${esc(e.category)}">${esc(e.category.replace("-"," "))}</span>
+          <span>${esc(timeLabel(e))}</span>
+          ${where?`<span>${esc(where)}</span>`:""}
+          ${e.distance_mi!=null?`<span>${e.distance_mi} mi</span>`:""}
+        </div>
+        <div class="detail">
+          ${e.description?`<p>${esc(e.description)}</p>`:"<p></p>"}
+          <div class="acts">
+            ${e.url?`<a class="act" href="${esc(e.url)}" target="_blank" rel="noopener">Event page</a>`:""}
+            <button class="act sub" data-add="${esc(e.uid)}">Add to my calendar</button>
+          </div>
+          <div class="credit">Listed by ${esc(e.source_name||"Altar")}</div>
+        </div>
+      </div></article>`;
+  }).join("");
+  dv.querySelectorAll("[data-add]").forEach(b=>b.onclick=()=>downloadOne(b.dataset.add));
+}
+
+/* ---------------------------------------------------------- view switch */
+let view="agenda";
+function syncHash(){
+  const h=view==="month"?("#month"+(cursor?"/"+cursor:"")):"";
+  if(location.hash!==h) history.replaceState(null,"",location.pathname+h);
+}
+function setView(v,push){
+  view=v==="month"?"month":"agenda";
+  document.body.classList.toggle("view-month",view==="month");
+  const a=document.getElementById("v-agenda"),m=document.getElementById("v-month");
+  if(a)a.setAttribute("aria-pressed",view==="agenda");
+  if(m)m.setAttribute("aria-pressed",view==="month");
+  if(view==="month")renderMonth(); else render();
+  if(push!==false)syncHash();
+}
+function readHash(){
+  const m=/^#month(?:\/(\d{4}-\d{2}))?/.exec(location.hash||"");
+  if(m){if(m[1])cursor=m[1];return "month";}
+  return "agenda";
+}
+
 /* ----------------------------------------------------------------- boot */
 function boot(data){
   EVENTS=(data.events||[]).filter(e=>e&&e.start&&e.title)
     .sort((a,b)=>a.start.localeCompare(b.start));
-  drawProfile();drawFilters();render();
+  drawProfile();drawFilters();
+
+  document.getElementById("v-agenda").onclick=()=>setView("agenda");
+  document.getElementById("v-month").onclick=()=>setView("month");
+  window.addEventListener("hashchange",()=>setView(readHash(),false));
+  setView(readHash(),false);
 
   const feed=location.origin+location.pathname.replace(/[^/]*$/,"")+"events.ics";
   if(location.protocol.startsWith("http")){
