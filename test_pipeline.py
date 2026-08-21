@@ -228,6 +228,42 @@ check("region rung uses Southeast (the region NC is in)",
 check("no rung uses a hyphenated region name",
       any("-" in str(s.get("region", "")) for s in shapes), False)
 
+print("\nlong spans (seasons and series posing as one event)")
+# All four captured from the live calendar on 2026-08-17. Building the month
+# grid is what exposed them: in an agenda list a 180-day event is one harmless
+# row, in a grid it paints every cell it covers.
+_cx = normalize.split_long_span(
+    {"title": "2026 Tuesday Night Cyclocross Training Series",
+     "start": "2026-09-15T18:00:00", "end": "2026-09-29T18:00:00"})
+check("weekday named in title -> weekly occurrences", len(_cx), 3)
+check("occurrences land on the named weekday",
+      [datetime.fromisoformat(e["start"]).strftime("%a") for e in _cx],
+      ["Tue", "Tue", "Tue"])
+check("split occurrences drop the long end", "end" in _cx[0], False)
+
+for title, start, end in [
+        ("Pisgah Rage Regular Season", "2026-12-01", "2027-05-30"),
+        ("Bear's Smokehouse BBQ Community Rides", "2027-05-01", "2027-08-31"),
+        ("Pisgah Rage Pre-season", "2026-10-15", "2026-12-31")]:
+    got = normalize.split_long_span({"title": title, "start": start, "end": end})
+    check("no cadence stated -> one entry: " + title[:26], len(got), 1)
+    check("  and the true range is recorded",
+          "Runs" in (got[0].get("description") or ""), True)
+    check("  and the long end is dropped", "end" in got[0], False)
+
+# Genuine weekenders must be left completely alone.
+for title, start, end, days in [
+        ("Rocky Knob Mountaineer Showdown", "2026-08-29", "2026-08-30", 1),
+        ("Fall Trail Weekend", "2026-11-06", "2026-11-08", 2)]:
+    got = normalize.split_long_span({"title": title, "start": start, "end": end})
+    check("weekender untouched: " + title[:28], len(got) == 1 and got[0].get("end") == end, True)
+
+check("junk dates cannot crash the split",
+      len(normalize.split_long_span(
+          {"title": "Tuesday thing", "start": "nope", "end": "also nope"})), 1)
+check("an event with no end is passed straight through",
+      len(normalize.split_long_span({"title": "X", "start": "2026-09-01"})), 1)
+
 print("\ntitle tidying")
 # The first case is verbatim from calendar.altar.bike on launch day.
 for messy, want in [

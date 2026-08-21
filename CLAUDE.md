@@ -86,7 +86,7 @@ curl -sS -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/user
 Two suites, both green (2026-08-17). Run them after any change:
 
 ```bash
-python test_pipeline.py      # 117 checks
+python test_pipeline.py      # 133 checks
 python test_integration.py   # 56 checks
 ```
 
@@ -310,6 +310,40 @@ updates them. Monthly walks calendar months, not 28 days, and clamps (31 Aug ->
 so the gate was untestable and the issue template's `labels:` line was a no-op.
 Both labels created 2026-08-17. Nothing from the public form reaches the
 calendar until Matt adds `approved`; removing it takes the event down again.
+
+**2e. Month view — DONE 2026-08-17.** `site/index.html` now has a List/Month
+toggle. The grid reads the same `visible()` rows as the agenda, so the filter
+chips apply to both. State lives in the URL (`#month/2026-09`) so a month is
+shareable and the back button works — deliberately not browser storage. On
+screens under 640px the titles are replaced by category dots and tapping a day
+opens that day's events beneath, because 7 columns of titles at 390px is
+unreadable. **The agenda stays the default on purpose:** 68 events across 49
+distinct days over 13 months means most cells are empty, and a sparse grid
+reads as "nothing on" rather than "quiet month". December had 2 events and
+February 1. The grid's real job is the near-term "what's on this weekend"
+question the agenda answers badly.
+
+**2f. Long spans — seasons and series posing as one event. FIXED, and building
+the month view is what exposed them.** In an agenda list a long span is one
+harmless row; in a grid it paints every cell it covers. The live data had four:
+
+| event | span | would have painted |
+|---|---|---|
+| Pisgah Rage Regular Season | 180 days | six months of every cell |
+| Bear's Smokehouse Community Rides | 122 days | four months |
+| Pisgah Rage Pre-season | 77 days | two and a half months |
+| 2026 Tuesday Night Cyclocross Series | 14 days | half of September |
+
+`normalize.split_long_span` handles anything over `LONG_SPAN_DAYS` (7). It is
+deliberately conservative about inventing dates: it only generates occurrences
+when **the title names a weekday** — "Tuesday Night Cyclocross" is
+unambiguously Tuesdays, so Sep 15-29 becomes three real Tuesday events.
+Everything else keeps its start date and records the true range in the
+description ("Runs 1 Dec 2026 to 30 May 2027."). Guessing a weekly cadence for
+a "Regular Season" would put invented dates on a customer-facing calendar,
+which is worse than one honest entry. Genuine weekenders (Rocky Knob 2 days,
+Fall Trail Weekend 3 days) pass through untouched. The month renderer also
+clamps at `GRID_MAX_SPAN` (8 cells) as a second line of defence.
 
 **2d. Multi-day events publish once per day.** Blue Ridge Heritage's craft
 exhibition appeared ELEVEN times before the keyword fix removed it entirely.

@@ -373,6 +373,82 @@ def _add_months(d, n):
     return d.replace(year=year, month=month, day=day)
 
 
+# --------------------------------------------------------------------------
+# long spans: seasons and series masquerading as one event
+# --------------------------------------------------------------------------
+
+# More than a long weekend is not one event. Found 2026-08-17 when building the
+# month-grid view, which is what made this visible — in an agenda list a long
+# span is one harmless row, but in a calendar grid it paints every cell it
+# covers. The live data had four:
+#   Pisgah Rage Regular Season        180 days  (a season, not an event)
+#   Bear's Smokehouse Community Rides 122 days  (a ride series)
+#   Pisgah Rage Pre-season             77 days  (a season)
+#   Tuesday Night Cyclocross Series    14 days  (a weekly series)
+LONG_SPAN_DAYS = 7
+
+_WEEKDAY_RE = re.compile(
+    r"\b(mon|tues?|wednes|thurs?|fri|satur|sun)day\b", re.I)
+_WEEKDAY_INDEX = {"mon": 0, "tue": 1, "tues": 1, "wednes": 2, "thur": 3,
+                  "thurs": 3, "fri": 4, "satur": 5, "sun": 6}
+
+
+def _named_weekday(title: str):
+    """The weekday a title names, e.g. 'Tuesday Night Cyclocross' -> 1."""
+    m = _WEEKDAY_RE.search(title or "")
+    return _WEEKDAY_INDEX.get(m.group(1).lower()) if m else None
+
+
+def split_long_span(event: dict) -> list[dict]:
+    """
+    Break up an event whose `end` is implausibly far from its `start`.
+
+    Deliberately conservative about inventing dates. We only generate
+    occurrences when the title NAMES A WEEKDAY — "2026 Tuesday Night
+    Cyclocross Training Series" is unambiguously Tuesdays, so Sep 15 -> Sep 29
+    becomes three real Tuesday events. Everything else (a "Regular Season", a
+    "Community Rides" banner with no cadence stated) keeps its start date and
+    records the true range in the description instead. Guessing a weekly cadence
+    for those would put invented dates on a customer-facing calendar, which is
+    worse than one honest entry.
+    """
+    try:
+        start = datetime.fromisoformat(str(event["start"]))
+        end = datetime.fromisoformat(str(event["end"]))
+    except (ValueError, KeyError, TypeError):
+        return [event]
+    span = (end - start).days
+    if span <= LONG_SPAN_DAYS:
+        return [event]
+
+    fmt = lambda d: d.strftime("%-d %b %Y") if hasattr(d, "strftime") else str(d)
+    weekday = _named_weekday(event.get("title", ""))
+
+    if weekday is not None:
+        out, when, n = [], start, 0
+        while when <= end and n < RECUR_MAX_COUNT:
+            if when.weekday() == weekday:
+                copy = dict(event)
+                copy["start"] = (event["start"] if when == start
+                                 else when.isoformat())
+                copy.pop("end", None)
+                copy["recurring"] = "weekly"
+                out.append(copy)
+                n += 1
+            when += timedelta(days=1)
+        if out:
+            return out
+
+    # No cadence we can justify. Keep one entry, say what the range is.
+    copy = dict(event)
+    copy.pop("end", None)
+    copy["long_span_days"] = span
+    note = f"Runs {fmt(start)} to {fmt(end)}."
+    desc = (copy.get("description") or "").strip()
+    copy["description"] = f"{note} {desc}".strip() if note not in desc else desc
+    return [copy]
+
+
 def expand_recurrence(event: dict, horizon_days: int = 400) -> list[dict]:
     """
     Turn one event carrying `repeat` into the individual dated events it means.
@@ -446,6 +522,7 @@ def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict
     # Expand before anything else so each occurrence gets its own geofence
     # check, category, uid and horizon test, exactly like a one-off would.
     # Sources that never set `repeat` pass through untouched.
+    raw = [x for e in raw for x in split_long_span(e)]
     raw = [occurrence for e in raw for occurrence in expand_recurrence(e)]
 
     out = []
