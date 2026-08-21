@@ -1,15 +1,15 @@
 {
- "generated": "2026-08-21T09:54:49.741428+00:00",
+ "generated": "2026-08-21T13:51:03.293248+00:00",
  "total": 68,
- "world": 24,
+ "world": 23,
  "needs_attention": [],
  "sources": {
   "asheville-on-bikes": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 22,
+   "fetched": 21,
    "kept": 19,
-   "at": "2026-08-21T09:52:38.731984+00:00"
+   "at": "2026-08-21T13:48:10.183625+00:00"
   },
   "asheville-on-bikes-rwgps": {
    "status": "failed",
@@ -25,21 +25,21 @@
    "adapter": "llm",
    "fetched": 2,
    "kept": 2,
-   "at": "2026-08-21T09:52:44.732446+00:00"
+   "at": "2026-08-21T13:48:16.187213+00:00"
   },
   "blue-ridge-dirt-skrrts": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 6,
+   "fetched": 16,
    "kept": 5,
-   "at": "2026-08-21T09:53:22.060884+00:00"
+   "at": "2026-08-21T13:49:33.678948+00:00"
   },
   "velosports-ring-of-fire": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 8,
    "kept": 0,
-   "at": "2026-08-21T09:53:30.423732+00:00"
+   "at": "2026-08-21T13:49:41.805514+00:00"
   },
   "blue-ridge-bicycle-club": {
    "status": "failed",
@@ -55,28 +55,28 @@
    "adapter": "volunteerhub",
    "fetched": 6,
    "kept": 4,
-   "at": "2026-08-21T09:53:34.400728+00:00"
+   "at": "2026-08-21T13:49:46.326067+00:00"
   },
   "g5-trail-collective": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 5,
    "kept": 4,
-   "at": "2026-08-21T09:53:39.062982+00:00"
+   "at": "2026-08-21T13:49:50.106273+00:00"
   },
   "nica-nc": {
    "status": "ok",
    "adapter": "jsonld",
    "fetched": 6,
    "kept": 0,
-   "at": "2026-08-21T09:53:42.039361+00:00"
+   "at": "2026-08-21T13:49:50.755168+00:00"
   },
   "pisgah-rage": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 2,
    "kept": 2,
-   "at": "2026-08-21T09:53:45.912663+00:00"
+   "at": "2026-08-21T13:49:54.539486+00:00"
   },
   "ic-imagine-cycling": {
    "status": "failed",
@@ -92,28 +92,28 @@
    "adapter": "bikereg",
    "fetched": 45,
    "kept": 32,
-   "at": "2026-08-21T09:54:04.944623+00:00"
+   "at": "2026-08-21T13:50:21.287501+00:00"
   },
   "runsignup": {
    "status": "ok",
    "adapter": "runsignup",
    "fetched": 250,
    "kept": 1,
-   "at": "2026-08-21T09:54:06.985592+00:00"
+   "at": "2026-08-21T13:50:23.262169+00:00"
   },
   "uci": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 24,
-   "kept": 24,
-   "at": "2026-08-21T09:54:26.824051+00:00"
+   "fetched": 23,
+   "kept": 23,
+   "at": "2026-08-21T13:50:42.562338+00:00"
   },
   "blue-ridge-heritage": {
    "status": "ok",
    "adapter": "tribe",
    "fetched": 500,
    "kept": 0,
-   "at": "2026-08-21T09:54:49.530329+00:00"
+   "at": "2026-08-21T13:51:02.971059+00:00"
   }
  }
 }
