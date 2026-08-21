@@ -1,5 +1,5 @@
 {
- "at": "2026-08-20T09:50:33.956312+00:00",
+ "at": "2026-08-21T09:52:38.731460+00:00",
  "events": [
   {
    "title": "Bike Love",
@@ -297,7 +297,7 @@
    "venue": "",
    "city": "Asheville",
    "state": "NC",
-   "cost": "Free",
+   "cost": null,
    "extracted_by": "llm",
    "source": "asheville-on-bikes",
    "source_name": "Asheville on Bikes",
@@ -330,28 +330,6 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "2db110e2b5eae1f7"
-  },
-  {
-   "title": "Bike Valet at Downtown After Five",
-   "start": "2027-08-21",
-   "end": "2027-08-21",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events",
-   "description": "Annual recurring event",
-   "venue": "Downtown After Five",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": "Free",
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "group-ride",
-   "category_basis": "default",
-   "discipline": "commuter",
-   "uid": "7037f9eff5e41388"
   },
   {
    "title": "Tour de Fat",
@@ -425,7 +403,7 @@
    "end": "2026-08-22T00:00:00",
    "all_day": false,
    "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Celebrate 20 years of Asheville on Bikes! Event includes Pop-Up Bike Park (2-7pm), Summer Cycle Check-In (3:30-4pm), ride start (4pm), and Post-Ride Festivities (5-7pm). Multiple route options: Cruiser Ride (5 miles), Main Ride (7 miles), and Ride More (18 miles). Waiver required to participate.",
+   "description": "Celebrate 20 years of Asheville on Bikes! Annual community ride event with multiple route options: Cruiser Ride (5 miles), Main Ride (7 miles), and Ride More (18 miles). Includes pop-up bike park, check-in, and post-ride festivities.",
    "venue": "New Belgium Brewing",
    "city": "Asheville",
    "state": "NC",
@@ -440,28 +418,6 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "e6662d6251819fff"
-  },
-  {
-   "title": "Pumpkin Pedaller",
-   "start": "2026-10-01",
-   "end": "2026-10-31",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Annual recurring event in October. See website for specific date and details.",
-   "venue": "None",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": null,
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "group-ride",
-   "category_basis": "default",
-   "discipline": "other",
-   "uid": "b7bf4ed64dac0469"
   }
  ]
 }

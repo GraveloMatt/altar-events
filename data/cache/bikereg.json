@@ -1,5 +1,5 @@
 {
- "at": "2026-08-20T09:52:25.523090+00:00",
+ "at": "2026-08-21T09:54:04.943689+00:00",
  "events": [
   {
    "title": "Gravel Roll - The Holler in Walhalla",
@@ -120,7 +120,7 @@
    "end": "2026-08-30T04:00:00+00:00",
    "all_day": false,
    "url": "http://www.BikeReg.com/rocky-knob-ruckus",
-   "description": "Volunteer Sign up: https://docs.google.com/forms/d/e/1FAIpQLSftNPvcVqCd2vvpp-gaB7QKpMLljbhNphTahbj_PHD3ZmCGuQ/viewform?usp=publish-editor All courses will be marked and taped by Friday afternoon. Saturday, August 29th: 8:30am Registration Opens 9:30-3pm XCO Races (Category start times coming soon) *All enduro racers are allowed to pre-ride the course all day, however, one stage is used in the XC courses. That stage will open after XC races conclude after 3pm. PLEASE be mindful of XC racers on course and in the parking lot! 6:30pm Whip-off competition at The Jam Sunday, August 30th: 7:30am Registration Opens 8:30-11:30am XC Short Track (Category start times coming soon) 12-4pm Enduro 4pm Results and Podiums Courses XC: https://ridewithgps.com/routes/51960777 STXC: https://ridewithgps.com/ro",
+   "description": "VOLUNTEER SIGN UP: https://docs.google.com/forms/d/e/1FAIpQLSftNPvcVqCd2vvpp-gaB7QKpMLljbhNphTahbj_PHD3ZmCGuQ/viewform?usp=publish-editor ***All courses will be marked and taped by Friday afternoon. Saturday, August 29th: 8:30am: Registration Opens 9:30-3pm: XCO Races (Category start times coming soon) 3pm-ish: Enduro practice (***Due to the sharing of trails with XC course, the Enduro course will not open until conclusion of XC race) 6:30pm: Whip-off competition at The Jam Sunday, August 30th: 7:30am: Registration Opens 8:30-11:30am: XC Short Track (Category start times coming soon) 12-4pm: Enduro 4pm: Results and Podiums COURSES: CROSS COUNTRY (3.2 miles) Rocky Branch > Mr. Berms > Middle of Nowhere > Boat Rock > (Don\u2019t) Rock the Boat > Middle Earth > The Roman Road > Rocky Branch Course",
    "venue": "285 Mountain Bike Wy",
    "city": "Boone",
    "state": "NC",
@@ -142,6 +142,34 @@
    "discipline": "mtb",
    "uid": "fee58fd0937c36eb",
    "distance_mi": 67.5
+  },
+  {
+   "title": "Asheville Youth Cycling CX Practice August 30th",
+   "start": "2026-08-30T04:00:00+00:00",
+   "end": "2026-08-30T04:00:00+00:00",
+   "all_day": false,
+   "url": "http://www.BikeReg.com/asheville-youth-cycling-cx-practice-august-30-2026",
+   "description": "Join Asheville Youth Cycling for a fun Cyclocross practice for juniors at Kenilworth Park ( 79 Wyoming Rd, Asheville, NC 28803). All juniors are welcome along with a parent (watch or help out). For more information contact Michael Lemon at michaelchandlerlemon@gmail.com",
+   "venue": "79 Wyoming Rd",
+   "city": "Asheville",
+   "state": "NC",
+   "lat": 35.5775767,
+   "lng": -82.5420265,
+   "image": "/BR/VirtualImages/EventLogos/0f7778ff-aba3-4e6a-b820-2a20c2729dfe.png",
+   "discipline_hint": "Cyclocross",
+   "tags": [
+    "Cyclocross"
+   ],
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "youth",
+   "category_basis": "rule",
+   "discipline": "cx",
+   "uid": "93c7c08500b384ca",
+   "distance_mi": 1.3
   },
   {
    "title": "Dirt Diggler Gravel Grinder",

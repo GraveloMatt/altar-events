@@ -10,7 +10,7 @@ BEGIN:VEVENT
 SUMMARY:Brevard Womens Work Day
 DTSTART:20260824T173000
 DTEND:20260824T193000
-DTSTAMP:20260820T095305Z
+DTSTAMP:20260821T095449Z
 UID:a7a570249b9c1518@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Join Pisgah Area SORBA for a Women's Trail Work Day on Mon day
@@ -33,21 +33,21 @@ BEGIN:VEVENT
 SUMMARY:Rocky Knob Mountaineer Showdown
 DTSTART:20260829T040000Z
 DTEND:20260830T040000Z
-DTSTAMP:20260820T095305Z
+DTSTAMP:20260821T095449Z
 UID:fee58fd0937c36eb@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Volunteer Sign up: https://docs.google.com/forms/d/e/1FAIpQLSf
+DESCRIPTION:VOLUNTEER SIGN UP: https://docs.google.com/forms/d/e/1FAIpQLSf
  tNPvcVqCd2vvpp-gaB7QKpMLljbhNphTahbj_PHD3ZmCGuQ/viewform?usp=publish-edito
- r All courses will be marked and taped by Friday afternoon. Saturday\, Aug
- ust 29th: 8:30am Registration Opens 9:30-3pm XCO Races (Category start tim
- es coming soon) *All enduro racers are allowed to pre-ride the course all 
- day\, however\, one stage is used in the XC courses. That stage will open 
- after XC races conclude after 3pm. PLEASE be mindful of XC racers on cours
- e and in the parking lot! 6:30pm Whip-off competition at The Jam Sunday\, 
- August 30th: 7:30am Registration Opens 8:30-11:30am XC Short Track (Catego
- ry start times coming soon) 12-4pm Enduro 4pm Results and Podiums Courses 
- XC: https://ridewithgps.com/routes/51960777 STXC: https://ridewithgps.com/
- ro\n\nMore: http://www.BikeReg.com/rocky-knob-ruckus\n\nSource: BikeReg\n
+ r ***All courses will be marked and taped by Friday afternoon. Saturday\, 
+ August 29th: 8:30am: Registration Opens 9:30-3pm: XCO Races (Category star
+ t times coming soon) 3pm-ish: Enduro practice (***Due to the sharing of tr
+ ails with XC course\, the Enduro course will not open until conclusion of 
+ XC race) 6:30pm: Whip-off competition at The Jam Sunday\, August 30th: 7:3
+ 0am: Registration Opens 8:30-11:30am: XC Short Track (Category start times
+  coming soon) 12-4pm: Enduro 4pm: Results and Podiums COURSES: CROSS COUNT
+ RY (3.2 miles) Rocky Branch > Mr. Berms > Middle of Nowhere > Boat Rock > 
+ (Don’t) Rock the Boat > Middle Earth > The Roman Road > Rocky Branch Cou
+ rse\n\nMore: http://www.BikeReg.com/rocky-knob-ruckus\n\nSource: BikeReg\n
  \nListed by Altar Cycles — altar.bike/calendar
 GEO:36.2201393;-81.6240583
 LOCATION:285 Mountain Bike Wy\, Boone\, NC
@@ -57,12 +57,12 @@ BEGIN:VEVENT
 SUMMARY:Betty's & Jarret's Run Trail Day
 DTSTART:20260904T120000
 DTEND:20260904T163000
-DTSTAMP:20260820T095305Z
+DTSTAMP:20260821T095449Z
 UID:e1bc6ea5ef974c01@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Drain cleaning. Tread shaping.\n\nMore: https://www.g5trailcol
- lective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by Altar Cy
- cles — altar.bike/calendar
+DESCRIPTION:Project: Drain cleaning. Tread shaping.\n\nMore: https://www.g
+ 5trailcollective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by
+  Altar Cycles — altar.bike/calendar
 LOCATION:Gateway Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
@@ -70,7 +70,7 @@ BEGIN:VEVENT
 SUMMARY:Catalyst Summer Jam Lunch Crew
 DTSTART:20260905T113000
 DTEND:20260905T140000
-DTSTAMP:20260820T095305Z
+DTSTAMP:20260821T095449Z
 UID:6471d9f7df15cf50@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:We're looking for a few volunteers to help Pisgah Area SORBA c
@@ -94,12 +94,12 @@ BEGIN:VEVENT
 SUMMARY:Lower Heartbreak Trail Day
 DTSTART:20260912T090000
 DTEND:20260912T140000
-DTSTAMP:20260820T095305Z
+DTSTAMP:20260821T095449Z
 UID:199f975dfbc75d0a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Drain cleaning. Corridor pruning & brushing.\n\nMore: https://
- www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Collective\n\nList
- ed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Project: Drain cleaning. Corridor pruning & brushing.\n\nMore:
+  https://www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Collectiv
+ e\n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:Allison Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
@@ -107,7 +107,7 @@ BEGIN:VEVENT
 SUMMARY:Women's Bikepacking Overnight w/ Earth Mountain!
 DTSTART:20260912T110000
 DTEND:20260913T150000
-DTSTAMP:20260820T095305Z
+DTSTAMP:20260821T095449Z
 UID:75f2fce441c009eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Women’s Overnight Bikepacking Trip with Earth Mountain! Join
@@ -131,7 +131,7 @@ BEGIN:VEVENT
 SUMMARY:Brevard Dig Day w/ CMC
 DTSTART:20261009T083000
 DTEND:20261009T140000
-DTSTAMP:20260820T095305Z
+DTSTAMP:20260821T095449Z
 UID:500d1546ec2f74d1@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Join Pisgah Area SORBA and the Carolina Mountain Club for a Tr
@@ -155,11 +155,12 @@ BEGIN:VEVENT
 SUMMARY:Fall Trail Weekend!
 DTSTART:20261106T160000
 DTEND:20261108T130000
-DTSTAMP:20260820T095305Z
+DTSTAMP:20260821T095449Z
 UID:65a4e186a310b33a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:More: https://www.g5trailcollective.org/volunteer\n\nSource: G
- 5 Trail Collective\n\nListed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:SAVE THE DATE\n\nMore: https://www.g5trailcollective.org/volun
+ teer\n\nSource: G5 Trail Collective\n\nListed by Altar Cycles — altar.bi
+ ke/calendar
 LOCATION:Camp Grier\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
