@@ -58,27 +58,39 @@ jobs:
           git add -A site data/cache
           if git diff --staged --quiet; then
             echo "No change."
-          else
-            git commit -m "events: $(date -u +%Y-%m-%d) [skip ci]"
-            # The runner checked out a commit that may no longer be the tip:
-            # anyone editing data/manual.yml or sources.yml in GitHub's web UI
-            # while a build is running pushes ahead of us, and a bare `git push`
-            # then dies with "! [rejected] main -> main (fetch first)". That
-            # happened on run #1. Rebase our generated files onto whatever
-            # landed meanwhile — they only ever touch site/ and data/cache/,
-            # which a human never edits by hand, so there is nothing to conflict
-            # with. Retry the whole dance in case a second push slips in.
-            for attempt in 1 2 3; do
-              if git push; then
-                echo "Pushed on attempt $attempt."
-                exit 0
-              fi
-              echo "Push rejected, rebasing onto origin/main (attempt $attempt)."
-              git pull --rebase --autostash origin main
-            done
-            echo "::error::Could not push results after 3 attempts."
-            exit 1
+            exit 0
           fi
+          git commit -m "events: $(date -u +%Y-%m-%d) [skip ci]"
+
+          # The runner may not be at the tip: a web-UI edit, or a SECOND build
+          # overlapping this one, can land first. Do NOT rebase — everything we
+          # write is GENERATED (site/, data/cache/), so replaying our commit
+          # onto theirs conflicts on all 16 files at once. That is exactly how
+          # run #17 died on 2026-08-21 after an earlier "fix" chose rebase.
+          #
+          # Generated output is authoritative because it was just built from
+          # current data. So: move HEAD to the new tip with a MIXED reset,
+          # which leaves our freshly built files on disk, then stage only our
+          # own directories and commit on top. A mixed reset is deliberate —
+          # --soft would keep the whole old tree staged and silently revert
+          # anyone else's concurrent edit to sources.yml.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected; re-basing generated output onto the new tip (attempt $attempt)."
+            git fetch origin main
+            git reset origin/main
+            git add -A site data/cache
+            if git diff --staged --quiet; then
+              echo "Someone else already published identical output. Nothing to do."
+              exit 0
+            fi
+            git commit -m "events: $(date -u +%Y-%m-%d) [skip ci]"
+          done
+          echo "::error::Could not push results after 3 attempts."
+          exit 1
 
       - uses: actions/upload-pages-artifact@v3
         with:
