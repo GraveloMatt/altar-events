@@ -1,13 +1,13 @@
 {
- "at": "2026-08-21T14:06:15.984751+00:00",
+ "at": "2026-08-22T09:43:15.366379+00:00",
  "events": [
   {
    "title": "Pisgah Rage Pre-season",
    "start": "2026-10-15",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 15 Oct 2026 to 15 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and adventure rides in Bent Creek or Dupont",
-   "venue": "Asheville area",
+   "description": "Runs 15 Oct 2026 to 15 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and 1-2 adventure rides in Bent Creek or Dupont",
+   "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
    "cost": null,
@@ -28,8 +28,8 @@
    "start": "2026-12-01",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with indoor training January, weekend practices February-May, and 5-6 races across North Carolina starting in early March",
-   "venue": "Asheville area and across North Carolina",
+   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with indoor training in January, weekend practices in February, and 2 rides per week March-May. NICA races typically held 5-6 times across North Carolina from March through May. Racing occurs all day Sunday with Saturday pre-rides.",
+   "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
    "cost": null,
@@ -40,7 +40,7 @@
    "source_url": "https://www.pisgahrage.com/",
    "trust": 50,
    "bucket": "local",
-   "category": "race",
+   "category": "youth",
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "670937aa0418b08a"

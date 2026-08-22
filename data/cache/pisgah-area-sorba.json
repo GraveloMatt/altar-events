@@ -1,26 +1,6 @@
 {
- "at": "2026-08-21T14:16:19.346868+00:00",
+ "at": "2026-08-22T09:43:05.212217+00:00",
  "events": [
-  {
-   "title": "Brevard Womens Work Day",
-   "start": "2026-08-24T17:30:00",
-   "end": "2026-08-24T19:30:00",
-   "all_day": false,
-   "url": "https://www.pisgahareasorba.org/",
-   "description": "Join Pisgah Area SORBA for a Women's Trail Work Day on Mon day, August 24, from 5:30\u20137:30 PM ! Come spend an evening giving back to the trails, meeting other women who love the outdoors, and enjoying some time by the river. We'll be brushing back vegetation along the Davidson River Trail to improve the trail corridor and keep this popular trail looking its best. We'll meet at the Cove Creek Trailhead , making it easy to cool off with a swim in the Davidson River after the work is done. To top it all off, we'll fire up the grill afterward and enjoy some food and cold drinks together by the river! Date: Monday, August 24th Time: 5:30 PM \u2013 7:30 PM Trail Work Location: Davidson River Trail Meetup Location: Cove Creek Trailhead No trail work experience is necessary. We'll provide the tools, ins",
-   "venue": "75MM+66 Brevard, North Carolina, USA",
-   "city": "75MM+66 Brevard",
-   "state": "",
-   "source": "pisgah-area-sorba",
-   "source_name": "Pisgah Area SORBA",
-   "source_url": "https://www.pisgahareasorba.org/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "trail-work",
-   "category_basis": "rule",
-   "discipline": "mtb",
-   "uid": "a7a570249b9c1518"
-  },
   {
    "title": "Catalyst Summer Jam Lunch Crew",
    "start": "2026-09-05T11:30:00",

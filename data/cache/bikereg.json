@@ -1,5 +1,5 @@
 {
- "at": "2026-08-21T14:16:36.294528+00:00",
+ "at": "2026-08-22T09:43:20.727311+00:00",
  "events": [
   {
    "title": "Gravel Roll - The Holler in Walhalla",
@@ -801,6 +801,34 @@
    "discipline": "mtb",
    "uid": "5d605450c7d6e77a",
    "distance_mi": 63.3
+  },
+  {
+   "title": "Pisgah Stage Race",
+   "start": "2027-04-06T04:00:00+00:00",
+   "end": "2027-04-10T04:00:00+00:00",
+   "all_day": false,
+   "url": "http://www.BikeReg.com/psr",
+   "description": "3-Day Version information. Since this race has always been a 5-Day Version, we are only opening the 3-Day Version to a limited number of 25 spots. I would not delay in registering if you want to be in the 3-Day Version. We could more spots than 25, but that is not a guarantee. RACE FEES CLICK HERE to see the full pay scale on our website. REFUND, DEFERRAL, and TRANSFER POLICY No transfers or deferrals under ANY circumstances. Refunds available until January 31, 2026, at 50% of entry fee. No refunds after January 31, 2026. NO EXCEPTIONS. WE STRONGLY ENCOURAGE YOU TO PURCHASE THE INSURANCE THAT IS OFFERED BY THE REGISTRATION SITE . This should cover about 95% of the emails we get before the race asking for a refund (I.E. injuries, medical issue, etc. Make sure to read through their informati",
+   "venue": "349 Andante Ln",
+   "city": "Brevard",
+   "state": "NC",
+   "lat": 35.2419601,
+   "lng": -82.7519076,
+   "image": "/BR/VirtualImages/EventLogos/d3711ba4-d78e-4c3c-8fb5-c5fe95fc93c1.png",
+   "discipline_hint": "Mountain Bike",
+   "tags": [
+    "Mountain Bike"
+   ],
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "b96fc2f355480948",
+   "distance_mi": 26.9
   },
   {
    "title": "Bootlegger",
