@@ -7,34 +7,10 @@ X-WR-CALNAME:WNC Bike Racing — Altar Cycles
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:Gravel Roll - The Holler in Walhalla
-DTSTART:20260822T040000Z
-DTEND:20260822T040000Z
-DTSTAMP:20260822T094344Z
-UID:a10bb3a380a81314@altar.bike
-CATEGORIES:race
-DESCRIPTION:The Gravel Roll is BACK! Hollerin' for more in Walhalla in 202
- 6! Guaranteed to make you whoop\, The Holler in Walhalla is our mountain g
- ravel race for the Gravel Roll in 2025. If you've ridden the Valley of the
-  Giants in the past\, the road surface composition will be very similar an
- d is representative of what mountain gravel with the U.S. Forest Service r
- oad system is like. There'll be some smooth crush\, some chunky\, and of c
- ourse a dash of our usual Gravel Roll fun. Like for you Bosses out there\,
-  we've got a little “bonus” for y'all. Like most of our mountain grave
- l rides\, this one doesn't meet our usual 70% threshold for paved to unpav
- ed\, but we think you'll welcome the smooth but swoopy tarmac when you enc
- ounter it\, and rip it all the same. Afterwards\, hang around at the Walha
- lla Depot f\n\nMore: http://www.BikeReg.com/the-holler\n\nSource: BikeReg
- \n\nListed by Altar Cycles — altar.bike/calendar
-GEO:34.762378;-83.0661084
-LOCATION:211 S College St\, Walhalla\, SC
-URL:http://www.BikeReg.com/the-holler
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Go Nuts Enduro Round 2 - Sugar Mountain\, USA
 DTSTART:20260823T040000Z
 DTEND:20260823T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:2b5c2eaa1337a28b@altar.bike
 CATEGORIES:race
 DESCRIPTION:TIME & LOCATION Sugar Mountain Bike Park 1009 Sugar Mountain D
@@ -60,7 +36,7 @@ BEGIN:VEVENT
 SUMMARY:Dirt Diggler Gravel Grinder
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260905
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:53b43bf11b736a76@altar.bike
 CATEGORIES:race
 DESCRIPTION:Featured Event\n\nMore: https://darccycling.com/calendar\n\nSo
@@ -74,7 +50,7 @@ BEGIN:VEVENT
 SUMMARY:End of Summer Jam
 DTSTART:20260905T040000Z
 DTEND:20260906T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:6628b3d67771c40f@altar.bike
 CATEGORIES:race
 DESCRIPTION:Come out to Ride Kanuga on Labor Day weekend for a few days of
@@ -98,7 +74,7 @@ BEGIN:VEVENT
 SUMMARY:Gravity Carolinas DH RD 3 Ride Rock Creek
 DTSTART:20260912T040000Z
 DTEND:20260913T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:1446d149ac9ba226@altar.bike
 CATEGORIES:race
 DESCRIPTION:EVENT CAPACITY 200 Racers Registration for each event will onl
@@ -118,7 +94,7 @@ SUMMARY:12th Annual Dancing Bear Bike Bash Returns on September 19th\, 202
  6
 DTSTART:20260919T040000Z
 DTEND:20260919T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:8f044efc5da3583a@altar.bike
 CATEGORIES:race
 DESCRIPTION:The best recreational cycling event in the Smokies region retu
@@ -142,7 +118,7 @@ BEGIN:VEVENT
 SUMMARY:Gravity Carolinas DH RD 4 WIldside
 DTSTART:20260919T040000Z
 DTEND:20260920T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:74961cf476e0181f@altar.bike
 CATEGORIES:race
 DESCRIPTION:200 Racers Registration for each event will only be available 
@@ -161,7 +137,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-season - Ride Rock Creek
 DTSTART:20260920T040000Z
 DTEND:20260920T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:3a00b4b477eb29e6@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
@@ -185,7 +161,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Bikeboom 2026
 DTSTART:20260925T040000Z
 DTEND:20260927T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:7ea8cf13a1f20b18@altar.bike
 CATEGORIES:race
 DESCRIPTION:Update on 7/10/26 Due to low registration number\, we have dec
@@ -209,7 +185,7 @@ BEGIN:VEVENT
 SUMMARY:2026 Ride to the Rock
 DTSTART:20260926T040000Z
 DTEND:20260926T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:f386287547fbc4ba@altar.bike
 CATEGORIES:race
 DESCRIPTION:SATURDAY\, SEPTEMBER 26\, 2026 Pickens\, SC Presented by the R
@@ -233,7 +209,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-season - Cane Creek
 DTSTART:20260927T040000Z
 DTEND:20260927T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:567c411f65a716bf@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
@@ -257,7 +233,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah 111 / 555
 DTSTART:20261003T040000Z
 DTEND:20261003T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:c6d05d9f51734aa6@altar.bike
 CATEGORIES:race
 DESCRIPTION:It’s time to turn the volume up to 111! The Pisgah 111 is th
@@ -281,7 +257,7 @@ BEGIN:VEVENT
 SUMMARY:2026 Gran Fondo Hincapie-Greenville
 DTSTART:20261017T040000Z
 DTEND:20261017T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:f2acb77c16a22d1c@altar.bike
 CATEGORIES:race
 DESCRIPTION:Not sure which distance is right for you? Visit our website to
@@ -297,7 +273,7 @@ BEGIN:VEVENT
 SUMMARY:2026 BRAGco Cycling Event
 DTSTART:20261025T040000Z
 DTEND:20261025T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:743ac628878c17c6@altar.bike
 CATEGORIES:race
 DESCRIPTION:Below are the STRAVA links for the routes. The Classic - 68 Mi
@@ -314,7 +290,7 @@ BEGIN:VEVENT
 SUMMARY:1000 Mile BikeWalk for Prevention
 DTSTART:20261031T000000
 DTEND:20261031T000000
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:ca69c113117cd0e8@altar.bike
 CATEGORIES:race
 DESCRIPTION:The 1000 Mile BikeWalk for Prevention to be held October 31\, 
@@ -338,7 +314,7 @@ BEGIN:VEVENT
 SUMMARY:Couch Potato
 DTSTART:20261107T050000Z
 DTEND:20261107T050000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:2e02b8a758b849f1@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 14th Annual Couch Potato race! We're very excit
@@ -362,7 +338,7 @@ BEGIN:VEVENT
 SUMMARY:Swank 65
 DTSTART:20261108T050000Z
 DTEND:20261108T050000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:808d5262f339b592@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 28th Annual Swank 65! We're very excited for an
@@ -386,7 +362,7 @@ BEGIN:VEVENT
 SUMMARY:We Shred Rock Creek
 DTSTART:20261114T050000Z
 DTEND:20261114T050000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:0a67e54dee113b1a@altar.bike
 CATEGORIES:race
 DESCRIPTION:We Shred Rock Creek is back for 2026 – and it is shaping up 
@@ -410,7 +386,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah DOUBLE DARE
 DTSTART:20261121T050000Z
 DTEND:20261122T050000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:59bf1e39a66ae34b@altar.bike
 CATEGORIES:race
 DESCRIPTION:Every year an event comes along that tests mental and physical
@@ -431,10 +407,25 @@ LOCATION:1 Davidson River Circle\, Brevard\, NC
 URL:http://www.BikeReg.com/pisgah-double-dare-2026
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Pisgah Rage Regular Season
+DTSTART;VALUE=DATE:20261201
+DTSTAMP:20260823T094457Z
+UID:670937aa0418b08a@altar.bike
+CATEGORIES:race
+DESCRIPTION:Runs 1 Dec 2026 to 30 May 2027. Regular season with races typi
+ cally 5-6 across North Carolina. January: indoor training. February: 1 wee
+ kend practice per week. March-May: 2 rides per week (1-2 weeknights and we
+ ekend practices). Races begin early March.\n\nMore: https://www.pisgahrage
+ .com/\n\nSource: Pisgah Rage (NICA composite team)\n\nListed by Altar Cycl
+ es — altar.bike/calendar
+LOCATION:Asheville\, Asheville\, NC
+URL:https://www.pisgahrage.com/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Pisgah Stage Race
 DTSTART:20270406T040000Z
 DTEND:20270410T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:b96fc2f355480948@altar.bike
 CATEGORIES:race
 DESCRIPTION:3-Day Version information. Since this race has always been a 5
@@ -458,7 +449,7 @@ BEGIN:VEVENT
 SUMMARY:Bootlegger
 DTSTART:20270417T040000Z
 DTEND:20270417T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:f0fa19e43a2adce0@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Bootlegger is one of the most challenging and scenic grave
@@ -482,7 +473,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Mountain Bike Adventure Race
 DTSTART:20270501T040000Z
 DTEND:20270501T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:996261671a499518@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Pisgah Mountain Bike Adventure Race (PMBAR) is the absolut
@@ -507,7 +498,7 @@ BEGIN:VEVENT
 SUMMARY:Carolina Reaper Road Race
 DTSTART:20270515T040000Z
 DTEND:20270515T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:6cb81637a4faee67@altar.bike
 CATEGORIES:race
 DESCRIPTION:Please visit www.reaperroadrace.com for more information.\n\nM
@@ -522,7 +513,7 @@ SUMMARY:2027 Gran Fondo Asheville\, p/b Applewood Manor Foundation\, a SEN
  A Gran Fondo National Series event
 DTSTART:20270718T040000Z
 DTEND:20270718T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:19cc3e2cb7f4ed33@altar.bike
 CATEGORIES:race
 DESCRIPTION:THIS REGISTRATION IS FOR 2027 THESE DETAILS ARE FOR 2026 EVENT
@@ -546,7 +537,7 @@ BEGIN:VEVENT
 SUMMARY:Gran Fondo AVL
 DTSTART;VALUE=DATE:20270719
 DTEND;VALUE=DATE:20270719
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:ff576b5052181618@altar.bike
 CATEGORIES:race
 DESCRIPTION:Annual recurring event\n\nMore: https://ashevilleonbikes.com/e
@@ -559,7 +550,7 @@ BEGIN:VEVENT
 SUMMARY:HARDford 50 and HARDERford 75
 DTSTART:20270801T040000Z
 DTEND:20270801T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:fbb7b952544d9b16@altar.bike
 CATEGORIES:race
 DESCRIPTION:Riders have two course options: The HARDford 50 and the HARDER
@@ -583,7 +574,7 @@ BEGIN:VEVENT
 SUMMARY:2027 Boone Gran Fondo\, a SENA Gran Fondo National Series event
 DTSTART:20270808T040000Z
 DTEND:20270808T040000Z
-DTSTAMP:20260822T094344Z
+DTSTAMP:20260823T094457Z
 UID:eaf10f6e0cd70f9a@altar.bike
 CATEGORIES:race
 DESCRIPTION:THIS REGISTRATION IS FOR THE 2027 EVENT DETAILS BELOW SUBJECT 

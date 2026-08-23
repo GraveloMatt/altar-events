@@ -1,35 +1,6 @@
 {
- "at": "2026-08-22T09:43:20.727311+00:00",
+ "at": "2026-08-23T09:44:27.217808+00:00",
  "events": [
-  {
-   "title": "Gravel Roll - The Holler in Walhalla",
-   "start": "2026-08-22T04:00:00+00:00",
-   "end": "2026-08-22T04:00:00+00:00",
-   "all_day": false,
-   "url": "http://www.BikeReg.com/the-holler",
-   "description": "The Gravel Roll is BACK! Hollerin' for more in Walhalla in 2026! Guaranteed to make you whoop, The Holler in Walhalla is our mountain gravel race for the Gravel Roll in 2025. If you've ridden the Valley of the Giants in the past, the road surface composition will be very similar and is representative of what mountain gravel with the U.S. Forest Service road system is like. There'll be some smooth crush, some chunky, and of course a dash of our usual Gravel Roll fun. Like for you Bosses out there, we've got a little \u201cbonus\u201d for y'all. Like most of our mountain gravel rides, this one doesn't meet our usual 70% threshold for paved to unpaved, but we think you'll welcome the smooth but swoopy tarmac when you encounter it, and rip it all the same. Afterwards, hang around at the Walhalla Depot f",
-   "venue": "211 S College St",
-   "city": "Walhalla",
-   "state": "SC",
-   "lat": 34.762378,
-   "lng": -83.0661084,
-   "image": "/BR/VirtualImages/EventLogos/cr-18410ee0-baac-4666-831d-30879ea65f00.jpg",
-   "discipline_hint": "Gravel",
-   "tags": [
-    "Gravel",
-    "Gravel"
-   ],
-   "source": "bikereg",
-   "source_name": "BikeReg",
-   "source_url": "https://www.bikereg.com/",
-   "trust": 60,
-   "bucket": "local",
-   "category": "race",
-   "category_basis": "rule",
-   "discipline": "gravel",
-   "uid": "a10bb3a380a81314",
-   "distance_mi": 64.5
-  },
   {
    "title": "Go Nuts Enduro Round 2 - Sugar Mountain, USA",
    "start": "2026-08-23T04:00:00+00:00",
