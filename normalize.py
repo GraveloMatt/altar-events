@@ -378,19 +378,39 @@ def cap_weekly(events: list[dict], per_week: int, keep_matching: list[str]) -> l
 MONTH_PRECISION = "month"
 
 
-def apply_month_precision(event: dict) -> dict:
-    """Anchor a month-only event to the first of its month and flag it.
+def is_month_only(event: dict) -> bool:
+    """Did the extractor tell us it only knew the month?"""
+    if event.get("date_precision") == MONTH_PRECISION:
+        return True
+    # Belt for an extractor that forgets the flag: the hint instructs it to
+    # write the first of the month when the page gives no day, so a bare -01
+    # from a month-only source is read as "no day known". The cost is that a
+    # real event genuinely held on the 1st gets labelled TBA. That is the safe
+    # direction to be wrong in — an honest "date to be announced" beats a
+    # confident wrong day, which is the whole point of this machinery.
+    return (event.get("start") or "")[8:10] == "01"
 
-    The 1st is a sorting convention, not a claim about the date. Every surface
-    checks `date_precision` and prints "date TBA" rather than the day number;
-    the 1st is chosen so the entry sorts to the head of its month, which is
-    where a "sometime in October" row belongs. `end` is cleared because a
-    month-only event has no known span to draw.
+
+def apply_month_precision(event: dict) -> dict:
+    """Anchor a month-only event inside its month and flag it.
+
+    The anchor is a sorting convention, not a claim about the date. Every
+    surface checks `date_precision` and prints "date TBA" rather than the day
+    number. `end` is cleared because a month-only event has no known span.
     """
     start = (event.get("start") or "")[:10]
     if len(start) < 7:
         return event
-    event["start"] = f"{start[:7]}-01"
+    first = f"{start[:7]}-01"
+    today = datetime.now().date().isoformat()
+    # Anchor to the first of the month — unless that month is already under
+    # way, in which case anchor to today. On 24 August, sorting an undated
+    # August entry to the 1st puts it at the very top of the agenda, above
+    # every real event, reading as the next thing happening when it may
+    # already have been and gone. What we actually know is "sometime in the
+    # rest of August", and today is where that belongs. uid keys on the month,
+    # not this anchor, so the entry still does not move day to day.
+    event["start"] = max(first, today) if start[:7] == today[:7] else first
     event["end"] = ""
     event["all_day"] = True
     event["date_precision"] = MONTH_PRECISION
@@ -603,8 +623,18 @@ def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict
         # backwards to the 1st, and "Summer Cycle — AUG" read on 24 August
         # would otherwise be anchored to 1 August and dropped as three weeks
         # past, retiring an event that has not happened yet.
-        if source.get("date_precision") == MONTH_PRECISION:
+        # Only snap what is ACTUALLY month-only. Flagging the whole source was
+        # too blunt: asheville-on-bikes reads its hub page (month names, no
+        # days) alongside three `extra_urls` event pages that DO carry real
+        # dates, and the first live build stamped "Summer Cycle 2026 — August,
+        # date TBA" over an event whose own page says 22 August.
+        if source.get("date_precision") == MONTH_PRECISION and is_month_only(e):
             apply_month_precision(e)
+        else:
+            # A source that has not been configured for month-only dates does
+            # not get to claim one. Otherwise a stray field from an extractor
+            # puts "date TBA" on an event that has a perfectly good date.
+            e.pop("date_precision", None)
 
         start = e["start"]
         if e.get("date_precision") == MONTH_PRECISION:

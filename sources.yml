@@ -54,11 +54,12 @@ sources:
     # start carrying their own days again.
     date_precision: month
     hint: >
-      This page lists annual recurring events grouped by month, with no day and
-      no year. Do NOT guess a day. For each event emit start as the FIRST day
-      of the next occurrence of that month, in YYYY-MM-01 form, with
-      all_day true. Say in the description that the date has not been
-      announced. If an event DOES carry a real day on the page, use that day.
+      The hub page lists annual recurring events grouped by month, with no day
+      and no year. Do NOT guess a day. For each of those emit
+      "date_precision": "month", start as YYYY-MM-01 for the next occurrence of
+      that month, and all_day true, and say in the description that the date
+      has not been announced. Individual event pages DO carry a real day —
+      when you have one, use it and leave date_precision out entirely.
     extra_urls:
       - https://ashevilleonbikes.com/events/asheville-summer-cycle
       - https://ashevilleonbikes.com/events/asheville-bike-love
@@ -141,11 +142,14 @@ sources:
     # The agenda view listed "9:30am Bakery Ride B Group Start at Gravelo"
     # every Saturday from 29 Aug 2026 through 2 Jan 2027, at 793 Merrimon Ave,
     # Asheville NC 28804.
-    # KNOWN GAP: the site also advertises a Wednesday 6:15pm shop ride
-    # ("routes posted on Instagram", weather dependent). It is NOT on the
-    # Google Calendar — only the Saturday ride is — so it will not arrive
-    # through this feed. data/manual.yml with `repeat: weekly` is the escape
-    # hatch if it is wanted.
+    # The website still advertises a Wednesday 6:15pm shop ride. The calendar
+    # says otherwise: that series is "Group Ride (roll out 6:15pm)",
+    # FREQ=WEEKLY;BYDAY=WE, and its UNTIL is 13 Jan 2026 — it ENDED. The web
+    # copy is stale. Do not hand-add it to data/manual.yml on the strength of
+    # the website; check the calendar first.
+    # The live recurring entries as of 2026-08-24 are exactly two: the Saturday
+    # Bakery Ride (FREQ=WEEKLY;BYDAY=SA from 2 Nov 2024, no UNTIL) and a Monday
+    # "SHOP CLOSED", which drop_if_titled removes.
     # The feed also carries all-day "SHOP CLOSED" entries most Mondays. Those
     # are opening hours, not events. `closed` on its own is deliberately NOT in
     # the drop list — it would take out a "Closed Course Crit".
@@ -154,6 +158,10 @@ sources:
     # entirely honest; leave it unless Matt objects.
     # LOCATION carries a street address but no GEO, so these geofence on the
     # word "Asheville" in the venue string and will show no distance.
+    # FIRST LIVE BUILD 2026-08-24 returned "ok (0 events)" from 177 VEVENTs —
+    # see adapters._ics_occurrences. Every future ride here is an RRULE, and
+    # the adapter was reading DTSTART only. Fixed the same day; this source is
+    # the regression fixture for it.
     # Marked optional until it has survived a live build.
     adapter: ics
     url: https://calendar.google.com/calendar/ical/c_m5od1fnoqhu3mr1i5ep3p6um4s%40group.calendar.google.com/public/basic.ics

@@ -32,12 +32,13 @@ import json
 import os
 import re
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, time as _time, timedelta, timezone
 from typing import Any, Iterable
 
 import requests
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
+from dateutil.rrule import rrulestr
 
 UA = "AltarCyclesEventBot/1.0 (+https://altar.bike/calendar; events@altar.bike)"
 TIMEOUT = 25
@@ -130,6 +131,72 @@ def _first(d: dict, *keys, default=""):
 # tier 1 — real feeds
 # --------------------------------------------------------------------------
 
+# A standing weekly ride would publish ~57 entries across the 400-day horizon
+# and swamp everything else, so each series is capped. This is deliberately the
+# same number normalize.RECUR_DEFAULT_COUNT uses for hand-entered and submitted
+# recurrences — one rule for "how far ahead do we promise a standing ride", not
+# two.
+ICS_RECUR_CAP = 12
+ICS_HORIZON_DAYS = 400
+_ICS_SCAN_LIMIT = 5000          # backstop against a pathological rule
+
+
+def _ics_occurrences(comp, start_val, all_day: bool) -> list:
+    """Every future date one VEVENT actually means.
+
+    An .ics feed is the best data this project gets, and until 2026-08-24 the
+    adapter threw most of it away: it read DTSTART and ignored RRULE entirely.
+    Google Calendar — and every other real calendar — writes a recurring event
+    as ONE VEVENT whose DTSTART is the FIRST occurrence, sometimes years back,
+    with the repetition in an RRULE. So a weekly ride looked like a single
+    event that happened in 2024 and got dropped as past.
+
+    gravelo-workshop is the case that exposed it: 177 VEVENTs fetched, 19 of
+    them recurring, ZERO with a future DTSTART, and the source reported
+    "ok (0 events)". Their standing Saturday ride — FREQ=WEEKLY;BYDAY=SA from
+    2 Nov 2024 with no UNTIL — was invisible.
+    """
+    rule = comp.get("rrule")
+    if rule is None:
+        return [start_val]
+
+    anchor = (start_val if isinstance(start_val, datetime)
+              else datetime.combine(start_val, _time.min))
+    anchor = anchor.replace(tzinfo=None)
+
+    # Google writes UNTIL in UTC ("...Z") while DTSTART is naive or floating.
+    # dateutil refuses to compare aware and naive datetimes, so the whole
+    # expansion runs naive. These calendars are local to one town; the worst
+    # this can cost is an hour at a DST boundary.
+    text = re.sub(r"(UNTIL=\d{8}T\d{6})Z", r"\1", rule.to_ical().decode())
+    try:
+        series = rrulestr(text, dtstart=anchor)
+    except (ValueError, TypeError):
+        return [start_val]
+
+    # Cancelled individual occurrences.
+    skipped = set()
+    exdate = comp.get("exdate")
+    for block in (exdate if isinstance(exdate, list) else [exdate] if exdate else []):
+        for entry in getattr(block, "dts", []):
+            value = entry.dt
+            skipped.add(value if isinstance(value, date) and not isinstance(value, datetime)
+                        else value.replace(tzinfo=None).date())
+
+    floor = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    ceiling = floor + timedelta(days=ICS_HORIZON_DAYS)
+    out = []
+    for seen, when in enumerate(series):
+        if seen > _ICS_SCAN_LIMIT or when > ceiling:
+            break
+        if when < floor or when.date() in skipped:
+            continue
+        out.append(when.date() if all_day else when)
+        if len(out) >= ICS_RECUR_CAP:
+            break
+    return out
+
+
 def ics(source: dict) -> list[dict]:
     """A genuine .ics feed. The best case: exact data, and it never breaks."""
     from icalendar import Calendar
@@ -144,10 +211,19 @@ def ics(source: dict) -> list[dict]:
         all_day = not isinstance(start_val, datetime)
         end = comp.get("dtend")
         geo = comp.get("geo")
-        out.append({
+        # Hold the event's LENGTH, not its end date: every occurrence of a
+        # recurring event runs as long as the first one, but ends on its own
+        # day. Copying the master's DTEND onto all of them would put every
+        # Saturday ride's finish in November 2024.
+        span = None
+        if end is not None:
+            try:
+                span = end.dt - start_val
+            except TypeError:
+                span = None
+
+        base = {
             "title": str(comp.get("summary", "")).strip(),
-            "start": iso(start_val, all_day=all_day),
-            "end": iso(end.dt, all_day=all_day) if end else None,
             "all_day": all_day,
             "url": str(comp.get("url", "") or source.get("org_url", "")),
             "description": _clean(str(comp.get("description", ""))),
@@ -155,7 +231,21 @@ def ics(source: dict) -> list[dict]:
             "lat": float(geo.latitude) if geo else None,
             "lng": float(geo.longitude) if geo else None,
             "uid_hint": str(comp.get("uid", "")),
-        })
+        }
+        # RFC 5545 makes an all-day DTEND EXCLUSIVE: a one-day event on the
+        # 29th is written DTEND;VALUE=DATE:20241103-style, i.e. the 30th. Taken
+        # literally that publishes every Saturday ride as a two-day event and
+        # paints two cells in the month grid. Step back one day for all-day
+        # events, and drop the end entirely if that leaves nothing.
+        if span is not None and all_day:
+            span = span - timedelta(days=1)
+            if span.days < 1:
+                span = None
+
+        for when in _ics_occurrences(comp, start_val, all_day):
+            out.append({**base,
+                        "start": iso(when, all_day=all_day),
+                        "end": iso(when + span, all_day=all_day) if span else None})
     return out
 
 
@@ -741,6 +831,11 @@ def llm(source: dict) -> list[dict]:
             "city": _clean(str(e.get("city", ""))),
             "state": _clean(str(e.get("state", ""))),
             "cost": e.get("cost") or None,
+            # Some pages publish a month and no day. The model is asked to SAY
+            # so rather than invent one; normalize decides what to do with it,
+            # and only for sources configured to allow it.
+            "date_precision": ("month" if str(e.get("date_precision", "")).lower() == "month"
+                               else None),
             "extracted_by": "llm",
         })
     return out

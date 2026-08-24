@@ -285,13 +285,77 @@ check("unescapes location commas", "Hendersonville" in got[0]["venue"])
 check("keeps event url", got[0]["url"].endswith("/e/991"))
 
 # --------------------------------------------------------------------- llm
+print("\nics — RRULE expansion (regression: 177 events fetched, 0 published)")
+# Captured verbatim from the Gravelo Workshop public Google Calendar on
+# 2026-08-24. 177 VEVENTs, 19 of them recurring, and NOT ONE with a future
+# DTSTART — every upcoming ride exists only as an RRULE. The adapter read
+# DTSTART and ignored RRULE, so the source reported "ok (0 events)" while
+# holding a standing Saturday ride.
+GOOGLE_ICS = b"""BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241102
+DTEND;VALUE=DATE:20241103
+RRULE:FREQ=WEEKLY;BYDAY=SA
+SUMMARY:9:30am Bakery Ride B Group Start at Gravelo
+LOCATION:Gravelo Workshop\\, 793 Merrimon Ave\\, Asheville\\, NC 28804
+UID:bakery@google.com
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20241030
+RRULE:FREQ=WEEKLY;BYDAY=WE;UNTIL=20260113
+SUMMARY:Group Ride (roll out 6:15pm)
+UID:wednesday@google.com
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20240609T130000Z
+DTEND:20240609T170000Z
+SUMMARY:Ride Series #1
+UID:oneoff@google.com
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261109
+SUMMARY:Fall Trail Weekend
+UID:weekender@google.com
+END:VEVENT
+END:VCALENDAR
+"""
+real_http = adapters.http
+adapters.http = lambda *a, **k: SimpleNamespace(content=GOOGLE_ICS)
+rows = adapters.ics({"url": "https://x.ics", "org_url": "https://x"})
+adapters.http = real_http
+
+bakery = [e for e in rows if "Bakery" in e["title"]]
+check("the standing Saturday ride is expanded", len(bakery) == adapters.ICS_RECUR_CAP,
+      f"{len(bakery)}")
+check("expansion starts from today, not from DTSTART in 2024",
+      all(e["start"][:10] >= datetime.now().date().isoformat() for e in bakery))
+check("occurrences land on Saturdays",
+      {datetime.fromisoformat(e["start"]).weekday() for e in bakery} == {5})
+# An open-ended weekly ride would otherwise publish ~57 rows over the horizon
+# and bury everything else, exactly as normalize caps hand-entered recurrences.
+check("an open-ended series is capped, not unbounded", len(bakery) <= 12)
+check("a series whose UNTIL has passed publishes nothing",
+      [e for e in rows if "roll out" in e["title"]] == [])
+check("a non-recurring past event is still just one row",
+      len([e for e in rows if "Ride Series" in e["title"]]) == 1)
+# RFC 5545 all-day DTEND is exclusive. Taken literally, every Saturday ride
+# becomes a two-day event and paints two cells in the month grid.
+check("a one-day all-day event gets no end date", bakery[0]["end"] is None)
+check("a genuine weekender keeps its real span",
+      [(e["start"], e["end"]) for e in rows if "Fall Trail" in e["title"]],
+      [("2026-11-06", "2026-11-08")])
+
 print("\nics — a month-only event says so instead of naming a day")
 # The .ics is the surface where an invented day does the most damage: it lands
 # in the subscriber's own calendar, on a square they may plan around. A
 # month-precision event still needs a DTSTART, so it gets the 1st — and the
 # SUMMARY has to admit that.
 tba = normalize.prepare(
-    [{"title": "Tour de Fat", "start": "2026-10-17", "city": "Asheville", "state": "NC"}],
+    [{"title": "Tour de Fat", "start": "2026-10-17", "date_precision": "month",
+      "city": "Asheville", "state": "NC"}],
     {"id": "asheville-on-bikes", "name": "Asheville on Bikes", "trust": 80,
      "default_category": "group-ride", "org_url": "https://ashevilleonbikes.com/",
      "date_precision": "month"},

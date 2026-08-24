@@ -490,19 +490,19 @@ _sh.rmtree(_out, ignore_errors=True)
 
 
 print("\nmonth-only sources (regression: invented days that moved nightly)")
-# Real shape from https://ashevilleonbikes.com/events, captured 2026-08-24:
-# the page prints "Tour de Fat — OCT" and nothing more. The extractor used to
-# be told to pick the day itself, and picked a different one most nights.
+# Real shape from https://ashevilleonbikes.com/events, captured 2026-08-24: the
+# hub page prints "Tour de Fat — OCT" and nothing more. The extractor used to
+# be told to pick the day itself and picked a different one most nights.
 AOB = {"id": "asheville-on-bikes", "name": "Asheville on Bikes", "trust": 80,
        "default_category": "group-ride", "org_url": "https://ashevilleonbikes.com/",
        "date_precision": "month"}
+MONTH_ONLY = {"date_precision": "month", "all_day": True,
+              "city": "Asheville", "state": "NC"}
 
 # Two builds, two different guesses for the same October event.
-monday  = normalize.prepare([{"title": "Tour de Fat", "start": "2026-10-03",
-                              "all_day": True, "city": "Asheville", "state": "NC"}],
+monday  = normalize.prepare([{"title": "Tour de Fat", "start": "2026-10-03", **MONTH_ONLY}],
                             AOB, HOME, R)
-tuesday = normalize.prepare([{"title": "Tour de Fat", "start": "2026-10-24",
-                              "all_day": True, "city": "Asheville", "state": "NC"}],
+tuesday = normalize.prepare([{"title": "Tour de Fat", "start": "2026-10-24", **MONTH_ONLY}],
                             AOB, HOME, R)
 check("guessed day is discarded", monday[0]["start"], "2026-10-01")
 check("flagged as month precision", monday[0]["date_precision"], "month")
@@ -512,23 +512,46 @@ check("no invented span", monday[0]["end"], "")
 check("uid holds still across a different guess",
       monday[0]["uid"], tuesday[0]["uid"])
 
-october  = normalize.prepare([{"title": "Ride Your City", "start": "2026-10-09"}], AOB, HOME, R)
-november = normalize.prepare([{"title": "Ride Your City", "start": "2026-11-09"}], AOB, HOME, R)
+# The belt: an extractor that forgets the flag but follows the hint's -01.
+unflagged = normalize.prepare(
+    [{"title": "Pumpkin Pedaller", "start": "2026-10-01", "all_day": True,
+      "city": "Asheville", "state": "NC"}], AOB, HOME, R)
+check("a bare first-of-month from this source is read as month-only",
+      unflagged[0].get("date_precision"), "month")
+
+# And the thing the first live build got wrong: the SAME source also reads
+# individual event pages that carry a real day. Those must survive intact.
+dated = normalize.prepare(
+    [{"title": "Summer Cycle 2026", "start": "2026-10-22", "all_day": True,
+      "city": "Asheville", "state": "NC"}], AOB, HOME, R)
+check("a real day from the same source is left alone", dated[0]["start"], "2026-10-22")
+check("and is not labelled TBA", dated[0].get("date_precision"), None)
+
+october  = normalize.prepare([{"title": "Ride Your City", "start": "2026-10-09", **MONTH_ONLY}],
+                             AOB, HOME, R)
+november = normalize.prepare([{"title": "Ride Your City", "start": "2026-11-09", **MONTH_ONLY}],
+                             AOB, HOME, R)
 check("a genuinely different month is a different event",
       october[0]["uid"] != november[0]["uid"], True)
 
-# Snapping to the 1st must not retire an event that has not happened. Read on
-# the 24th, "sometime this month" is still ahead of us.
+# Snapping must not retire an event that has not happened, and must not sort an
+# undated entry above every real event in a month already under way.
 this_month = datetime.now().strftime("%Y-%m")
-current = normalize.prepare([{"title": "Summer Cycle", "start": f"{this_month}-28"}],
-                            AOB, HOME, R)
+today = datetime.now().date().isoformat()
+current = normalize.prepare([{"title": "Summer Cycle", "start": f"{this_month}-28",
+                              **MONTH_ONLY}], AOB, HOME, R)
 check("current month survives the horizon floor", len(current), 1)
+check("a month already under way anchors to today, not the 1st",
+      current[0]["start"], today)
+check("and its uid still keys on the month, so it does not move daily",
+      current[0]["uid"],
+      normalize.uid({"title": "Summer Cycle", "start": f"{this_month}-01",
+                     "date_precision": "month"}))
 
 # A source that knows the day absorbs the placeholder, and the KNOWN date is
 # what publishes — even though the placeholder came from the more trusted org.
 placeholder = normalize.prepare(
-    [{"title": "Tour de Fat", "start": "2026-10-14", "city": "Asheville", "state": "NC"}],
-    AOB, HOME, R)
+    [{"title": "Tour de Fat", "start": "2026-10-14", **MONTH_ONLY}], AOB, HOME, R)
 confirmed = normalize.prepare(
     [{"title": "Tour de Fat", "start": "2026-10-03", "all_day": True,
       "city": "Asheville", "state": "NC"}],
@@ -542,8 +565,9 @@ check("and it is no longer flagged TBA", tdf[0].get("date_precision"), None)
 check("placeholder's org still credited",
       "Asheville on Bikes" in tdf[0].get("also_listed_by", []), True)
 
-# Sources without the flag are untouched.
+# Sources without the flag are untouched, whatever the extractor claims.
 plain = normalize.prepare([{"title": "Old Fort Fifty", "start": soon(30), "all_day": True,
+                            "date_precision": "month",
                             "city": "Old Fort", "state": "NC"}],
                           {"id": "g5", "name": "G5", "trust": 80,
                            "default_category": "race", "org_url": "https://g5.org"},
