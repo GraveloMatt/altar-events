@@ -1,5 +1,5 @@
 {
- "at": "2026-08-24T10:05:07.088727+00:00",
+ "at": "2026-08-24T21:41:16.141055+00:00",
  "events": [
   {
    "title": "Betty's & Jarret's Run Trail Day",
@@ -7,7 +7,7 @@
    "end": "2026-09-04T16:30:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Project: Drain cleaning. Tread shaping.",
+   "description": "Drain cleaning. Tread shaping.",
    "venue": "Gateway Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -21,7 +21,8 @@
    "category": "trail-work",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "e1bc6ea5ef974c01"
+   "uid": "e1bc6ea5ef974c01",
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Lower Heartbreak Trail Day",
@@ -29,7 +30,7 @@
    "end": "2026-09-12T14:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Project: Drain cleaning. Corridor pruning & brushing.",
+   "description": "Drain cleaning. Corridor pruning & brushing.",
    "venue": "Allison Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -43,7 +44,8 @@
    "category": "trail-work",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "199f975dfbc75d0a"
+   "uid": "199f975dfbc75d0a",
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Women + Trail Skills Workshop",
@@ -65,7 +67,8 @@
    "category": "clinic",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "f25b655f83100d84"
+   "uid": "f25b655f83100d84",
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Fall Trail Weekend!",
@@ -87,7 +90,8 @@
    "category": "trail-work",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "65a4e186a310b33a"
+   "uid": "65a4e186a310b33a",
+   "last_seen": "2026-08-24"
   }
  ]
 }

@@ -1,18 +1,16 @@
 {
- "generated": "2026-08-24T10:07:00.957828+00:00",
- "total": 64,
+ "generated": "2026-08-24T21:43:05.611479+00:00",
+ "total": 48,
  "world": 9,
- "needs_attention": [
-  "nica-nc",
-  "pisgah-rage"
- ],
+ "needs_attention": [],
  "sources": {
   "asheville-on-bikes": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 22,
-   "kept": 19,
-   "at": "2026-08-24T10:04:23.263498+00:00"
+   "fetched": 20,
+   "kept": 4,
+   "held": 0,
+   "at": "2026-08-24T21:40:52.590012+00:00"
   },
   "asheville-on-bikes-rwgps": {
    "status": "failed",
@@ -21,28 +19,40 @@
    ],
    "cached_events": 0,
    "cache_age_days": null,
-   "optional": true
+   "optional": true,
+   "off_season": false
   },
   "darc": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 2,
    "kept": 2,
-   "at": "2026-08-24T10:04:28.647307+00:00"
+   "held": 0,
+   "at": "2026-08-24T21:40:59.959405+00:00"
   },
   "blue-ridge-dirt-skrrts": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 15,
+   "fetched": 4,
    "kept": 3,
-   "at": "2026-08-24T10:04:49.875896+00:00"
+   "held": 0,
+   "at": "2026-08-24T21:41:04.990386+00:00"
+  },
+  "gravelo-workshop": {
+   "status": "ok",
+   "adapter": "ics",
+   "fetched": 177,
+   "kept": 0,
+   "held": 0,
+   "at": "2026-08-24T21:41:05.575212+00:00"
   },
   "velosports-ring-of-fire": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 8,
+   "fetched": 1,
    "kept": 0,
-   "at": "2026-08-24T10:04:58.103718+00:00"
+   "held": 0,
+   "at": "2026-08-24T21:41:07.357220+00:00"
   },
   "blue-ridge-bicycle-club": {
    "status": "failed",
@@ -51,40 +61,43 @@
    ],
    "cached_events": 0,
    "cache_age_days": null,
-   "optional": true
+   "optional": true,
+   "off_season": false
   },
   "pisgah-area-sorba": {
    "status": "ok",
    "adapter": "volunteerhub",
-   "fetched": 5,
-   "kept": 3,
-   "at": "2026-08-24T10:05:03.231424+00:00"
+   "fetched": 4,
+   "kept": 2,
+   "held": 0,
+   "at": "2026-08-24T21:41:11.435331+00:00"
   },
   "g5-trail-collective": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 5,
    "kept": 4,
-   "at": "2026-08-24T10:05:07.089009+00:00"
+   "held": 0,
+   "at": "2026-08-24T21:41:16.141276+00:00"
   },
   "nica-nc": {
-   "status": "failed",
+   "status": "off-season",
    "errors": [
     "jsonld: https://northcarolinamtb.org/event-weekends: no schema.org Event blocks",
     "llm: returned 0 events"
    ],
    "cached_events": 0,
-   "cache_age_days": 2,
-   "optional": false
+   "cache_age_days": 3,
+   "optional": false,
+   "off_season": true
   },
   "pisgah-rage": {
-   "status": "cached",
-   "errors": [
-    "llm: returned 0 events"
-   ],
-   "cached_events": 2,
-   "cache_age_days": 1,
-   "optional": false
+   "status": "ok",
+   "adapter": "llm",
+   "fetched": 2,
+   "kept": 2,
+   "held": 0,
+   "at": "2026-08-24T21:41:20.052352+00:00"
   },
   "ic-imagine-cycling": {
    "status": "failed",
@@ -93,21 +106,24 @@
    ],
    "cached_events": 0,
    "cache_age_days": null,
-   "optional": true
+   "optional": true,
+   "off_season": false
   },
   "bikereg": {
    "status": "ok",
    "adapter": "bikereg",
    "fetched": 42,
    "kept": 31,
-   "at": "2026-08-24T10:05:16.106403+00:00"
+   "held": 0,
+   "at": "2026-08-24T21:41:25.621298+00:00"
   },
   "runsignup": {
    "status": "ok",
    "adapter": "runsignup",
    "fetched": 250,
    "kept": 1,
-   "at": "2026-08-24T10:05:18.461041+00:00"
+   "held": 0,
+   "at": "2026-08-24T21:41:28.377348+00:00"
   },
   "uci": {
    "status": "cached",
@@ -116,14 +132,16 @@
    ],
    "cached_events": 9,
    "cache_age_days": 1,
-   "optional": true
+   "optional": true,
+   "off_season": false
   },
   "blue-ridge-heritage": {
    "status": "ok",
    "adapter": "tribe",
    "fetched": 500,
    "kept": 0,
-   "at": "2026-08-24T10:07:00.657699+00:00"
+   "held": 0,
+   "at": "2026-08-24T21:43:05.409699+00:00"
   }
  }
 }

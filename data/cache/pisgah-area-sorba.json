@@ -1,5 +1,5 @@
 {
- "at": "2026-08-24T10:05:03.231152+00:00",
+ "at": "2026-08-24T21:41:11.435135+00:00",
  "events": [
   {
    "title": "Catalyst Summer Jam Lunch Crew",
@@ -19,7 +19,8 @@
    "category": "trail-work",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "6471d9f7df15cf50"
+   "uid": "6471d9f7df15cf50",
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Women's Bikepacking Overnight w/ Earth Mountain!",
@@ -39,27 +40,8 @@
    "category": "trail-work",
    "category_basis": "default",
    "discipline": "mtb",
-   "uid": "75f2fce441c009eb"
-  },
-  {
-   "title": "Brevard Dig Day w/ CMC",
-   "start": "2026-10-09T08:30:00",
-   "end": "2026-10-09T14:00:00",
-   "all_day": false,
-   "url": "https://www.pisgahareasorba.org/",
-   "description": "Join Pisgah Area SORBA and the Carolina Mountain Club for a Trail Work Day in Pisgah! We\u2019ll meet at the Fish Hatchery and hike in along Cat Gap to work on the trail. We\u2019ll be partnering with the Carolina Mountain Club on this work day and are excited to continue working together! Come lend a hand as we work together to maintain and improve the trails we all love! No experience is necessary\u2014our crew leaders will provide the tools, guidance, and instruction. Date: Tuesday, October 9th Time: 8:30 AM \u2013 2:00 PM Trail Work Location: Cat Gap Trail Meetup Location: F ish Hatchery What to Bring: Required: Long pants, boots that cover your ankles, safety glasses, gloves, hardhat (bike helmets DO NOT count, but climbing helmets do), snacks/lunch and water. Note: Hardhats, gloves and safety glasses ca",
-   "venue": "1401 Fish Hatchery Rd, Pisgah Forest, NC, USA",
-   "city": "Pisgah Forest",
-   "state": "NC",
-   "source": "pisgah-area-sorba",
-   "source_name": "Pisgah Area SORBA",
-   "source_url": "https://www.pisgahareasorba.org/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "trail-work",
-   "category_basis": "rule",
-   "discipline": "mtb",
-   "uid": "500d1546ec2f74d1"
+   "uid": "75f2fce441c009eb",
+   "last_seen": "2026-08-24"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-08-24T10:05:18.460804+00:00",
+ "at": "2026-08-24T21:41:28.377160+00:00",
  "events": [
   {
    "title": "1000 Mile BikeWalk for Prevention",
@@ -23,7 +23,8 @@
    "category": "race",
    "category_basis": "rule",
    "discipline": "other",
-   "uid": "ca69c113117cd0e8"
+   "uid": "ca69c113117cd0e8",
+   "last_seen": "2026-08-24"
   }
  ]
 }

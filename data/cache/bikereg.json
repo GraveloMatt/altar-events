@@ -1,5 +1,5 @@
 {
- "at": "2026-08-24T10:05:16.105537+00:00",
+ "at": "2026-08-24T21:41:25.620541+00:00",
  "events": [
   {
    "title": "Rocky Knob Mountaineer Showdown",
@@ -28,7 +28,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "fee58fd0937c36eb",
-   "distance_mi": 67.5
+   "distance_mi": 67.5,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Asheville Youth Cycling CX Practice August 30th",
@@ -56,7 +57,8 @@
    "category_basis": "rule",
    "discipline": "cx",
    "uid": "93c7c08500b384ca",
-   "distance_mi": 1.3
+   "distance_mi": 1.3,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Dirt Diggler Gravel Grinder",
@@ -85,7 +87,8 @@
    "category_basis": "rule",
    "discipline": "gravel",
    "uid": "53b43bf11b736a76",
-   "distance_mi": 25.2
+   "distance_mi": 25.2,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "End of Summer Jam",
@@ -113,7 +116,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "6628b3d67771c40f",
-   "distance_mi": 22.8
+   "distance_mi": 22.8,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Pisgah Monster-Cross Challenge",
@@ -142,7 +146,8 @@
    "category_basis": "rule",
    "discipline": "gravel",
    "uid": "005472d939111204",
-   "distance_mi": 23.6
+   "distance_mi": 23.6,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Gravity Carolinas DH RD 3 Ride Rock Creek",
@@ -170,7 +175,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "1446d149ac9ba226",
-   "distance_mi": 27.5
+   "distance_mi": 27.5,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "NCCX Pre-Season Skills Clinics 2026",
@@ -200,7 +206,8 @@
    "category_basis": "rule",
    "discipline": "cx",
    "uid": "bbf6b38b2e5ea38d",
-   "distance_mi": 6.9
+   "distance_mi": 6.9,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -228,7 +235,8 @@
    "category_basis": "rule",
    "discipline": "cx",
    "uid": "2c8aa0d648484ac3",
-   "distance_mi": 14.9
+   "distance_mi": 14.9,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -256,7 +264,8 @@
    "category_basis": "rule",
    "discipline": "cx",
    "uid": "82ab5a481026f2a7",
-   "distance_mi": 14.9
+   "distance_mi": 14.9,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -284,7 +293,8 @@
    "category_basis": "rule",
    "discipline": "cx",
    "uid": "03009b517bb77e7e",
-   "distance_mi": 14.9
+   "distance_mi": 14.9,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Thank you! 12th annual Dancing Bear Bike Bash is sold out! USA Cycling Permit #16238",
@@ -313,7 +323,8 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "0d5dcfaa94feb9c3",
-   "distance_mi": 69.4
+   "distance_mi": 69.4,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Gravity Carolinas DH RD 4 WIldside",
@@ -341,7 +352,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "74961cf476e0181f",
-   "distance_mi": 58.5
+   "distance_mi": 58.5,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "NCCX Pre-season - Ride Rock Creek",
@@ -370,7 +382,8 @@
    "category_basis": "rule",
    "discipline": "cx",
    "uid": "3a00b4b477eb29e6",
-   "distance_mi": 27.5
+   "distance_mi": 27.5,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Pisgah Bikeboom 2026",
@@ -399,7 +412,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "7ea8cf13a1f20b18",
-   "distance_mi": 23.8
+   "distance_mi": 23.8,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "2026 Ride to the Rock",
@@ -429,7 +443,8 @@
    "category_basis": "rule",
    "discipline": "road",
    "uid": "f386287547fbc4ba",
-   "distance_mi": 49.9
+   "distance_mi": 49.9,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "NCCX Pre-season - Cane Creek",
@@ -458,7 +473,8 @@
    "category_basis": "rule",
    "discipline": "cx",
    "uid": "567c411f65a716bf",
-   "distance_mi": 11.0
+   "distance_mi": 11.0,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Pisgah 111 / 555",
@@ -487,7 +503,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "c6d05d9f51734aa6",
-   "distance_mi": 23.6
+   "distance_mi": 23.6,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "2026 Gran Fondo Hincapie-Greenville",
@@ -516,7 +533,8 @@
    "category_basis": "rule",
    "discipline": "road",
    "uid": "f2acb77c16a22d1c",
-   "distance_mi": 34.5
+   "distance_mi": 34.5,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "2026 BRAGco Cycling Event",
@@ -545,7 +563,8 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "743ac628878c17c6",
-   "distance_mi": 42.2
+   "distance_mi": 42.2,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Couch Potato",
@@ -573,7 +592,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "2e02b8a758b849f1",
-   "distance_mi": 23.6
+   "distance_mi": 23.6,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Swank 65",
@@ -601,7 +621,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "808d5262f339b592",
-   "distance_mi": 23.6
+   "distance_mi": 23.6,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "We Shred Rock Creek",
@@ -630,7 +651,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "0a67e54dee113b1a",
-   "distance_mi": 27.4
+   "distance_mi": 27.4,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Pisgah DOUBLE DARE",
@@ -658,7 +680,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "59bf1e39a66ae34b",
-   "distance_mi": 26.3
+   "distance_mi": 26.3,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Go Nuts Biking Nut Gobbler XC",
@@ -687,7 +710,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "5d605450c7d6e77a",
-   "distance_mi": 63.3
+   "distance_mi": 63.3,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Pisgah Stage Race",
@@ -695,7 +719,7 @@
    "end": "2027-04-10T04:00:00+00:00",
    "all_day": false,
    "url": "http://www.BikeReg.com/psr",
-   "description": "3-Day Version information. Since this race has always been a 5-Day Version, we are only opening the 3-Day Version to a limited number of 25 spots. I would not delay in registering if you want to be in the 3-Day Version. We could more spots than 25, but that is not a guarantee. RACE FEES CLICK HERE to see the full pay scale on our website. REFUND, DEFERRAL, and TRANSFER POLICY No transfers or deferrals under ANY circumstances. Refunds available until January 31, 2026, at 50% of entry fee. No refunds after January 31, 2026. NO EXCEPTIONS. WE STRONGLY ENCOURAGE YOU TO PURCHASE THE INSURANCE THAT IS OFFERED BY THE REGISTRATION SITE . This should cover about 95% of the emails we get before the race asking for a refund (I.E. injuries, medical issue, etc. Make sure to read through their informati",
+   "description": "RACE FEES CLICK HERE to see the full pay scale on our website. REFUND, DEFERRAL, and TRANSFER POLICY No transfers or deferrals under ANY circumstances. Refunds available until December 31, 2026, at 80% of entry fee. Refunds available until January 31, 2027, at 50% of entry fee. No refunds after January 31, 2027. NO EXCEPTIONS. WE STRONGLY ENCOURAGE YOU TO PURCHASE THE INSURANCE THAT IS OFFERED BY THE REGISTRATION SITE . This should cover about 95% of the emails we get before the race asking for a refund (I.E. injuries, medical issue, etc. Make sure to read through their information on what is covered under this insurance opportunity. PSR has no control over insurance claims or their refunds.) 2027 RACE ROUTES Tuesday, April 6th - Looking Glass Route - 29.5 miles with 3,615 feet of elevatio",
    "venue": "349 Andante Ln",
    "city": "Brevard",
    "state": "NC",
@@ -715,7 +739,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b96fc2f355480948",
-   "distance_mi": 26.9
+   "distance_mi": 26.9,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Bootlegger",
@@ -744,7 +769,8 @@
    "category_basis": "rule",
    "discipline": "gravel",
    "uid": "f0fa19e43a2adce0",
-   "distance_mi": 60.8
+   "distance_mi": 60.8,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Pisgah Mountain Bike Adventure Race",
@@ -772,7 +798,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "996261671a499518",
-   "distance_mi": 23.6
+   "distance_mi": 23.6,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Carolina Reaper Road Race",
@@ -800,7 +827,8 @@
    "category_basis": "rule",
    "discipline": "road",
    "uid": "6cb81637a4faee67",
-   "distance_mi": 58.6
+   "distance_mi": 58.6,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "2027 Gran Fondo Asheville, p/b Applewood Manor Foundation, a SENA Gran Fondo National Series event",
@@ -829,7 +857,8 @@
    "category_basis": "rule",
    "discipline": "road",
    "uid": "19cc3e2cb7f4ed33",
-   "distance_mi": 0.3
+   "distance_mi": 0.3,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "HARDford 50 and HARDERford 75",
@@ -857,7 +886,8 @@
    "category_basis": "rule",
    "discipline": "gravel",
    "uid": "fbb7b952544d9b16",
-   "distance_mi": 36.6
+   "distance_mi": 36.6,
+   "last_seen": "2026-08-24"
   },
   {
    "title": "2027 Boone Gran Fondo, a SENA Gran Fondo National Series event",
@@ -887,7 +917,8 @@
    "category_basis": "rule",
    "discipline": "road",
    "uid": "eaf10f6e0cd70f9a",
-   "distance_mi": 64.8
+   "distance_mi": 64.8,
+   "last_seen": "2026-08-24"
   }
  ]
 }
