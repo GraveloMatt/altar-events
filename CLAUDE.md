@@ -1,17 +1,21 @@
 # Altar Cycles — WNC cycling calendar
 
-**Handoff brief. Read this first.** Third revision. The previous two each
-carried one wrong assumption about the environment that cost most of a
-session; see "Environment reality" below and **verify, do not trust**.
+**Handoff brief. Read this first.** Fourth revision. Every previous revision
+carried at least one wrong assumption about the environment that cost most of a
+session; see "Environment reality" below and **verify, do not trust**. The
+fourth revision's own lesson is narrower and sharper: three separate bugs
+shipped because a source that answers is not a source that is right, and the
+build log said "ok" for all three. **Read the published events, not the log.**
 
 Project: aggregate every cycling event within 75 miles of the shop into one
 calendar, published at `calendar.altar.bike`, embedded on altar.bike, and
 subscribable as `.ics`.
 
-**LIVE as of 2026-08-17.** https://calendar.altar.bike — repo
+**LIVE as of 2026-08-24.** https://calendar.altar.bike — repo
 `GraveloMatt/altar-events` (public), GitHub Pages via Actions, HTTPS enforced,
 DNS CNAME `calendar` -> `gravelomatt.github.io` at Squarespace. Rebuilds every
-morning at 05:17 ET. Currently publishing 64 events.
+morning at 05:17 ET. **Publishing 59 events from 17 sources; needs_attention is
+empty for the first time.** 25 races, 17 group rides, 6 trail work, 6 youth.
 
 ---
 
@@ -34,8 +38,9 @@ This matters:
 
 ## Environment reality — read before planning anything
 
-Each session has been different. **Probe it, don't assume.** As of 2026-08-17
-(Cowork cloud session):
+Each session has been different. **Probe it, don't assume.** As of 2026-08-24
+(Cowork cloud session). Two things the third revision stated as fact were
+already false by this session — both listed below.
 
 ```bash
 curl -sS -o /dev/null -w "%{http_code}\n" https://darccycling.com   # 000/403 = blocked
@@ -51,13 +56,24 @@ curl -sS -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/user
   that way. Two gotchas: `web_fetch` truncates long JSON bodies before
   summarising, so **any count it reports is a floor, not a total**; and it
   honours robots.txt, which blocks some URLs outright.
-- **GitHub identity exists but is read-only and unbound.** `$GH_TOKEN` is
-  proxy-injected and `api.github.com/user` answers as **GraveloMatt**. But
-  `/user/repos`, `POST /user/repos`, `/user/installations` and every
-  `repos/GraveloMatt/*` path return 403 *"sessions are bound to their
-  configured repositories"*, and `git` auth fails with *"Password
-  authentication is not supported"*. Creating the repo did NOT unlock it — the
-  binding is fixed when the session starts. **You cannot push from the shell.**
+- **`git clone` WORKS. `git push` does not.** Corrected 2026-08-24: the third
+  revision said you could not get the code at all. You can —
+  `git clone https://github.com/GraveloMatt/altar-events.git` succeeds
+  anonymously through the proxy. **Do this first.** It gives you the whole
+  codebase, both test suites, and every past `events.json` in the git history,
+  which is how the nightly date-jitter in this revision was proved rather than
+  guessed. Push still fails: *"not in this session's authorized repository
+  set"*. The API is also still closed — `repos/GraveloMatt/*` returns
+  *"GitHub access to this repository is not enabled for this session"*.
+- **Package registries are BLOCKED too.** New in this session: pypi.org,
+  files.pythonhosted.org and registry.npmjs.org all return 403, so
+  `pip install -r requirements.txt` fails. `requests`, `bs4`, `lxml`, `yaml`
+  and `dateutil` happen to be pre-installed; **`icalendar` is not**, and both
+  suites import it. Workaround that works, because github.com IS allowlisted:
+  ```bash
+  git clone --depth 1 https://github.com/collective/icalendar.git /tmp/icalendar-src
+  export PYTHONPATH=/tmp/icalendar-src/src
+  ```
 - **BUT: drive Chrome instead.** This is the lesson of the deploy session.
   Matt's browser is reachable through the `mcp__claude-in-chrome__*` tools and
   is signed in as GraveloMatt, so the entire GitHub UI is available — the repo,
@@ -102,29 +118,121 @@ Config: home 35.5951 / -82.5515, radius 75 mi, horizon 400 days.
 still exits 0, writes every `site/` file, and lists each failure under
 "needs attention". Verified 2026-08-17.
 
-## Source inventory — 15 sources
+## Source inventory — 17 sources (live counts 2026-08-24)
 
 | id | adapter | trust | status |
 |---|---|---|---|
-| asheville-on-bikes | llm | 80 | needs `ANTHROPIC_API_KEY` |
-| asheville-on-bikes-rwgps | ridewithgps | 75 | **DEAD END** — see below, optional |
-| darc | llm | 80 | needs `ANTHROPIC_API_KEY` |
-| blue-ridge-dirt-skrrts | llm | 80 | **ADDED 2026-08-17**; best group-ride source |
-| velosports-ring-of-fire | llm | 80 | **ADDED**; seasonal May-Jun, optional |
-| blue-ridge-bicycle-club | clubexpress | 80 | **BLOCKED**, optional |
-| pisgah-area-sorba | squarespace | 80 | **STALE**, optional; 1 event via llm |
-| g5-trail-collective | wix | 80 | **VERIFIED working** |
-| nica-nc | jsonld | 80 | **URL corrected**; empty Jul-Nov by design |
-| pisgah-rage | llm | 50 | seasonal, mirrors NICA |
-| ic-imagine-cycling | llm | 50 | seasonal, optional |
-| bikereg | bikereg | 60 | **VERIFIED**; 31 events |
-| runsignup | runsignup | 60 | **title-only keywords**; 1 event, by design |
-| uci | llm | 60 | cosmetic, optional |
-| blue-ridge-heritage | tribe | 40 | route serves; **keywords tightened** |
+| bikereg | bikereg | 60 | 31 events. The backbone. |
+| gravelo-workshop | **ics** | 80 | **ADDED 2026-08-24**; 12. Only exact feed for a standing ride |
+| g5-trail-collective | llm | 80 | 4 |
+| asheville-on-bikes | llm | 80 | 3, all **month-only/TBA**. Hub page, `date_precision: month` |
+| asheville-on-bikes-pages | llm | 80 | **ADDED 2026-08-24**; 0 now. Event pages, real dates |
+| blue-ridge-dirt-skrrts | llm | 80 | 3. Best llm group-ride source |
+| darc | llm | 80 | 2 |
+| pisgah-area-sorba | **volunteerhub** | 80 | 2. **Fixed 2026-08-17** — no longer stale |
+| pisgah-rage | llm | 50 | 2. `season: [11, 6]` |
+| runsignup | runsignup | 60 | 1, by design (title-only keywords) |
+| uci | llm | 60 | 9 world-bucket, cosmetic, optional |
+| nica-nc | jsonld | 80 | **off-season** Jul-Oct by declaration, not by failure |
+| velosports-ring-of-fire | llm | 80 | 0. `season: [4, 7]`, optional |
+| blue-ridge-heritage | tribe | 40 | 0. Keywords carry the load, by design |
+| blue-ridge-bicycle-club | clubexpress | 80 | **BLOCKED** behind a member wall, optional |
+| asheville-on-bikes-rwgps | ridewithgps | 75 | **DEAD END**, inert, optional |
+| ic-imagine-cycling | llm | 50 | domain no longer resolves. Decide in November |
 
 Every finding below is also a dated comment in `sources.yml`. House rule:
 **every failure gets understood and written down, never silently dropped.**
 Keep that up.
+
+### 2026-08-24 — four silent bugs, all of them reading as "ok"
+
+Every one of these was invisible in the build log and obvious in the published
+data. The generalisable lesson is in **Conventions** at the bottom; this is what
+actually happened.
+
+**1. Roughly a third of the calendar had dates nobody had ever published, and
+they moved every night.** `sources.yml` told the Asheville on Bikes llm adapter
+that the hub page "lists annual recurring events grouped by month with no year.
+Emit each as an all-day event in the next occurrence of that month." The page
+really does say only "Tour de Fat — OCT". So the model picked a day, and picked
+a **different one most nights**. From the repo's own history:
+
+| build | AoB events | Pumpkin Pedaller |
+|---|---|---|
+| 20 Aug | 21 | **listed twice** — 1 Oct *and* 24 Oct |
+| 21 Aug | 16-19 (varied between runs) | 1 Oct |
+| 22 Aug | 17 | absent |
+| 24 Aug | 19 | 24 Oct |
+
+Total swung 64-68 across four days with no source changing. `uid` was
+`sha1(title|start)`, so every wobble was a **delete-and-recreate in every .ics
+subscriber's calendar**. Fixed by `date_precision: month`: those events anchor
+to the 1st, key their uid on the MONTH so they hold still, and render
+"October 2026 · date TBA" in the agenda, in a strip under the month grid, and
+as "(date TBA)" in the .ics. A source that knows the real day absorbs the
+placeholder in dedupe — month-precision rows sort last there deliberately, so a
+confirmed date beats a placeholder from a more trusted org.
+
+**The flag is BLANKET and must stay that way.** Asking the model to mark its own
+month-only rows was tried the same day and failed inside one build: it returned
+"Tour de Fat, 3 October" unflagged, next to a row whose own description read
+"Specific date has not been announced." **A model is not a reliable reporter of
+its own uncertainty.** Consequence: a source carrying this flag may only read
+pages with no days at all, which is why `asheville-on-bikes` (hub) and
+`asheville-on-bikes-pages` (event pages, real dates) are now two entries.
+`test_pipeline.py` reads `sources.yml` and fails if they are ever recombined.
+
+**2. A real ride vanished for three days and the log said "ok (3 events)".**
+Blue Ridge Dirt Skrrts' 12 September group ride published on the 21st, was
+simply not returned by the extractor on the 22nd, and stayed gone — while
+sitting on the source page the whole time. `build.hold_recent` now keeps a
+future event that was seen in the last `EVENT_GRACE_DAYS` (7) through a run that
+misses it, and **prints and counts the hold**, so a source that holds the same
+event every morning is visibly one whose extraction has stopped working.
+
+**3. `nica-nc` and `pisgah-rage` were FAIL every single morning, for a seasonal
+reason.** An always-red flag is wallpaper — and this project has already shipped
+three silent failures that read as "quiet season". Sources now declare
+`season: [start_month, end_month]` (wrapping the year). Outside it an **empty**
+answer is reported `off-season` and kept out of `needs_attention`. Nothing else
+is excused: a timeout, a 500 or a dead domain still flags in any month.
+`needs_attention` is now empty and therefore means something again.
+
+**4. `test_integration.py` deleted the live feeds.** It built into the real
+`site/` and its cleanup unlinked `events.json` and all three `.ics` files —
+five TRACKED files, silently deleted from the working tree of anyone who ran the
+tests. Commit that by accident and every subscribe link 404s until the next
+build. `build.emit()` now takes an output directory and the test passes a
+tempdir; a check asserts the real `site/` was untouched.
+
+### 2026-08-24, same session — three more, found by reading the live site
+
+The fix for (1) went live, and reading the published page immediately showed
+three further bugs that the green build had hidden.
+
+**5. `.ics` feeds silently dropped every recurring event — the whole point of an
+exact feed.** `adapters.ics` read `DTSTART` and ignored `RRULE`. Every real
+calendar writes a recurring event as ONE VEVENT whose DTSTART is the FIRST
+occurrence, sometimes years back. `gravelo-workshop` exposed it: **177 VEVENTs
+fetched, 19 of them recurring, ZERO with a future DTSTART, source reported
+"ok (0 events)"**. Their standing Saturday ride — `FREQ=WEEKLY;BYDAY=SA` from
+2 Nov 2024, no UNTIL — was invisible. `adapters._ics_occurrences` now expands
+from today forward, honours UNTIL and EXDATE, and caps at
+`ICS_RECUR_CAP` (12) per series, deliberately the same number
+`normalize.RECUR_DEFAULT_COUNT` uses. That one fix took group rides from 5 to
+17.
+
+**6. RFC 5545 all-day `DTEND` is EXCLUSIVE.** Taken literally, every one-day
+Saturday ride published as a two-day event and painted two cells in the month
+grid. The adapter now steps back a day for all-day events. A genuine weekender
+(Nov 6-9 exclusive) still comes out as Nov 6-8.
+
+**7. All twelve Gravelo rides classified as CLINICS.** Every entry in that feed
+has a bare link for a description, the shop is called "**Workshop**", and
+"workshop" is a clinic keyword. `normalize._haystack` now strips URLs before
+matching — a link is a slug, not prose. This is the same bug as `trail` matching
+"Blue Ridge Craft Trails": **a keyword hit on a NAME rather than on what the
+thing is.** Assume it will happen again and look for it.
 
 ### Verified 2026-08-17 (second pass)
 
@@ -290,10 +398,28 @@ empty list more politely. The source stays `optional` and inert.
 if either club ever starts scheduling events properly the only work left is the
 endpoint path.
 
-**2. Pisgah Area SORBA's VolunteerHub URL.** One click for a human: open their
-events page, click any "click Here!" button, read the domain off the address
-bar. VolunteerHub exposes iCal, which turns a dead source into an exact `ics`
-feed and brings back their dig days.
+**2. Pisgah Area SORBA's VolunteerHub URL — DONE 2026-08-17.** Someone found
+the portal and wired the `volunteerhub` adapter. Publishing again.
+
+**2b. NEW, and the most valuable thing left: near-term coverage.** On 24 August
+the calendar had **two events in the following seven days**. That is not a bug,
+it is the source list: weekday and weekend standing rides mostly live on
+Facebook, Instagram and behind BRBC's member wall, and `gravelo-workshop` is so
+far the only source that publishes one in a machine-readable form. Leads found
+and NOT yet followed up:
+* **`pisgahareasorba.org/find-your-ride`** is a hand-maintained directory of
+  recurring rides — Motion Makers women's MTB (Mondays 6pm, Ledford Branch) and
+  a Motion Makers no-drop (Saturdays 8am, Bent Creek) were listed on 24 Aug.
+  Not a feed, but a short list a human could confirm and drop into
+  `data/manual.yml` with `repeat: weekly`.
+* **`avlgo.com`** aggregates Asheville events from AVL Today, Eventbrite,
+  Meetup and **Facebook Events**, and demonstrably carries shop rides. It is a
+  JS-rendered custom app with no JSON-LD and it is open source, so the repo may
+  document a real endpoint. That would be the single biggest addition
+  available, because Facebook is exactly where the missing rides are.
+* **Check the feed, not the web copy.** Gravelo's website still advertises a
+  Wednesday 6:15pm ride. Their calendar says that series has an `UNTIL` of
+  13 Jan 2026 — it ended. Stale web copy is a trap for `manual.yml`.
 
 **2. Recurring events — DONE 2026-08-17.** `normalize.expand_recurrence`
 turns one row carrying `repeat: weekly|biweekly|monthly` (+ optional
@@ -429,4 +555,25 @@ itself returned 503 twice during an active githubstatus.com incident — when
   just the response.
 - **Read the live site after a change, not just the build log.** The craft-fair
   bug was invisible in the summary — "blue-ridge-heritage — ok (32 events)" —
-  and obvious the moment anyone looked at the page.
+  and obvious the moment anyone looked at the page. Three MORE bugs were caught
+  this way on 2026-08-24, all of them behind a green build.
+- **`git clone` the repo and read past `events.json` from the history.** It is
+  the cheapest bug-finding tool this project has. The nightly date-jitter was
+  not deduced, it was read straight off four days of commits, and the Dirt
+  Skrrts ride that vanished was found the same way. A build report describes one
+  morning; the history shows whether the answer is STABLE.
+- **A source that answers is not a source that is right.** "ok (0 events)" and
+  "ok (19 events)" both hid serious bugs in one day. Prefer checks that compare
+  a source's output to what a human can see on its page.
+- **Never let a model report its own uncertainty and act on that.** It will
+  emit a confident date beside a description that says the date is unknown.
+  Decide it in config, where it can be tested.
+- **Keyword rules match names, not just topics.** `trail` caught "Craft
+  Trails"; `mountain` caught "Paris Mountain"; `workshop` caught a shop called
+  Workshop. Before adding a keyword, ask what BUSINESS or PLACE might be called
+  that. URLs are stripped from the classification haystack for this reason —
+  keep them out.
+- **Nothing that is expected may be reported as a failure.** Seasonal sources
+  declare a `season`; an off-season empty answer is `off-season`, not FAIL. A
+  warning everybody scrolls past is worse than no warning, because it makes the
+  real ones invisible.
