@@ -12,7 +12,34 @@
 #   repeat: weekly | biweekly | monthly
 #   repeat_until: 2026-12-31   (optional)
 
-events: []
+events:
+  # Gravelo Workshop's Wednesday shop ride. HAND-ENTERED 2026-08-24 on Matt's
+  # word, and it has to be, because it cannot come from their feed: their
+  # public Google Calendar carries this series as "Group Ride (roll out
+  # 6:15pm)" with an RRULE whose UNTIL is 13 Jan 2026 — as far as that calendar
+  # is concerned it ENDED eight months ago. Their website still advertises it.
+  # Matt says it is running. A shop owner in the same town beats a stale
+  # calendar entry, so it goes in here at trust 100.
+  #
+  # WHEN THIS LAPSES: delete this block. `repeat_until` stops it on 28 Oct
+  # 2026 by itself, which is deliberate — a standing ride goes stale faster
+  # than anyone updates it, so it expires rather than quietly running forever.
+  # If Gravelo ever fixes the UNTIL on their own calendar entry, delete this
+  # block immediately and let the gravelo-workshop ics source carry it: an
+  # exact feed beats a hand-typed one, and two copies would publish as one
+  # event only while the titles and dates keep matching.
+  - title: Gravelo Wednesday Shop Ride
+    start: 2026-08-26T18:00:00
+    repeat: weekly
+    repeat_until: 2026-10-28
+    venue: Gravelo Workshop — Bicycles & Coffee
+    city: Asheville
+    state: NC
+    url: https://www.gravelo-workshop.com/eventcal
+    description: >
+      Weekly mixed-surface shop ride. Meet at 6:00pm, roll out at 6:15.
+      Weather dependent — routes are posted on Gravelo's Instagram.
+      Lights from October.
 
 # events:
 #   - title: Altar Shop Ride — Bent Creek
