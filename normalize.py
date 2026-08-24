@@ -16,7 +16,7 @@ import math
 import re
 import unicodedata
 from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from difflib import SequenceMatcher
 
 # --------------------------------------------------------------------------
@@ -594,6 +594,23 @@ def expand_recurrence(event: dict, horizon_days: int = 400) -> list[dict]:
     return out or [event]
 
 
+def as_iso(value):
+    """YAML hands back a datetime, not a string.
+
+    `data/manual.yml` is written by hand, and its own worked example writes
+    `start: 2026-09-04T18:00:00` unquoted — which PyYAML parses into a
+    datetime object. Everything downstream slices `start[:10]`, so the first
+    standing ride anyone actually added would have crashed the build with
+    "'datetime.datetime' object is not subscriptable". The file has been empty
+    since day one, which is the only reason this never fired. Coerce once,
+    here, instead of defending in a dozen places — and note that datetime is a
+    subclass of date, so it has to be tested first.
+    """
+    if isinstance(value, (datetime, date)):
+        return value.isoformat()
+    return value
+
+
 def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict]:
     """Everything that happens to one source's events before the global merge."""
     now = datetime.now()
@@ -608,6 +625,11 @@ def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict
     # Expand before anything else so each occurrence gets its own geofence
     # check, category, uid and horizon test, exactly like a one-off would.
     # Sources that never set `repeat` pass through untouched.
+    for e in raw:
+        for field in ("start", "end", "repeat_until"):
+            if e.get(field) is not None:
+                e[field] = as_iso(e[field])
+
     raw = [x for e in raw for x in split_long_span(e)]
     raw = [occurrence for e in raw for occurrence in expand_recurrence(e)]
 

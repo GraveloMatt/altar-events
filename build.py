@@ -471,9 +471,24 @@ def main() -> int:
         collected += fetch_source(source, home, radius, report)
 
     if not args.only:
-        collected += load_manual(home, radius)
+        # Everywhere else the rule is "one dead source never kills the build" —
+        # fetch_source catches, logs, and serves cache. These two were the
+        # exception, and data/manual.yml is the ONE file a non-programmer edits
+        # by hand. A single mistyped date in it took down the entire publish,
+        # every other source with it. Found 2026-08-24 while adding a standing
+        # ride. They now fail like any other source: loudly, in the report, and
+        # alone.
+        loaders = [("altar", load_manual)]
         if not args.offline:
-            collected += load_submissions(home, radius)
+            loaders.append(("community", load_submissions))
+        for sid, loader in loaders:
+            try:
+                collected += loader(home, radius)
+            except Exception as exc:                  # noqa: BLE001
+                report[sid] = {"status": "failed", "errors": [str(exc)],
+                               "cached_events": 0, "cache_age_days": None,
+                               "optional": False}
+                print(f"  FAIL  {sid:26} {str(exc)[:70]}")
 
     before = len(collected)
     merged = normalize.dedupe(collected)

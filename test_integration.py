@@ -7,6 +7,7 @@ parsing code is exercised without touching the network.
 import json
 import re
 from datetime import datetime, timedelta
+import pathlib
 from types import SimpleNamespace
 
 import adapters
@@ -285,6 +286,36 @@ check("unescapes location commas", "Hendersonville" in got[0]["venue"])
 check("keeps event url", got[0]["url"].endswith("/e/991"))
 
 # --------------------------------------------------------------------- llm
+print("\na broken manual.yml must not take the whole calendar down")
+# data/manual.yml is the one file a non-programmer edits by hand, and until
+# 2026-08-24 it was the only input with no error guard: load_manual() raising
+# killed main() before emit(), so ONE mistyped date published nothing at all.
+_report = {}
+_broken = SimpleNamespace(only=None, offline=True)
+def _explode(home, radius):
+    raise ValueError("could not parse start: 'next tuesdayy'")
+
+_collected = []
+for _sid, _loader in [("altar", _explode)]:
+    try:
+        _collected += _loader(None, None)
+    except Exception as _exc:                              # noqa: BLE001
+        _report[_sid] = {"status": "failed", "errors": [str(_exc)],
+                         "cached_events": 0, "cache_age_days": None,
+                         "optional": False}
+check("a broken hand-entered file does not raise past the loader", _collected == [])
+check("it is reported as a failed source", _report["altar"]["status"], "failed")
+check("and it lands in needs_attention where a human will see it",
+      [s for s, r in _report.items()
+       if r.get("status") not in ("ok", "off-season") and not r.get("optional")],
+      ["altar"])
+# The guard has to be in build.py itself, not just in this test's mirror of it.
+import inspect
+_main_src = inspect.getsource(build.main) if hasattr(build, "main") else \
+    pathlib.Path(build.__file__).read_text()
+check("build.py actually wraps the hand-entered loaders",
+      "except Exception" in _main_src and "load_manual" in _main_src)
+
 print("\nics — RRULE expansion (regression: 177 events fetched, 0 published)")
 # Captured verbatim from the Gravelo Workshop public Google Calendar on
 # 2026-08-24. 177 VEVENTs, 19 of them recurring, and NOT ONE with a future

@@ -287,6 +287,45 @@ check("tidying happens before the uid is taken",
            "org_url": "https://x"}, HOME, R)[0]["title"],
       "Bent Creek Dig Day")
 
+print("\nhand-entered YAML dates (regression: manual.yml would crash the build)")
+# PyYAML parses an unquoted `start: 2026-09-04T18:00:00` into a datetime
+# OBJECT, not a string, and every downstream check slices start[:10]. The
+# worked example in data/manual.yml's own comments is unquoted, so the first
+# standing ride anyone added would have died with "'datetime.datetime' object
+# is not subscriptable". The file sat empty from day one, which is the only
+# reason it never fired — found 2026-08-24 adding the Gravelo Wednesday ride.
+import yaml as _yaml
+_parsed = _yaml.safe_load("""
+events:
+  - title: Gravelo Wednesday Shop Ride
+    start: 2026-08-26T18:00:00
+    repeat: weekly
+    repeat_until: 2026-10-28
+    city: Asheville
+    state: NC
+""")["events"]
+check("YAML really does hand back a datetime, not a string",
+      isinstance(_parsed[0]["start"], datetime), True)
+_manual = {"id": "altar", "name": "Altar Cycles", "trust": 100,
+           "default_category": "race", "org_url": "https://altar.bike"}
+_rides = normalize.prepare(_parsed, _manual, HOME, R)
+check("a hand-entered standing ride survives", len(_rides), 10)
+check("every occurrence is a Wednesday",
+      {datetime.fromisoformat(e["start"]).weekday() for e in _rides}, {2})
+check("repeat_until is respected to the day",
+      (_rides[0]["start"][:10], _rides[-1]["start"][:10]),
+      ("2026-08-26", "2026-10-28"))
+check("time of day is kept", _rides[3]["start"][11:], "18:00:00")
+check("each occurrence gets its own uid",
+      len({e["uid"] for e in _rides}), 10)
+check("the shop's own entry outranks anything scraped", _rides[0]["trust"], 100)
+# The coercion itself, directly.
+check("a bare date coerces too", normalize.as_iso(datetime(2026, 9, 4).date()),
+      "2026-09-04")
+check("a string is left alone", normalize.as_iso("2026-09-04"), "2026-09-04")
+check("None is left alone", normalize.as_iso(None), None)
+
+
 print("\nrecurring events")
 _wk = normalize.expand_recurrence(
     {"title": "Altar Shop Ride", "start": soon(5) + "T18:00:00", "repeat": "weekly"})
