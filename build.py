@@ -20,7 +20,7 @@ import argparse
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import yaml
@@ -29,7 +29,12 @@ import adapters
 import normalize
 
 ROOT = Path(__file__).parent
-SITE = ROOT / "site"
+# Where emit() writes. Overridable because test_integration.py used to build
+# into the REAL site/ and then unlink events.json and all three .ics feeds on
+# its way out, leaving those tracked files deleted in the working tree. Commit
+# that by accident and every subscribe link on the live calendar 404s until the
+# next scheduled build. Tests now pass their own directory to emit().
+SITE = Path(os.environ.get("ALTAR_SITE_DIR") or (ROOT / "site"))
 CACHE = ROOT / "data" / "cache"
 STALE_AFTER_DAYS = 14           # warn when a source hasn't succeeded in this long
 
@@ -57,6 +62,41 @@ def run_adapter(spec: dict, home: dict, radius: int) -> list[dict]:
     return out
 
 
+# An adapter can fail two very different ways: the source answered and had
+# nothing, or the source did not answer. Only the first is ever "expected".
+_EMPTY_SIGNS = ("returned 0 events", "no schema.org event blocks",
+                "no events found", "empty page")
+
+
+def looks_empty(error: str) -> bool:
+    return any(sign in error.lower() for sign in _EMPTY_SIGNS)
+
+
+def in_season(source: dict, today: date | None = None) -> bool:
+    """Is this source expected to have anything at all right now?
+
+    NICA NC is a spring league: it races late January to June and opens
+    registration on 1 November. Between July and October its calendar page is
+    legitimately, correctly empty — and it was reported as FAIL every single
+    morning regardless, alongside pisgah-rage, which mirrors it. A red flag
+    that is always red is not a flag, it is wallpaper. This project has already
+    shipped three silent source failures that read as "quiet season"; the way
+    that keeps happening is by training everyone to scroll past the warning.
+
+    A source declares `season: [11, 6]` — November through June, wrapping the
+    year. Outside that window an EMPTY result is reported as `off-season` and
+    kept out of needs_attention. Nothing else is excused: an off-season source
+    that 500s, times out, or stops resolving still flags, because that is a
+    real breakage whatever the month.
+    """
+    season = source.get("season")
+    if not season or len(season) != 2:
+        return True
+    start, end = int(season[0]), int(season[1])
+    month = (today or date.today()).month
+    return start <= month <= end if start <= end else (month >= start or month <= end)
+
+
 def fetch_source(source: dict, home: dict, radius: int, report: dict) -> list[dict]:
     """
     Try the declared adapter, then each fallback in turn. If everything fails,
@@ -76,33 +116,105 @@ def fetch_source(source: dict, home: dict, radius: int, report: dict) -> list[di
                 errors.append(f"{attempt['adapter']}: returned 0 events")
                 continue
             events = normalize.prepare(raw, source, home, radius)
+            events, held = hold_recent(source, events)
             write_cache(sid, events)
             report[sid] = {
                 "status": "ok",
                 "adapter": attempt["adapter"],
                 "fetched": len(raw),
                 "kept": len(events),
+                "held": len(held),
                 "at": datetime.now(timezone.utc).isoformat(),
             }
             print(f"  ok    {sid:26} {attempt['adapter']:12} "
                   f"{len(raw):3} fetched -> {len(events):3} kept")
+            if held:
+                # Say it out loud. A held event is one this run did NOT find,
+                # and a source that holds the same event every day is a source
+                # whose extraction has genuinely stopped working.
+                print(f"        -> holding {len(held)} not returned this run: "
+                      + ", ".join(f"{e['title'][:32]} ({e['held_since']})" for e in held[:4]))
             return events
         except Exception as exc:                      # noqa: BLE001
             errors.append(f"{attempt['adapter']}: {exc}")
 
     cached, age = read_cache(sid)
-    level = "warn" if source.get("optional") else "FAIL"
+    off_season = bool(errors) and all(map(looks_empty, errors)) and not in_season(source)
+    if off_season:
+        status, level = "off-season", "quiet"
+    else:
+        status = "cached" if cached else "failed"
+        level = "warn" if source.get("optional") else "FAIL"
     report[sid] = {
-        "status": "cached" if cached else "failed",
+        "status": status,
         "errors": errors,
         "cached_events": len(cached),
         "cache_age_days": age,
         "optional": bool(source.get("optional")),
+        "off_season": off_season,
     }
     print(f"  {level:5} {sid:26} {errors[-1][:70] if errors else 'no adapters'}")
     if cached:
         print(f"        -> serving {len(cached)} cached events ({age}d old)")
     return cached
+
+
+# How long an event that has already been published survives a source that
+# stops mentioning it.
+#
+# The llm adapter is not deterministic, and until 2026-08-24 nothing noticed.
+# Blue Ridge Dirt Skrrts' September group ride (Sat 12 Sep, Fonta Flora State
+# Trail) published normally in the 21 Aug build. On the 22nd the extractor
+# simply did not return it. It has been missing every morning since, and the
+# build log said "blue-ridge-dirt-skrrts — ok (3 events)" each time. The ride
+# is still on the source page. Nothing was broken and nothing warned — the
+# calendar just quietly lost the nearest group ride it had.
+#
+# One quiet run is not evidence an event was cancelled. A future event that was
+# seen recently is held for this many days before it is allowed to fall off,
+# and the hold is PRINTED and counted in the report, so it is never silent in
+# the other direction either.
+EVENT_GRACE_DAYS = 7
+
+
+def hold_recent(source: dict, fresh: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Union this run's extraction with events still inside their grace window."""
+    sid = source["id"]
+    today = datetime.now().date()
+    for e in fresh:
+        e["last_seen"] = today.isoformat()
+
+    path = CACHE / f"{sid}.json"
+    if not path.exists():
+        return fresh, []
+    try:
+        previous = json.loads(path.read_text()).get("events", [])
+    except (ValueError, OSError):
+        return fresh, []
+
+    want = source.get("date_precision") or None
+    seen_now = {e.get("uid") for e in fresh}
+    held = []
+    for e in previous:
+        if e.get("uid") in seen_now:
+            continue
+        if (e.get("start") or "")[:10] < today.isoformat():
+            continue                        # already happened; let it go
+        if (e.get("date_precision") or None) != want:
+            # The source's date handling changed under us — this is how the
+            # old invented-day Asheville on Bikes rows would otherwise have
+            # come back for a week and beaten their own replacements in
+            # dedupe. A cached event of the wrong shape is stale, not held.
+            continue
+        try:
+            last = date.fromisoformat(e.get("last_seen") or "")
+        except ValueError:
+            continue                        # written before events were stamped
+        if (today - last).days > EVENT_GRACE_DAYS:
+            continue
+        e["held_since"] = e["last_seen"]
+        held.append(e)
+    return fresh + held, held
 
 
 def write_cache(sid: str, events: list[dict]) -> None:
@@ -239,7 +351,12 @@ def to_ics(events: list[dict], name: str, description: str) -> bytes:
     for e in events:
         item = Event()
         item.add("uid", f"{e['uid']}@altar.bike")
-        item.add("summary", e["title"])
+        # A month-precision event is anchored to the 1st purely so it has a
+        # DTSTART. Saying so in the SUMMARY is the whole point: a subscriber
+        # sees "Tour de Fat (date TBA)" sitting on 1 October and knows not to
+        # plan around that square, instead of seeing a confident wrong day.
+        month_only = e.get("date_precision") == normalize.MONTH_PRECISION
+        item.add("summary", f"{e['title']} (date TBA)" if month_only else e["title"])
         try:
             start = datetime.fromisoformat(e["start"])
         except (ValueError, KeyError):
@@ -261,7 +378,12 @@ def to_ics(events: list[dict], name: str, description: str) -> bytes:
         if e.get("url"):
             item.add("url", e["url"])
 
-        body = [e.get("description", "")]
+        body = []
+        if month_only:
+            month = datetime.fromisoformat(e["start"]).strftime("%B %Y")
+            body.append(f"Date not yet announced. {e['source_name']} lists this "
+                        f"as a {month} event; the day above is a placeholder.")
+        body.append(e.get("description", ""))
         if e.get("register_url"):
             body.append(f"Register: {e['register_url']}")
         elif e.get("url"):
@@ -275,8 +397,9 @@ def to_ics(events: list[dict], name: str, description: str) -> bytes:
     return cal.to_ical()
 
 
-def emit(events: list[dict], report: dict) -> None:
-    SITE.mkdir(parents=True, exist_ok=True)
+def emit(events: list[dict], report: dict, site: Path | None = None) -> None:
+    site = Path(site) if site else SITE
+    site.mkdir(parents=True, exist_ok=True)
     local = [e for e in events if e.get("bucket") != "world"]
     world = [e for e in events if e.get("bucket") == "world"]
 
@@ -288,8 +411,8 @@ def emit(events: list[dict], report: dict) -> None:
         "sources": sorted({e["source_name"] for e in local}),
         "categories": sorted({e["category"] for e in local}),
     }
-    (SITE / "events.json").write_text(json.dumps(payload, indent=1))
-    (SITE / "events.ics").write_bytes(
+    (site / "events.json").write_text(json.dumps(payload, indent=1))
+    (site / "events.ics").write_bytes(
         to_ics(local, "WNC Cycling — by Altar Cycles",
                "Races, group rides, trail work and festivals within about "
                "75 miles of Asheville. Maintained by Altar Cycles. altar.bike"))
@@ -297,12 +420,12 @@ def emit(events: list[dict], report: dict) -> None:
     for cat, filename, label in (("race", "races.ics", "WNC Bike Racing"),
                                  ("trail-work", "trail-work.ics", "WNC Trail Work Days")):
         subset = [e for e in local if e["category"] == cat]
-        (SITE / filename).write_bytes(
+        (site / filename).write_bytes(
             to_ics(subset, f"{label} — Altar Cycles", f"{label}. altar.bike"))
 
     stale = [s for s, r in report.items()
-             if r.get("status") != "ok" and not r.get("optional")]
-    (SITE / "build-report.json").write_text(json.dumps({
+             if r.get("status") not in ("ok", "off-season") and not r.get("optional")]
+    (site / "build-report.json").write_text(json.dumps({
         "generated": payload["generated"],
         "total": len(local),
         "world": len(world),

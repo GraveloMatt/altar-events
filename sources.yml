@@ -40,10 +40,25 @@ sources:
     # individual event pages, so we read the hub plus those.
     adapter: llm
     url: https://ashevilleonbikes.com/events
+    # VERIFIED 2026-08-24: the page really does show a month and nothing else —
+    # "Tour de Fat — OCT", "Summer Cycle — AUG". The old hint told the model to
+    # "emit each as an all-day event in the next occurrence of that month",
+    # which made it invent a day number. It invented a DIFFERENT one most
+    # nights: Pumpkin Pedaller published as 1 Oct on the 20th, 24 Oct on the
+    # 22nd, and twice at once on the 20th. Because uid was sha1(title|start),
+    # every wobble deleted and re-created the ride in every .ics subscriber's
+    # calendar. `date_precision: month` is the fix: normalize anchors these to
+    # the 1st, keys the uid on the month so it holds still, and every surface
+    # renders "October 2026 · date TBA" instead of a day nobody confirmed.
+    # If AoB ever publishes real dates, delete this flag and the events will
+    # start carrying their own days again.
+    date_precision: month
     hint: >
-      This page lists annual recurring events grouped by month with no year.
-      Emit each as an all-day event in the next occurrence of that month.
-      Mark them clearly as annual in the description.
+      This page lists annual recurring events grouped by month, with no day and
+      no year. Do NOT guess a day. For each event emit start as the FIRST day
+      of the next occurrence of that month, in YYYY-MM-01 form, with
+      all_day true. Say in the description that the date has not been
+      announced. If an event DOES carry a real day on the page, use that day.
     extra_urls:
       - https://ashevilleonbikes.com/events/asheville-summer-cycle
       - https://ashevilleonbikes.com/events/asheville-bike-love
@@ -102,7 +117,47 @@ sources:
       start and end time and a venue. Some entries are social or skills events
       rather than rides (a tire clinic, a self-defense class, a bike wash) —
       include them, they are club events, but do not call them races.
+      Return EVERY entry dated today or later, without exception. Upcoming
+      entries are listed first and are followed by a long archive of past ones
+      (30+ going back two years); once you reach entries earlier than today you
+      may stop. Missing an upcoming ride is the worst outcome here — on
+      2026-08-22 the 12 September group ride at Fonta Flora was silently
+      dropped from an extraction that returned everything around it.
     drop_if_titled: [membership, donate, volunteer application]
+
+  - id: gravelo-workshop
+    name: Gravelo Workshop
+    org_url: https://www.gravelo-workshop.com/
+    trust: 80
+    default_category: group-ride
+    optional: true
+    # ADDED 2026-08-24. VERIFIED the same day by opening the calendar in a
+    # browser, not inferred: the shop's Squarespace /eventcal page embeds a
+    # PUBLIC Google Calendar (c_m5od1fnoqhu3mr1i5ep3p6um4s@group.calendar.
+    # google.com), which means the standard /public/basic.ics endpoint is a
+    # genuine iCal feed. That is the top rung of the adapter ladder, and the
+    # first exact feed this project has for a RECURRING group ride — the
+    # category that has been thinnest since BRBC went behind its member wall.
+    # The agenda view listed "9:30am Bakery Ride B Group Start at Gravelo"
+    # every Saturday from 29 Aug 2026 through 2 Jan 2027, at 793 Merrimon Ave,
+    # Asheville NC 28804.
+    # KNOWN GAP: the site also advertises a Wednesday 6:15pm shop ride
+    # ("routes posted on Instagram", weather dependent). It is NOT on the
+    # Google Calendar — only the Saturday ride is — so it will not arrive
+    # through this feed. data/manual.yml with `repeat: weekly` is the escape
+    # hatch if it is wanted.
+    # The feed also carries all-day "SHOP CLOSED" entries most Mondays. Those
+    # are opening hours, not events. `closed` on its own is deliberately NOT in
+    # the drop list — it would take out a "Closed Course Crit".
+    # The entries are all-day with the time written into the title, so titles
+    # read "9:30am Bakery Ride B Group Start at Gravelo". Slightly awkward and
+    # entirely honest; leave it unless Matt objects.
+    # LOCATION carries a street address but no GEO, so these geofence on the
+    # word "Asheville" in the venue string and will show no distance.
+    # Marked optional until it has survived a live build.
+    adapter: ics
+    url: https://calendar.google.com/calendar/ical/c_m5od1fnoqhu3mr1i5ep3p6um4s%40group.calendar.google.com/public/basic.ics
+    drop_if_titled: [shop closed, private event, staff meeting, holiday hours]
 
   - id: velosports-ring-of-fire
     name: Ring of Fire — Asheville Velodrome
@@ -124,6 +179,9 @@ sources:
     # earlier than that, and to name the venue properly. Marked optional so it
     # can never fail the build.
     # Wix site; no iCal and no JSON-LD, so the llm rung reads the page.
+    # The series runs 6 May to 24 June. Outside that an empty page is the
+    # correct answer, not a fault worth printing FAIL over.
+    season: [4, 7]
     adapter: llm
     url: https://www.velosportsracing.com/ring-of-fire
     hint: >
@@ -249,6 +307,14 @@ sources:
     default_category: youth
     adapter: jsonld
     url: https://northcarolinamtb.org/event-weekends
+    # ADDED 2026-08-24: the seasonal pattern documented below was true and was
+    # ALSO reported as a FAIL every single morning, which is how a warning
+    # stops being read. November through June is when this league has anything
+    # to say; outside it an EMPTY result is logged as `off-season` and kept out
+    # of needs_attention. A timeout, a 500 or a dead domain still flags in any
+    # month. If November turns out to be reliably quiet too — registration
+    # opens 1 Nov but dates may post later — tighten this to [12, 6].
+    season: [11, 6]
     # VERIFIED 2026-08-17: domain confirmed correct against NICA's own league
     # directory (nationalmtb.org/nica-leagues).
     # CORRECTED 2026-08-17 after live build run #2: /schedule/ does NOT exist —
@@ -282,6 +348,8 @@ sources:
     adapter: llm
     url: https://www.pisgahrage.com/
     drop_if_titled: [practice, parent meeting, rider assessment, team meeting]
+    # Mirrors nica-nc's calendar, so it keeps nica-nc's season. See there.
+    season: [11, 6]
 
   - id: ic-imagine-cycling
     name: IC Imagine Cycling

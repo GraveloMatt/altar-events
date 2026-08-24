@@ -427,6 +427,131 @@ for title, keep in [
         BRH, HOME, R)
     check(("keeps " if keep else "drops ") + title[:38], bool(got), keep)
 
+print("\ngravelo-workshop — shop hours must not become events")
+# Real shapes from the live public Google Calendar, read 2026-08-24. The feed
+# mixes the Saturday ride with all-day "SHOP CLOSED" opening-hours entries.
+import yaml as _yaml
+GRAV = [x for x in _yaml.safe_load(open("sources.yml"))["sources"]
+        if x["id"] == "gravelo-workshop"][0]
+_g = normalize.prepare([
+    {"title": "SHOP CLOSED", "start": soon(7), "all_day": True, "venue": ""},
+    {"title": "9:30am Bakery Ride B Group Start at Gravelo", "start": soon(5),
+     "all_day": True,
+     "venue": "Gravelo Workshop - Bicycles & Coffee, 793 Merrimon Ave, Asheville, NC 28804, USA"},
+    # The reason `closed` alone is not in the drop list.
+    {"title": "Closed Course Crit", "start": soon(26), "all_day": True,
+     "venue": "Carrier Park, Asheville, NC"},
+], GRAV, HOME, R)
+_titles = [e["title"] for e in _g]
+check("opening hours dropped", "SHOP CLOSED" not in _titles, True)
+check("the Saturday ride survives",
+      any("Bakery Ride" in t for t in _titles), True)
+check("a real race with 'closed' in the title is not caught",
+      any("Closed Course Crit" in t for t in _titles), True)
+check("geofenced on the address, with no coordinates",
+      all(e.get("lat") is None for e in _g), True)
+check("categorised as a group ride",
+      [e["category"] for e in _g if "Bakery" in e["title"]], ["group-ride"])
+
+
+print("\nseasonal sources (a flag that is always red is wallpaper)")
+from datetime import date as _date
+NICA = {"id": "nica-nc", "season": [11, 6]}
+check("in season in March",   build.in_season(NICA, _date(2027, 3, 1)), True)
+check("in season in November", build.in_season(NICA, _date(2026, 11, 1)), True)
+check("out of season in August", build.in_season(NICA, _date(2026, 8, 24)), False)
+check("wrap-around handled at the year boundary",
+      build.in_season(NICA, _date(2027, 1, 5)), True)
+check("a summer season does not wrap",
+      build.in_season({"season": [4, 7]}, _date(2026, 12, 1)), False)
+check("no season declared means always in season", build.in_season({}), True)
+
+check("an empty answer looks empty", build.looks_empty("llm: returned 0 events"), True)
+check("missing JSON-LD on an empty page looks empty",
+      build.looks_empty("jsonld: https://x: no schema.org Event blocks"), True)
+# The distinction that keeps this honest: a source that cannot be reached is
+# broken in July exactly as much as in March.
+check("a dead domain does NOT look empty",
+      build.looks_empty("llm: https://x: Max retries exceeded, NameResolutionError"), False)
+check("a timeout does NOT look empty",
+      build.looks_empty("llm: https://api.anthropic.com/v1/messages: Read timed out"), False)
+
+import tempfile
+from pathlib import Path as _P
+_out = _P(tempfile.mkdtemp(prefix="altar-season-"))
+build.emit([], {"nica-nc":  {"status": "off-season", "off_season": True, "optional": False},
+                "pisgah-rage": {"status": "cached", "optional": False},
+                "bikereg":  {"status": "ok"}}, site=_out)
+_report = json.loads((_out / "build-report.json").read_text())
+check("off-season stays out of needs_attention",
+      _report["needs_attention"], ["pisgah-rage"])
+import shutil as _sh
+_sh.rmtree(_out, ignore_errors=True)
+
+
+print("\nmonth-only sources (regression: invented days that moved nightly)")
+# Real shape from https://ashevilleonbikes.com/events, captured 2026-08-24:
+# the page prints "Tour de Fat — OCT" and nothing more. The extractor used to
+# be told to pick the day itself, and picked a different one most nights.
+AOB = {"id": "asheville-on-bikes", "name": "Asheville on Bikes", "trust": 80,
+       "default_category": "group-ride", "org_url": "https://ashevilleonbikes.com/",
+       "date_precision": "month"}
+
+# Two builds, two different guesses for the same October event.
+monday  = normalize.prepare([{"title": "Tour de Fat", "start": "2026-10-03",
+                              "all_day": True, "city": "Asheville", "state": "NC"}],
+                            AOB, HOME, R)
+tuesday = normalize.prepare([{"title": "Tour de Fat", "start": "2026-10-24",
+                              "all_day": True, "city": "Asheville", "state": "NC"}],
+                            AOB, HOME, R)
+check("guessed day is discarded", monday[0]["start"], "2026-10-01")
+check("flagged as month precision", monday[0]["date_precision"], "month")
+check("no invented span", monday[0]["end"], "")
+# This is the one that matters. A moving uid reaches a subscriber's calendar
+# as a delete plus an add, every single morning.
+check("uid holds still across a different guess",
+      monday[0]["uid"], tuesday[0]["uid"])
+
+october  = normalize.prepare([{"title": "Ride Your City", "start": "2026-10-09"}], AOB, HOME, R)
+november = normalize.prepare([{"title": "Ride Your City", "start": "2026-11-09"}], AOB, HOME, R)
+check("a genuinely different month is a different event",
+      october[0]["uid"] != november[0]["uid"], True)
+
+# Snapping to the 1st must not retire an event that has not happened. Read on
+# the 24th, "sometime this month" is still ahead of us.
+this_month = datetime.now().strftime("%Y-%m")
+current = normalize.prepare([{"title": "Summer Cycle", "start": f"{this_month}-28"}],
+                            AOB, HOME, R)
+check("current month survives the horizon floor", len(current), 1)
+
+# A source that knows the day absorbs the placeholder, and the KNOWN date is
+# what publishes — even though the placeholder came from the more trusted org.
+placeholder = normalize.prepare(
+    [{"title": "Tour de Fat", "start": "2026-10-14", "city": "Asheville", "state": "NC"}],
+    AOB, HOME, R)
+confirmed = normalize.prepare(
+    [{"title": "Tour de Fat", "start": "2026-10-03", "all_day": True,
+      "city": "Asheville", "state": "NC"}],
+    {"id": "bikereg", "name": "BikeReg", "trust": 60, "default_category": "race",
+     "org_url": "https://www.bikereg.com/"}, HOME, R)
+both = normalize.dedupe(placeholder + confirmed)
+tdf = [e for e in both if e["title"] == "Tour de Fat"]
+check("placeholder absorbed, not published beside the real one", len(tdf), 1)
+check("the confirmed date wins", tdf[0]["start"], "2026-10-03")
+check("and it is no longer flagged TBA", tdf[0].get("date_precision"), None)
+check("placeholder's org still credited",
+      "Asheville on Bikes" in tdf[0].get("also_listed_by", []), True)
+
+# Sources without the flag are untouched.
+plain = normalize.prepare([{"title": "Old Fort Fifty", "start": soon(30), "all_day": True,
+                            "city": "Old Fort", "state": "NC"}],
+                          {"id": "g5", "name": "G5", "trust": 80,
+                           "default_category": "race", "org_url": "https://g5.org"},
+                          HOME, R)
+check("day-precision source keeps its day", plain[0]["start"], soon(30))
+check("day-precision source carries no flag", plain[0].get("date_precision"), None)
+
+
 print("\nreal-world titles from live sources (2026-08-17)")
 # Captured from g5trailcollective.org/volunteer. G5 defaults to trail-work;
 # the workshop must still land in clinic via category_basis, and "Trail Day"

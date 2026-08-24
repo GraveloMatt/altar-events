@@ -252,13 +252,22 @@ def slug(title: str) -> str:
 
 def same_event(a: dict, b: dict) -> bool:
     """Same day (or overlapping range) plus a near-identical title."""
-    try:
-        da = datetime.fromisoformat(a["start"]).date()
-        db = datetime.fromisoformat(b["start"]).date()
-    except (ValueError, KeyError):
-        return False
-    if abs((da - db).days) > 1:
-        return False
+    if (a.get("date_precision") == MONTH_PRECISION
+            or b.get("date_precision") == MONTH_PRECISION):
+        # One side only knows the month. Compare months rather than days so a
+        # confirmed "Tour de Fat, Sat 3 Oct" from BikeReg absorbs the "sometime
+        # in October" placeholder instead of publishing alongside it. Without
+        # this the two sit two days apart and both survive.
+        if (a.get("start") or "")[:7] != (b.get("start") or "")[:7]:
+            return False
+    else:
+        try:
+            da = datetime.fromisoformat(a["start"]).date()
+            db = datetime.fromisoformat(b["start"]).date()
+        except (ValueError, KeyError):
+            return False
+        if abs((da - db).days) > 1:
+            return False
 
     sa, sb = slug(a["title"]), slug(b["title"])
     if not sa or not sb:
@@ -290,7 +299,13 @@ def merge(winner: dict, loser: dict) -> dict:
 
 def dedupe(events: list[dict]) -> list[dict]:
     """Bucket by month so this stays O(n) in practice, then compare in-bucket."""
-    events.sort(key=lambda e: (-e.get("trust", 0), e.get("start", "")))
+    # A confirmed date beats a "sometime this month" placeholder even when the
+    # placeholder came from a more trusted org — Asheville on Bikes is trust 80
+    # and BikeReg is 60, but BikeReg is the one that knows the day. Sorting
+    # month-precision rows last makes them the loser in merge(), so the real
+    # date is what publishes and the placeholder is absorbed into it.
+    events.sort(key=lambda e: (e.get("date_precision") == MONTH_PRECISION,
+                               -e.get("trust", 0), e.get("start", "")))
     buckets: dict[str, list[dict]] = defaultdict(list)
     for e in events:
         key = (e.get("start") or "")[:7]
@@ -336,8 +351,61 @@ def cap_weekly(events: list[dict], per_week: int, keep_matching: list[str]) -> l
 # pipeline
 # --------------------------------------------------------------------------
 
+# --------------------------------------------------------------------------
+# date precision
+# --------------------------------------------------------------------------
+# Some sources publish a month and nothing more. Asheville on Bikes' events
+# page is the case that forced this: it lists "Tour de Fat — OCT", with no day
+# and no year on the page at all. Until 2026-08-24 that source's hint told the
+# llm adapter to "emit each as an all-day event in the next occurrence of that
+# month", which in practice meant the model picked a day number out of the air.
+# Three harms followed, all of them live on the public site:
+#
+#   * The day was fiction. Tour de Fat published as Sat 3 Oct 2026. Nothing on
+#     the source page says the 3rd.
+#   * The fiction moved. The model re-runs every night, so Pumpkin Pedaller was
+#     1 Oct in the 20 Aug build, 24 Oct on the 22nd, and absent on the 23rd.
+#   * uid was sha1(title|start), so each wobble minted a NEW uid and every
+#     events.ics subscriber had the ride deleted and re-created in their own
+#     calendar overnight. On 2026-08-20 two guesses survived the same build and
+#     Pumpkin Pedaller published TWICE.
+#
+# split_long_span already established the house rule: putting invented dates on
+# a customer-facing calendar is worse than one honest entry. This applies the
+# same rule to month-only sources. Set `date_precision: month` on the source
+# and its events are anchored to the first of the month, flagged, and rendered
+# as "October 2026 · date TBA" by every surface that shows them.
+MONTH_PRECISION = "month"
+
+
+def apply_month_precision(event: dict) -> dict:
+    """Anchor a month-only event to the first of its month and flag it.
+
+    The 1st is a sorting convention, not a claim about the date. Every surface
+    checks `date_precision` and prints "date TBA" rather than the day number;
+    the 1st is chosen so the entry sorts to the head of its month, which is
+    where a "sometime in October" row belongs. `end` is cleared because a
+    month-only event has no known span to draw.
+    """
+    start = (event.get("start") or "")[:10]
+    if len(start) < 7:
+        return event
+    event["start"] = f"{start[:7]}-01"
+    event["end"] = ""
+    event["all_day"] = True
+    event["date_precision"] = MONTH_PRECISION
+    return event
+
+
 def uid(event: dict) -> str:
-    basis = f"{slug(event.get('title',''))}|{(event.get('start') or '')[:10]}"
+    # A month-precision event MUST keep the same uid every night. Key it on the
+    # day and an extractor that says "the 3rd" on Monday and "the 24th" on
+    # Tuesday mints a second identity, which reaches a subscriber's calendar as
+    # a delete plus an add. Key it on the month and the entry simply stays put.
+    when = (event.get("start") or "")[:10]
+    if event.get("date_precision") == MONTH_PRECISION:
+        when = when[:7]
+    basis = f"{slug(event.get('title',''))}|{when}"
     return hashlib.sha1(basis.encode()).hexdigest()[:16]
 
 
@@ -529,8 +597,22 @@ def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict
     for e in raw:
         if not e.get("title") or not e.get("start"):
             continue
+
+        # Snap month-only sources BEFORE the horizon test. Doing it afterwards
+        # would be fine; doing it here matters because the snap moves the date
+        # backwards to the 1st, and "Summer Cycle — AUG" read on 24 August
+        # would otherwise be anchored to 1 August and dropped as three weeks
+        # past, retiring an event that has not happened yet.
+        if source.get("date_precision") == MONTH_PRECISION:
+            apply_month_precision(e)
+
         start = e["start"]
-        if start[:10] < floor or start[:10] > ceiling:
+        if e.get("date_precision") == MONTH_PRECISION:
+            # "Sometime in August" is still ahead of us on 24 August, so the
+            # window is compared in whole months for these.
+            if start[:7] < floor[:7] or start[:7] > ceiling[:7]:
+                continue
+        elif start[:10] < floor or start[:10] > ceiling:
             continue
 
         title_l = e["title"].lower()

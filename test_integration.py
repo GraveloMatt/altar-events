@@ -14,6 +14,7 @@ import build
 import normalize
 
 soon = lambda d: (datetime.now() + timedelta(days=d)).date().isoformat()
+ago  = lambda d: (datetime.now() - timedelta(days=d)).date().isoformat()
 fails = []
 
 
@@ -284,6 +285,23 @@ check("unescapes location commas", "Hendersonville" in got[0]["venue"])
 check("keeps event url", got[0]["url"].endswith("/e/991"))
 
 # --------------------------------------------------------------------- llm
+print("\nics — a month-only event says so instead of naming a day")
+# The .ics is the surface where an invented day does the most damage: it lands
+# in the subscriber's own calendar, on a square they may plan around. A
+# month-precision event still needs a DTSTART, so it gets the 1st — and the
+# SUMMARY has to admit that.
+tba = normalize.prepare(
+    [{"title": "Tour de Fat", "start": "2026-10-17", "city": "Asheville", "state": "NC"}],
+    {"id": "asheville-on-bikes", "name": "Asheville on Bikes", "trust": 80,
+     "default_category": "group-ride", "org_url": "https://ashevilleonbikes.com/",
+     "date_precision": "month"},
+    {"lat": 35.5951, "lng": -82.5515, "zip": "28801"}, 75)
+blob = build.to_ics(tba, "T", "d").decode()
+check("summary admits the day is unknown", "Tour de Fat (date TBA)" in blob)
+check("anchored to the first of the month", "DTSTART;VALUE=DATE:20261001" in blob)
+check("body names the month and calls the day a placeholder",
+      "October 2026" in blob.replace("\r\n ", "") and "placeholder" in blob.replace("\r\n ", ""))
+
 print("\nllm — model response handling (DARC-style prose page)")
 import os
 os.environ["ANTHROPIC_API_KEY"] = "test-key-not-used"
@@ -311,6 +329,49 @@ check("empty array is not an error", adapters.llm({"url": "https://x"}) == [])
 adapters.http = real_http
 
 # ------------------------------------------------------------ full pipeline
+print("\nheld events (regression: a real ride silently vanished for three days)")
+# 2026-08-21 published the Dirt Skrrts 12 September group ride. 2026-08-22 did
+# not, and the log said "ok (3 events)" both mornings. The ride was still on
+# the source page the whole time.
+import tempfile as _tf
+from pathlib import Path as _Path
+_cache_was = build.CACHE
+build.CACHE = _Path(_tf.mkdtemp(prefix="altar-cache-"))
+_today = datetime.now().date()
+_yday = (_today - timedelta(days=1)).isoformat()
+
+SKRRTS = {"id": "blue-ridge-dirt-skrrts", "name": "Blue Ridge Dirt Skrrts"}
+build.write_cache("blue-ridge-dirt-skrrts", [
+    {"uid": "sept", "title": "September Group Ride + Social", "start": soon(19),
+     "last_seen": _yday},
+    {"uid": "oct", "title": "October Group Ride + Social", "start": soon(47),
+     "last_seen": _yday},
+    {"uid": "gone", "title": "Cancelled Long Ago", "start": soon(30),
+     "last_seen": (_today - timedelta(days=30)).isoformat()},
+    {"uid": "past", "title": "Last Month's Ride", "start": ago(9),
+     "last_seen": _yday},
+])
+kept, held = build.hold_recent(SKRRTS, [
+    {"uid": "oct", "title": "October Group Ride + Social", "start": soon(47)}])
+titles = sorted(e["title"] for e in kept)
+check("today's extraction is kept", "October Group Ride + Social" in titles)
+check("yesterday's ride is held, not dropped", "September Group Ride + Social" in titles)
+check("long-gone event is released", "Cancelled Long Ago" not in titles)
+check("an event that already happened is not resurrected", "Last Month's Ride" not in titles)
+check("the hold is reported, not silent", len(held) == 1, f"{len(held)}")
+check("held event says when it was last seen", held[0]["held_since"] == _yday)
+
+# The guard that stops a source's OLD date shape coming back and beating its
+# replacement in dedupe for a week.
+build.write_cache("aob", [{"uid": "old", "title": "Tour de Fat",
+                           "start": "2026-10-03", "last_seen": _yday}])
+kept2, held2 = build.hold_recent({"id": "aob", "date_precision": "month"}, [])
+check("cached rows of the wrong date shape are not held", len(held2) == 0, f"{len(held2)}")
+
+import shutil as _shutil
+_shutil.rmtree(build.CACHE, ignore_errors=True)
+build.CACHE = _cache_was
+
 print("\nfull pipeline — five sources into one calendar")
 HOME = {"lat": 35.5951, "lng": -82.5515, "zip": "28801"}
 pool = []
@@ -350,22 +411,36 @@ check("race title beat trail-work default", ofc[0]["category"] == "race")
 check("kept BikeReg credit", "BikeReg" in ofc[0].get("also_listed_by", []))
 check("distance computed", ofc[0].get("distance_mi", 0) > 20)
 
-build.emit(merged, {"g5": {"status": "ok", "kept": 1},
-                    "darc": {"status": "failed", "errors": ["boom"], "optional": False}})
-
+# Build into a throwaway directory. This block used to write into the real
+# site/ and then unlink the results, which deleted five TRACKED files —
+# events.json and all three .ics feeds — from the working tree of anyone who
+# ran the tests. Nothing warned; `git status` just quietly showed five
+# deletions waiting to be committed.
+import tempfile
 from pathlib import Path
-payload = json.loads(Path("site/events.json").read_text())
+OUT = Path(tempfile.mkdtemp(prefix="altar-site-"))
+REAL = Path("site/events.json")
+before = REAL.stat().st_mtime_ns if REAL.exists() else None
+
+build.emit(merged, {"g5": {"status": "ok", "kept": 1},
+                    "darc": {"status": "failed", "errors": ["boom"], "optional": False}},
+           site=OUT)
+
+check("real site/ untouched by the test build",
+      (REAL.stat().st_mtime_ns if REAL.exists() else None) == before)
+
+payload = json.loads((OUT / "events.json").read_text())
 check("events.json written", payload["count"] == len(merged) - 1)
 check("world kept separate", len(payload["world"]) == 1)
-ics_text = Path("site/events.ics").read_bytes().decode()
+ics_text = (OUT / "events.ics").read_bytes().decode()
 check("events.ics has the events", ics_text.count("BEGIN:VEVENT") == payload["count"])
 check("world excluded from local ics", "Andorra" not in ics_text)
-check("races.ics filtered", Path("site/races.ics").read_bytes().decode().count("BEGIN:VEVENT") == 1)
-report = json.loads(Path("site/build-report.json").read_text())
+check("races.ics filtered", (OUT / "races.ics").read_bytes().decode().count("BEGIN:VEVENT") == 1)
+report = json.loads((OUT / "build-report.json").read_text())
 check("report flags the broken source", report["needs_attention"] == ["darc"])
 
-for f in ("events.json", "events.ics", "races.ics", "trail-work.ics", "build-report.json"):
-    Path("site", f).unlink(missing_ok=True)
+import shutil
+shutil.rmtree(OUT, ignore_errors=True)
 
 print("\n" + "-" * 52)
 if fails:
