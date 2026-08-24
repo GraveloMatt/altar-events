@@ -117,6 +117,23 @@ h1 em{font-style:normal;color:var(--rust)}
 .dow{display:block;font-size:.6rem;letter-spacing:.16em;color:var(--dim);text-transform:uppercase}
 .dnum{display:block;font-size:1.85rem;line-height:1.15;color:#fff;font-weight:700}
 .drange{display:block;font-size:.58rem;color:var(--rust);letter-spacing:.08em}
+/* The date chip for an event whose source published a month and no day.
+   Rust, not white, and smaller than .dnum: it should not read as a date. */
+.dtba{display:block;font-size:.95rem;line-height:1.3;color:var(--rust);
+  font-weight:700;letter-spacing:.06em;padding-top:6px}
+/* Undated entries, listed under the month grid rather than in it. */
+.tba{margin-top:18px;border-top:1px solid var(--hair);padding-top:14px}
+.tba h3{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--dim);font-weight:400;margin:0 0 8px}
+.tbarow{display:flex;align-items:center;gap:9px;padding:7px 4px;
+  border-bottom:1px solid var(--hair);text-decoration:none;color:var(--ash)}
+.tbarow:last-child{border-bottom:0}
+.tbarow:hover{background:var(--raise)}
+.tbarow span{flex:1;min-width:0;font-family:var(--display);font-weight:900;
+  text-transform:uppercase;font-size:.98rem;letter-spacing:.01em;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tbarow em{font-family:var(--mono);font-size:.58rem;font-style:normal;
+  color:var(--dim);letter-spacing:.06em;white-space:nowrap}
 .body{padding:16px 0 17px;min-width:0}
 .head{
   all:unset;display:block;cursor:pointer;width:100%;
@@ -352,6 +369,7 @@ const SAMPLE = {generated:"2026-08-16T11:00:00Z", events:[
  {uid:"s07",title:"National Public Lands Day Dig — Bent Creek",start:"2026-09-26T09:00:00",category:"trail-work",discipline:"mtb",venue:"Bent Creek",city:"Asheville",state:"NC",distance_mi:6.4,source_name:"Pisgah Area SORBA",url:"https://www.pisgahareasorba.org/events-volunteer",description:"With the Ford Bronco Wild Fund. Tools and PPE provided."},
  {uid:"s08",title:"Tuesday Social Ride",start:"2026-09-01T18:00:00",category:"group-ride",discipline:"road",venue:"Blue Ridge Beer Garden",city:"Hendersonville",state:"NC",distance_mi:21.0,source_name:"Blue Ridge Bicycle Club",url:"https://brbcnc.clubexpress.com/",description:"Meet 5:30, roll 6:00. Social pace, plus a hilly loop for the anti-social."},
  {uid:"s09",title:"Tuesday Social Ride",start:"2026-09-08T18:00:00",category:"group-ride",discipline:"road",venue:"Blue Ridge Beer Garden",city:"Hendersonville",state:"NC",distance_mi:21.0,source_name:"Blue Ridge Bicycle Club",url:"https://brbcnc.clubexpress.com/",description:"Meet 5:30, roll 6:00."},
+ {uid:"s09b",title:"Tour de Fat",start:"2026-10-01",all_day:true,date_precision:"month",category:"group-ride",discipline:"commuter",city:"Asheville",state:"NC",distance_mi:1.2,source_name:"Asheville on Bikes",url:"https://ashevilleonbikes.com/events",description:"Annual costume parade ride and party. Asheville on Bikes lists it by month only \u2014 the day has not been announced."},
  {uid:"s10",title:"NICA NC Race #2 — Tryon International",start:"2026-10-03",end:"2026-10-04",all_day:true,category:"youth",discipline:"mtb",venue:"Tryon International Equestrian Center",city:"Mill Spring",state:"NC",distance_mi:41.2,source_name:"NC Interscholastic Cycling League",also_listed_by:["Pisgah Rage"],url:"https://northcarolinamtb.org/",description:"Middle and high school racing. Pisgah Rage and IC Imagine both field teams."},
  {uid:"s11",title:"Fall Trail Weekend",start:"2026-10-16",end:"2026-10-18",all_day:true,category:"trail-work",discipline:"mtb",venue:"Camp Grier",city:"Old Fort",state:"NC",distance_mi:26.5,source_name:"G5 Trail Collective",url:"https://www.g5trailcollective.org/",description:"Free lodging and camping, dinner and beer Saturday. Trail work all levels, bike demos, shuttle laps, bonfire."},
  {uid:"s12",title:"Old Fort Fifty",start:"2026-10-24",all_day:true,category:"race",discipline:"mtb",venue:"Camp Grier",city:"Old Fort",state:"NC",distance_mi:26.5,source_name:"G5 Trail Collective",also_listed_by:["BikeReg"],url:"https://www.g5trailcollective.org/",description:"30.4 miles, 4,874 feet of climbing. Gateway flow into Star Gap and Heckle Rock. Open to riders and runners."},
@@ -373,9 +391,13 @@ let EVENTS=[], active=new Set(), nearOnly=false, live=false;
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>
   ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const D=e=>new Date(e.start.length===10?e.start+"T12:00:00":e.start);
+/* Source knew the month and not the day. The 1st in `start` is an anchor
+   for sorting, never something to print as a date. */
+const MONTHONLY=e=>e.date_precision==="month";
 const key=d=>d.getFullYear()+"-"+String(d.getMonth()).padStart(2,"0");
 
 function timeLabel(e){
+  if(MONTHONLY(e))return "Date to be announced";
   if(e.all_day||e.start.length===10)return "All day";
   const d=D(e),h=d.getHours(),m=d.getMinutes();
   return ((h%12)||12)+(m?":"+String(m).padStart(2,"0"):"")+(h<12?"am":"pm");
@@ -504,9 +526,11 @@ function render(){
       ? ` · also via ${esc(e.also_listed_by.join(", "))}`:"";
     html+=`<article class="ev" id="e-${esc(e.uid)}">
       <div class="date">
-        <span class="dow">${DOW[d.getDay()]}</span>
+        ${MONTHONLY(e)?`<span class="dow">${MON[d.getMonth()]}</span>
+        <span class="dtba">TBA</span>`
+        :`<span class="dow">${DOW[d.getDay()]}</span>
         <span class="dnum">${d.getDate()}</span>
-        ${span?`<span class="drange">${esc(span)}</span>`:""}
+        ${span?`<span class="drange">${esc(span)}</span>`:""}`}
       </div>
       <div class="body">
         <button class="head" aria-expanded="false" data-uid="${esc(e.uid)}">${esc(e.title)}</button>
@@ -578,6 +602,10 @@ const dkey=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"
    ones upstream; this is the belt to that pair of braces. */
 const GRID_MAX_SPAN=8;
 function daysOf(e){
+  /* A month-only event owns no day, so it paints no cell. Putting it on the
+     1st would be the same lie the agenda stopped telling, except louder — in
+     a grid a square IS the date. These are listed under the grid instead. */
+  if(MONTHONLY(e)) return [];
   const a=D(e); a.setHours(12,0,0,0);
   const out=[dkey(a)];
   if(!e.end) return out;
@@ -592,7 +620,10 @@ function daysOf(e){
 }
 
 function monthsWithEvents(){
-  const s=new Set(visible().flatMap(e=>daysOf(e).map(k=>k.slice(0,7))));
+  /* Count TBA rows too, or a month whose only entries are undated would
+     disappear from the nav entirely. */
+  const s=new Set(visible().flatMap(e=>
+    MONTHONLY(e)?[e.start.slice(0,7)]:daysOf(e).map(k=>k.slice(0,7))));
   return [...s].sort();
 }
 
@@ -617,8 +648,9 @@ function renderMonth(){
   const first=new Date(Y,M-1,1), last=new Date(Y,M,0);
   const lead=first.getDay(), total=last.getDate();
   const idx=months.indexOf(cursor);
+  const tba=rows.filter(e=>MONTHONLY(e)&&e.start.slice(0,7)===cursor);
   const inMonth=Object.keys(byDay).filter(k=>k.startsWith(cursor))
-    .reduce((n,k)=>n+byDay[k].filter(x=>!x.cont).length,0);
+    .reduce((n,k)=>n+byDay[k].filter(x=>!x.cont).length,0)+tba.length;
   const todayK=dkey(new Date());
 
   let h=`<div class="monthnav">
@@ -646,12 +678,29 @@ function renderMonth(){
       .map(({e})=>`<i class="dot c-${esc(e.category)}"></i>`).join("")+`</span>`;
     h+=`</${tag}>`;
   }
-  h+=`</div><div id="dayview"></div>`;
+  h+=`</div>`;
+  if(tba.length){
+    h+=`<div class="tba"><h3>Also this month &#183; date not announced yet</h3>`
+      +tba.map(e=>`<a class="tbarow" href="#e-${esc(e.uid)}" data-jump="${esc(e.uid)}">
+        <i class="dot c-${esc(e.category)}"></i>
+        <span>${esc(e.title)}</span>
+        <em>${esc(e.source_name||"")}</em></a>`).join("")
+      +`</div>`;
+  }
+  h+=`<div id="dayview"></div>`;
   host.innerHTML=h;
 
   const prev=document.getElementById("mprev"),next=document.getElementById("mnext");
   if(prev)prev.onclick=()=>{cursor=months[idx-1];selDay=null;syncHash();renderMonth();};
   if(next)next.onclick=()=>{cursor=months[idx+1];selDay=null;syncHash();renderMonth();};
+
+  host.querySelectorAll("[data-jump]").forEach(a=>a.onclick=ev=>{
+    ev.preventDefault();
+    setView("agenda");
+    const row=document.getElementById("e-"+a.dataset.jump);
+    if(row){row.classList.add("open");
+      row.scrollIntoView({behavior:"smooth",block:"center"});}
+  });
 
   host.querySelectorAll("[data-day]").forEach(c=>c.onclick=()=>{
     selDay=(selDay===c.dataset.day)?null:c.dataset.day;renderMonth();
