@@ -1,5 +1,5 @@
 {
- "at": "2026-08-24T23:15:39.078562+00:00",
+ "at": "2026-08-24T23:18:36.403377+00:00",
  "events": [
   {
    "title": "Tour de Fat",
@@ -26,12 +26,12 @@
    "last_seen": "2026-08-24"
   },
   {
-   "title": "Get There Asheville: City Council Candidate Forum",
+   "title": "Get There Asheville",
    "start": "2026-10-01",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
-   "description": "",
+   "description": "City Council Candidate Forum",
    "venue": "",
    "city": "Asheville",
    "state": "NC",
@@ -46,7 +46,7 @@
    "category": "advocacy",
    "category_basis": "rule",
    "discipline": "other",
-   "uid": "eddbdc68281cb4b4",
+   "uid": "1473187f58b65f1a",
    "last_seen": "2026-08-24"
   },
   {
@@ -74,18 +74,18 @@
    "last_seen": "2026-08-24"
   },
   {
-   "title": "Get There Asheville",
+   "title": "Get There Asheville: City Council Candidate Forum",
    "start": "2026-10-01",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
-   "description": "City Council Candidate Forum",
+   "description": "6 to 8 PM",
    "venue": "",
    "city": "Asheville",
    "state": "NC",
    "cost": "Free",
-   "date_precision": "month",
    "extracted_by": "llm",
+   "date_precision": "month",
    "source": "asheville-on-bikes",
    "source_name": "Asheville on Bikes",
    "source_url": "https://ashevilleonbikes.com/",
@@ -94,7 +94,32 @@
    "category": "advocacy",
    "category_basis": "rule",
    "discipline": "other",
-   "uid": "1473187f58b65f1a",
+   "uid": "eddbdc68281cb4b4",
+   "last_seen": "2026-08-24",
+   "held_since": "2026-08-24"
+  },
+  {
+   "title": "Get There Asheville: City Council Candidate Forum",
+   "start": "2026-10-01",
+   "end": "",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
+   "description": "",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "date_precision": "month",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "advocacy",
+   "category_basis": "rule",
+   "discipline": "other",
+   "uid": "eddbdc68281cb4b4",
    "last_seen": "2026-08-24",
    "held_since": "2026-08-24"
   }
