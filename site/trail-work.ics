@@ -10,7 +10,7 @@ BEGIN:VEVENT
 SUMMARY:Rocky Knob Mountaineer Showdown
 DTSTART:20260829T040000Z
 DTEND:20260830T040000Z
-DTSTAMP:20260824T214305Z
+DTSTAMP:20260824T214656Z
 UID:fee58fd0937c36eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:VOLUNTEER SIGN UP: https://docs.google.com/forms/d/e/1FAIpQLSf
@@ -34,12 +34,12 @@ BEGIN:VEVENT
 SUMMARY:Betty's & Jarret's Run Trail Day
 DTSTART:20260904T120000
 DTEND:20260904T163000
-DTSTAMP:20260824T214305Z
+DTSTAMP:20260824T214656Z
 UID:e1bc6ea5ef974c01@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Drain cleaning. Tread shaping.\n\nMore: https://www.g5trailcol
- lective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by Altar Cy
- cles — altar.bike/calendar
+DESCRIPTION:Project: Drain cleaning. Tread shaping.\n\nMore: https://www.g
+ 5trailcollective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by
+  Altar Cycles — altar.bike/calendar
 LOCATION:Gateway Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
@@ -47,7 +47,7 @@ BEGIN:VEVENT
 SUMMARY:Catalyst Summer Jam Lunch Crew
 DTSTART:20260905T113000
 DTEND:20260905T140000
-DTSTAMP:20260824T214305Z
+DTSTAMP:20260824T214656Z
 UID:6471d9f7df15cf50@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:We're looking for a few volunteers to help Pisgah Area SORBA c
@@ -71,12 +71,12 @@ BEGIN:VEVENT
 SUMMARY:Lower Heartbreak Trail Day
 DTSTART:20260912T090000
 DTEND:20260912T140000
-DTSTAMP:20260824T214305Z
+DTSTAMP:20260824T214656Z
 UID:199f975dfbc75d0a@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Drain cleaning. Corridor pruning & brushing.\n\nMore: https://
- www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Collective\n\nList
- ed by Altar Cycles — altar.bike/calendar
+DESCRIPTION:Project: Drain cleaning. Corridor pruning & brushing.\n\nMore:
+  https://www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Collectiv
+ e\n\nListed by Altar Cycles — altar.bike/calendar
 LOCATION:Allison Trailhead Parking Lot\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
@@ -84,7 +84,7 @@ BEGIN:VEVENT
 SUMMARY:Women's Bikepacking Overnight w/ Earth Mountain!
 DTSTART:20260912T110000
 DTEND:20260913T150000
-DTSTAMP:20260824T214305Z
+DTSTAMP:20260824T214656Z
 UID:75f2fce441c009eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Women’s Overnight Bikepacking Trip with Earth Mountain! Join
@@ -108,7 +108,7 @@ BEGIN:VEVENT
 SUMMARY:Fall Trail Weekend!
 DTSTART:20261106T160000
 DTEND:20261108T130000
-DTSTAMP:20260824T214305Z
+DTSTAMP:20260824T214656Z
 UID:65a4e186a310b33a@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:More: https://www.g5trailcollective.org/volunteer\n\nSource: G
