@@ -92,8 +92,19 @@ CATEGORIES = {name for name, _ in CATEGORY_RULES} | {
 _DISCIPLINE = _compile(DISCIPLINE_RULES)
 
 
+_URL = re.compile(r"https?://\S+|www\.\S+")
+
+
 def _haystack(event: dict) -> str:
-    return f" {event.get('title', '')} {(event.get('description') or '')[:300]} "
+    # Strip links before matching. A URL is a slug, not prose, and its words
+    # are incidental. Gravelo Workshop's feed writes "More info:
+    # https://www.gravelo-workshop.com/bakery-ride" into every description,
+    # and "workshop" is a CLINIC keyword — so on 2026-08-24 all twelve of
+    # their Saturday group rides published as clinics. Same family as 'trail'
+    # matching "Blue Ridge Craft Trails": a keyword hit on a NAME rather than
+    # on what the thing is.
+    text = _URL.sub(" ", (event.get("description") or "")[:400])
+    return f" {event.get('title', '')} {text[:300]} "
 
 
 def classify(event: dict, default: str) -> tuple[str, str]:
@@ -378,19 +389,6 @@ def cap_weekly(events: list[dict], per_week: int, keep_matching: list[str]) -> l
 MONTH_PRECISION = "month"
 
 
-def is_month_only(event: dict) -> bool:
-    """Did the extractor tell us it only knew the month?"""
-    if event.get("date_precision") == MONTH_PRECISION:
-        return True
-    # Belt for an extractor that forgets the flag: the hint instructs it to
-    # write the first of the month when the page gives no day, so a bare -01
-    # from a month-only source is read as "no day known". The cost is that a
-    # real event genuinely held on the 1st gets labelled TBA. That is the safe
-    # direction to be wrong in — an honest "date to be announced" beats a
-    # confident wrong day, which is the whole point of this machinery.
-    return (event.get("start") or "")[8:10] == "01"
-
-
 def apply_month_precision(event: dict) -> dict:
     """Anchor a month-only event inside its month and flag it.
 
@@ -623,12 +621,17 @@ def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict
         # backwards to the 1st, and "Summer Cycle — AUG" read on 24 August
         # would otherwise be anchored to 1 August and dropped as three weeks
         # past, retiring an event that has not happened yet.
-        # Only snap what is ACTUALLY month-only. Flagging the whole source was
-        # too blunt: asheville-on-bikes reads its hub page (month names, no
-        # days) alongside three `extra_urls` event pages that DO carry real
-        # dates, and the first live build stamped "Summer Cycle 2026 — August,
-        # date TBA" over an event whose own page says 22 August.
-        if source.get("date_precision") == MONTH_PRECISION and is_month_only(e):
+        # `date_precision: month` snaps EVERY event from the source. Asking
+        # the extractor to flag them individually was tried on 2026-08-24 and
+        # failed inside one build: the model returned "Tour de Fat, 3 October"
+        # with no flag, and a sibling row whose own description read "Specific
+        # date has not been announced." A model cannot be relied on to report
+        # its own uncertainty, so the decision is made in config instead. The
+        # cost is that the flag may only go on a source whose pages carry NO
+        # days at all — pages that do carry real dates belong in a separate
+        # source, which is why asheville-on-bikes and asheville-on-bikes-pages
+        # are two entries. test_pipeline pins that rule.
+        if source.get("date_precision") == MONTH_PRECISION:
             apply_month_precision(e)
         else:
             # A source that has not been configured for month-only dates does

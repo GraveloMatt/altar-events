@@ -60,8 +60,29 @@ sources:
       that month, and all_day true, and say in the description that the date
       has not been announced. Individual event pages DO carry a real day —
       when you have one, use it and leave date_precision out entirely.
+    # NOTE — deliberately NO extra_urls here. `date_precision: month` snaps
+    # every event this source returns, so it may only ever read pages that
+    # carry no days. The individual event pages, which DO carry real dates,
+    # moved to asheville-on-bikes-pages below on 2026-08-24 after the hub's
+    # blanket snap stamped "August, date TBA" over Summer Cycle, whose own
+    # page says 22 August. test_pipeline pins the rule.
+
+  - id: asheville-on-bikes-pages
+    name: Asheville on Bikes
+    org_url: https://ashevilleonbikes.com/
+    trust: 80
+    default_category: group-ride
+    optional: true
+    # The same org's individual event pages. These carry a real day, so they
+    # are read WITHOUT date_precision and their dates publish as-is. When both
+    # sources describe the same event, dedupe sorts month-precision rows last
+    # and the confirmed date wins — which is exactly the intended behaviour:
+    # the hub gets the event onto the calendar as "October, date TBA", and the
+    # event page replaces it with the real day as soon as one is published.
+    # Same `name` as the hub on purpose, so the credit line reads the same.
+    adapter: llm
+    url: https://ashevilleonbikes.com/events/asheville-summer-cycle
     extra_urls:
-      - https://ashevilleonbikes.com/events/asheville-summer-cycle
       - https://ashevilleonbikes.com/events/asheville-bike-love
       - https://ashevilleonbikes.com/events/gran-fondo-asheville
 

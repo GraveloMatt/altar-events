@@ -427,6 +427,24 @@ for title, keep in [
         BRH, HOME, R)
     check(("keeps " if keep else "drops ") + title[:38], bool(got), keep)
 
+print("\nclassification must not read URLs (regression: 12 rides became clinics)")
+# Verbatim from the Gravelo Workshop feed, 2026-08-24. Every entry's
+# description is a bare link, and the shop is called "Workshop", which is a
+# CLINIC keyword. All twelve Saturday group rides published as clinics.
+check("a link in the description does not decide the category",
+      normalize.classify({"title": "9:30am Bakery Ride B Group Start at Gravelo",
+                          "description": "More info: https://www.gravelo-workshop.com/bakery-ride"},
+                         "group-ride"),
+      ("group-ride", "default"))
+check("a real clinic still classifies as one",
+      normalize.classify({"title": "Women + Trail Skills Workshop",
+                          "description": "Learn to corner."}, "race")[0], "clinic")
+check("a bare www link is stripped too",
+      normalize.classify({"title": "Sunday Social",
+                          "description": "www.somewhere-workshop.com/join"},
+                         "group-ride"), ("group-ride", "default"))
+
+
 print("\ngravelo-workshop — shop hours must not become events")
 # Real shapes from the live public Google Calendar, read 2026-08-24. The feed
 # mixes the Saturday ride with all-day "SHOP CLOSED" opening-hours entries.
@@ -512,20 +530,26 @@ check("no invented span", monday[0]["end"], "")
 check("uid holds still across a different guess",
       monday[0]["uid"], tuesday[0]["uid"])
 
-# The belt: an extractor that forgets the flag but follows the hint's -01.
+# The flag is BLANKET, deliberately. Asking the extractor to mark its own
+# month-only rows was tried on 2026-08-24 and failed inside a single build: it
+# returned "Tour de Fat, 3 October" unflagged, next to a row whose description
+# read "Specific date has not been announced."
 unflagged = normalize.prepare(
-    [{"title": "Pumpkin Pedaller", "start": "2026-10-01", "all_day": True,
+    [{"title": "Pumpkin Pedaller", "start": "2026-10-17", "all_day": True,
       "city": "Asheville", "state": "NC"}], AOB, HOME, R)
-check("a bare first-of-month from this source is read as month-only",
-      unflagged[0].get("date_precision"), "month")
+check("a confident day from a month-only source is still snapped",
+      unflagged[0]["start"], "2026-10-01")
 
-# And the thing the first live build got wrong: the SAME source also reads
-# individual event pages that carry a real day. Those must survive intact.
-dated = normalize.prepare(
-    [{"title": "Summer Cycle 2026", "start": "2026-10-22", "all_day": True,
-      "city": "Asheville", "state": "NC"}], AOB, HOME, R)
-check("a real day from the same source is left alone", dated[0]["start"], "2026-10-22")
-check("and is not labelled TBA", dated[0].get("date_precision"), None)
+# Which is exactly why a month-only source may not also read pages that carry
+# real days. Pin it against the live config so the two cannot be recombined.
+import yaml as _y
+_srcs = _y.safe_load(open("sources.yml"))["sources"]
+_both = [x["id"] for x in _srcs
+         if x.get("date_precision") == "month" and x.get("extra_urls")]
+check("no month-only source also reads dated event pages", _both, [])
+check("the Asheville on Bikes event pages are their own source",
+      any(x["id"] == "asheville-on-bikes-pages"
+          and not x.get("date_precision") for x in _srcs), True)
 
 october  = normalize.prepare([{"title": "Ride Your City", "start": "2026-10-09", **MONTH_ONLY}],
                              AOB, HOME, R)
@@ -564,6 +588,16 @@ check("the confirmed date wins", tdf[0]["start"], "2026-10-03")
 check("and it is no longer flagged TBA", tdf[0].get("date_precision"), None)
 check("placeholder's org still credited",
       "Asheville on Bikes" in tdf[0].get("also_listed_by", []), True)
+
+# The event-pages sibling: no flag, so a real day survives intact.
+pages = normalize.prepare(
+    [{"title": "Summer Cycle 2026", "start": "2026-10-22", "all_day": True,
+      "city": "Asheville", "state": "NC"}],
+    {"id": "asheville-on-bikes-pages", "name": "Asheville on Bikes", "trust": 80,
+     "default_category": "group-ride", "org_url": "https://ashevilleonbikes.com/"},
+    HOME, R)
+check("the event-pages source keeps its real day", pages[0]["start"], "2026-10-22")
+check("and is not labelled TBA", pages[0].get("date_precision"), None)
 
 # Sources without the flag are untouched, whatever the extractor claims.
 plain = normalize.prepare([{"title": "Old Fort Fifty", "start": soon(30), "all_day": True,
