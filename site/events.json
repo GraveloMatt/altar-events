@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-24T22:08:46.217389+00:00",
+ "generated": "2026-08-24T23:17:57.392124+00:00",
  "count": 59,
  "events": [
   {
@@ -89,7 +89,7 @@
    "end": "2026-09-04T16:30:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Drain cleaning. Tread shaping.",
+   "description": "Project: Drain cleaning. Tread shaping.",
    "venue": "Gateway Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -294,7 +294,7 @@
    "end": "2026-09-12T14:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Drain cleaning. Corridor pruning & brushing.",
+   "description": "Project: Drain cleaning. Corridor pruning & brushing.",
    "venue": "Allison Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -589,8 +589,8 @@
    "start": "2026-09-26T00:00:00",
    "end": "2026-09-27T00:00:00",
    "all_day": false,
-   "url": "https://darccycling.com/calendar",
-   "description": "A Bicycle and Gear Show celebrating handmade craft and independent makers across the Southeast. Saturday 10 a.m. to 5 p.m., Sunday 10 a.m. to 4 p.m. Features group rides, tours, live music, tattoos, food, libations, and a kid- and family-friendly skills course.",
+   "url": "https://www.craftedbikeshow.com",
+   "description": "A Bicycle and Gear Show celebrating handmade craft and independent makers across the Southeast. Saturday 10 a.m. to 5 p.m., Sunday 10 a.m. to 4 p.m. Features group rides, tours, live music, tattoos, food, and libations. Kid- and family-friendly skills course. Admission is free and open to the public.",
    "venue": "Cane Creek Cycling Components",
    "city": "Fletcher",
    "state": "NC",
@@ -722,7 +722,7 @@
    "last_seen": "2026-08-24"
   },
   {
-   "title": "Get There Asheville",
+   "title": "Get There Asheville: City Council Candidate Forum",
    "start": "2026-10-01",
    "end": "",
    "all_day": true,
@@ -742,7 +742,7 @@
    "category": "advocacy",
    "category_basis": "rule",
    "discipline": "other",
-   "uid": "1473187f58b65f1a",
+   "uid": "eddbdc68281cb4b4",
    "last_seen": "2026-08-24",
    "also_listed_by": []
   },
@@ -850,7 +850,7 @@
    "end": "2026-10-10T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Old Fort. This location does not allow e-bikes. Sign up goes live Thursday, October 1 at 7 pm. All riders must sign up through Eventbrite to join. Our rides are for all women 18 and older.",
+   "description": "Old Fort. Please note that this location does not allow e-bikes. Sign up goes live Thursday, October 1 at 7 pm. All riders must sign up through Eventbrite to join. Our rides are for all women 18 and older.",
    "venue": "Gateway Trails",
    "city": "Old Fort",
    "state": "NC",
@@ -872,13 +872,13 @@
    "start": "2026-10-15",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 15 Oct 2026 to 15 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and 1-2 adventure rides in Bent Creek or Dupont",
+   "description": "Runs 15 Oct 2026 to 31 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and adventure rides in Bent Creek or Dupont",
    "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
    "cost": null,
    "extracted_by": "llm",
-   "long_span_days": 61,
+   "long_span_days": 77,
    "source": "pisgah-rage",
    "source_name": "Pisgah Rage (NICA composite team)",
    "source_url": "https://www.pisgahrage.com/",
@@ -1065,12 +1065,12 @@
    "last_seen": "2026-08-24"
   },
   {
-   "title": "Fall Trail Weekend!",
+   "title": "Fall Trail Weekend! Nov 6-8",
    "start": "2026-11-06T16:00:00",
    "end": "2026-11-08T13:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "",
+   "description": "SAVE THE DATE",
    "venue": "Camp Grier",
    "city": "Old Fort",
    "state": "NC",
@@ -1084,8 +1084,9 @@
    "category": "trail-work",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "65a4e186a310b33a",
-   "last_seen": "2026-08-24"
+   "uid": "d1d99200ca490eae",
+   "last_seen": "2026-08-24",
+   "also_listed_by": []
   },
   {
    "title": "9:30am Bakery Ride B Group Start at Gravelo",
@@ -1225,7 +1226,7 @@
    "end": "2026-11-14T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Pisgah + Oskar Blues Brewery. This location does not allow e-bikes. Post-ride social is at Oskar Blues Brewery [ 342 Mountain Industrial Dr, Brevard, NC 28712 ]. Sign up goes live Sunday, November 1 at 7 pm. All riders must sign up through Eventbrite to join. Our rides are for all women 18 and older.",
+   "description": "Pisgah + Oskar Blues Brewery. Please note that this location does not allow e-bikes. Post-ride social is at Oskar Blues Brewery [342 Mountain Industrial Dr, Brevard, NC 28712]. Sign up goes live Sunday, November 1 at 7 pm. All riders must sign up through Eventbrite to join. Our rides are for all women 18 and older.",
    "venue": "Pisgah",
    "city": "Brevard",
    "state": "NC",
@@ -1306,7 +1307,7 @@
    "start": "2026-12-01",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season including indoor training (January), weekly practices (February-May), and races across North Carolina starting in March with typically 5-6 races through end of May",
+   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with practices and races. January: 2-4 indoor training opportunities. February: 1 weekend practice per week (2 hours). March-May: 2 rides per week (1-2 weeknights after 5pm for 1.5 hours, weekend practices on alternating Saturdays/Sundays for 2 hours). Races start in March with 5-6 races across North Carolina through May",
    "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
@@ -1330,7 +1331,7 @@
    "end": "2026-12-12T15:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Hot Springs + Big Pillow Brewing. This location does not allow e-bikes. Post-ride social is at Big Pillow Brewing [ 25-27 N Andrews Avenue, Hot Springs, NC 28743-9231 ]. Sign up goes live Tuesday, December 1 at 7 pm. All riders must sign up through Eventbrite to join. Our rides are for all women 18 and older.",
+   "description": "Hot Springs + Big Pillow Brewing. Please note that this location does not allow e-bikes. Post-ride social is at Big Pillow Brewing [25-27 N Andrews Avenue, Hot Springs, NC 28743-9231]. Sign up goes live Tuesday, December 1 at 7 pm. All riders must sign up through Eventbrite to join. Our rides are for all women 18 and older.",
    "venue": "Hot Springs",
    "city": "Hot Springs",
    "state": "NC",
@@ -1562,7 +1563,7 @@
    "end": "2026-09-07",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class event",
    "venue": "Mont-Sainte-Anne",
    "city": "Mont-Sainte-Anne",
    "state": "",
@@ -1577,7 +1578,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "ff826ef0397ce294",
-   "from_cache": true
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Skoda Swiss Bike Cup - XCO",
@@ -1585,7 +1586,7 @@
    "end": "2026-09-06",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class event",
    "venue": "Huttwil",
    "city": "Huttwil",
    "state": "",
@@ -1600,15 +1601,15 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "a136015d151cd5d3",
-   "from_cache": true
+   "last_seen": "2026-08-24"
   },
   {
-   "title": "UCI Mountain Bike Continental Series - iXS European Downhill Cup Verbier",
+   "title": "UCI Mountain Bike Continental Series \u2013 iXS European Downhill Cup Verbier",
    "start": "2026-09-11",
    "end": "2026-09-13",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Continental Series (CS) - Downhill Cup",
+   "description": "Continental Series Downhill event",
    "venue": "Verbier",
    "city": "Verbier",
    "state": "",
@@ -1623,7 +1624,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "975aee90f5008d12",
-   "from_cache": true
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Skoda Swiss Bike Cup Gr\u00e4nichen",
@@ -1631,7 +1632,7 @@
    "end": "2026-09-12",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class event",
    "venue": "Gr\u00e4nichen",
    "city": "Gr\u00e4nichen",
    "state": "",
@@ -1646,7 +1647,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "4bfbc331956a4a28",
-   "from_cache": true
+   "last_seen": "2026-08-24"
   },
   {
    "title": "La Forestiere - XCM",
@@ -1654,7 +1655,7 @@
    "end": "2026-09-19",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class Marathon event",
    "venue": "La Pesse",
    "city": "La Pesse",
    "state": "",
@@ -1669,7 +1670,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "d5f3ed6b7af30730",
-   "from_cache": true
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Extreme Sur Loue - XCM",
@@ -1677,7 +1678,7 @@
    "end": "2026-10-04",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class Marathon event",
    "venue": "Ornans",
    "city": "Ornans",
    "state": "",
@@ -1692,7 +1693,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "1b11e287915045b5",
-   "from_cache": true
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Roc D'azur - XCM",
@@ -1700,7 +1701,7 @@
    "end": "2026-10-10",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class Marathon event",
    "venue": "Fr\u00e9jus",
    "city": "Fr\u00e9jus",
    "state": "",
@@ -1715,7 +1716,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "3b613757ff568727",
-   "from_cache": true
+   "last_seen": "2026-08-24"
   },
   {
    "title": "Serbia Epic Petrovaradin Fortress Bike Fest",
@@ -1723,7 +1724,7 @@
    "end": "2026-10-11",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class event",
    "venue": "Novi Sad",
    "city": "Novi Sad",
    "state": "",
@@ -1738,15 +1739,15 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "22b56ec9aa45fc91",
-   "from_cache": true
+   "last_seen": "2026-08-24"
   },
   {
-   "title": "UCI Mountain Bike Continental Series - DHI Araucania",
+   "title": "UCI Mountain Bike Continental Series \u2013 DHI Araucania",
    "start": "2026-11-27",
    "end": "2026-11-29",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Continental Series (CS) - Downhill Cup",
+   "description": "Continental Series Downhill event",
    "venue": "Temuco",
    "city": "Temuco",
    "state": "",
@@ -1761,7 +1762,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "a429a749010fdf86",
-   "from_cache": true
+   "last_seen": "2026-08-24"
   }
  ],
  "sources": [

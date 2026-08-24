@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-24T22:08:46.217389+00:00",
+ "generated": "2026-08-24T23:17:57.392124+00:00",
  "total": 59,
  "world": 9,
  "needs_attention": [],
@@ -8,9 +8,9 @@
    "status": "ok",
    "adapter": "llm",
    "fetched": 17,
-   "kept": 5,
-   "held": 2,
-   "at": "2026-08-24T22:06:09.927561+00:00"
+   "kept": 4,
+   "held": 1,
+   "at": "2026-08-24T23:15:39.078775+00:00"
   },
   "asheville-on-bikes-pages": {
    "status": "ok",
@@ -18,7 +18,7 @@
    "fetched": 3,
    "kept": 0,
    "held": 0,
-   "at": "2026-08-24T22:06:18.084610+00:00"
+   "at": "2026-08-24T23:15:47.521021+00:00"
   },
   "asheville-on-bikes-rwgps": {
    "status": "failed",
@@ -36,7 +36,7 @@
    "fetched": 2,
    "kept": 2,
    "held": 0,
-   "at": "2026-08-24T22:06:24.921039+00:00"
+   "at": "2026-08-24T23:15:54.285398+00:00"
   },
   "blue-ridge-dirt-skrrts": {
    "status": "ok",
@@ -44,7 +44,7 @@
    "fetched": 4,
    "kept": 3,
    "held": 0,
-   "at": "2026-08-24T22:06:32.389847+00:00"
+   "at": "2026-08-24T23:16:01.957051+00:00"
   },
   "gravelo-workshop": {
    "status": "ok",
@@ -52,7 +52,7 @@
    "fetched": 182,
    "kept": 12,
    "held": 0,
-   "at": "2026-08-24T22:06:33.125473+00:00"
+   "at": "2026-08-24T23:16:02.510469+00:00"
   },
   "velosports-ring-of-fire": {
    "status": "ok",
@@ -60,7 +60,7 @@
    "fetched": 8,
    "kept": 0,
    "held": 0,
-   "at": "2026-08-24T22:06:39.334453+00:00"
+   "at": "2026-08-24T23:16:09.216989+00:00"
   },
   "blue-ridge-bicycle-club": {
    "status": "failed",
@@ -78,15 +78,15 @@
    "fetched": 4,
    "kept": 2,
    "held": 0,
-   "at": "2026-08-24T22:06:43.939493+00:00"
+   "at": "2026-08-24T23:16:13.916353+00:00"
   },
   "g5-trail-collective": {
    "status": "ok",
    "adapter": "llm",
    "fetched": 5,
-   "kept": 4,
-   "held": 0,
-   "at": "2026-08-24T22:06:47.647271+00:00"
+   "kept": 5,
+   "held": 1,
+   "at": "2026-08-24T23:16:20.446798+00:00"
   },
   "nica-nc": {
    "status": "off-season",
@@ -105,7 +105,7 @@
    "fetched": 2,
    "kept": 2,
    "held": 0,
-   "at": "2026-08-24T22:06:51.404990+00:00"
+   "at": "2026-08-24T23:16:25.078218+00:00"
   },
   "ic-imagine-cycling": {
    "status": "failed",
@@ -123,7 +123,7 @@
    "fetched": 42,
    "kept": 31,
    "held": 0,
-   "at": "2026-08-24T22:07:07.009879+00:00"
+   "at": "2026-08-24T23:16:35.407793+00:00"
   },
   "runsignup": {
    "status": "ok",
@@ -131,17 +131,15 @@
    "fetched": 250,
    "kept": 1,
    "held": 0,
-   "at": "2026-08-24T22:07:09.969872+00:00"
+   "at": "2026-08-24T23:16:37.705010+00:00"
   },
   "uci": {
-   "status": "cached",
-   "errors": [
-    "llm: https://api.anthropic.com/v1/messages: HTTPSConnectionPool(host='api.anthropic.com', port=443): Read timed out. (read timeout=25)"
-   ],
-   "cached_events": 9,
-   "cache_age_days": 1,
-   "optional": true,
-   "off_season": false
+   "status": "ok",
+   "adapter": "llm",
+   "fetched": 9,
+   "kept": 9,
+   "held": 0,
+   "at": "2026-08-24T23:17:43.209671+00:00"
   },
   "blue-ridge-heritage": {
    "status": "ok",
@@ -149,7 +147,7 @@
    "fetched": 500,
    "kept": 0,
    "held": 0,
-   "at": "2026-08-24T22:08:45.919685+00:00"
+   "at": "2026-08-24T23:17:56.991644+00:00"
   }
  }
 }
