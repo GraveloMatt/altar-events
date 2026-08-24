@@ -105,11 +105,17 @@ jobs:
           summary = pathlib.Path(os.environ["GITHUB_STEP_SUMMARY"])
           lines = [f"### {r['total']} events published\n"]
           for sid, info in r["sources"].items():
-              mark = {"ok": "ok", "cached": "stale", "failed": "down"}.get(info["status"], "?")
-              lines.append(f"- **{sid}** — {mark}"
-                           + (f" ({info.get('kept')} events via {info.get('adapter')})"
-                              if info["status"] == "ok" else
-                              f" — {(info.get('errors') or ['-'])[-1][:120]}"))
+              mark = {"ok": "ok", "cached": "stale", "failed": "down",
+                      "off-season": "off-season"}.get(info["status"], "?")
+              if info["status"] == "ok":
+                  detail = f" ({info.get('kept')} events via {info.get('adapter')})"
+              elif info["status"] == "off-season":
+                  # Empty on purpose. Say so plainly rather than printing an
+                  # error line that reads like a breakage.
+                  detail = " — empty, and expected to be, until its season opens"
+              else:
+                  detail = f" — {(info.get('errors') or ['-'])[-1][:120]}"
+              lines.append(f"- **{sid}** — {mark}{detail}")
           summary.write_text("\n".join(lines))
           if bad:
               print(f"::warning::Sources needing attention: {', '.join(bad)}")
