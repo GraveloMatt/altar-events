@@ -1,5 +1,5 @@
 {
- "at": "2026-08-23T09:43:22.213353+00:00",
+ "at": "2026-08-24T10:04:23.262993+00:00",
  "events": [
   {
    "title": "Bike Love",
@@ -310,6 +310,50 @@
    "uid": "ff576b5052181618"
   },
   {
+   "title": "Summer Cycle",
+   "start": "2027-08-22",
+   "end": "2027-08-22",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "Annual recurring event",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "festival",
+   "category_basis": "rule",
+   "discipline": "other",
+   "uid": "2db110e2b5eae1f7"
+  },
+  {
+   "title": "Bike Valet at Downtown After Five",
+   "start": "2027-08-21",
+   "end": "2027-08-21",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "Annual recurring event",
+   "venue": "Downtown After Five",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "default",
+   "discipline": "commuter",
+   "uid": "7037f9eff5e41388"
+  },
+  {
    "title": "Tour de Fat",
    "start": "2026-10-03",
    "end": "2026-10-03",
@@ -374,28 +418,6 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "2e8a7e6ac62f5ec3"
-  },
-  {
-   "title": "Summer Cycle 2026",
-   "start": "2026-08-22T00:00:00",
-   "end": "2026-08-22T00:00:00",
-   "all_day": false,
-   "url": "https://ashevilleonbikes.com/events/asheville-summer-cycle",
-   "description": "Celebrate 20 years of Asheville on Bikes! Multiple ride routes available: Cruiser Ride (5 miles), Main Ride (7 miles), and Ride More (18 miles). Activities include Pop-Up Bike Park, Summer Cycle Check-In, and Post-Ride Festivities.",
-   "venue": "New Belgium Brewing",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": null,
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "festival",
-   "category_basis": "rule",
-   "discipline": "other",
-   "uid": "e6662d6251819fff"
   }
  ]
 }

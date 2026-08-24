@@ -1,5 +1,5 @@
 {
- "at": "2026-08-23T09:44:16.069741+00:00",
+ "at": "2026-08-24T10:05:07.088727+00:00",
  "events": [
   {
    "title": "Betty's & Jarret's Run Trail Day",
@@ -7,7 +7,7 @@
    "end": "2026-09-04T16:30:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Drain cleaning. Tread shaping.",
+   "description": "Project: Drain cleaning. Tread shaping.",
    "venue": "Gateway Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -29,7 +29,7 @@
    "end": "2026-09-12T14:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Drain cleaning. Corridor pruning & brushing.",
+   "description": "Project: Drain cleaning. Corridor pruning & brushing.",
    "venue": "Allison Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -73,7 +73,7 @@
    "end": "2026-11-08T13:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "SAVE THE DATE",
+   "description": "",
    "venue": "Camp Grier",
    "city": "Old Fort",
    "state": "NC",
