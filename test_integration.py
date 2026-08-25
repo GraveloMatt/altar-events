@@ -316,6 +316,30 @@ _main_src = inspect.getsource(build.main) if hasattr(build, "main") else \
 check("build.py actually wraps the hand-entered loaders",
       "except Exception" in _main_src and "load_manual" in _main_src)
 
+print("\nbikereg dates (regression: 25 races published a 12am start nobody stated)")
+# Captured verbatim from the BikeReg API. EventDate is a DATE — the millis are
+# always midnight in the promoter's zone, which serialises to 04:00Z on the US
+# east coast. Reading it as a timestamp put "12am" under every race on the live
+# page. Both offsets below are real: -0400 in summer, -0500 in winter.
+check("a summer date recovers the promoter's calendar day",
+      adapters.ms_date("/Date(1780545600000-0400)/", as_date=True), "2026-06-04")
+check("a winter date recovers it too, across the DST change",
+      adapters.ms_date("/Date(1767243600000-0500)/", as_date=True), "2026-01-01")
+check("the raw form is unchanged for anything that really is a timestamp",
+      adapters.ms_date("/Date(1780545600000-0400)/"), "2026-06-04T04:00:00+00:00")
+check("a missing date stays missing", adapters.ms_date(None, as_date=True) is None)
+check("an unparseable value does not raise",
+      adapters.ms_date("not a date", as_date=True) is None)
+
+_row = adapters._bikereg_event({
+    "EventName": "Pisgah Monster-Cross Challenge",
+    "EventDate": "/Date(1780545600000-0400)/",
+    "EventCity": "Brevard", "EventState": "NC", "EventTypes": ["Gravel"],
+    "EventID": 12345})
+check("a race publishes as all-day", _row["all_day"], True)
+check("with a date and no invented time", _row["start"], "2026-06-04")
+check("and no time sneaks into the end either", _row["end"] is None)
+
 print("\nics — RRULE expansion (regression: 177 events fetched, 0 published)")
 # Captured verbatim from the Gravelo Workshop public Google Calendar on
 # 2026-08-24. 177 VEVENTs, 19 of them recurring, and NOT ONE with a future

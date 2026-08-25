@@ -102,21 +102,42 @@ def text_of(html: str) -> str:
 _MS_DATE = re.compile(r"/Date\((-?\d+)([+-]\d{4})?\)/")
 
 
-def ms_date(value: Any) -> str | None:
+def ms_date(value: Any, *, as_date: bool = False) -> str | None:
     """
     Parse ASP.NET's /Date(1780545600000-0400)/ into ISO 8601.
 
     BikeReg's REST API serialises every date this way. dateutil can't read it,
-    so it has to be unwrapped before iso() sees it. The trailing offset is the
-    promoter's local zone; the millis are already UTC epoch, so applying the
-    offset again would double-count it. We keep the millis and ignore it.
+    so it has to be unwrapped before iso() sees it. The millis are a UTC epoch
+    and the trailing offset is the promoter's local zone.
+
+    `as_date=True` returns the promoter's LOCAL CALENDAR DATE and nothing else.
+    Use it for a field that is a date, because the alternative publishes a
+    fictional time of day: EventDate always carries midnight local, which
+    serialises to 04:00Z on the US east coast, and until 2026-08-25 all 25
+    BikeReg races on the live calendar rendered as starting at "12am".
+    Nobody said that. BikeReg's EventDate has no time-of-day component at all —
+    a race's actual start time lives in the promoter's own notes — so the
+    honest output is a date with all_day set, exactly like a source that
+    publishes "Sat 29 Aug".
+
+    Recovering the local date means SHIFTING the UTC instant by the offset, not
+    subtracting it from the millis: the millis are already absolute, so
+    04:00Z + (-04:00) = midnight local = the date the promoter typed.
     """
     if not isinstance(value, str):
-        return iso(value)
+        return iso(value, all_day=as_date)
     m = _MS_DATE.search(value)
     if not m:
-        return iso(value)
-    return iso(int(m.group(1)))
+        return iso(value, all_day=as_date)
+    if not as_date:
+        return iso(int(m.group(1)))
+
+    moment = datetime.fromtimestamp(int(m.group(1)) / 1000, tz=timezone.utc)
+    offset = m.group(2)
+    if offset:
+        sign = -1 if offset[0] == "-" else 1
+        moment += sign * timedelta(hours=int(offset[1:3]), minutes=int(offset[3:5]))
+    return moment.date().isoformat()
 
 
 def _first(d: dict, *keys, default=""):
@@ -527,9 +548,11 @@ def _bikereg_event(e: dict) -> dict:
     types = [t for t in (e.get("EventTypes") or []) if t]
     return {
         "title": _clean(e.get("EventName", "")),
-        "start": ms_date(e.get("EventDate")),
-        "end": ms_date(e.get("EventEndDate")),
-        "all_day": False,
+        # EventDate and EventEndDate are DATES. See ms_date: taking the raw
+        # millis publishes midnight-local-as-UTC, which reads as a 12am start.
+        "start": ms_date(e.get("EventDate"), as_date=True),
+        "end": ms_date(e.get("EventEndDate"), as_date=True),
+        "all_day": True,
         # EventUrl is promoter-supplied and occasionally malformed (we saw
         # "http://www.BikeReg.comhttps://..." in live data). EventPermalink is
         # generated from the event id, so it is always well formed.
