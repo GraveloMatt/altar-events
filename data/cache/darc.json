@@ -1,13 +1,13 @@
 {
- "at": "2026-08-25T00:36:42.430906+00:00",
+ "at": "2026-08-25T09:52:30.059435+00:00",
  "events": [
   {
    "title": "CRAFTED The Bicycle & Gear Show",
    "start": "2026-09-26T00:00:00",
    "end": "2026-09-27T00:00:00",
    "all_day": false,
-   "url": "https://www.craftedbikeshow.com",
-   "description": "A Bicycle and Gear Show celebrating handmade craft and independent makers across the Southeast. Saturday 10 a.m. to 5 p.m., Sunday 10 a.m. to 4 p.m. Features group rides, tours, live music, tattoos, food, and libations. Kid- and family-friendly skills course.",
+   "url": "https://darccycling.com/calendar",
+   "description": "A Bicycle and Gear Show celebrating handmade craft and independent makers across the Southeast. Saturday 10 a.m. to 5 p.m., Sunday 10 a.m. to 4 p.m. Features group rides, tours, live music, tattoos, food, libations, and kid- and family-friendly skills course. Admission is free and open to the public.",
    "venue": "Cane Creek Cycling Components",
    "city": "Fletcher",
    "state": "NC",
@@ -30,7 +30,7 @@
    "end": "2026-09-05",
    "all_day": true,
    "url": "https://darccycling.com/calendar",
-   "description": "Featured event for DARC members",
+   "description": "Featured Event",
    "venue": "",
    "city": "Hendersonville",
    "state": "NC",
