@@ -1,5 +1,5 @@
 {
- "at": "2026-08-25T00:27:31.723960+00:00",
+ "at": "2026-08-25T00:36:49.508728+00:00",
  "events": [
   {
    "title": "October Group Ride + Social",
@@ -7,7 +7,7 @@
    "end": "2026-10-10T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Old Fort. Please note that this location does not allow e-bikes. Sign up goes live Thursday, October 1 at 7 pm. All riders must sign up through Eventbrite. Our rides are for all women 18 and older.",
+   "description": "Old Fort. Please note that this location does not allow e-bikes. Sign up goes live Thursday, October 1 at 7 pm. All riders must sign up through Eventbrite to join. Our rides are for all women 18 and older.",
    "venue": "Gateway Trails",
    "city": "Old Fort",
    "state": "NC",
@@ -30,9 +30,9 @@
    "end": "2026-11-14T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Pisgah + Oskar Blues Brewery. Please note that this location does not allow e-bikes. Post-ride social is at Oskar Blues Brewery [342 Mountain Industrial Dr, Brevard, NC 28712]. Sign up goes live Sunday, November 1 at 7 pm. All riders must sign up through Eventbrite. Our rides are for all women 18 and older.",
+   "description": "Pisgah + Oskar Blues Brewery. Please note that this location does not allow e-bikes. Post-ride social is at Oskar Blues Brewery [ 342 Mountain Industrial Dr, Brevard, NC 28712 ]. Sign up goes live Sunday, November 1 at 7 pm. All riders must sign up through Eventbrite to join. Our rides are for all women 18 and older.",
    "venue": "Pisgah",
-   "city": "Pisgah",
+   "city": "Pisgah Forest",
    "state": "NC",
    "cost": null,
    "extracted_by": "llm",
@@ -53,7 +53,7 @@
    "end": "2026-12-12T15:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Hot Springs + Big Pillow Brewing. Please note that this location does not allow e-bikes. Post-ride social is at Big Pillow Brewing [25-27 N Andrews Avenue, Hot Springs, NC 28743-9231]. Sign up goes live Tuesday, December 1 at 7 pm. All riders must sign up through Eventbrite. Our rides are for all women 18 and older.",
+   "description": "Hot Springs + Big Pillow Brewing. Please note that this location does not allow e-bikes. Post-ride social is at Big Pillow Brewing [ 25-27 N Andrews Avenue, Hot Springs, NC 28743-9231 ]. Sign up goes live Tuesday, December 1 at 7 pm. All riders must sign up through Eventbrite to join. Our rides are for all women 18 and older.",
    "venue": "Hot Springs",
    "city": "Hot Springs",
    "state": "NC",
