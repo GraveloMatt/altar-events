@@ -1,13 +1,13 @@
 {
- "at": "2026-08-23T09:44:37.848993+00:00",
+ "at": "2026-08-25T00:26:11.955505+00:00",
  "events": [
   {
-   "title": "UCI Mountain Bike Continental Series - iXS European Downhill Cup Verbier",
+   "title": "UCI Mountain Bike Continental Series \u2013 iXS European Downhill Cup Verbier",
    "start": "2026-09-11",
    "end": "2026-09-13",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Continental Series (CS) - Downhill Cup",
+   "description": "Continental Series (CS) Downhill event",
    "venue": "Verbier",
    "city": "Verbier",
    "state": "",
@@ -21,15 +21,16 @@
    "category": "race",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "975aee90f5008d12"
+   "uid": "975aee90f5008d12",
+   "last_seen": "2026-08-25"
   },
   {
-   "title": "UCI Mountain Bike Continental Series - DHI Araucania",
+   "title": "UCI Mountain Bike Continental Series \u2013 DHI Araucania",
    "start": "2026-11-27",
    "end": "2026-11-29",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Continental Series (CS) - Downhill Cup",
+   "description": "Continental Series (CS) Downhill event",
    "venue": "Temuco",
    "city": "Temuco",
    "state": "",
@@ -43,7 +44,8 @@
    "category": "race",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "a429a749010fdf86"
+   "uid": "a429a749010fdf86",
+   "last_seen": "2026-08-25"
   },
   {
    "title": "Crankworx - Mont-Saint-Anne Canada Cup - DHI/XCC/XCO",
@@ -51,7 +53,7 @@
    "end": "2026-09-07",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class (HC) event",
    "venue": "Mont-Sainte-Anne",
    "city": "Mont-Sainte-Anne",
    "state": "",
@@ -65,15 +67,16 @@
    "category": "watch",
    "category_basis": "default",
    "discipline": "other",
-   "uid": "ff826ef0397ce294"
+   "uid": "ff826ef0397ce294",
+   "last_seen": "2026-08-25"
   },
   {
-   "title": "Skoda Swiss Bike Cup - XCO",
+   "title": "Skoda Swiss Bike Cup - XCO Huttwil",
    "start": "2026-09-06",
    "end": "2026-09-06",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class (HC) event",
    "venue": "Huttwil",
    "city": "Huttwil",
    "state": "",
@@ -87,7 +90,8 @@
    "category": "watch",
    "category_basis": "default",
    "discipline": "other",
-   "uid": "a136015d151cd5d3"
+   "uid": "e1726bbc349c61f8",
+   "last_seen": "2026-08-25"
   },
   {
    "title": "Skoda Swiss Bike Cup Gr\u00e4nichen",
@@ -95,7 +99,7 @@
    "end": "2026-09-12",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class (HC) event",
    "venue": "Gr\u00e4nichen",
    "city": "Gr\u00e4nichen",
    "state": "",
@@ -109,7 +113,8 @@
    "category": "watch",
    "category_basis": "default",
    "discipline": "other",
-   "uid": "4bfbc331956a4a28"
+   "uid": "4bfbc331956a4a28",
+   "last_seen": "2026-08-25"
   },
   {
    "title": "La Forestiere - XCM",
@@ -117,7 +122,7 @@
    "end": "2026-09-19",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class (HC) Cross Country Marathon event",
    "venue": "La Pesse",
    "city": "La Pesse",
    "state": "",
@@ -130,8 +135,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "other",
-   "uid": "d5f3ed6b7af30730"
+   "discipline": "mtb",
+   "uid": "d5f3ed6b7af30730",
+   "last_seen": "2026-08-25"
   },
   {
    "title": "Extreme Sur Loue - XCM",
@@ -139,7 +145,7 @@
    "end": "2026-10-04",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class (HC) Cross Country Marathon event",
    "venue": "Ornans",
    "city": "Ornans",
    "state": "",
@@ -152,8 +158,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "other",
-   "uid": "1b11e287915045b5"
+   "discipline": "mtb",
+   "uid": "1b11e287915045b5",
+   "last_seen": "2026-08-25"
   },
   {
    "title": "Roc D'azur - XCM",
@@ -161,7 +168,7 @@
    "end": "2026-10-10",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class (HC) Cross Country Marathon event",
    "venue": "Fr\u00e9jus",
    "city": "Fr\u00e9jus",
    "state": "",
@@ -174,8 +181,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "other",
-   "uid": "3b613757ff568727"
+   "discipline": "mtb",
+   "uid": "3b613757ff568727",
+   "last_seen": "2026-08-25"
   },
   {
    "title": "Serbia Epic Petrovaradin Fortress Bike Fest",
@@ -183,7 +191,7 @@
    "end": "2026-10-11",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class (HC) event",
    "venue": "Novi Sad",
    "city": "Novi Sad",
    "state": "",
@@ -197,7 +205,8 @@
    "category": "festival",
    "category_basis": "rule",
    "discipline": "other",
-   "uid": "22b56ec9aa45fc91"
+   "uid": "22b56ec9aa45fc91",
+   "last_seen": "2026-08-25"
   }
  ]
 }

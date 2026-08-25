@@ -1,18 +1,18 @@
 {
- "at": "2026-08-24T23:19:17.604605+00:00",
+ "at": "2026-08-25T00:24:43.178973+00:00",
  "events": [
   {
    "title": "Pisgah Rage Pre-season",
    "start": "2026-10-15",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 15 Oct 2026 to 15 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and 1-2 adventure rides in Bent Creek or Dupont. 2-3 social events total.",
+   "description": "Runs 15 Oct 2026 to 31 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and adventure rides in Bent Creek or Dupont. 2-3 social events and 1-2 adventure rides.",
    "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
    "cost": null,
    "extracted_by": "llm",
-   "long_span_days": 61,
+   "long_span_days": 77,
    "source": "pisgah-rage",
    "source_name": "Pisgah Rage (NICA composite team)",
    "source_url": "https://www.pisgahrage.com/",
@@ -22,14 +22,14 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "2115f0c8d04aeced",
-   "last_seen": "2026-08-24"
+   "last_seen": "2026-08-25"
   },
   {
    "title": "Pisgah Rage Regular Season",
    "start": "2026-12-01",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with races and practices. January: 2-4 indoor training opportunities. February: 1 weekend practice per week (2 hours). March-May: 2 rides per week (1-2 weeknight rides after 5pm lasting 1.5 hours, and weekend day practices alternating Saturdays/Sundays lasting 2 hours). 5-6 races across North Carolina starting in early March through May. Races are Saturday pre-ride with team and Sunday racing all day.",
+   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with indoor training January, weekend practices February, and 2 rides per week March-May. Races begin early March with 5-6 races across North Carolina through end of May.",
    "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "670937aa0418b08a",
-   "last_seen": "2026-08-24"
+   "last_seen": "2026-08-25"
   }
  ]
 }
