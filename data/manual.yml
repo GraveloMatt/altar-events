@@ -32,6 +32,7 @@ events:
     start: 2026-08-26T18:00:00
     repeat: weekly
     repeat_until: 2026-10-28
+    listed_by: Gravelo Workshop
     venue: Gravelo Workshop — Bicycles & Coffee
     city: Asheville
     state: NC
@@ -42,6 +43,10 @@ events:
       Lights from October.
 
 # events:
+# CREDIT: entries here say "Listed by Altar Cycles" on the public page, which
+# is right for Altar's own rides and wrong for anybody else's. Add
+# `listed_by: Their Shop Name` to credit the org that actually runs it.
+#
 #   - title: Altar Shop Ride — Bent Creek
 #     start: 2026-09-04T18:00:00
 #     venue: Altar Cycles
