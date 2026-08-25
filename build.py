@@ -253,7 +253,10 @@ def load_manual(home: dict, radius: int) -> list[dict]:
         return []
     blob = yaml.safe_load(path.read_text()) or {}
     source = {"id": "altar", "name": "Altar Cycles", "trust": 100,
-              "default_category": "race", "org_url": "https://altar.bike"}
+              "default_category": "race", "org_url": "https://altar.bike",
+              # The only source allowed to set an event's credit line, because
+              # it is the only one a human types by hand. See normalize.prepare.
+              "hand_entered": True}
     events = normalize.prepare(blob.get("events", []) or [], source, home, radius)
     print(f"  ok    {'altar (manual)':26} {'yaml':12} {len(events):3} events")
     return events

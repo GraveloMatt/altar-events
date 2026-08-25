@@ -695,7 +695,23 @@ def prepare(raw: list[dict], source: dict, home: dict, radius: int) -> list[dict
         if not e["title"]:
             continue
         e["source"] = source["id"]
-        e["source_name"] = source["name"]
+        # `listed_by` lets ONE hand-entered event credit somebody other than
+        # the source that carried it. Everything in data/manual.yml is stamped
+        # "Altar Cycles", which is right for Altar's own rides and wrong for
+        # anyone else's: the Gravelo Wednesday ride published as "Listed by
+        # Altar Cycles", which reads as though Altar hosts it, and a rider
+        # could turn up at the wrong shop.
+        #
+        # Honoured ONLY from `hand_entered` sources — today that is
+        # data/manual.yml and nothing else. A credit line is the one field on
+        # the page that says who vouches for an event, so a scraped page must
+        # not be able to write it: the llm adapter reads whatever prose a site
+        # serves, and "listed_by: <anyone>" in that prose would otherwise put
+        # any name we like under any event. The field is stripped either way,
+        # so it can never leak into the published record.
+        claimed = e.pop("listed_by", None)
+        e["source_name"] = (claimed if claimed and source.get("hand_entered")
+                            else source["name"])
         e["source_url"] = source.get("org_url", "")
         e["trust"] = source.get("trust", 50)
         e["bucket"] = source.get("bucket", "local")

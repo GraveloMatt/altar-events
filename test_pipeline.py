@@ -287,6 +287,49 @@ check("tidying happens before the uid is taken",
            "org_url": "https://x"}, HOME, R)[0]["title"],
       "Bent Creek Dig Day")
 
+print("\nlisted_by — crediting somebody else's ride")
+# Everything in data/manual.yml is stamped "Altar Cycles". On 2026-08-24 the
+# Gravelo Wednesday ride published as "Listed by Altar Cycles", which reads as
+# though Altar hosts it — a rider could turn up at the wrong shop.
+_ALTAR = {"id": "altar", "name": "Altar Cycles", "trust": 100,
+          "default_category": "race", "org_url": "https://altar.bike",
+          "hand_entered": True}
+_theirs = normalize.prepare(
+    [{"title": "Gravelo Wednesday Shop Ride", "start": soon(2),
+      "listed_by": "Gravelo Workshop", "city": "Asheville", "state": "NC"}],
+    _ALTAR, HOME, R)
+check("someone else's ride credits them", _theirs[0]["source_name"], "Gravelo Workshop")
+check("the override is consumed, not published as a stray field",
+      "listed_by" in _theirs[0], False)
+check("but it is still OUR entry, at our trust", _theirs[0]["trust"], 100)
+check("and still attributed to the altar source id", _theirs[0]["source"], "altar")
+
+_ours = normalize.prepare(
+    [{"title": "Altar Shop Ride — Bent Creek", "start": soon(3),
+      "city": "Asheville", "state": "NC"}], _ALTAR, HOME, R)
+check("Altar's own ride still credits Altar", _ours[0]["source_name"], "Altar Cycles")
+
+# A scraped source must never be able to rewrite its own credit line.
+_scraped = normalize.prepare(
+    [{"title": "Some Race", "start": soon(4), "listed_by": "Totally Legit Org",
+      "city": "Asheville", "state": "NC"}],
+    {"id": "bikereg", "name": "BikeReg", "trust": 60, "default_category": "race",
+     "org_url": "https://www.bikereg.com/"}, HOME, R)
+check("a scraped feed cannot forge a credit line it did not earn",
+      _scraped[0]["source_name"], "BikeReg")
+check("and the forged field never reaches the published record",
+      "listed_by" in _scraped[0], False)
+# The credit line is the one field that says WHO VOUCHES for an event. The llm
+# adapter reads whatever prose a site serves, so a page containing
+# "listed_by: <anyone>" must not be able to put that name under an event.
+check("only hand-entered sources may set it",
+      normalize.prepare(
+          [{"title": "Some Race", "start": soon(5), "listed_by": "Nope",
+            "city": "Asheville", "state": "NC"}],
+          {**_ALTAR, "hand_entered": False}, HOME, R)[0]["source_name"],
+      "Altar Cycles")
+
+
 print("\nhand-entered YAML dates (regression: manual.yml would crash the build)")
 # PyYAML parses an unquoted `start: 2026-09-04T18:00:00` into a datetime
 # OBJECT, not a string, and every downstream check slices start[:10]. The
