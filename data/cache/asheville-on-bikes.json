@@ -1,5 +1,5 @@
 {
- "at": "2026-08-25T00:24:07.844724+00:00",
+ "at": "2026-08-25T00:27:11.054594+00:00",
  "events": [
   {
    "title": "Bike Valet at Downtown After Five",
@@ -50,6 +50,30 @@
    "last_seen": "2026-08-25"
   },
   {
+   "title": "Get There Asheville",
+   "start": "2026-10-01",
+   "end": "",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "date_precision": "month",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "default",
+   "discipline": "other",
+   "uid": "1473187f58b65f1a",
+   "last_seen": "2026-08-25"
+  },
+  {
    "title": "Pumpkin Pedaller",
    "start": "2026-10-01",
    "end": "",
@@ -71,30 +95,6 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "a4fb8fc562c30f55",
-   "last_seen": "2026-08-25"
-  },
-  {
-   "title": "Get There Asheville",
-   "start": "2026-10-01",
-   "end": "",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events",
-   "description": "City Council Candidate Forum",
-   "venue": "",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": "Free",
-   "date_precision": "month",
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "advocacy",
-   "category_basis": "rule",
-   "discipline": "other",
-   "uid": "1473187f58b65f1a",
    "last_seen": "2026-08-25"
   },
   {
