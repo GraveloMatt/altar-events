@@ -1,5 +1,5 @@
 {
- "at": "2026-08-26T09:58:10.171162+00:00",
+ "at": "2026-08-27T19:51:49.426964+00:00",
  "events": [
   {
    "title": "Betty's & Jarret's Run Trail Day",
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e1bc6ea5ef974c01",
-   "last_seen": "2026-08-26"
+   "last_seen": "2026-08-27"
   },
   {
    "title": "Lower Heartbreak Trail Day",
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "199f975dfbc75d0a",
-   "last_seen": "2026-08-26"
+   "last_seen": "2026-08-27"
   },
   {
    "title": "Women + Trail Skills Workshop",
@@ -68,7 +68,30 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "f25b655f83100d84",
-   "last_seen": "2026-08-26"
+   "last_seen": "2026-08-27"
+  },
+  {
+   "title": "Fall Trail Weekend!",
+   "start": "2026-11-06T16:00:00",
+   "end": "2026-11-08T13:00:00",
+   "all_day": false,
+   "url": "https://www.g5trailcollective.org/volunteer",
+   "description": "",
+   "venue": "Camp Grier",
+   "city": "Old Fort",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "source": "g5-trail-collective",
+   "source_name": "G5 Trail Collective",
+   "source_url": "https://www.g5trailcollective.org/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "trail-work",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "65a4e186a310b33a",
+   "last_seen": "2026-08-27"
   },
   {
    "title": "Fall Trail Weekend! Nov 6-8",
@@ -91,31 +114,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "d1d99200ca490eae",
-   "last_seen": "2026-08-26"
-  },
-  {
-   "title": "Fall Trail Weekend!",
-   "start": "2026-11-06T16:00:00",
-   "end": "2026-11-08T13:00:00",
-   "all_day": false,
-   "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "SAVE THE DATE",
-   "venue": "Camp Grier",
-   "city": "Old Fort",
-   "state": "NC",
-   "cost": null,
-   "extracted_by": "llm",
-   "source": "g5-trail-collective",
-   "source_name": "G5 Trail Collective",
-   "source_url": "https://www.g5trailcollective.org/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "trail-work",
-   "category_basis": "rule",
-   "discipline": "mtb",
-   "uid": "65a4e186a310b33a",
-   "last_seen": "2026-08-25",
-   "held_since": "2026-08-25"
+   "last_seen": "2026-08-26",
+   "held_since": "2026-08-26"
   }
  ]
 }
