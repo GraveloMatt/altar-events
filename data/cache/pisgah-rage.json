@@ -1,18 +1,18 @@
 {
- "at": "2026-08-27T19:51:54.585999+00:00",
+ "at": "2026-08-28T20:51:13.810836+00:00",
  "events": [
   {
    "title": "Pisgah Rage Pre-season",
    "start": "2026-10-15",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 15 Oct 2026 to 31 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and adventure rides in Bent Creek or Dupont",
-   "venue": "Asheville",
+   "description": "Runs 15 Oct 2026 to 1 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and adventure rides in Bent Creek or Dupont",
+   "venue": "Asheville, North Carolina",
    "city": "Asheville",
    "state": "NC",
    "cost": null,
    "extracted_by": "llm",
-   "long_span_days": 77,
+   "long_span_days": 47,
    "source": "pisgah-rage",
    "source_name": "Pisgah Rage (NICA composite team)",
    "source_url": "https://www.pisgahrage.com/",
@@ -22,15 +22,15 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "2115f0c8d04aeced",
-   "last_seen": "2026-08-27"
+   "last_seen": "2026-08-28"
   },
   {
    "title": "Pisgah Rage Regular Season",
    "start": "2026-12-01",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with races and practices. Races typically start in March with 5-6 races across North Carolina through end of May",
-   "venue": "Asheville",
+   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season racing and training. Races start in March with 5-6 races across North Carolina through end of May. Practice schedule varies by month: January has indoor training; February has 1 weekend practice per week; March-May has 2 rides per week",
+   "venue": "Asheville, North Carolina",
    "city": "Asheville",
    "state": "NC",
    "cost": null,
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "670937aa0418b08a",
-   "last_seen": "2026-08-27"
+   "last_seen": "2026-08-28"
   }
  ]
 }

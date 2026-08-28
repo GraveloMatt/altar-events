@@ -1,12 +1,12 @@
 {
- "at": "2026-08-27T19:51:25.475076+00:00",
+ "at": "2026-08-28T20:50:46.393003+00:00",
  "events": [
   {
    "title": "CRAFTED The Bicycle & Gear Show",
    "start": "2026-09-26T00:00:00",
    "end": "2026-09-27T00:00:00",
    "all_day": false,
-   "url": "https://www.craftedbikeshow.com",
+   "url": "https://darccycling.com/calendar",
    "description": "A Bicycle and Gear Show celebrating handmade craft and independent makers across the Southeast. Saturday 10 a.m. to 5 p.m., Sunday 10 a.m. to 4 p.m. Features group rides, tours, live music, tattoos, food, and libations. Kid- and family-friendly skills course.",
    "venue": "Cane Creek Cycling Components",
    "city": "Fletcher",
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b6eff59b8929c1ed",
-   "last_seen": "2026-08-27"
+   "last_seen": "2026-08-28"
   },
   {
    "title": "Dirt Diggler Gravel Grinder",
@@ -30,7 +30,7 @@
    "end": "2026-09-05",
    "all_day": true,
    "url": "https://darccycling.com/calendar",
-   "description": "Featured Event for DARC members",
+   "description": "Featured Event",
    "venue": "",
    "city": "Hendersonville",
    "state": "NC",
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "gravel",
    "uid": "53b43bf11b736a76",
-   "last_seen": "2026-08-27"
+   "last_seen": "2026-08-28"
   }
  ]
 }
