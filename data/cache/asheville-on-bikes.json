@@ -1,5 +1,5 @@
 {
- "at": "2026-08-28T20:50:32.984589+00:00",
+ "at": "2026-08-29T14:29:09.910903+00:00",
  "events": [
   {
    "title": "Tour de Fat",
@@ -23,7 +23,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "548f70215540a5da",
-   "last_seen": "2026-08-28"
+   "last_seen": "2026-08-29"
   },
   {
    "title": "Get There Asheville",
@@ -31,7 +31,7 @@
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
-   "description": "City Council Candidate Forum",
+   "description": "",
    "venue": "",
    "city": "Asheville",
    "state": "NC",
@@ -43,11 +43,11 @@
    "source_url": "https://ashevilleonbikes.com/",
    "trust": 80,
    "bucket": "local",
-   "category": "advocacy",
-   "category_basis": "rule",
+   "category": "group-ride",
+   "category_basis": "default",
    "discipline": "other",
    "uid": "1473187f58b65f1a",
-   "last_seen": "2026-08-28"
+   "last_seen": "2026-08-29"
   },
   {
    "title": "Pumpkin Pedaller",
@@ -71,7 +71,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "a4fb8fc562c30f55",
-   "last_seen": "2026-08-28"
+   "last_seen": "2026-08-29"
   },
   {
    "title": "Get There Asheville: City Council Candidate Forum",

@@ -1,5 +1,5 @@
 {
- "at": "2026-08-28T20:51:07.009033+00:00",
+ "at": "2026-08-29T14:29:49.069308+00:00",
  "events": [
   {
    "title": "Betty's & Jarret's Run Trail Day",
@@ -7,7 +7,7 @@
    "end": "2026-09-04T16:30:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Project: Drain cleaning. Tread shaping.",
+   "description": "Drain cleaning. Tread shaping.",
    "venue": "Gateway Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e1bc6ea5ef974c01",
-   "last_seen": "2026-08-28"
+   "last_seen": "2026-08-29"
   },
   {
    "title": "Lower Heartbreak Trail Day",
@@ -30,7 +30,7 @@
    "end": "2026-09-12T14:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Project: Drain cleaning. Corridor pruning & brushing.",
+   "description": "Drain cleaning. Corridor pruning & brushing.",
    "venue": "Allison Trailhead Parking Lot",
    "city": "Old Fort",
    "state": "NC",
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "199f975dfbc75d0a",
-   "last_seen": "2026-08-28"
+   "last_seen": "2026-08-29"
   },
   {
    "title": "Women + Trail Skills Workshop",
@@ -68,30 +68,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "f25b655f83100d84",
-   "last_seen": "2026-08-28"
-  },
-  {
-   "title": "Fall Trail Weekend! Nov 6-8",
-   "start": "2026-11-06T16:00:00",
-   "end": "2026-11-08T13:00:00",
-   "all_day": false,
-   "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "SAVE THE DATE",
-   "venue": "Camp Grier",
-   "city": "Old Fort",
-   "state": "NC",
-   "cost": null,
-   "extracted_by": "llm",
-   "source": "g5-trail-collective",
-   "source_name": "G5 Trail Collective",
-   "source_url": "https://www.g5trailcollective.org/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "trail-work",
-   "category_basis": "rule",
-   "discipline": "mtb",
-   "uid": "d1d99200ca490eae",
-   "last_seen": "2026-08-28"
+   "last_seen": "2026-08-29"
   },
   {
    "title": "Fall Trail Weekend!",
@@ -114,8 +91,31 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "65a4e186a310b33a",
-   "last_seen": "2026-08-27",
-   "held_since": "2026-08-27"
+   "last_seen": "2026-08-29"
+  },
+  {
+   "title": "Fall Trail Weekend! Nov 6-8",
+   "start": "2026-11-06T16:00:00",
+   "end": "2026-11-08T13:00:00",
+   "all_day": false,
+   "url": "https://www.g5trailcollective.org/volunteer",
+   "description": "SAVE THE DATE",
+   "venue": "Camp Grier",
+   "city": "Old Fort",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "source": "g5-trail-collective",
+   "source_name": "G5 Trail Collective",
+   "source_url": "https://www.g5trailcollective.org/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "trail-work",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "d1d99200ca490eae",
+   "last_seen": "2026-08-28",
+   "held_since": "2026-08-28"
   }
  ]
 }

@@ -1,13 +1,36 @@
 {
- "at": "2026-08-28T20:50:53.178071+00:00",
+ "at": "2026-08-29T14:29:32.830425+00:00",
  "events": [
+  {
+   "title": "September Group Ride + Social",
+   "start": "2026-09-12T00:00:00",
+   "end": "2026-09-12T00:00:00",
+   "all_day": false,
+   "url": "https://www.dirtskrrts.com/schedule",
+   "description": "Group ride at Fonta Flora State Trail with post-ride social. All riders must sign up through Eventbrite. For all women 18 and older.",
+   "venue": "Lake James State Park + Fonta Flora Trail",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "source": "blue-ridge-dirt-skrrts",
+   "source_name": "Blue Ridge Dirt Skrrts",
+   "source_url": "https://www.dirtskrrts.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "a225996df6ef3f9c",
+   "last_seen": "2026-08-29"
+  },
   {
    "title": "October Group Ride + Social",
    "start": "2026-10-10T00:00:00",
    "end": "2026-10-10T00:00:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Group ride for all women 18 and older. Riding in and around Old Fort. Note: e-bikes not allowed. Registration required through Eventbrite.",
+   "description": "Group ride in Old Fort. No e-bikes allowed. All riders must sign up through Eventbrite. For all women 18 and older.",
    "venue": "Gateway Trails",
    "city": "Old Fort",
    "state": "NC",
@@ -22,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b150ddbea280cbb5",
-   "last_seen": "2026-08-28"
+   "last_seen": "2026-08-29"
   },
   {
    "title": "November Group Ride + Social",
@@ -30,7 +53,7 @@
    "end": "2026-11-14T00:00:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Group ride for all women 18 and older. Riding in Pisgah. Note: e-bikes not allowed. Post-ride social at Oskar Blues Brewery, 342 Mountain Industrial Dr, Brevard, NC 28712. Registration required through Eventbrite.",
+   "description": "Group ride in Pisgah. No e-bikes allowed. Post-ride social at Oskar Blues Brewery, 342 Mountain Industrial Dr, Brevard, NC 28712. All riders must sign up through Eventbrite. For all women 18 and older.",
    "venue": "Pisgah + Oskar Blues Brewery",
    "city": "Brevard",
    "state": "NC",
@@ -45,7 +68,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e6ecfc09dd6c5bf2",
-   "last_seen": "2026-08-28"
+   "last_seen": "2026-08-29"
   },
   {
    "title": "December Group Ride + Social",
@@ -53,7 +76,7 @@
    "end": "2026-12-12T00:00:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Group ride for all women 18 and older. Riding in Hot Springs. Note: e-bikes not allowed. Post-ride social at Big Pillow Brewing, 25-27 N Andrews Avenue, Hot Springs, NC 28743-9231. Registration required through Eventbrite.",
+   "description": "Group ride in Hot Springs. No e-bikes allowed. Post-ride social at Big Pillow Brewing, 25-27 N Andrews Avenue, Hot Springs, NC 28743-9231. All riders must sign up through Eventbrite. For all women 18 and older.",
    "venue": "Hot Springs + Big Pillow Brewing",
    "city": "Hot Springs",
    "state": "NC",
@@ -68,31 +91,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b68ee4e9e36aad4a",
-   "last_seen": "2026-08-28"
-  },
-  {
-   "title": "September Group Ride + Social",
-   "start": "2026-09-12T00:00:00",
-   "end": "2026-09-12T00:00:00",
-   "all_day": false,
-   "url": "https://www.dirtskrrts.com/schedule",
-   "description": "We're riding at Lake James this month. All riders must sign up through Eventbrite. Our rides are for all women 18 and older.",
-   "venue": "Lake James State Park + Fonta Flora Trail",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": null,
-   "extracted_by": "llm",
-   "source": "blue-ridge-dirt-skrrts",
-   "source_name": "Blue Ridge Dirt Skrrts",
-   "source_url": "https://www.dirtskrrts.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "group-ride",
-   "category_basis": "rule",
-   "discipline": "other",
-   "uid": "a225996df6ef3f9c",
-   "last_seen": "2026-08-26",
-   "held_since": "2026-08-26"
+   "last_seen": "2026-08-29"
   }
  ]
 }
