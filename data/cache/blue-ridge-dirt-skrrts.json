@@ -1,5 +1,5 @@
 {
- "at": "2026-08-29T14:29:32.830425+00:00",
+ "at": "2026-08-30T14:25:55.101520+00:00",
  "events": [
   {
    "title": "September Group Ride + Social",
@@ -7,7 +7,7 @@
    "end": "2026-09-12T00:00:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Group ride at Fonta Flora State Trail with post-ride social. All riders must sign up through Eventbrite. For all women 18 and older.",
+   "description": "Group ride at Fonta Flora State Trail with post-ride social. Sign up goes live Tuesday, September 1 at 7 pm.",
    "venue": "Lake James State Park + Fonta Flora Trail",
    "city": "Asheville",
    "state": "NC",
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "a225996df6ef3f9c",
-   "last_seen": "2026-08-29"
+   "last_seen": "2026-08-30"
   },
   {
    "title": "October Group Ride + Social",
@@ -30,7 +30,7 @@
    "end": "2026-10-10T00:00:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Group ride in Old Fort. No e-bikes allowed. All riders must sign up through Eventbrite. For all women 18 and older.",
+   "description": "Group ride in Old Fort at Foothills Watershed. No e-bikes allowed. Post-ride social at Foothills Watershed. Sign up goes live Thursday, October 1 at 7 pm.",
    "venue": "Gateway Trails",
    "city": "Old Fort",
    "state": "NC",
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b150ddbea280cbb5",
-   "last_seen": "2026-08-29"
+   "last_seen": "2026-08-30"
   },
   {
    "title": "November Group Ride + Social",
@@ -53,8 +53,8 @@
    "end": "2026-11-14T00:00:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Group ride in Pisgah. No e-bikes allowed. Post-ride social at Oskar Blues Brewery, 342 Mountain Industrial Dr, Brevard, NC 28712. All riders must sign up through Eventbrite. For all women 18 and older.",
-   "venue": "Pisgah + Oskar Blues Brewery",
+   "description": "Group ride in Pisgah. No e-bikes allowed. Post-ride social at Oskar Blues Brewery. Sign up goes live Sunday, November 1 at 7 pm.",
+   "venue": "Pisgah",
    "city": "Brevard",
    "state": "NC",
    "cost": null,
@@ -68,7 +68,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e6ecfc09dd6c5bf2",
-   "last_seen": "2026-08-29"
+   "last_seen": "2026-08-30"
   },
   {
    "title": "December Group Ride + Social",
@@ -76,8 +76,8 @@
    "end": "2026-12-12T00:00:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Group ride in Hot Springs. No e-bikes allowed. Post-ride social at Big Pillow Brewing, 25-27 N Andrews Avenue, Hot Springs, NC 28743-9231. All riders must sign up through Eventbrite. For all women 18 and older.",
-   "venue": "Hot Springs + Big Pillow Brewing",
+   "description": "Group ride in Hot Springs. No e-bikes allowed. Post-ride social at Big Pillow Brewing. Sign up goes live Tuesday, December 1 at 7 pm.",
+   "venue": "Hot Springs",
    "city": "Hot Springs",
    "state": "NC",
    "cost": null,
@@ -91,7 +91,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b68ee4e9e36aad4a",
-   "last_seen": "2026-08-29"
+   "last_seen": "2026-08-30"
   }
  ]
 }

@@ -1,6 +1,54 @@
 {
- "at": "2026-08-29T14:29:09.910903+00:00",
+ "at": "2026-08-30T14:25:33.466251+00:00",
  "events": [
+  {
+   "title": "Bike Valet at Downtown After Five",
+   "start": "2026-08-30",
+   "end": "",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "",
+   "venue": "Downtown After Five",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "date_precision": "month",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "default",
+   "discipline": "commuter",
+   "uid": "72784cb0f273092d",
+   "last_seen": "2026-08-30"
+  },
+  {
+   "title": "Summer Cycle",
+   "start": "2026-08-30",
+   "end": "",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "date_precision": "month",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "festival",
+   "category_basis": "rule",
+   "discipline": "other",
+   "uid": "e54938b418a33b7d",
+   "last_seen": "2026-08-30"
+  },
   {
    "title": "Tour de Fat",
    "start": "2026-10-01",
@@ -23,7 +71,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "548f70215540a5da",
-   "last_seen": "2026-08-29"
+   "last_seen": "2026-08-30"
   },
   {
    "title": "Get There Asheville",
@@ -31,7 +79,7 @@
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
-   "description": "",
+   "description": "City Council Candidate Forum",
    "venue": "",
    "city": "Asheville",
    "state": "NC",
@@ -43,11 +91,11 @@
    "source_url": "https://ashevilleonbikes.com/",
    "trust": 80,
    "bucket": "local",
-   "category": "group-ride",
-   "category_basis": "default",
+   "category": "advocacy",
+   "category_basis": "rule",
    "discipline": "other",
    "uid": "1473187f58b65f1a",
-   "last_seen": "2026-08-29"
+   "last_seen": "2026-08-30"
   },
   {
    "title": "Pumpkin Pedaller",
@@ -71,7 +119,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "a4fb8fc562c30f55",
-   "last_seen": "2026-08-29"
+   "last_seen": "2026-08-30"
   },
   {
    "title": "Get There Asheville: City Council Candidate Forum",
