@@ -1,65 +1,6 @@
 {
- "at": "2026-08-30T14:26:24.578021+00:00",
+ "at": "2026-08-31T17:05:09.907171+00:00",
  "events": [
-  {
-   "title": "Rocky Knob Mountaineer Showdown",
-   "start": "2026-08-29",
-   "end": "2026-08-30",
-   "all_day": true,
-   "url": "http://www.BikeReg.com/rocky-knob-ruckus",
-   "description": "VOLUNTEER SIGN UP: Volunteers for short-track race meet at 8am, for Enduro at 10am at pavilion on Sunday. https://docs.google.com/forms/d/e/1FAIpQLSftNPvcVqCd2vvpp-gaB7QKpMLljbhNphTahbj_PHD3ZmCGuQ/viewform?usp=publish-editor ***All courses will be marked and taped by Friday afternoon. Saturday, August 29th: 8:30am: Registration Opens 9:30-3pm: XCO Races (Category start times coming soon) 3pm-ish: Enduro practice (***Due to the sharing of trails with XC course, the Enduro course will not open until conclusion of XC race) 6:30pm: Whip-off competition at The Jam Sunday, August 30th: 7:30am: Registration Opens 8:30-11:30am: XC Short Track (Category start times coming soon) 12-4pm: Enduro 4pm: Results and Podiums COURSES: CROSS COUNTRY (3.2 miles) Rocky Branch > Mr. Berms > Middle of Nowhere > ",
-   "venue": "285 Mountain Bike Wy",
-   "city": "Boone",
-   "state": "NC",
-   "lat": 36.2201393,
-   "lng": -81.6240583,
-   "image": "/BR/VirtualImages/EventLogos/22f855d2-feea-470d-950c-30aadc6b7a74.png",
-   "discipline_hint": "Mountain Bike",
-   "tags": [
-    "Mountain Bike",
-    "Mountain Bike"
-   ],
-   "source": "bikereg",
-   "source_name": "BikeReg",
-   "source_url": "https://www.bikereg.com/",
-   "trust": 60,
-   "bucket": "local",
-   "category": "trail-work",
-   "category_basis": "rule",
-   "discipline": "mtb",
-   "uid": "fee58fd0937c36eb",
-   "distance_mi": 67.5,
-   "last_seen": "2026-08-30"
-  },
-  {
-   "title": "Asheville Youth Cycling CX Practice August 30th",
-   "start": "2026-08-30",
-   "end": "2026-08-30",
-   "all_day": true,
-   "url": "http://www.BikeReg.com/asheville-youth-cycling-cx-practice-august-30-2026",
-   "description": "Join Asheville Youth Cycling for a fun Cyclocross practice for juniors at Kenilworth Park ( 79 Wyoming Rd, Asheville, NC 28803). All juniors are welcome along with a parent (watch or help out). For more information contact Michael Lemon at michaelchandlerlemon@gmail.com",
-   "venue": "79 Wyoming Rd",
-   "city": "Asheville",
-   "state": "NC",
-   "lat": 35.5775767,
-   "lng": -82.5420265,
-   "image": "/BR/VirtualImages/EventLogos/0f7778ff-aba3-4e6a-b820-2a20c2729dfe.png",
-   "discipline_hint": "Cyclocross",
-   "tags": [
-    "Cyclocross"
-   ],
-   "source": "bikereg",
-   "source_name": "BikeReg",
-   "source_url": "https://www.bikereg.com/",
-   "trust": 60,
-   "bucket": "local",
-   "category": "youth",
-   "category_basis": "rule",
-   "discipline": "cx",
-   "uid": "93c7c08500b384ca",
-   "distance_mi": 1.3,
-   "last_seen": "2026-08-30"
-  },
   {
    "title": "Rumble on the River 1 of 3",
    "start": "2026-09-02",
@@ -87,7 +28,7 @@
    "discipline": "road",
    "uid": "986e15816d93e170",
    "distance_mi": 2.5,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Dirt Diggler Gravel Grinder",
@@ -117,7 +58,7 @@
    "discipline": "gravel",
    "uid": "53b43bf11b736a76",
    "distance_mi": 25.2,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "End of Summer Jam",
@@ -146,7 +87,7 @@
    "discipline": "mtb",
    "uid": "6628b3d67771c40f",
    "distance_mi": 22.8,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Rumble on the River 2 of 3",
@@ -175,7 +116,7 @@
    "discipline": "road",
    "uid": "c6db194b1ff1e374",
    "distance_mi": 2.5,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Pisgah Monster-Cross Challenge",
@@ -205,7 +146,7 @@
    "discipline": "gravel",
    "uid": "005472d939111204",
    "distance_mi": 23.6,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Gravity Carolinas DH RD 3 Ride Rock Creek",
@@ -234,7 +175,7 @@
    "discipline": "mtb",
    "uid": "1446d149ac9ba226",
    "distance_mi": 27.5,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "NCCX Pre-Season Skills Clinics 2026",
@@ -248,7 +189,7 @@
    "state": "NC",
    "lat": 35.508641,
    "lng": -82.6130561,
-   "image": "/BR/VirtualImages/EventLogos/4e94d0ef-91ea-4e7d-b2cb-ef36959a656e.png",
+   "image": "/BR/VirtualImages/EventLogos/bb9400ce-9345-409e-8930-8eaf197e0886.png",
    "discipline_hint": "Cycling Camp",
    "tags": [
     "Cycling Camp",
@@ -265,7 +206,7 @@
    "discipline": "cx",
    "uid": "bbf6b38b2e5ea38d",
    "distance_mi": 6.9,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -294,7 +235,7 @@
    "discipline": "cx",
    "uid": "2c8aa0d648484ac3",
    "distance_mi": 14.9,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -323,7 +264,7 @@
    "discipline": "cx",
    "uid": "82ab5a481026f2a7",
    "distance_mi": 14.9,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -352,7 +293,7 @@
    "discipline": "cx",
    "uid": "03009b517bb77e7e",
    "distance_mi": 14.9,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Thank you! 12th annual Dancing Bear Bike Bash is sold out! USA Cycling Permit #16238",
@@ -382,7 +323,7 @@
    "discipline": "other",
    "uid": "0d5dcfaa94feb9c3",
    "distance_mi": 69.4,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Gravity Carolinas DH RD 4 WIldside",
@@ -411,7 +352,7 @@
    "discipline": "mtb",
    "uid": "74961cf476e0181f",
    "distance_mi": 58.5,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "NCCX Pre-season - Ride Rock Creek",
@@ -441,7 +382,7 @@
    "discipline": "cx",
    "uid": "3a00b4b477eb29e6",
    "distance_mi": 27.5,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Pisgah Bikeboom 2026",
@@ -471,7 +412,7 @@
    "discipline": "mtb",
    "uid": "7ea8cf13a1f20b18",
    "distance_mi": 23.8,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "2026 Ride to the Rock",
@@ -502,7 +443,7 @@
    "discipline": "road",
    "uid": "f386287547fbc4ba",
    "distance_mi": 49.9,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "NCCX Pre-season - Cane Creek",
@@ -532,7 +473,7 @@
    "discipline": "cx",
    "uid": "567c411f65a716bf",
    "distance_mi": 11.0,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Pisgah 111 / 555",
@@ -562,7 +503,7 @@
    "discipline": "mtb",
    "uid": "c6d05d9f51734aa6",
    "distance_mi": 23.6,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "2026 Gran Fondo Hincapie-Greenville",
@@ -592,7 +533,37 @@
    "discipline": "road",
    "uid": "f2acb77c16a22d1c",
    "distance_mi": 34.5,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
+  },
+  {
+   "title": "2026 NCCX Race #3 Boone",
+   "start": "2026-10-18",
+   "end": "2026-10-18",
+   "all_day": true,
+   "url": "http://www.BikeReg.com/nccxrace3boone2026",
+   "description": "Welcome to the 30th season of the NCCX series. We are excited to have you racing. This season's race schedule has a few changes. If you have questions at the races, please look for our friendly NCCX Ambassadors located at registration and around the race course. From beginner to experienced racers, there are opportunities for all to participate and compete. Registration- All registrations will be online. There is a discount for pre-registration , and we encourage everyone to choose this option. Early registration discount ends on Thursday night for all Saturday races, and Friday night for all Sunday races. Race day registration is available and will be online via your mobile device. Race Numbers- If you did not participate in the first race of the season, you must purchase a 2026 race numb",
+   "venue": "748 Roby Green Rd",
+   "city": "Boone",
+   "state": "NC",
+   "lat": 36.2349797,
+   "lng": -81.6291955,
+   "image": "/BR/VirtualImages/EventLogos/4d3c875d-2fe7-47bf-ad34-3b7a08c57f6f.png",
+   "discipline_hint": "Cyclocross",
+   "tags": [
+    "Cyclocross",
+    "NCCX"
+   ],
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "cx",
+   "uid": "0b3f52f489b0c6d2",
+   "distance_mi": 68.0,
+   "last_seen": "2026-08-31"
   },
   {
    "title": "2026 BRAGco Cycling Event",
@@ -622,7 +593,7 @@
    "discipline": "other",
    "uid": "743ac628878c17c6",
    "distance_mi": 42.2,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "The Middle Fork Fondo 2026",
@@ -652,7 +623,7 @@
    "discipline": "road",
    "uid": "0186abed2e6b428b",
    "distance_mi": 14.9,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Couch Potato",
@@ -681,7 +652,7 @@
    "discipline": "mtb",
    "uid": "2e02b8a758b849f1",
    "distance_mi": 23.6,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Swank 65",
@@ -710,7 +681,37 @@
    "discipline": "mtb",
    "uid": "808d5262f339b592",
    "distance_mi": 23.6,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
+  },
+  {
+   "title": "2026 NCCX Race #8 Hickory",
+   "start": "2026-11-08",
+   "end": "2026-11-08",
+   "all_day": true,
+   "url": "http://www.BikeReg.com/nccxrace8hickory",
+   "description": "Welcome to the 30th season of the NCCX series. We are excited to have you racing. This season's race schedule has a few changes. If you have questions at the races, please look for our friendly NCCX Ambassadors located at registration and around the race course. From beginner to experienced racers, there are opportunities for all to participate and compete. Registration- All registrations will be online. There is a discount for pre-registration , and we encourage everyone to choose this option. Early registration discount ends on Thursday night for all Saturday races, and Friday night for all Sunday races. Race day registration is available and will be online via your mobile device. Race Numbers- If you did not participate in the first race of the season, you must purchase a 2026 race numb",
+   "venue": "2500 Clement Blvd NW",
+   "city": "Hickory",
+   "state": "NC",
+   "lat": 35.7487164,
+   "lng": -81.3789764,
+   "image": "/BR/VirtualImages/EventLogos/03d6cca0-7e2b-415b-82c1-6c8a44732d58.png",
+   "discipline_hint": "Cyclocross",
+   "tags": [
+    "Cyclocross",
+    "NCCX"
+   ],
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "cx",
+   "uid": "6ce7ed1f4106eec0",
+   "distance_mi": 66.7,
+   "last_seen": "2026-08-31"
   },
   {
    "title": "We Shred Rock Creek",
@@ -740,7 +741,7 @@
    "discipline": "mtb",
    "uid": "0a67e54dee113b1a",
    "distance_mi": 27.4,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Pisgah DOUBLE DARE",
@@ -769,7 +770,38 @@
    "discipline": "mtb",
    "uid": "59bf1e39a66ae34b",
    "distance_mi": 26.3,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
+  },
+  {
+   "title": "2026 NORTH CAROLINA GRAND PRIX - R#1 & R#2 - NCCX Race #10 & Race #11 Hendersonville",
+   "start": "2026-11-21",
+   "end": "2026-11-22",
+   "all_day": true,
+   "url": "http://www.BikeReg.com/nccxncgp2026",
+   "description": "Review the event website here. The 2026 guide will be posted closer to the event date. Pre-registration for collegiate, category, master's, and elite racers is open online until Thursday, November 19, 2026, at 11:59 p.m. ET. UCI categories must pre-register. Day-of registration is available online for non-UCI races and closes 60 minutes before the start of each designated race. There is an additional $15 fee for the day of registration. All racers must collect a new bib number for the NCGP. Timing chips will remain the same for NCCX series racers. Staging and call-ups begin 15 minutes before each race start. Be prompt, as our UCI officials will be staging racers and strictly staying on schedule. The early bell and/or 80% rule will be in effect, so pay attention to your elapsed race time an",
+   "venue": "708 Glover St",
+   "city": "Hendersonville",
+   "state": "NC",
+   "lat": 35.3169908,
+   "lng": -82.4463546,
+   "image": "/BR/VirtualImages/EventLogos/cef3af9c-4de8-4e7c-bb39-4785dc3962a6.png",
+   "discipline_hint": "Cyclocross",
+   "tags": [
+    "Cyclocross",
+    "UCI Cyclocross Race",
+    "NCCX"
+   ],
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "cx",
+   "uid": "1ea4003af619eb35",
+   "distance_mi": 20.1,
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Go Nuts Biking Nut Gobbler XC",
@@ -799,7 +831,7 @@
    "discipline": "mtb",
    "uid": "5d605450c7d6e77a",
    "distance_mi": 63.3,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Pisgah Stage Race",
@@ -828,7 +860,7 @@
    "discipline": "mtb",
    "uid": "b96fc2f355480948",
    "distance_mi": 26.9,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Bootlegger",
@@ -858,7 +890,7 @@
    "discipline": "gravel",
    "uid": "f0fa19e43a2adce0",
    "distance_mi": 60.8,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Pisgah Mountain Bike Adventure Race",
@@ -887,7 +919,7 @@
    "discipline": "mtb",
    "uid": "996261671a499518",
    "distance_mi": 23.6,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Carolina Reaper Road Race",
@@ -916,7 +948,7 @@
    "discipline": "road",
    "uid": "6cb81637a4faee67",
    "distance_mi": 58.6,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "2027 Gran Fondo Asheville, p/b Applewood Manor Foundation, a SENA Gran Fondo National Series event",
@@ -946,7 +978,7 @@
    "discipline": "road",
    "uid": "19cc3e2cb7f4ed33",
    "distance_mi": 0.3,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "HARDford 50 and HARDERford 75",
@@ -975,7 +1007,7 @@
    "discipline": "gravel",
    "uid": "fbb7b952544d9b16",
    "distance_mi": 36.6,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "2027 Boone Gran Fondo, a SENA Gran Fondo National Series event",
@@ -1006,7 +1038,7 @@
    "discipline": "road",
    "uid": "eaf10f6e0cd70f9a",
    "distance_mi": 64.8,
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-08-30T14:26:34.759205+00:00",
+ "at": "2026-08-31T17:06:14.286934+00:00",
  "events": [
   {
    "title": "UCI Mountain Bike Continental Series \u2013 iXS European Downhill Cup Verbier",
@@ -7,7 +7,7 @@
    "end": "2026-09-13",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Continental Series Downhill event",
    "venue": "Verbier",
    "city": "Verbier",
    "state": "",
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "975aee90f5008d12",
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "UCI Mountain Bike Continental Series \u2013 DHI Araucania",
@@ -30,7 +30,7 @@
    "end": "2026-11-29",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Continental Series Downhill event",
    "venue": "Temuco",
    "city": "Temuco",
    "state": "",
@@ -41,11 +41,11 @@
    "source_url": "https://www.uci.org/",
    "trust": 60,
    "bucket": "world",
-   "category": "watch",
-   "category_basis": "default",
+   "category": "race",
+   "category_basis": "rule",
    "discipline": "mtb",
    "uid": "a429a749010fdf86",
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Crankworx - Mont-Saint-Anne Canada Cup - DHI/XCC/XCO",
@@ -53,7 +53,7 @@
    "end": "2026-09-07",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class event",
    "venue": "Mont-Sainte-Anne",
    "city": "Mont-Sainte-Anne",
    "state": "",
@@ -68,7 +68,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "ff826ef0397ce294",
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Skoda Swiss Bike Cup - XCO",
@@ -76,7 +76,7 @@
    "end": "2026-09-06",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class event",
    "venue": "Huttwil",
    "city": "Huttwil",
    "state": "",
@@ -91,7 +91,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "a136015d151cd5d3",
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Skoda Swiss Bike Cup Gr\u00e4nichen",
@@ -99,7 +99,7 @@
    "end": "2026-09-12",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class event",
    "venue": "Gr\u00e4nichen",
    "city": "Gr\u00e4nichen",
    "state": "",
@@ -114,7 +114,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "4bfbc331956a4a28",
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "La Forestiere - XCM",
@@ -122,7 +122,7 @@
    "end": "2026-09-19",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class event",
    "venue": "La Pesse",
    "city": "La Pesse",
    "state": "",
@@ -137,7 +137,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "d5f3ed6b7af30730",
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Extreme Sur Loue - XCM",
@@ -145,7 +145,7 @@
    "end": "2026-10-04",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class event",
    "venue": "Ornans",
    "city": "Ornans",
    "state": "",
@@ -160,7 +160,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "1b11e287915045b5",
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Roc D'azur - XCM",
@@ -168,7 +168,7 @@
    "end": "2026-10-10",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class event",
    "venue": "Fr\u00e9jus",
    "city": "Fr\u00e9jus",
    "state": "",
@@ -183,7 +183,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "3b613757ff568727",
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Serbia Epic Petrovaradin Fortress Bike Fest",
@@ -191,7 +191,7 @@
    "end": "2026-10-11",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "",
+   "description": "Hors Class event",
    "venue": "Novi Sad",
    "city": "Novi Sad",
    "state": "",
@@ -206,7 +206,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "22b56ec9aa45fc91",
-   "last_seen": "2026-08-30"
+   "last_seen": "2026-08-31"
   },
   {
    "title": "Czech MTB Cup",

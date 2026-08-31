@@ -1,4 +1,30 @@
 {
- "at": "2026-08-30T14:26:53.914965+00:00",
- "events": []
+ "at": "2026-08-31T17:06:34.437983+00:00",
+ "events": [
+  {
+   "title": "Fall Pop-Up Market",
+   "start": "2026-10-03T14:00:00",
+   "end": "2026-10-03T19:00:00",
+   "all_day": false,
+   "url": "https://www.blueridgeheritage.com/event/fall-pop-up-market/",
+   "description": "This is the 6th annual Fall Art and Craft Pop-up Market in the Reems Creek Pottery Studio parking lot. With over 20 vendors and lots of parking, it\u2019s a great place to start your holiday shopping or treat yourself to something special. Shop locally made by the people or who selling. There will be a variety of items from pottery (5 potters at Reems Creek Pottery), fine art, up cycled, tote bags, mittens, cards, crotchet, cork, jewelry, candles, soaps and more.",
+   "venue": "Reems Creek Pottery",
+   "city": "Weaverville",
+   "state": "NC",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.blueridgeheritage.com/wp-content/uploads/2026/08/fall-popup-marketing-square-1-e1788195692622.png",
+   "cost": "Free to attend.",
+   "source": "blue-ridge-heritage",
+   "source_name": "Blue Ridge National Heritage Area",
+   "source_url": "https://www.blueridgeheritage.com/",
+   "trust": 40,
+   "bucket": "local",
+   "category": "festival",
+   "category_basis": "default",
+   "discipline": "other",
+   "uid": "268c4fb8129679ec",
+   "last_seen": "2026-08-31"
+  }
+ ]
 }
