@@ -1,8 +1,8 @@
 {
- "at": "2026-08-31T17:05:04.171245+00:00",
+ "at": "2026-09-01T14:10:01.495915+00:00",
  "events": [
   {
-   "title": "Pisgah Rage Pre-season",
+   "title": "Pisgah Rage Pre-Season",
    "start": "2026-10-15",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
@@ -22,14 +22,14 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "2115f0c8d04aeced",
-   "last_seen": "2026-08-31"
+   "last_seen": "2026-09-01"
   },
   {
    "title": "Pisgah Rage Regular Season",
    "start": "2026-12-01",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with practices and races. January: indoor training. February: 1 weekend practice per week. March-May: 2 rides per week. Races begin in early March, typically 5-6 races across North Carolina through end of May.",
+   "description": "Runs 1 Dec 2026 to 30 May 2027. NICA regular season with practices and races. Indoor training in January, weekend practices in February, multiple rides per week March-May. Races start beginning of March with 5-6 races across North Carolina through end of May. Racing occurs on Sundays with Saturday pre-rides.",
    "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
@@ -41,11 +41,11 @@
    "source_url": "https://www.pisgahrage.com/",
    "trust": 50,
    "bucket": "local",
-   "category": "race",
+   "category": "youth",
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "670937aa0418b08a",
-   "last_seen": "2026-08-31"
+   "last_seen": "2026-09-01"
   }
  ]
 }
