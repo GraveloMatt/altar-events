@@ -1,5 +1,5 @@
 {
- "at": "2026-09-03T13:35:57.146784+00:00",
+ "at": "2026-09-04T13:33:15.562729+00:00",
  "events": [
   {
    "title": "CRAFTED The Bicycle & Gear Show",
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b6eff59b8929c1ed",
-   "last_seen": "2026-09-03"
+   "last_seen": "2026-09-04"
   },
   {
    "title": "Dirt Diggler Gravel Grinder",
@@ -45,7 +45,8 @@
    "category_basis": "rule",
    "discipline": "gravel",
    "uid": "53b43bf11b736a76",
-   "last_seen": "2026-09-03"
+   "last_seen": "2026-09-03",
+   "held_since": "2026-09-03"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-09-03T13:36:03.336749+00:00",
+ "at": "2026-09-04T13:33:20.159489+00:00",
  "events": [
   {
    "title": "October Group Ride + Social",
@@ -7,7 +7,7 @@
    "end": "2026-10-10T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in and around Old Fort. E-bikes are not allowed. Post-ride social at Foothills Watershed.",
+   "description": "Riding in and around Old Fort. E-bikes not allowed. Post-ride social at Foothills Watershed.",
    "venue": "Gateway Trails",
    "city": "Old Fort",
    "state": "NC",
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b150ddbea280cbb5",
-   "last_seen": "2026-09-03"
+   "last_seen": "2026-09-04"
   },
   {
    "title": "November Group Ride + Social",
@@ -30,7 +30,7 @@
    "end": "2026-11-14T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Pisgah. E-bikes are not allowed. Post-ride social at Oskar Blues Brewery.",
+   "description": "Riding in Pisgah. E-bikes not allowed. Post-ride social at Oskar Blues Brewery.",
    "venue": "Pisgah",
    "city": "Brevard",
    "state": "NC",
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e6ecfc09dd6c5bf2",
-   "last_seen": "2026-09-03"
+   "last_seen": "2026-09-04"
   },
   {
    "title": "December Group Ride + Social",
@@ -53,7 +53,7 @@
    "end": "2026-12-12T15:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Hot Springs. E-bikes are not allowed. Post-ride social at Big Pillow Brewing.",
+   "description": "Riding in Hot Springs. E-bikes not allowed. Post-ride social at Big Pillow Brewing.",
    "venue": "Hot Springs",
    "city": "Hot Springs",
    "state": "NC",
@@ -68,7 +68,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b68ee4e9e36aad4a",
-   "last_seen": "2026-09-03"
+   "last_seen": "2026-09-04"
   },
   {
    "title": "September Group Ride + Social",
