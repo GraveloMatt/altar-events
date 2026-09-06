@@ -7,34 +7,10 @@ X-WR-CALNAME:WNC Trail Work Days — Altar Cycles
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:Catalyst Summer Jam Lunch Crew
-DTSTART:20260905T113000
-DTEND:20260905T140000
-DTSTAMP:20260905T124635Z
-UID:6471d9f7df15cf50@altar.bike
-CATEGORIES:trail-work
-DESCRIPTION:We're looking for a few volunteers to help Pisgah Area SORBA c
- ook lunch at Catalyst Sports End of Summer Jam . We'll be grilling burgers
-  and hot dogs while representing PAS\, talking trails\, recruiting volunte
- ers\, and promoting upcoming work days. Catalyst Sports is a volunteer-led
-  nonprofit that empowers people with physical disabilities through adaptiv
- e adventure sports\, building confidence\, community\, and healthy\, activ
- e lives. This is a fun way to support the local riding community and help 
- spread the word about the work we're doing on the trails. Perks: • Free 
- Ride Kanuga bike park pass for the day • Hang out with riders\, racers\,
-  and volunteers • Help represent Pisgah Area SORBA at a great event Date
- : Saturday\, September 5th Time: 11:30 AM – 2:00 PM Location: Ride Kanug
- a If you're inte\n\nMore: https://www.pisgahareasorba.org/\n\nSource: Pisg
- ah Area SORBA\n\nListed by Altar Cycles — altar.bike/calendar
-LOCATION:Ride Kanuga\, Kanuga Lake Road\, Hendersonville\, NC\, USA\, Hend
- ersonville\, NC
-URL:https://www.pisgahareasorba.org/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Trail Talk Tuesday @ AMB Outpost in Old Fort
 DTSTART:20260908T173000
 DTEND:20260908T183000
-DTSTAMP:20260905T124635Z
+DTSTAMP:20260906T125617Z
 UID:251068c64d12ee65@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:More: https://www.g5trailcollective.org/volunteer\n\nSource: G
@@ -46,7 +22,7 @@ BEGIN:VEVENT
 SUMMARY:Lower Heartbreak Trail Day
 DTSTART:20260912T090000
 DTEND:20260912T140000
-DTSTAMP:20260905T124635Z
+DTSTAMP:20260906T125617Z
 UID:199f975dfbc75d0a@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Project: Drain cleaning. Corridor pruning & brushing.\n\nMore:
@@ -59,7 +35,7 @@ BEGIN:VEVENT
 SUMMARY:Women's Bikepacking Overnight w/ Earth Mountain!
 DTSTART:20260912T110000
 DTEND:20260913T150000
-DTSTAMP:20260905T124635Z
+DTSTAMP:20260906T125617Z
 UID:75f2fce441c009eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Women’s Overnight Bikepacking Trip with Earth Mountain! Join
@@ -83,7 +59,7 @@ BEGIN:VEVENT
 SUMMARY:Trek Tuesday - Star Gap Trail Day
 DTSTART:20260915T100000
 DTEND:20260915T140000
-DTSTAMP:20260905T124635Z
+DTSTAMP:20260906T125617Z
 UID:d4a4a537f44dcdd8@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Project: Steep section rock work.\n\nMore: https://www.g5trail
@@ -96,7 +72,7 @@ BEGIN:VEVENT
 SUMMARY:Brewin' Good Partners Pint Night
 DTSTART:20260924T170000
 DTEND:20260924T200000
-DTSTAMP:20260905T124635Z
+DTSTAMP:20260906T125617Z
 UID:2daf6a0314b5501d@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:G5 Trail Collective X AMB Outpost Old Fort\n\nMore: https://ww
@@ -109,7 +85,7 @@ BEGIN:VEVENT
 SUMMARY:G5 Fall Trail Weekend!
 DTSTART:20261106T150000
 DTEND:20261108T130000
-DTSTAMP:20260905T124635Z
+DTSTAMP:20260906T125617Z
 UID:950ebae34683eda4@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Pisgah Grandfather Outdoor Community & Stewardship Party! Volu
@@ -124,7 +100,7 @@ BEGIN:VEVENT
 SUMMARY:Fall Trail Weekend! Nov 6-8
 DTSTART:20261106T160000
 DTEND:20261108T130000
-DTSTAMP:20260905T124635Z
+DTSTAMP:20260906T125617Z
 UID:d1d99200ca490eae@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:More: https://www.g5trailcollective.org/volunteer\n\nSource: G

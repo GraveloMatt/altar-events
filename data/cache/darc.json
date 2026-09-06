@@ -1,12 +1,12 @@
 {
- "at": "2026-09-05T12:44:22.856703+00:00",
+ "at": "2026-09-06T12:53:51.273379+00:00",
  "events": [
   {
    "title": "CRAFTED The Bicycle & Gear Show",
    "start": "2026-09-26T00:00:00",
    "end": "2026-09-27T00:00:00",
    "all_day": false,
-   "url": "https://darccycling.com/calendar",
+   "url": "https://www.craftedbikeshow.com",
    "description": "A Bicycle and Gear Show celebrating handmade craft and independent makers across the Southeast. Saturday 10 a.m. to 5 p.m., Sunday 10 a.m. to 4 p.m. Features group rides, tours, live music, tattoos, food, libations, and kid- and family-friendly skills course. Admission is free and open to the public.",
    "venue": "Cane Creek Cycling Components",
    "city": "Fletcher",
@@ -22,31 +22,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b6eff59b8929c1ed",
-   "last_seen": "2026-09-05"
-  },
-  {
-   "title": "Dirt Diggler Gravel Grinder",
-   "start": "2026-09-05",
-   "end": "2026-09-05",
-   "all_day": true,
-   "url": "https://darccycling.com/calendar",
-   "description": "Featured Event",
-   "venue": "",
-   "city": "Hendersonville",
-   "state": "NC",
-   "cost": null,
-   "extracted_by": "llm",
-   "source": "darc",
-   "source_name": "Downtown Asheville Racing Club",
-   "source_url": "https://darccycling.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "race",
-   "category_basis": "rule",
-   "discipline": "gravel",
-   "uid": "53b43bf11b736a76",
-   "last_seen": "2026-09-03",
-   "held_since": "2026-09-03"
+   "last_seen": "2026-09-06"
   }
  ]
 }

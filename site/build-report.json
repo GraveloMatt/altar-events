@@ -1,7 +1,7 @@
 {
- "generated": "2026-09-05T12:46:35.883396+00:00",
- "total": 83,
- "world": 27,
+ "generated": "2026-09-06T12:56:17.433568+00:00",
+ "total": 81,
+ "world": 23,
  "needs_attention": [],
  "sources": {
   "asheville-on-bikes": {
@@ -10,7 +10,7 @@
    "fetched": 23,
    "kept": 7,
    "held": 0,
-   "at": "2026-09-05T12:44:08.013205+00:00"
+   "at": "2026-09-06T12:53:33.677951+00:00"
   },
   "asheville-on-bikes-pages": {
    "status": "ok",
@@ -18,7 +18,7 @@
    "fetched": 3,
    "kept": 0,
    "held": 0,
-   "at": "2026-09-05T12:44:16.647874+00:00"
+   "at": "2026-09-06T12:53:44.902396+00:00"
   },
   "asheville-on-bikes-rwgps": {
    "status": "failed",
@@ -34,9 +34,9 @@
    "status": "ok",
    "adapter": "llm",
    "fetched": 1,
-   "kept": 2,
-   "held": 1,
-   "at": "2026-09-05T12:44:22.856932+00:00"
+   "kept": 1,
+   "held": 0,
+   "at": "2026-09-06T12:53:51.273636+00:00"
   },
   "blue-ridge-dirt-skrrts": {
    "status": "ok",
@@ -44,7 +44,7 @@
    "fetched": 4,
    "kept": 4,
    "held": 1,
-   "at": "2026-09-05T12:44:29.646103+00:00"
+   "at": "2026-09-06T12:53:57.601014+00:00"
   },
   "gravelo-workshop": {
    "status": "ok",
@@ -52,15 +52,15 @@
    "fetched": 182,
    "kept": 12,
    "held": 0,
-   "at": "2026-09-05T12:44:30.173798+00:00"
+   "at": "2026-09-06T12:53:58.130495+00:00"
   },
   "velosports-ring-of-fire": {
    "status": "ok",
    "adapter": "llm",
-   "fetched": 1,
+   "fetched": 8,
    "kept": 0,
    "held": 0,
-   "at": "2026-09-05T12:44:33.328582+00:00"
+   "at": "2026-09-06T12:54:10.960903+00:00"
   },
   "blue-ridge-bicycle-club": {
    "status": "failed",
@@ -75,10 +75,10 @@
   "pisgah-area-sorba": {
    "status": "ok",
    "adapter": "volunteerhub",
-   "fetched": 4,
-   "kept": 2,
+   "fetched": 3,
+   "kept": 1,
    "held": 0,
-   "at": "2026-09-05T12:44:38.099260+00:00"
+   "at": "2026-09-06T12:54:15.738677+00:00"
   },
   "g5-trail-collective": {
    "status": "ok",
@@ -86,7 +86,7 @@
    "fetched": 6,
    "kept": 10,
    "held": 5,
-   "at": "2026-09-05T12:44:46.596318+00:00"
+   "at": "2026-09-06T12:54:27.318385+00:00"
   },
   "nica-nc": {
    "status": "off-season",
@@ -95,7 +95,7 @@
     "llm: returned 0 events"
    ],
    "cached_events": 0,
-   "cache_age_days": 14,
+   "cache_age_days": 15,
    "optional": false,
    "off_season": true
   },
@@ -105,7 +105,7 @@
     "llm: returned 0 events"
    ],
    "cached_events": 2,
-   "cache_age_days": 0,
+   "cache_age_days": 1,
    "optional": false,
    "off_season": true
   },
@@ -122,10 +122,10 @@
   "bikereg": {
    "status": "ok",
    "adapter": "bikereg",
-   "fetched": 50,
-   "kept": 37,
+   "fetched": 49,
+   "kept": 36,
    "held": 0,
-   "at": "2026-09-05T12:44:56.617525+00:00"
+   "at": "2026-09-06T12:54:35.539176+00:00"
   },
   "runsignup": {
    "status": "ok",
@@ -133,15 +133,15 @@
    "fetched": 250,
    "kept": 1,
    "held": 0,
-   "at": "2026-09-05T12:44:58.857974+00:00"
+   "at": "2026-09-06T12:54:37.782855+00:00"
   },
   "uci": {
    "status": "cached",
    "errors": [
     "llm: https://api.anthropic.com/v1/messages: HTTPSConnectionPool(host='api.anthropic.com', port=443): Read timed out. (read timeout=25)"
    ],
-   "cached_events": 27,
-   "cache_age_days": 2,
+   "cached_events": 23,
+   "cache_age_days": 3,
    "optional": true,
    "off_season": false
   },
@@ -151,7 +151,7 @@
    "fetched": 500,
    "kept": 1,
    "held": 0,
-   "at": "2026-09-05T12:46:35.489809+00:00"
+   "at": "2026-09-06T12:56:17.043989+00:00"
   }
  }
 }
