@@ -1,33 +1,9 @@
 {
- "at": "2026-09-07T15:04:13.433210+00:00",
+ "at": "2026-09-08T13:38:17.097470+00:00",
  "events": [
   {
-   "title": "Strive Not To Drive Week",
-   "start": "2027-05-01",
-   "end": "",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events",
-   "description": "Date not yet announced",
-   "venue": "",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": "Free",
-   "date_precision": "month",
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "group-ride",
-   "category_basis": "default",
-   "discipline": "other",
-   "uid": "26dba6bf08e3e357",
-   "last_seen": "2026-09-07"
-  },
-  {
    "title": "Bike Valet at Forestry Camp for Drive-By Truckers",
-   "start": "2026-09-07",
+   "start": "2026-09-08",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
@@ -47,11 +23,11 @@
    "category_basis": "default",
    "discipline": "commuter",
    "uid": "29840e2362a0ef56",
-   "last_seen": "2026-09-07"
+   "last_seen": "2026-09-08"
   },
   {
    "title": "Group Ride to Drive-By Truckers at Forestry Camp",
-   "start": "2026-09-07",
+   "start": "2026-09-08",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
@@ -71,15 +47,15 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "dfbd585de33a81e5",
-   "last_seen": "2026-09-07"
+   "last_seen": "2026-09-08"
   },
   {
-   "title": "Crafted Bike Show",
-   "start": "2026-09-07",
+   "title": "Crafted Bike Show - Southeast Handmade Bicycle & Gear Show",
+   "start": "2026-09-08",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
-   "description": "Southeast Handmade Bicycle & Gear Show",
+   "description": "",
    "venue": "",
    "city": "Asheville",
    "state": "NC",
@@ -94,8 +70,8 @@
    "category": "festival",
    "category_basis": "rule",
    "discipline": "other",
-   "uid": "0595169b11c58fac",
-   "last_seen": "2026-09-07"
+   "uid": "69efd846125d8658",
+   "last_seen": "2026-09-08"
   },
   {
    "title": "Tour de Fat",
@@ -119,7 +95,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "548f70215540a5da",
-   "last_seen": "2026-09-07"
+   "last_seen": "2026-09-08"
   },
   {
    "title": "Bike Valet at Forestry Camp for Burnpile",
@@ -143,7 +119,7 @@
    "category_basis": "default",
    "discipline": "commuter",
    "uid": "ee2e3dc469806832",
-   "last_seen": "2026-09-07"
+   "last_seen": "2026-09-08"
   },
   {
    "title": "Get There Asheville",
@@ -167,7 +143,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "1473187f58b65f1a",
-   "last_seen": "2026-09-07"
+   "last_seen": "2026-09-08"
   },
   {
    "title": "Pumpkin Pedaller",
@@ -191,7 +167,32 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "a4fb8fc562c30f55",
-   "last_seen": "2026-09-07"
+   "last_seen": "2026-09-08"
+  },
+  {
+   "title": "Strive Not To Drive Week",
+   "start": "2027-05-01",
+   "end": "",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "Date not yet announced",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "date_precision": "month",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "default",
+   "discipline": "other",
+   "uid": "26dba6bf08e3e357",
+   "last_seen": "2026-09-07",
+   "held_since": "2026-09-07"
   }
  ]
 }
