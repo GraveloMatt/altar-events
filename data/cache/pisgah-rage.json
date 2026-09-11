@@ -1,13 +1,13 @@
 {
- "at": "2026-09-10T13:37:12.205510+00:00",
+ "at": "2026-09-11T13:35:46.768683+00:00",
  "events": [
   {
    "title": "Pisgah Rage Pre-season",
    "start": "2026-10-15",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 15 Oct 2026 to 31 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and adventure rides. 2-3 social events and 1-2 adventure rides.",
-   "venue": "Bent Creek, Dupont, Asheville area",
+   "description": "Runs 15 Oct 2026 to 31 Dec 2026. Pre-season with 2-3 social events, rider assessment, bike shop night, parent meeting, and 1-2 adventure rides in Bent Creek or Dupont",
+   "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
    "cost": null,
@@ -22,15 +22,15 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "2115f0c8d04aeced",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Pisgah Rage Regular Season",
    "start": "2026-12-01",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with practices and races. Races typically start in early March with 5-6 races across North Carolina through the end of May. 2 rides per week March-May (1-2 weeknights after 5pm and weekend day practice). January includes 2-4 indoor training opportunities. February includes 1 weekend practice per week.",
-   "venue": "Asheville, North Carolina",
+   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with indoor training in January, weekly practices February-May, and 5-6 races across North Carolina starting in March",
+   "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
    "cost": null,
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "670937aa0418b08a",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   }
  ]
 }

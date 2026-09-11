@@ -1,14 +1,14 @@
 {
- "at": "2026-09-10T13:37:58.175434+00:00",
+ "at": "2026-09-11T13:36:18.988672+00:00",
  "events": [
   {
-   "title": "UCI Mountain Bike Continental Series \u2013 iXS European Downhill Cup Verbier",
+   "title": "UCI Mountain Bike Continental Series - iXS European Downhill Cup Verbier",
    "start": "2026-09-11",
    "end": "2026-09-13",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Continental Series Downhill event",
-   "venue": "Verbier",
+   "description": "Continental Series (CS) - iXS European Downhill Cup",
+   "venue": "",
    "city": "Verbier",
    "state": "",
    "cost": null,
@@ -22,16 +22,16 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "975aee90f5008d12",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
-   "title": "UCI Mountain Bike Continental Series \u2013 DHI Araucania",
+   "title": "UCI Mountain Bike Continental Series - DHI Araucania",
    "start": "2026-11-27",
    "end": "2026-11-29",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Continental Series Downhill event",
-   "venue": "Temuco",
+   "description": "Continental Series (CS)",
+   "venue": "",
    "city": "Temuco",
    "state": "",
    "cost": null,
@@ -41,11 +41,11 @@
    "source_url": "https://www.uci.org/",
    "trust": 60,
    "bucket": "world",
-   "category": "race",
-   "category_basis": "rule",
+   "category": "watch",
+   "category_basis": "default",
    "discipline": "mtb",
    "uid": "a429a749010fdf86",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Skoda Swiss Bike Cup Gr\u00e4nichen",
@@ -53,8 +53,8 @@
    "end": "2026-09-12",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class event",
-   "venue": "Gr\u00e4nichen",
+   "description": "Hors Class (HC)",
+   "venue": "",
    "city": "Gr\u00e4nichen",
    "state": "",
    "cost": null,
@@ -68,7 +68,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "4bfbc331956a4a28",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "La Forestiere - XCM",
@@ -76,8 +76,8 @@
    "end": "2026-09-19",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class mountain bike marathon event",
-   "venue": "La Pesse",
+   "description": "Hors Class (HC)",
+   "venue": "",
    "city": "La Pesse",
    "state": "",
    "cost": null,
@@ -89,9 +89,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "d5f3ed6b7af30730",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Extreme Sur Loue - XCM",
@@ -99,8 +99,8 @@
    "end": "2026-10-04",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class mountain bike marathon event",
-   "venue": "Ornans",
+   "description": "Hors Class (HC)",
+   "venue": "",
    "city": "Ornans",
    "state": "",
    "cost": null,
@@ -112,9 +112,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "1b11e287915045b5",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Roc D'azur - XCM",
@@ -122,8 +122,8 @@
    "end": "2026-10-10",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class mountain bike marathon event",
-   "venue": "Fr\u00e9jus",
+   "description": "Hors Class (HC)",
+   "venue": "",
    "city": "Fr\u00e9jus",
    "state": "",
    "cost": null,
@@ -135,9 +135,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "3b613757ff568727",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Serbia Epic Petrovaradin Fortress Bike Fest",
@@ -145,8 +145,8 @@
    "end": "2026-10-11",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class event",
-   "venue": "Novi Sad",
+   "description": "Hors Class (HC)",
+   "venue": "",
    "city": "Novi Sad",
    "state": "",
    "cost": null,
@@ -160,7 +160,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "22b56ec9aa45fc91",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Borovets Open Cup",
@@ -168,8 +168,8 @@
    "end": "2026-09-13",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 event",
-   "venue": "Borovets",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Borovets",
    "state": "",
    "cost": null,
@@ -183,8 +183,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "ec1ba83007fdf941",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "MTB French Cup - XCO/XCE",
@@ -192,8 +191,8 @@
    "end": "2026-09-13",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 event with Cross Country Olympic and Cross Country Eliminator formats",
-   "venue": "Brouains",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Brouains",
    "state": "",
    "cost": null,
@@ -207,8 +206,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "2552508be8846c64",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Rize MTB Cup - XCO",
@@ -216,8 +214,8 @@
    "end": "2026-09-13",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 Cross Country Olympic event",
-   "venue": "Rize",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Rize",
    "state": "",
    "cost": null,
@@ -231,8 +229,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "8dcd5d3bfa40fbe0",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Banyuwangi Ijen Geopark Downhill",
@@ -240,8 +237,8 @@
    "end": "2026-09-20",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 Downhill event",
-   "venue": "Banyuwangi",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Banyuwangi",
    "state": "",
    "cost": null,
@@ -255,8 +252,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "2f0fdc546271b309",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Karl XII Rittet",
@@ -264,8 +260,8 @@
    "end": "2026-09-20",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 event",
-   "venue": "Halden",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Halden",
    "state": "",
    "cost": null,
@@ -279,8 +275,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "9929387968dd97c6",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Cimtb #3 - Xco/Xcc/Xcm",
@@ -288,8 +283,8 @@
    "end": "2026-09-27",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 event with Cross Country Olympic, Cross Country Eliminator, and Cross Country Marathon formats",
-   "venue": "Congonhas",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Congonhas",
    "state": "",
    "cost": null,
@@ -301,10 +296,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "4830d2ae4274f4e3",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "iXS European Downhill Cup Bike Park Pohorje Maribor",
@@ -312,8 +306,8 @@
    "end": "2026-09-27",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 Downhill event",
-   "venue": "Maribor",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Maribor",
    "state": "",
    "cost": null,
@@ -327,8 +321,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "5c2b04c5d141b651",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Bike Marathon Pulm\u00f3n de Acero - XCM",
@@ -336,8 +329,8 @@
    "end": "2026-09-26",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 Cross Country Marathon event",
-   "venue": "Barakaldo",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Barakaldo",
    "state": "",
    "cost": null,
@@ -349,10 +342,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "a166d04d1ca00c9a",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "XCO Predolac",
@@ -360,8 +352,8 @@
    "end": "2026-09-27",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 Cross Country Olympic event",
-   "venue": "Metkovi\u0107",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Metkovi\u0107",
    "state": "",
    "cost": null,
@@ -373,10 +365,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "80734f6419d365cb",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Tierra Estella Epic - XCM",
@@ -384,9 +375,9 @@
    "end": "2026-10-03",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 Cross Country Marathon event",
-   "venue": "Ayegui \u2013 Aiegi",
-   "city": "Ayegui",
+   "description": "Class 1 (1)",
+   "venue": "",
+   "city": "Ayegui \u2013 Aiegi",
    "state": "",
    "cost": null,
    "extracted_by": "llm",
@@ -397,10 +388,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "6dacdc876df507c9",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Hammerstone - XCM/XCC",
@@ -408,8 +398,8 @@
    "end": "2026-10-18",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 event with Cross Country Marathon and Cross Country Eliminator formats",
-   "venue": "Valkenburg",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Valkenburg",
    "state": "",
    "cost": null,
@@ -421,10 +411,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "5dce7af735829c9e",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Triple Crown DH Mini Series #1",
@@ -432,8 +421,8 @@
    "end": "2026-10-27",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 Downhill event",
-   "venue": "Philo",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Philo",
    "state": "",
    "cost": null,
@@ -445,10 +434,9 @@
    "bucket": "world",
    "category": "race",
    "category_basis": "rule",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "527818bb77c43ff8",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Triple Crown DH Mini Series #2",
@@ -456,8 +444,8 @@
    "end": "2026-10-30",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 Downhill event",
-   "venue": "Philo",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Philo",
    "state": "",
    "cost": null,
@@ -469,10 +457,9 @@
    "bucket": "world",
    "category": "race",
    "category_basis": "rule",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "b5e54acdd0d8d51b",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Triple Crown DH Mini Series #3",
@@ -480,8 +467,8 @@
    "end": "2026-11-01",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 Downhill event",
-   "venue": "Philo",
+   "description": "Class 1 (1)",
+   "venue": "",
    "city": "Philo",
    "state": "",
    "cost": null,
@@ -493,10 +480,9 @@
    "bucket": "world",
    "category": "race",
    "category_basis": "rule",
-   "discipline": "mtb",
+   "discipline": "other",
    "uid": "718209fe0fac9f5e",
-   "last_seen": "2026-09-08",
-   "held_since": "2026-09-08"
+   "last_seen": "2026-09-11"
   }
  ]
 }

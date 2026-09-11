@@ -1,5 +1,5 @@
 {
- "at": "2026-09-10T13:37:06.929201+00:00",
+ "at": "2026-09-11T13:35:41.768836+00:00",
  "events": [
   {
    "title": "Lower Heartbreak Trail Day",
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "199f975dfbc75d0a",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Brewin' Good Partners Pint Night",
@@ -45,7 +45,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "2daf6a0314b5501d",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Women's + Trail Skills Workshop",
@@ -68,7 +68,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "58085b166d26dbaf",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "G5 Fall Trail Weekend!",
@@ -91,7 +91,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "950ebae34683eda4",
-   "last_seen": "2026-09-10"
+   "last_seen": "2026-09-11"
   },
   {
    "title": "Trek Tuesday - Star Gap Trail Day",
@@ -140,30 +140,6 @@
    "uid": "65a4e186a310b33a",
    "last_seen": "2026-09-04",
    "held_since": "2026-09-04"
-  },
-  {
-   "title": "Trail Skills Workshop for Women +",
-   "start": "2026-10-17T09:00:00",
-   "end": "2026-10-17T15:00:00",
-   "all_day": false,
-   "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Intro Class: Trail Maintenance 101. G5 Community Education Program. Registration Opens Friday, Sept 4 @ 7am.",
-   "venue": "Allison Trailhead Parking - Meetup",
-   "city": "Old Fort",
-   "state": "NC",
-   "cost": null,
-   "extracted_by": "llm",
-   "source": "g5-trail-collective",
-   "source_name": "G5 Trail Collective",
-   "source_url": "https://www.g5trailcollective.org/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "clinic",
-   "category_basis": "rule",
-   "discipline": "mtb",
-   "uid": "7f27ca02f9ead8b6",
-   "last_seen": "2026-09-03",
-   "held_since": "2026-09-03"
   }
  ]
 }
