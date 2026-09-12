@@ -1,5 +1,5 @@
 {
- "at": "2026-09-11T13:35:15.765595+00:00",
+ "at": "2026-09-12T12:52:08.878433+00:00",
  "events": [
   {
    "title": "October Group Ride + Social",
@@ -7,8 +7,8 @@
    "end": "2026-10-10T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in and around Old Fort. E-bikes not allowed. Post-ride social at Foothills Watershed (655 Catawba River Rd, Old Fort, NC 28762).",
-   "venue": "Gateway Trails",
+   "description": "Group ride in and around Old Fort with post-ride social at Foothills Watershed. No e-bikes allowed at this location.",
+   "venue": "Gateway Trails, Old Fort + Foothills Watershed",
    "city": "Old Fort",
    "state": "NC",
    "cost": null,
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b150ddbea280cbb5",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-12"
   },
   {
    "title": "November Group Ride + Social",
@@ -30,7 +30,7 @@
    "end": "2026-11-14T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Pisgah. E-bikes not allowed. Post-ride social at Oskar Blues Brewery (342 Mountain Industrial Dr, Brevard, NC 28712).",
+   "description": "Group ride in Pisgah with post-ride social at Oskar Blues Brewery. No e-bikes allowed at this location.",
    "venue": "Pisgah",
    "city": "Brevard",
    "state": "NC",
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e6ecfc09dd6c5bf2",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-12"
   },
   {
    "title": "December Group Ride + Social",
@@ -53,7 +53,7 @@
    "end": "2026-12-12T15:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Hot Springs. E-bikes not allowed. Post-ride social at Big Pillow Brewing (25-27 N Andrews Avenue, Hot Springs, NC 28743-9231).",
+   "description": "Group ride in Hot Springs with post-ride social at Big Pillow Brewing. No e-bikes allowed at this location.",
    "venue": "Hot Springs",
    "city": "Hot Springs",
    "state": "NC",
@@ -68,7 +68,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b68ee4e9e36aad4a",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-12"
   }
  ]
 }

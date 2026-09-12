@@ -1,9 +1,9 @@
 {
- "at": "2026-09-11T13:34:55.657266+00:00",
+ "at": "2026-09-12T12:51:48.483078+00:00",
  "events": [
   {
    "title": "Bike Valet at Forestry Camp for Drive-By Truckers",
-   "start": "2026-09-11",
+   "start": "2026-09-12",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
@@ -23,11 +23,11 @@
    "category_basis": "default",
    "discipline": "commuter",
    "uid": "29840e2362a0ef56",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-12"
   },
   {
    "title": "Group Ride to Drive-By Truckers at Forestry Camp",
-   "start": "2026-09-11",
+   "start": "2026-09-12",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
@@ -47,11 +47,11 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "dfbd585de33a81e5",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-12"
   },
   {
-   "title": "Crafted Bike Show - Southeast Handmade Bicycle & Gear Show",
-   "start": "2026-09-11",
+   "title": "Crafted Bike Show \u2013 Southeast Handmade Bicycle & Gear Show",
+   "start": "2026-09-12",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
@@ -71,7 +71,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "69efd846125d8658",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-12"
   },
   {
    "title": "Tour de Fat",
@@ -95,7 +95,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "548f70215540a5da",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-12"
   },
   {
    "title": "Bike Valet at Forestry Camp for Burnpile",
@@ -119,7 +119,31 @@
    "category_basis": "default",
    "discipline": "commuter",
    "uid": "ee2e3dc469806832",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-12"
+  },
+  {
+   "title": "World Mental Health Ride at Bear's Smokehouse",
+   "start": "2026-10-01",
+   "end": "",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "Ride gathers 10:30 am",
+   "venue": "Bear's Smokehouse",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "date_precision": "month",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "default",
+   "discipline": "other",
+   "uid": "0a759df2f1b97615",
+   "last_seen": "2026-09-12"
   },
   {
    "title": "Get There Asheville",
@@ -127,7 +151,7 @@
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
-   "description": "",
+   "description": "6 to 8 PM",
    "venue": "",
    "city": "Asheville",
    "state": "NC",
@@ -143,7 +167,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "1473187f58b65f1a",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-12"
   },
   {
    "title": "Pumpkin Pedaller",
@@ -167,7 +191,31 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "a4fb8fc562c30f55",
-   "last_seen": "2026-09-11"
+   "last_seen": "2026-09-12"
+  },
+  {
+   "title": "Smart Cycling Class",
+   "start": "2026-11-01",
+   "end": "",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "10 am \u2013 5 pm",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "date_precision": "month",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "clinic",
+   "category_basis": "rule",
+   "discipline": "other",
+   "uid": "d59523d7622bcc38",
+   "last_seen": "2026-09-12"
   },
   {
    "title": "Strive Not To Drive Week",

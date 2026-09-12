@@ -10,7 +10,7 @@ BEGIN:VEVENT
 SUMMARY:Lower Heartbreak Trail Day
 DTSTART:20260912T090000
 DTEND:20260912T140000
-DTSTAMP:20260911T133636Z
+DTSTAMP:20260912T125325Z
 UID:199f975dfbc75d0a@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Drain cleaning. Corridor pruning & brushing.\n\nMore: https://
@@ -23,7 +23,7 @@ BEGIN:VEVENT
 SUMMARY:Women's Bikepacking Overnight w/ Earth Mountain!
 DTSTART:20260912T110000
 DTEND:20260913T150000
-DTSTAMP:20260911T133636Z
+DTSTAMP:20260912T125325Z
 UID:75f2fce441c009eb@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Women’s Overnight Bikepacking Trip with Earth Mountain! Join
@@ -44,23 +44,10 @@ LOCATION:Jimmy Harris Railroad Depot Park\, Railroad Avenue\, Brevard\, NC
 URL:https://www.pisgahareasorba.org/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Trek Tuesday - Star Gap Trail Day
-DTSTART:20260915T100000
-DTEND:20260915T140000
-DTSTAMP:20260911T133636Z
-UID:d4a4a537f44dcdd8@altar.bike
-CATEGORIES:trail-work
-DESCRIPTION:Project: Steep section rock work.\n\nMore: https://www.g5trail
- collective.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by Altar
-  Cycles — altar.bike/calendar
-LOCATION:Star Gap Access - Graphite Road\, Old Fort\, NC
-URL:https://www.g5trailcollective.org/volunteer
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Brewin' Good Partners Pint Night
 DTSTART:20260924T170000
 DTEND:20260924T200000
-DTSTAMP:20260911T133636Z
+DTSTAMP:20260912T125325Z
 UID:2daf6a0314b5501d@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:G5 Trail Collective X AMB Outpost Old Fort\n\nMore: https://ww
@@ -73,7 +60,7 @@ BEGIN:VEVENT
 SUMMARY:G5 Fall Trail Weekend!
 DTSTART:20261106T150000
 DTEND:20261108T130000
-DTSTAMP:20260911T133636Z
+DTSTAMP:20260912T125325Z
 UID:950ebae34683eda4@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Pisgah Grandfather Outdoor Community & Stewardship Party! Volu
