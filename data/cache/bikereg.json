@@ -1,65 +1,6 @@
 {
- "at": "2026-09-12T12:52:40.222607+00:00",
+ "at": "2026-09-13T13:49:38.348753+00:00",
  "events": [
-  {
-   "title": "Pisgah Monster-Cross Challenge",
-   "start": "2026-09-12",
-   "end": "2026-09-12",
-   "all_day": true,
-   "url": "http://www.BikeReg.com/pisgah-monster-cross-challenge-2026",
-   "description": "The Pisgah Monster-Cross Challenge is the premiere all-road racing event in the region. Participants are challenged to complete a 69.2 mile course with 8,777\u2019of climbing along scenic gravel and paved roads. The riders will be treated to some of the finest gravel roads in the Pisgah and Nantahala National Forests, which is a one-of-a-kind opportunity in the racing world. Monster-Cross is a dream gravel endurance event where keen race tactics and strategy, along with overall fitness, proper gear selection, and sheer luck are key to success. There will be three Rest Areas along the way that will be stocked with water, food (PB&J, fruit, salty snacks, sweet snacks, bars), first aid, and neutral mechanical support. Racers will be covering a lot of ground on the map, riding through some of the m",
-   "venue": "1284 Pisgah Hwy",
-   "city": "Pisgah Forest",
-   "state": "NC",
-   "lat": 35.2830246,
-   "lng": -82.7218935,
-   "image": "/BR/VirtualImages/EventLogos/b48fe780-de5a-4b37-acf0-6baf3bf66b5b.png",
-   "discipline_hint": "Gravel",
-   "tags": [
-    "Gravel",
-    "Road Race"
-   ],
-   "source": "bikereg",
-   "source_name": "BikeReg",
-   "source_url": "https://www.bikereg.com/",
-   "trust": 60,
-   "bucket": "local",
-   "category": "festival",
-   "category_basis": "rule",
-   "discipline": "gravel",
-   "uid": "005472d939111204",
-   "distance_mi": 23.6,
-   "last_seen": "2026-09-12"
-  },
-  {
-   "title": "Gravity Carolinas DH RD 3 Ride Rock Creek",
-   "start": "2026-09-12",
-   "end": "2026-09-13",
-   "all_day": true,
-   "url": "http://www.BikeReg.com/gcdh3",
-   "description": "EVENT CAPACITY 200 Racers Registration for each event will only be available online. There is NO ONSITE REGISTRATION. Race registration will close at 11:59pm thursday night before the race. Number plates/timing chips will be available for pickup at rider check in. For all other event details https://www.gravitycarolinas.com/downhill ***Please email info@dialedevents.com for other Gravity Carolinas sponsor opportunities. Presented by Dialed Events",
-   "venue": "298 W Rock Creek Rd",
-   "city": "Zirconia",
-   "state": "NC",
-   "lat": 35.1990482,
-   "lng": -82.5074104,
-   "image": "/BR/VirtualImages/EventLogos/ac66e9e5-9e6f-4edf-ad1a-7414c7656bac.png",
-   "discipline_hint": "Mountain Bike",
-   "tags": [
-    "Mountain Bike"
-   ],
-   "source": "bikereg",
-   "source_name": "BikeReg",
-   "source_url": "https://www.bikereg.com/",
-   "trust": 60,
-   "bucket": "local",
-   "category": "race",
-   "category_basis": "rule",
-   "discipline": "mtb",
-   "uid": "1446d149ac9ba226",
-   "distance_mi": 27.5,
-   "last_seen": "2026-09-12"
-  },
   {
    "title": "NCCX Pre-Season Skills Clinics 2026",
    "start": "2026-09-13",
@@ -89,7 +30,7 @@
    "discipline": "cx",
    "uid": "bbf6b38b2e5ea38d",
    "distance_mi": 6.9,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -118,7 +59,7 @@
    "discipline": "cx",
    "uid": "2c8aa0d648484ac3",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -147,7 +88,7 @@
    "discipline": "cx",
    "uid": "82ab5a481026f2a7",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -176,7 +117,7 @@
    "discipline": "cx",
    "uid": "03009b517bb77e7e",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Thank you! 12th annual Dancing Bear Bike Bash is sold out! USA Cycling Permit #16238",
@@ -206,7 +147,7 @@
    "discipline": "other",
    "uid": "0d5dcfaa94feb9c3",
    "distance_mi": 69.4,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Gravity Carolinas DH RD 4 WIldside",
@@ -235,7 +176,7 @@
    "discipline": "mtb",
    "uid": "74961cf476e0181f",
    "distance_mi": 58.5,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Collegiate MTB Challenge at Lees-McRae College",
@@ -264,7 +205,7 @@
    "discipline": "mtb",
    "uid": "adbfc7b222862cb8",
    "distance_mi": 54.3,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "NCCX Pre-season - Ride Rock Creek",
@@ -294,7 +235,7 @@
    "discipline": "cx",
    "uid": "3a00b4b477eb29e6",
    "distance_mi": 27.5,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "DARC September 20 Road Social Ride",
@@ -323,7 +264,7 @@
    "discipline": "road",
    "uid": "8ec6c8f0f0dc3d6a",
    "distance_mi": 2.1,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Pisgah Bikeboom 2026",
@@ -353,7 +294,7 @@
    "discipline": "mtb",
    "uid": "7ea8cf13a1f20b18",
    "distance_mi": 23.8,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2026 Ride to the Rock",
@@ -384,7 +325,7 @@
    "discipline": "road",
    "uid": "f386287547fbc4ba",
    "distance_mi": 49.9,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "SECCC Conference Championships at Ride Rock Creek",
@@ -413,7 +354,7 @@
    "discipline": "mtb",
    "uid": "c2e3c2a0c6471d35",
    "distance_mi": 27.5,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "NCCX Pre-season - Cane Creek",
@@ -443,7 +384,7 @@
    "discipline": "cx",
    "uid": "567c411f65a716bf",
    "distance_mi": 11.0,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Downtown Asheville Racing Club (DARC)/Asheville Youth Cycling (AYC) 2026 Membership",
@@ -472,7 +413,7 @@
    "discipline": "other",
    "uid": "85b38b92bf08ad51",
    "distance_mi": 0.3,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Pisgah 111 / 555",
@@ -502,7 +443,7 @@
    "discipline": "mtb",
    "uid": "c6d05d9f51734aa6",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2026 Gran Fondo Hincapie-Greenville",
@@ -532,7 +473,7 @@
    "discipline": "road",
    "uid": "f2acb77c16a22d1c",
    "distance_mi": 34.5,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2026 NCCX Race #3 Boone",
@@ -562,7 +503,7 @@
    "discipline": "cx",
    "uid": "0b3f52f489b0c6d2",
    "distance_mi": 68.0,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2026 BRAGco Cycling Event",
@@ -592,7 +533,7 @@
    "discipline": "other",
    "uid": "743ac628878c17c6",
    "distance_mi": 42.2,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "The Middle Fork Fondo 2026",
@@ -622,7 +563,7 @@
    "discipline": "road",
    "uid": "0186abed2e6b428b",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Couch Potato",
@@ -651,7 +592,7 @@
    "discipline": "mtb",
    "uid": "2e02b8a758b849f1",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Swank 65",
@@ -680,7 +621,7 @@
    "discipline": "mtb",
    "uid": "808d5262f339b592",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2026 NCCX Race #8 Hickory",
@@ -710,7 +651,7 @@
    "discipline": "cx",
    "uid": "6ce7ed1f4106eec0",
    "distance_mi": 66.7,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "We Shred Rock Creek",
@@ -740,7 +681,7 @@
    "discipline": "mtb",
    "uid": "0a67e54dee113b1a",
    "distance_mi": 27.4,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Pisgah DOUBLE DARE",
@@ -769,7 +710,7 @@
    "discipline": "mtb",
    "uid": "59bf1e39a66ae34b",
    "distance_mi": 26.3,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2026 NORTH CAROLINA GRAND PRIX - R#1 & R#2 - NCCX Race #10 & Race #11 Hendersonville",
@@ -800,7 +741,7 @@
    "discipline": "cx",
    "uid": "1ea4003af619eb35",
    "distance_mi": 20.1,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Go Nuts Biking Nut Gobbler XC",
@@ -830,7 +771,7 @@
    "discipline": "mtb",
    "uid": "5d605450c7d6e77a",
    "distance_mi": 63.3,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Pisgah Stage Race",
@@ -859,7 +800,7 @@
    "discipline": "mtb",
    "uid": "b96fc2f355480948",
    "distance_mi": 26.9,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Bootlegger",
@@ -889,7 +830,7 @@
    "discipline": "gravel",
    "uid": "f0fa19e43a2adce0",
    "distance_mi": 60.8,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Pisgah Mountain Bike Adventure Race",
@@ -918,7 +859,7 @@
    "discipline": "mtb",
    "uid": "996261671a499518",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "Carolina Reaper Road Race",
@@ -947,7 +888,7 @@
    "discipline": "road",
    "uid": "6cb81637a4faee67",
    "distance_mi": 58.6,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2027 Gran Fondo Asheville, p/b Applewood Manor Foundation, a SENA Gran Fondo National Series event",
@@ -977,7 +918,7 @@
    "discipline": "road",
    "uid": "19cc3e2cb7f4ed33",
    "distance_mi": 0.3,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "HARDford 50 and HARDERford 75",
@@ -1006,7 +947,7 @@
    "discipline": "gravel",
    "uid": "fbb7b952544d9b16",
    "distance_mi": 36.6,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
   },
   {
    "title": "2027 Boone Gran Fondo, a SENA Gran Fondo National Series event",
@@ -1037,7 +978,97 @@
    "discipline": "road",
    "uid": "eaf10f6e0cd70f9a",
    "distance_mi": 64.8,
-   "last_seen": "2026-09-12"
+   "last_seen": "2026-09-13"
+  },
+  {
+   "title": "Old Fort Fifty",
+   "start": "2027-08-14",
+   "end": "2027-08-14",
+   "all_day": true,
+   "url": "http://www.BikeReg.com/old-fort-fifty-2027",
+   "description": "The Old Fort Fifty will be held on the rugged, legendary trails that have made the area famous in the mountain bike world while also incorporating some newer trails recently built by the G5 Trail Collective. While the 30.9 mile distance is on the shorter side for an endurance race, don't fool yourself into thinking this is going to be a walk in the park. You will be served up a heaping helping of elevation gain, climbing 4874 feet and descending an equal amount over fast and technical chunky terrain as well as some super omega flow. There will be two rest areas along the way (Mile 13 and 23.5) stocked with plenty of water and snacks. The Old Fort Fifty will be open to cyclists AND runners! Starting and finishing at Camp Grier, racers will first head over to the Gateway Trail System, an inc",
+   "venue": "985 Camp Grier Rd",
+   "city": "Old Fort",
+   "state": "NC",
+   "lat": 35.6462044,
+   "lng": -82.1927674,
+   "image": "/BR/VirtualImages/EventLogos/58ec9c72-048c-436c-a439-6ea563f3c9e7.png",
+   "discipline_hint": "Mountain Bike",
+   "tags": [
+    "Mountain Bike",
+    "Mountain Bike"
+   ],
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "574c90ce85701ccd",
+   "distance_mi": 20.5,
+   "last_seen": "2026-09-13"
+  },
+  {
+   "title": "Pisgah Enduro",
+   "start": "2027-08-15",
+   "end": "2027-08-15",
+   "all_day": true,
+   "url": "http://www.BikeReg.com/pisgah-enduro-2027",
+   "description": "High-speed East Coast technical rocky rooty singletrack ENDURO racing in Pisgah National Forest, around Old Fort, along the steep escarpment of the Blue Ridge Mountains. With dizzying vertical descents to quad-crushing climbs, you will ride a roller coaster that puts this region on the map for the downhill minded. The venue is an actual Summer Camp. There\u2019s a lake, pump track, post-race cookout, and more! Choose bunkhouse or car/tent camping and spend the weekend racing and enjoying life! The course starts in the shadow of the highest peak East of the Mississippi , Mount Mitchell, on the legendary Heartbreak Ridge trail. Stage one and two drop over 3000' elevation in a combined 4.5 miles. Stage three follows with the most amazing trail that parallels Interstate 40\u2026 Kitsuma, and descends an",
+   "venue": "985 Camp Grier Rd",
+   "city": "Old Fort",
+   "state": "NC",
+   "lat": 35.646372,
+   "lng": -82.192121,
+   "image": "/BR/VirtualImages/EventLogos/f006719e-caa8-439a-bf04-d09c40c1b835.png",
+   "discipline_hint": "Mountain Bike",
+   "tags": [
+    "Mountain Bike",
+    "Time Trial"
+   ],
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "903f0caa2f7afb82",
+   "distance_mi": 20.5,
+   "last_seen": "2026-09-13"
+  },
+  {
+   "title": "Pisgah Monster-Cross Challenge",
+   "start": "2027-09-11",
+   "end": "2027-09-11",
+   "all_day": true,
+   "url": "http://www.BikeReg.com/pisgah-monster-cross-challenge-2027",
+   "description": "The Pisgah Monster-Cross Challenge is the premiere all-road racing event in the region. Participants are challenged to complete a 69.2 mile course with 8,777\u2019of climbing along scenic gravel and paved roads. The riders will be treated to some of the finest gravel roads in the Pisgah and Nantahala National Forests, which is a one-of-a-kind opportunity in the racing world. Monster-Cross is a dream gravel endurance event where keen race tactics and strategy, along with overall fitness, proper gear selection, and sheer luck are key to success. There will be three Rest Areas along the way that will be stocked with water, food (PB&J, fruit, salty snacks, sweet snacks, bars), first aid, and neutral mechanical support. Racers will be covering a lot of ground on the map, riding through some of the m",
+   "venue": "1284 Pisgah Hwy",
+   "city": "Pisgah Forest",
+   "state": "NC",
+   "lat": 35.2830246,
+   "lng": -82.7218935,
+   "image": "/BR/VirtualImages/EventLogos/b48fe780-de5a-4b37-acf0-6baf3bf66b5b.png",
+   "discipline_hint": "Gravel",
+   "tags": [
+    "Gravel",
+    "Road Race"
+   ],
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "festival",
+   "category_basis": "rule",
+   "discipline": "gravel",
+   "uid": "b200a71231055f5c",
+   "distance_mi": 23.6,
+   "last_seen": "2026-09-13"
   }
  ]
 }
