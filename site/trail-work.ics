@@ -7,34 +7,10 @@ X-WR-CALNAME:WNC Trail Work Days — Altar Cycles
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:Women's Bikepacking Overnight w/ Earth Mountain!
-DTSTART:20260912T110000
-DTEND:20260913T150000
-DTSTAMP:20260913T135024Z
-UID:75f2fce441c009eb@altar.bike
-CATEGORIES:trail-work
-DESCRIPTION:Women’s Overnight Bikepacking Trip with Earth Mountain! Join
-  us for a women’s overnight bikepacking adventure through Pisgah Nationa
- l Forest with Earth Mountain! This bikepacking trip is a great opportunity
-  to learn the basics\, spend a night in the woods\, and connect with other
-  women who love riding and exploring. The total route is approximately 39 
- miles with 3\,770 feet of climbing \, with about 1\,500 feet of climbing e
- ach day. The route includes options for gravel and single track\, so both 
- gravel and mountain bikes are welcome! Route : Looking Glass Loop Overnigh
- t What to Expect: Bring the good vibes: We're always stoked to be in bikin
- g and camping in the woods\, and even moreso to share it with a rad group 
- of ladies. Bring your own food: You’ll be responsible for bringing your 
- food for th\n\nMore: https://www.pisgahareasorba.org/\n\nSource: Pisgah Ar
- ea SORBA\n\nListed by Altar Cycles — altar.bike/calendar
-LOCATION:Jimmy Harris Railroad Depot Park\, Railroad Avenue\, Brevard\, NC
- \, USA\, Brevard\, NC
-URL:https://www.pisgahareasorba.org/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Brewin' Good Partners Pint Night
 DTSTART:20260924T170000
 DTEND:20260924T200000
-DTSTAMP:20260913T135024Z
+DTSTAMP:20260914T155500Z
 UID:2daf6a0314b5501d@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:G5 Trail Collective X AMB Outpost Old Fort\n\nMore: https://ww
@@ -47,7 +23,7 @@ BEGIN:VEVENT
 SUMMARY:G5 Fall Trail Weekend!
 DTSTART:20261106T150000
 DTEND:20261108T130000
-DTSTAMP:20260913T135024Z
+DTSTAMP:20260914T155500Z
 UID:950ebae34683eda4@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Pisgah Grandfather Outdoor Community & Stewardship Party! Volu

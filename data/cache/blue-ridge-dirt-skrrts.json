@@ -1,10 +1,10 @@
 {
- "at": "2026-09-13T13:49:01.378029+00:00",
+ "at": "2026-09-14T15:54:13.984421+00:00",
  "events": [
   {
    "title": "October Group Ride + Social",
-   "start": "2026-10-10T00:00:00",
-   "end": "2026-10-10T00:00:00",
+   "start": "2026-10-10T10:00:00",
+   "end": "2026-10-10T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
    "description": "Riding in and around Old Fort. Post-ride social at Foothills Watershed. E-bikes not allowed.",
@@ -22,12 +22,12 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b150ddbea280cbb5",
-   "last_seen": "2026-09-13"
+   "last_seen": "2026-09-14"
   },
   {
    "title": "November Group Ride + Social",
-   "start": "2026-11-14T00:00:00",
-   "end": "2026-11-14T00:00:00",
+   "start": "2026-11-14T10:00:00",
+   "end": "2026-11-14T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
    "description": "Riding in Pisgah. Post-ride social at Oskar Blues Brewery. E-bikes not allowed.",
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e6ecfc09dd6c5bf2",
-   "last_seen": "2026-09-13"
+   "last_seen": "2026-09-14"
   },
   {
    "title": "December Group Ride + Social",
@@ -68,7 +68,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b68ee4e9e36aad4a",
-   "last_seen": "2026-09-13"
+   "last_seen": "2026-09-14"
   }
  ]
 }
