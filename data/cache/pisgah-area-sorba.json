@@ -1,4 +1,26 @@
 {
- "at": "2026-09-14T15:54:21.847709+00:00",
- "events": []
+ "at": "2026-09-15T14:20:42.772092+00:00",
+ "events": [
+  {
+   "title": "Carolina Mountain Club Joint Work Day",
+   "start": "2026-10-09T08:30:00",
+   "end": "2026-10-09T14:00:00",
+   "all_day": false,
+   "url": "https://www.pisgahareasorba.org/",
+   "description": "Join Carolina Mountain Club and Pisgah Area SORBA for a joint work day on the north side of Pink Beds! No experience is necessary - the Carolina Mountain Club and Pisgah SORBA Trail Crew Leaders will provide all tools, guidance, and instruction. We\u2019ll meet at the new paved parking lot next to the Ranger Station and carpool up to Pink Beds. Date: Friday, October 9th Time: 8:30 AM \u2013 2:00 PM Trail Work Location: North side of Pink Beds Loop Meetup Location: Pisgah Ranger Station/Visitor Center Required items: Long pants, boots that cover your ankles, safety glasses, gloves, hardhat (bike helmets DO NOT count, but climbing helmets do), snacks/lunch and water. Note: Hardhats, gloves and safety glasses can be provided if needed. All tools will be provided. Come help our two trail organizations g",
+   "venue": "Pisgah Ranger Station/Visitor Center, Pisgah Highway, Pisgah Forest, NC, USA",
+   "city": "Pisgah Forest",
+   "state": "NC",
+   "source": "pisgah-area-sorba",
+   "source_name": "Pisgah Area SORBA",
+   "source_url": "https://www.pisgahareasorba.org/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "trail-work",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "798af262c46ed07e",
+   "last_seen": "2026-09-15"
+  }
+ ]
 }
