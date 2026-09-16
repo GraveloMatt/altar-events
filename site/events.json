@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-15T14:21:29.412808+00:00",
- "count": 77,
+ "generated": "2026-09-16T14:13:51.718542+00:00",
+ "count": 76,
  "events": [
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -29,79 +29,7 @@
    "discipline": "cx",
    "uid": "2c8aa0d648484ac3",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-15"
-  },
-  {
-   "title": "Bike Valet at Forestry Camp for Drive-By Truckers",
-   "start": "2026-09-15",
-   "end": "",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events",
-   "description": "",
-   "venue": "Forestry Camp",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": "Free",
-   "date_precision": "month",
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "group-ride",
-   "category_basis": "default",
-   "discipline": "commuter",
-   "uid": "29840e2362a0ef56",
-   "last_seen": "2026-09-15"
-  },
-  {
-   "title": "Group Ride to Drive-By Truckers at Forestry Camp",
-   "start": "2026-09-15",
-   "end": "",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events",
-   "description": "",
-   "venue": "Forestry Camp",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": "Free",
-   "date_precision": "month",
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "group-ride",
-   "category_basis": "rule",
-   "discipline": "other",
-   "uid": "dfbd585de33a81e5",
-   "last_seen": "2026-09-15"
-  },
-  {
-   "title": "Crafted Bike Show \u2013 Southeast Handmade Bicycle & Gear Show",
-   "start": "2026-09-15",
-   "end": "",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events",
-   "description": "",
-   "venue": "",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": null,
-   "date_precision": "month",
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "festival",
-   "category_basis": "rule",
-   "discipline": "other",
-   "uid": "69efd846125d8658",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Rumble on the River 3 of 3",
@@ -130,7 +58,55 @@
    "discipline": "road",
    "uid": "ca399f58a0c2e5b2",
    "distance_mi": 2.5,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
+  },
+  {
+   "title": "Group Ride to Drive-By Truckers at Forestry Camp",
+   "start": "2026-09-16",
+   "end": "",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "",
+   "venue": "Forestry Camp",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": "Free",
+   "date_precision": "month",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "group-ride",
+   "category_basis": "rule",
+   "discipline": "other",
+   "uid": "dfbd585de33a81e5",
+   "last_seen": "2026-09-16"
+  },
+  {
+   "title": "Crafted Bike Show \u2013 Southeast Handmade Bicycle & Gear Show",
+   "start": "2026-09-16",
+   "end": "",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": null,
+   "date_precision": "month",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "festival",
+   "category_basis": "rule",
+   "discipline": "other",
+   "uid": "69efd846125d8658",
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Gravelo Wednesday Shop Ride",
@@ -172,7 +148,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "db6a24a5f8313785",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Thank you! 12th annual Dancing Bear Bike Bash is sold out! USA Cycling Permit #16238",
@@ -202,7 +178,7 @@
    "discipline": "other",
    "uid": "0d5dcfaa94feb9c3",
    "distance_mi": 69.4,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Gravity Carolinas DH RD 4 WIldside",
@@ -231,7 +207,7 @@
    "discipline": "mtb",
    "uid": "74961cf476e0181f",
    "distance_mi": 58.5,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Collegiate MTB Challenge at Lees-McRae College",
@@ -260,7 +236,7 @@
    "discipline": "mtb",
    "uid": "adbfc7b222862cb8",
    "distance_mi": 54.3,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "NCCX Pre-season - Ride Rock Creek",
@@ -290,7 +266,7 @@
    "discipline": "cx",
    "uid": "3a00b4b477eb29e6",
    "distance_mi": 27.5,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "DARC September 20 Road Social Ride",
@@ -319,7 +295,7 @@
    "discipline": "road",
    "uid": "8ec6c8f0f0dc3d6a",
    "distance_mi": 2.1,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -348,7 +324,7 @@
    "discipline": "cx",
    "uid": "82ab5a481026f2a7",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Gravelo Wednesday Shop Ride",
@@ -391,7 +367,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "2daf6a0314b5501d",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Pisgah Bikeboom 2026",
@@ -421,7 +397,7 @@
    "discipline": "mtb",
    "uid": "7ea8cf13a1f20b18",
    "distance_mi": 23.8,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "9:30am Bakery Ride B Group Start at Gravelo",
@@ -443,7 +419,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "b56db3e5933cf72e",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "2026 Ride to the Rock",
@@ -474,7 +450,7 @@
    "discipline": "road",
    "uid": "f386287547fbc4ba",
    "distance_mi": 49.9,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "SECCC Conference Championships at Ride Rock Creek",
@@ -503,7 +479,7 @@
    "discipline": "mtb",
    "uid": "c2e3c2a0c6471d35",
    "distance_mi": 27.5,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "CRAFTED The Bicycle & Gear Show",
@@ -511,7 +487,7 @@
    "end": "2026-09-27T00:00:00",
    "all_day": false,
    "url": "https://www.craftedbikeshow.com",
-   "description": "A bicycle and gear show celebrating handmade craft and independent makers across the Southeast. Saturday 10 a.m. to 5 p.m., Sunday 10 a.m. to 4 p.m. Features group rides, tours, live music, tattoos, food, and libations. Kid- and family-friendly skills course. Free admission.",
+   "description": "A Bicycle and Gear Show celebrating handmade craft and independent makers across the Southeast. Saturday 10 a.m. to 5 p.m., Sunday 10 a.m. to 4 p.m. Features group rides, tours, live music, tattoos, food, libations, and kid- and family-friendly skills course.",
    "venue": "Cane Creek Cycling Components",
    "city": "Fletcher",
    "state": "NC",
@@ -526,7 +502,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b6eff59b8929c1ed",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "NCCX Pre-season - Cane Creek",
@@ -556,7 +532,7 @@
    "discipline": "cx",
    "uid": "567c411f65a716bf",
    "distance_mi": 11.0,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -585,7 +561,7 @@
    "discipline": "cx",
    "uid": "03009b517bb77e7e",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Downtown Asheville Racing Club (DARC)/Asheville Youth Cycling (AYC) 2026 Membership",
@@ -614,7 +590,7 @@
    "discipline": "other",
    "uid": "85b38b92bf08ad51",
    "distance_mi": 0.3,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Gravelo Wednesday Shop Ride",
@@ -658,7 +634,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "548f70215540a5da",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Bike Valet at Forestry Camp for Burnpile",
@@ -682,7 +658,7 @@
    "category_basis": "default",
    "discipline": "commuter",
    "uid": "ee2e3dc469806832",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "World Mental Health Ride at Bear's Smokehouse",
@@ -706,7 +682,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "0a759df2f1b97615",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Get There Asheville",
@@ -714,7 +690,7 @@
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
-   "description": "6 to 8 PM. City Council Candidate Forum",
+   "description": "6 to 8 PM",
    "venue": "",
    "city": "Asheville",
    "state": "NC",
@@ -726,11 +702,11 @@
    "source_url": "https://ashevilleonbikes.com/",
    "trust": 80,
    "bucket": "local",
-   "category": "advocacy",
-   "category_basis": "rule",
+   "category": "group-ride",
+   "category_basis": "default",
    "discipline": "other",
    "uid": "1473187f58b65f1a",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Pumpkin Pedaller",
@@ -754,7 +730,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "a4fb8fc562c30f55",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "9:30am Bakery Ride B Group Start at Gravelo",
@@ -776,7 +752,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "35d25ce21eb7a760",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Pisgah 111 / 555",
@@ -806,7 +782,7 @@
    "discipline": "mtb",
    "uid": "c6d05d9f51734aa6",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Fall Pop-Up Market",
@@ -831,7 +807,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "268c4fb8129679ec",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Gravelo Wednesday Shop Ride",
@@ -872,7 +848,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "798af262c46ed07e",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "9:30am Bakery Ride B Group Start at Gravelo",
@@ -894,7 +870,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "54bc1e3cf1e43fce",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "October Group Ride + Social",
@@ -902,7 +878,7 @@
    "end": "2026-10-10T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in and around Old Fort. Post-ride social at Foothills Watershed. E-bikes not allowed. Multiple ride levels: Foundation, Chill, Chill Plus, Modrrt, Silver Shredders.",
+   "description": "Riding in and around Old Fort. Post-ride social at Foothills Watershed. E-bikes not allowed. All riders must sign up through Eventbrite.",
    "venue": "Gateway Trails",
    "city": "Old Fort",
    "state": "NC",
@@ -917,7 +893,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b150ddbea280cbb5",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Gravelo Wednesday Shop Ride",
@@ -944,13 +920,13 @@
    "start": "2026-10-15",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 15 Oct 2026 to 31 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and 1-2 adventure rides in Bent Creek or Dupont",
+   "description": "Runs 15 Oct 2026 to 1 Dec 2026. Pre-season activities including social events, rider assessment, bike shop night, parent meeting, and 1-2 adventure rides in Bent Creek or Dupont",
    "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
    "cost": null,
    "extracted_by": "llm",
-   "long_span_days": 77,
+   "long_span_days": 47,
    "source": "pisgah-rage",
    "source_name": "Pisgah Rage (NICA composite team)",
    "source_url": "https://www.pisgahrage.com/",
@@ -960,8 +936,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "2115f0c8d04aeced",
-   "last_seen": "2026-09-13",
-   "from_cache": true
+   "last_seen": "2026-09-16"
   },
   {
    "title": "9:30am Bakery Ride B Group Start at Gravelo",
@@ -983,7 +958,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "00246472dee73698",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "2026 Gran Fondo Hincapie-Greenville",
@@ -1013,7 +988,7 @@
    "discipline": "road",
    "uid": "f2acb77c16a22d1c",
    "distance_mi": 34.5,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Women's + Trail Skills Workshop",
@@ -1021,7 +996,7 @@
    "end": "2026-10-17T15:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Intro Class: Trail Maintenance 101. G5 Community Education Program. REGISTRATION FULL",
+   "description": "Intro Class: Trail Maintenance 101. G5 Community Education Program.",
    "venue": "Allison Trailhead Parking - Meetup",
    "city": "Old Fort",
    "state": "NC",
@@ -1036,7 +1011,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "58085b166d26dbaf",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "2026 NCCX Race #3 Boone",
@@ -1066,7 +1041,7 @@
    "discipline": "cx",
    "uid": "0b3f52f489b0c6d2",
    "distance_mi": 68.0,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Gravelo Wednesday Shop Ride",
@@ -1108,7 +1083,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "cf9f2373912c7d6c",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "2026 BRAGco Cycling Event",
@@ -1138,7 +1113,7 @@
    "discipline": "other",
    "uid": "743ac628878c17c6",
    "distance_mi": 42.2,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Gravelo Wednesday Shop Ride",
@@ -1180,7 +1155,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "0e9327a6cec9678a",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "The Middle Fork Fondo 2026",
@@ -1210,7 +1185,7 @@
    "discipline": "road",
    "uid": "0186abed2e6b428b",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "1000 Mile BikeWalk for Prevention",
@@ -1235,7 +1210,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "ca69c113117cd0e8",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Smart Cycling Class",
@@ -1259,7 +1234,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "d59523d7622bcc38",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "G5 Fall Trail Weekend!",
@@ -1282,7 +1257,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "950ebae34683eda4",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "9:30am Bakery Ride B Group Start at Gravelo",
@@ -1304,7 +1279,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "31df84e9ac8b006c",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Couch Potato",
@@ -1333,7 +1308,7 @@
    "discipline": "mtb",
    "uid": "2e02b8a758b849f1",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Swank 65",
@@ -1362,7 +1337,7 @@
    "discipline": "mtb",
    "uid": "808d5262f339b592",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "2026 NCCX Race #8 Hickory",
@@ -1392,7 +1367,7 @@
    "discipline": "cx",
    "uid": "6ce7ed1f4106eec0",
    "distance_mi": 66.7,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "9:30am Bakery Ride B Group Start at Gravelo",
@@ -1414,7 +1389,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "3854cb867bb3b05b",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "We Shred Rock Creek",
@@ -1444,7 +1419,7 @@
    "discipline": "mtb",
    "uid": "0a67e54dee113b1a",
    "distance_mi": 27.4,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "November Group Ride + Social",
@@ -1452,7 +1427,7 @@
    "end": "2026-11-14T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Pisgah. Post-ride social at Oskar Blues Brewery. E-bikes not allowed. Multiple ride levels: Foundation, Chill, Chill Plus, Modrrt.",
+   "description": "Riding in Pisgah. Post-ride social at Oskar Blues Brewery. E-bikes not allowed. All riders must sign up through Eventbrite.",
    "venue": "Pisgah",
    "city": "Brevard",
    "state": "NC",
@@ -1467,7 +1442,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e6ecfc09dd6c5bf2",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "9:30am Bakery Ride B Group Start at Gravelo",
@@ -1489,7 +1464,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "aebfef844e768835",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Pisgah DOUBLE DARE",
@@ -1518,7 +1493,7 @@
    "discipline": "mtb",
    "uid": "59bf1e39a66ae34b",
    "distance_mi": 26.3,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "2026 NORTH CAROLINA GRAND PRIX - R#1 & R#2 - NCCX Race #10 & Race #11 Hendersonville",
@@ -1549,7 +1524,7 @@
    "discipline": "cx",
    "uid": "1ea4003af619eb35",
    "distance_mi": 20.1,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Go Nuts Biking Nut Gobbler XC",
@@ -1579,7 +1554,7 @@
    "discipline": "mtb",
    "uid": "5d605450c7d6e77a",
    "distance_mi": 63.3,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "9:30am Bakery Ride B Group Start at Gravelo",
@@ -1601,14 +1576,14 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "5aac60792a0e466c",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Pisgah Rage Regular Season",
    "start": "2026-12-01",
    "all_day": true,
    "url": "https://www.pisgahrage.com/",
-   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with indoor training in January, weekend practices in February, and 2 rides a week (weeknights and weekends) in March-May. Races typically start in early March with 5-6 races across North Carolina through end of May.",
+   "description": "Runs 1 Dec 2026 to 30 May 2027. Regular season with indoor training in January, weekend practices in February, and 2 rides per week March-May. Races start beginning of March with 5-6 races across North Carolina through end of May.",
    "venue": "Asheville",
    "city": "Asheville",
    "state": "NC",
@@ -1624,8 +1599,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "670937aa0418b08a",
-   "last_seen": "2026-09-13",
-   "from_cache": true
+   "last_seen": "2026-09-16"
   },
   {
    "title": "9:30am Bakery Ride B Group Start at Gravelo",
@@ -1647,7 +1621,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "c5aa7127c6175622",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "December Group Ride + Social",
@@ -1655,7 +1629,7 @@
    "end": "2026-12-12T15:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Hot Springs. Post-ride social at Big Pillow Brewing. E-bikes not allowed. Multiple ride levels: Foundation, Chill, Chill Plus, Modrrt, Silver Shredders.",
+   "description": "Riding in Hot Springs. Post-ride social at Big Pillow Brewing. E-bikes not allowed. All riders must sign up through Eventbrite.",
    "venue": "Hot Springs",
    "city": "Hot Springs",
    "state": "NC",
@@ -1670,7 +1644,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b68ee4e9e36aad4a",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Smart Cycling Class",
@@ -1682,7 +1656,7 @@
    "venue": "",
    "city": "Asheville",
    "state": "NC",
-   "cost": "Free",
+   "cost": null,
    "date_precision": "month",
    "extracted_by": "llm",
    "source": "asheville-on-bikes",
@@ -1694,8 +1668,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "3d04c78472303ea6",
-   "last_seen": "2026-09-14",
-   "held_since": "2026-09-14"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Pisgah Stage Race",
@@ -1724,7 +1697,7 @@
    "discipline": "mtb",
    "uid": "b96fc2f355480948",
    "distance_mi": 26.9,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Bootlegger",
@@ -1754,7 +1727,7 @@
    "discipline": "gravel",
    "uid": "f0fa19e43a2adce0",
    "distance_mi": 60.8,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Pisgah Mountain Bike Adventure Race",
@@ -1783,7 +1756,7 @@
    "discipline": "mtb",
    "uid": "996261671a499518",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Carolina Reaper Road Race",
@@ -1797,7 +1770,7 @@
    "state": "SC",
    "lat": 34.7588238864549,
    "lng": -82.3814146429841,
-   "image": "/BR/VirtualImages/EventLogos/168d5ab6-3463-4deb-9ae1-55d14e26dc54.png",
+   "image": "/BR/VirtualImages/EventLogos/43b6c0ae-9397-40fe-9652-eaed71f8c96a.png",
    "discipline_hint": "Road Race",
    "tags": [
     "Road Race"
@@ -1812,7 +1785,7 @@
    "discipline": "road",
    "uid": "6cb81637a4faee67",
    "distance_mi": 58.6,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "2027 Gran Fondo Asheville, p/b Applewood Manor Foundation, a SENA Gran Fondo National Series event",
@@ -1842,7 +1815,7 @@
    "discipline": "road",
    "uid": "19cc3e2cb7f4ed33",
    "distance_mi": 0.3,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "HARDford 50 and HARDERford 75",
@@ -1871,7 +1844,7 @@
    "discipline": "gravel",
    "uid": "fbb7b952544d9b16",
    "distance_mi": 36.6,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "2027 Boone Gran Fondo, a SENA Gran Fondo National Series event",
@@ -1902,7 +1875,7 @@
    "discipline": "road",
    "uid": "eaf10f6e0cd70f9a",
    "distance_mi": 64.8,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Old Fort Fifty",
@@ -1932,7 +1905,7 @@
    "discipline": "mtb",
    "uid": "574c90ce85701ccd",
    "distance_mi": 20.5,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Pisgah Enduro",
@@ -1962,7 +1935,7 @@
    "discipline": "mtb",
    "uid": "903f0caa2f7afb82",
    "distance_mi": 20.5,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Pisgah Monster-Cross Challenge",
@@ -1992,7 +1965,7 @@
    "discipline": "gravel",
    "uid": "b200a71231055f5c",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   }
  ],
  "world": [
@@ -2002,7 +1975,7 @@
    "end": "2026-09-19",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC) - Cross Country Marathon event",
+   "description": "Hors Class (HC) - Cross Country Marathon",
    "venue": "La Pesse",
    "city": "La Pesse",
    "state": "",
@@ -2017,7 +1990,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "d5f3ed6b7af30730",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Banyuwangi Ijen Geopark Downhill",
@@ -2025,7 +1998,7 @@
    "end": "2026-09-20",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 Downhill event",
+   "description": "Class 1 (1) - Downhill competition",
    "venue": "Banyuwangi",
    "city": "Banyuwangi",
    "state": "",
@@ -2040,8 +2013,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "2f0fdc546271b309",
-   "last_seen": "2026-09-13",
-   "held_since": "2026-09-13"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Karl XII Rittet",
@@ -2049,7 +2021,7 @@
    "end": "2026-09-20",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 event",
+   "description": "Class 1 (1)",
    "venue": "Halden",
    "city": "Halden",
    "state": "",
@@ -2064,8 +2036,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "9929387968dd97c6",
-   "last_seen": "2026-09-13",
-   "held_since": "2026-09-13"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Cimtb #3 - Xco/Xcc/Xcm",
@@ -2073,7 +2044,7 @@
    "end": "2026-09-27",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 (1) event",
+   "description": "Class 1 (1) - Cross Country and Marathon",
    "venue": "Congonhas",
    "city": "Congonhas",
    "state": "",
@@ -2086,9 +2057,9 @@
    "bucket": "world",
    "category": "watch",
    "category_basis": "default",
-   "discipline": "other",
+   "discipline": "mtb",
    "uid": "4830d2ae4274f4e3",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "iXS European Downhill Cup Bike Park Pohorje Maribor",
@@ -2096,7 +2067,7 @@
    "end": "2026-09-27",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 (1) - Downhill event",
+   "description": "Class 1 (1) - Downhill competition",
    "venue": "Maribor",
    "city": "Maribor",
    "state": "",
@@ -2111,7 +2082,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "5c2b04c5d141b651",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Bike Marathon Pulm\u00f3n de Acero - XCM",
@@ -2119,7 +2090,7 @@
    "end": "2026-09-26",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 (1) - Cross Country Marathon event",
+   "description": "Class 1 (1) - Cross Country Marathon",
    "venue": "Barakaldo",
    "city": "Barakaldo",
    "state": "",
@@ -2134,7 +2105,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "a166d04d1ca00c9a",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "XCO Predolac",
@@ -2142,7 +2113,7 @@
    "end": "2026-09-27",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 (1) - Cross Country Olympic event",
+   "description": "Class 1 (1) - Cross Country race",
    "venue": "Metkovi\u0107",
    "city": "Metkovi\u0107",
    "state": "",
@@ -2153,11 +2124,11 @@
    "source_url": "https://www.uci.org/",
    "trust": 60,
    "bucket": "world",
-   "category": "watch",
-   "category_basis": "default",
+   "category": "race",
+   "category_basis": "rule",
    "discipline": "mtb",
    "uid": "80734f6419d365cb",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Tierra Estella Epic - XCM",
@@ -2165,7 +2136,7 @@
    "end": "2026-10-03",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 (1) - Cross Country Marathon event",
+   "description": "Class 1 (1) - Cross Country Marathon",
    "venue": "Ayegui \u2013 Aiegi",
    "city": "Ayegui",
    "state": "",
@@ -2180,7 +2151,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "6dacdc876df507c9",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Extreme Sur Loue - XCM",
@@ -2188,7 +2159,7 @@
    "end": "2026-10-04",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC) - Cross Country Marathon event",
+   "description": "Hors Class (HC) - Cross Country Marathon",
    "venue": "Ornans",
    "city": "Ornans",
    "state": "",
@@ -2203,7 +2174,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "1b11e287915045b5",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Roc D'azur - XCM",
@@ -2211,7 +2182,7 @@
    "end": "2026-10-10",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC) - Cross Country Marathon event",
+   "description": "Hors Class (HC) - Cross Country Marathon",
    "venue": "Fr\u00e9jus",
    "city": "Fr\u00e9jus",
    "state": "",
@@ -2226,7 +2197,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "3b613757ff568727",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Serbia Epic Petrovaradin Fortress Bike Fest",
@@ -2234,7 +2205,7 @@
    "end": "2026-10-11",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC) event",
+   "description": "Hors Class (HC)",
    "venue": "Novi Sad",
    "city": "Novi Sad",
    "state": "",
@@ -2249,7 +2220,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "22b56ec9aa45fc91",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Hammerstone - XCM/XCC",
@@ -2257,7 +2228,7 @@
    "end": "2026-10-18",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 (1) event",
+   "description": "Class 1 (1) - Cross Country Marathon and Short Track",
    "venue": "Valkenburg",
    "city": "Valkenburg",
    "state": "",
@@ -2268,11 +2239,11 @@
    "source_url": "https://www.uci.org/",
    "trust": 60,
    "bucket": "world",
-   "category": "watch",
-   "category_basis": "default",
-   "discipline": "other",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "mtb",
    "uid": "5dce7af735829c9e",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Triple Crown DH Mini Series #1",
@@ -2280,7 +2251,7 @@
    "end": "2026-10-27",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 (1) - Downhill event",
+   "description": "Class 1 (1) - Downhill competition",
    "venue": "Philo",
    "city": "Philo",
    "state": "",
@@ -2295,7 +2266,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "527818bb77c43ff8",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Triple Crown DH Mini Series #2",
@@ -2303,7 +2274,7 @@
    "end": "2026-10-30",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 (1) - Downhill event",
+   "description": "Class 1 (1) - Downhill competition",
    "venue": "Philo",
    "city": "Philo",
    "state": "",
@@ -2318,7 +2289,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b5e54acdd0d8d51b",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
    "title": "Triple Crown DH Mini Series #3",
@@ -2326,7 +2297,7 @@
    "end": "2026-11-01",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Class 1 (1) - Downhill event",
+   "description": "Class 1 (1) - Downhill competition",
    "venue": "Philo",
    "city": "Philo",
    "state": "",
@@ -2341,15 +2312,15 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "718209fe0fac9f5e",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   },
   {
-   "title": "UCI Mountain Bike Continental Series \u2013 DHI Araucania",
+   "title": "UCI Mountain Bike Continental Series - DHI Araucania",
    "start": "2026-11-27",
    "end": "2026-11-29",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Continental Series (CS) - Downhill event",
+   "description": "Continental Series (CS) - Downhill competition",
    "venue": "Temuco",
    "city": "Temuco",
    "state": "",
@@ -2364,7 +2335,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "a429a749010fdf86",
-   "last_seen": "2026-09-15"
+   "last_seen": "2026-09-16"
   }
  ],
  "sources": [
@@ -2380,7 +2351,6 @@
   "RunSignup"
  ],
  "categories": [
-  "advocacy",
   "clinic",
   "festival",
   "group-ride",
