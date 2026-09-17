@@ -1,35 +1,6 @@
 {
- "at": "2026-09-16T14:13:10.732088+00:00",
+ "at": "2026-09-17T14:18:42.446575+00:00",
  "events": [
-  {
-   "title": "2026 Tuesday Night Cyclocross Training Series",
-   "start": "2026-09-15",
-   "all_day": true,
-   "url": "http://www.BikeReg.com/tuesday-night-cyclocross-training-series",
-   "description": "Group C: Men Novice, Women Novice, Women CX4, & Juniors (20 minutes at 6:00 pm) Group C: First-Timers 20 minutes at 6:01pm Group B: Men Novice, Men CX4, Men CX3, & Women CX1-3 (30 minutes immediately after C group) Group A: Men CX1-3 & Women CX1-2 (40 minutes immediately after B group) Race Information: *USAC Sanctioned Non-Competitive Training Series, No Awards/Prizes *$30 Entry Fee / Free for Juniors /no charge for 2nd same day race. *USA Cycling License Required (One day license available) *Registration opens at 4:45 pm, closes 15 minutes prior to start time *Mountain Bikes OK but no bar-ends, Helmets Required at all times *Mills River Brewery Google Address: 328 Banner Farm Rd, Mills River, NC *Instagram: Crosstown_Velo_Racing_Team or Facebook: Crosstown-Velo-Racing-Team for race day i",
-   "venue": "328 Banner Farm Rd",
-   "city": "Mills River",
-   "state": "NC",
-   "lat": 35.3797074,
-   "lng": -82.5660866,
-   "image": "/BR/VirtualImages/EventLogos/66819c32-06ca-4eb3-a4bf-cf9ed94aacde.png",
-   "discipline_hint": "Cyclocross",
-   "tags": [
-    "Cyclocross"
-   ],
-   "recurring": "weekly",
-   "source": "bikereg",
-   "source_name": "BikeReg",
-   "source_url": "https://www.bikereg.com/",
-   "trust": 60,
-   "bucket": "local",
-   "category": "youth",
-   "category_basis": "rule",
-   "discipline": "cx",
-   "uid": "2c8aa0d648484ac3",
-   "distance_mi": 14.9,
-   "last_seen": "2026-09-16"
-  },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
    "start": "2026-09-22T00:00:00",
@@ -57,7 +28,7 @@
    "discipline": "cx",
    "uid": "82ab5a481026f2a7",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "2026 Tuesday Night Cyclocross Training Series",
@@ -86,39 +57,10 @@
    "discipline": "cx",
    "uid": "03009b517bb77e7e",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
-   "title": "Rumble on the River 3 of 3",
-   "start": "2026-09-16",
-   "end": "2026-09-16",
-   "all_day": true,
-   "url": "http://www.BikeReg.com/rumble-on-the-river-1-of-3",
-   "description": "",
-   "venue": "220 Amboy Rd",
-   "city": "Asheville",
-   "state": "NC",
-   "lat": 35.5659219,
-   "lng": -82.5791016,
-   "image": null,
-   "discipline_hint": "Road Race",
-   "tags": [
-    "Road Race"
-   ],
-   "source": "bikereg",
-   "source_name": "BikeReg",
-   "source_url": "https://www.bikereg.com/",
-   "trust": 60,
-   "bucket": "local",
-   "category": "race",
-   "category_basis": "rule",
-   "discipline": "road",
-   "uid": "ca399f58a0c2e5b2",
-   "distance_mi": 2.5,
-   "last_seen": "2026-09-16"
-  },
-  {
-   "title": "Thank you! 12th annual Dancing Bear Bike Bash is sold out! USA Cycling Permit #16238",
+   "title": "12th annual Dancing Bear Bike Bash is this Saturday 9/19! A Few Reminders",
    "start": "2026-09-19",
    "end": "2026-09-19",
    "all_day": true,
@@ -143,9 +85,9 @@
    "category": "race",
    "category_basis": "rule",
    "discipline": "other",
-   "uid": "0d5dcfaa94feb9c3",
+   "uid": "465d6cf8394aff46",
    "distance_mi": 69.4,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Gravity Carolinas DH RD 4 WIldside",
@@ -174,7 +116,7 @@
    "discipline": "mtb",
    "uid": "74961cf476e0181f",
    "distance_mi": 58.5,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Collegiate MTB Challenge at Lees-McRae College",
@@ -203,7 +145,7 @@
    "discipline": "mtb",
    "uid": "adbfc7b222862cb8",
    "distance_mi": 54.3,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "NCCX Pre-season - Ride Rock Creek",
@@ -233,7 +175,7 @@
    "discipline": "cx",
    "uid": "3a00b4b477eb29e6",
    "distance_mi": 27.5,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "DARC September 20 Road Social Ride",
@@ -262,7 +204,7 @@
    "discipline": "road",
    "uid": "8ec6c8f0f0dc3d6a",
    "distance_mi": 2.1,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Pisgah Bikeboom 2026",
@@ -292,7 +234,7 @@
    "discipline": "mtb",
    "uid": "7ea8cf13a1f20b18",
    "distance_mi": 23.8,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "2026 Ride to the Rock",
@@ -323,7 +265,7 @@
    "discipline": "road",
    "uid": "f386287547fbc4ba",
    "distance_mi": 49.9,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "SECCC Conference Championships at Ride Rock Creek",
@@ -352,7 +294,7 @@
    "discipline": "mtb",
    "uid": "c2e3c2a0c6471d35",
    "distance_mi": 27.5,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "NCCX Pre-season - Cane Creek",
@@ -382,7 +324,7 @@
    "discipline": "cx",
    "uid": "567c411f65a716bf",
    "distance_mi": 11.0,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Downtown Asheville Racing Club (DARC)/Asheville Youth Cycling (AYC) 2026 Membership",
@@ -411,7 +353,7 @@
    "discipline": "other",
    "uid": "85b38b92bf08ad51",
    "distance_mi": 0.3,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Pisgah 111 / 555",
@@ -419,12 +361,12 @@
    "end": "2026-10-03",
    "all_day": true,
    "url": "http://www.BikeReg.com/2026-pisgah-111-555",
-   "description": "It\u2019s time to turn the volume up to 111! The Pisgah 111 is the quintessential crusher of a cross-country endurance MTB race. Racers follow a 65.1 mile course with 10,200' feet of climbing along the most iconic trails and gravel roads known in Pisgah National Forest. Just peek at the course map and list of trails and you\u2019ll immediately get chills just thinking about the epic scenery and terrain you\u2019ll encounter. This is a true mountain bike race with no map reading skills required, just follow the arrows. Think of it as the most exciting (and grueling) tour of Pisgah you can imagine during the peak of the leaves changing in the forest. It certainly wouldn\u2019t hurt to study the map and cue sheets to know what you\u2019re getting yourself into, as some of these trails will test your lungs and your le",
-   "venue": "1284 Pisgah Hwy",
+   "description": "The Pisgah 111 is the quintessential crusher of a cross-country endurance MTB race. Racers follow a 65.1 mile course with 10,200' feet of climbing along the most iconic trails and gravel roads known in Pisgah National Forest. Just peek at the course map and list of trails and you\u2019ll immediately get chills just thinking about the epic scenery and terrain you\u2019ll encounter. There will be FOUR rest areas (at three locations) for the Pisgah 111 that will be stocked with water, food (PB&J, fruit, salty snacks, sweet snacks, bars), first aid, and neutral mechanical support. Riders may send drop bags to each rest area. Be sure to read the information below, too. The Pisgah 555 will test the strength and endurance of racers by challenging them to complete a 39.7 mile course with 7325' of climbing a",
+   "venue": "1 Davidson River Cir",
    "city": "Pisgah Forest",
    "state": "NC",
-   "lat": 35.2830246,
-   "lng": -82.7218935,
+   "lat": 35.2811489,
+   "lng": -82.7229988,
    "image": "/BR/VirtualImages/EventLogos/998e64ef-cf40-43aa-997b-7bc8ac92e63e.png",
    "discipline_hint": "Mountain Bike",
    "tags": [
@@ -440,8 +382,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "c6d05d9f51734aa6",
-   "distance_mi": 23.6,
-   "last_seen": "2026-09-16"
+   "distance_mi": 23.7,
+   "last_seen": "2026-09-17"
   },
   {
    "title": "2026 Gran Fondo Hincapie-Greenville",
@@ -471,7 +413,7 @@
    "discipline": "road",
    "uid": "f2acb77c16a22d1c",
    "distance_mi": 34.5,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "2026 NCCX Race #3 Boone",
@@ -501,7 +443,7 @@
    "discipline": "cx",
    "uid": "0b3f52f489b0c6d2",
    "distance_mi": 68.0,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "2026 BRAGco Cycling Event",
@@ -531,7 +473,7 @@
    "discipline": "other",
    "uid": "743ac628878c17c6",
    "distance_mi": 42.2,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "The Middle Fork Fondo 2026",
@@ -561,7 +503,7 @@
    "discipline": "road",
    "uid": "0186abed2e6b428b",
    "distance_mi": 14.9,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Couch Potato",
@@ -590,7 +532,7 @@
    "discipline": "mtb",
    "uid": "2e02b8a758b849f1",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Swank 65",
@@ -619,7 +561,7 @@
    "discipline": "mtb",
    "uid": "808d5262f339b592",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "2026 NCCX Race #8 Hickory",
@@ -649,7 +591,7 @@
    "discipline": "cx",
    "uid": "6ce7ed1f4106eec0",
    "distance_mi": 66.7,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "We Shred Rock Creek",
@@ -679,7 +621,7 @@
    "discipline": "mtb",
    "uid": "0a67e54dee113b1a",
    "distance_mi": 27.4,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Pisgah DOUBLE DARE",
@@ -708,7 +650,7 @@
    "discipline": "mtb",
    "uid": "59bf1e39a66ae34b",
    "distance_mi": 26.3,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "2026 NORTH CAROLINA GRAND PRIX - R#1 & R#2 - NCCX Race #10 & Race #11 Hendersonville",
@@ -739,7 +681,7 @@
    "discipline": "cx",
    "uid": "1ea4003af619eb35",
    "distance_mi": 20.1,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Go Nuts Biking Nut Gobbler XC",
@@ -769,7 +711,7 @@
    "discipline": "mtb",
    "uid": "5d605450c7d6e77a",
    "distance_mi": 63.3,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Pisgah Stage Race",
@@ -777,7 +719,7 @@
    "end": "2027-04-10",
    "all_day": true,
    "url": "http://www.BikeReg.com/psr",
-   "description": "RACE FEES CLICK HERE to see the full pay scale on our website. REFUND, DEFERRAL, and TRANSFER POLICY No transfers or deferrals under ANY circumstances. Refunds available until December 31, 2026, at 80% of entry fee. Refunds available until January 31, 2027, at 50% of entry fee. No refunds after January 31, 2027. NO EXCEPTIONS. WE STRONGLY ENCOURAGE YOU TO PURCHASE THE INSURANCE THAT IS OFFERED BY THE REGISTRATION SITE . This should cover about 95% of the emails we get before the race asking for a refund (I.E. injuries, medical issue, etc. Make sure to read through their information on what is covered under this insurance opportunity. PSR has no control over insurance claims or their refunds.) 2027 RACE ROUTES Tuesday, April 6th - Looking Glass Route - 29.5 miles with 3,615 feet of elevatio",
+   "description": "Pisgah Stage Race is now running as a Three-Day Race. It's not goodbye to the Five-Day Version, but hopefully just we'll see you later. RACE FEES CLICK HERE to see the full pay scale on our website. REFUND, DEFERRAL, and TRANSFER POLICY No transfers or deferrals under ANY circumstances. Refunds available until December 31, 2026, at 80% of entry fee. Refunds available until January 31, 2027, at 50% of entry fee. No refunds after January 31, 2027. NO EXCEPTIONS. WE STRONGLY ENCOURAGE YOU TO PURCHASE THE INSURANCE THAT IS OFFERED BY THE REGISTRATION SITE . This should cover about 95% of the emails we get before the race asking for a refund (I.E. injuries, medical issue, etc. Make sure to read through their information on what is covered under this insurance opportunity. PSR has no control ove",
    "venue": "349 Andante Ln",
    "city": "Brevard",
    "state": "NC",
@@ -798,7 +740,7 @@
    "discipline": "mtb",
    "uid": "b96fc2f355480948",
    "distance_mi": 26.9,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Bootlegger",
@@ -828,7 +770,7 @@
    "discipline": "gravel",
    "uid": "f0fa19e43a2adce0",
    "distance_mi": 60.8,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Pisgah Mountain Bike Adventure Race",
@@ -857,7 +799,7 @@
    "discipline": "mtb",
    "uid": "996261671a499518",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Carolina Reaper Road Race",
@@ -886,7 +828,7 @@
    "discipline": "road",
    "uid": "6cb81637a4faee67",
    "distance_mi": 58.6,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "2027 Gran Fondo Asheville, p/b Applewood Manor Foundation, a SENA Gran Fondo National Series event",
@@ -916,7 +858,7 @@
    "discipline": "road",
    "uid": "19cc3e2cb7f4ed33",
    "distance_mi": 0.3,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "HARDford 50 and HARDERford 75",
@@ -945,7 +887,7 @@
    "discipline": "gravel",
    "uid": "fbb7b952544d9b16",
    "distance_mi": 36.6,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "2027 Boone Gran Fondo, a SENA Gran Fondo National Series event",
@@ -976,7 +918,7 @@
    "discipline": "road",
    "uid": "eaf10f6e0cd70f9a",
    "distance_mi": 64.8,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Old Fort Fifty",
@@ -1006,7 +948,7 @@
    "discipline": "mtb",
    "uid": "574c90ce85701ccd",
    "distance_mi": 20.5,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Pisgah Enduro",
@@ -1036,7 +978,7 @@
    "discipline": "mtb",
    "uid": "903f0caa2f7afb82",
    "distance_mi": 20.5,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Pisgah Monster-Cross Challenge",
@@ -1066,7 +1008,38 @@
    "discipline": "gravel",
    "uid": "b200a71231055f5c",
    "distance_mi": 23.6,
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
+  },
+  {
+   "title": "Thank you! 12th annual Dancing Bear Bike Bash is sold out! USA Cycling Permit #16238",
+   "start": "2026-09-19",
+   "end": "2026-09-19",
+   "all_day": true,
+   "url": "http://www.BikeReg.com/12th-annual-dancing-bear-bike-bash",
+   "description": "The best recreational cycling event in the Smokies region returns on Saturday September 19th, 2026! The 12th annual 2026 Dancing Bear Bike Bash is open for registration! We will have three (tweaked) rides of 25, 37 and 45 miles with full support. A staple of our event--the famous post ride gourmet lunch curated by Executive Chef Jeff Carter will be better than ever ---with fabulous spread, live music and complimentary Peaceful Side Brewery beer. Packet pick up starts on Friday evening 9/19/26 at Peaceful Side Social from 5:00-6:30 Pm and resumes on Saturday morning of Race Day (9/20/26) at 7:30 Am at the Dancing Bean Coffee House. All rides leave around 8:50 Am. Once again, we will ride through the curves with a full police escort! Post ride gourmet lunch starts at 10:30 Am and ends at 1:4",
+   "venue": "7140 E Lamar Alexander Parkway",
+   "city": "Townsend",
+   "state": "TN",
+   "lat": 35.6787608,
+   "lng": -83.7823541,
+   "image": "/BR/VirtualImages/EventLogos/e293c097-0c2e-4ffa-8d0d-8c6a489364e1.png",
+   "discipline_hint": "Recreational",
+   "tags": [
+    "Recreational",
+    "Recreational"
+   ],
+   "source": "bikereg",
+   "source_name": "BikeReg",
+   "source_url": "https://www.bikereg.com/",
+   "trust": 60,
+   "bucket": "local",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "other",
+   "uid": "0d5dcfaa94feb9c3",
+   "distance_mi": 69.4,
+   "last_seen": "2026-09-16",
+   "held_since": "2026-09-16"
   }
  ]
 }

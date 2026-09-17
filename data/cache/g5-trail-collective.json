@@ -1,5 +1,5 @@
 {
- "at": "2026-09-16T14:12:59.323333+00:00",
+ "at": "2026-09-17T14:18:34.450593+00:00",
  "events": [
   {
    "title": "Brewin' Good Partners Pint Night",
@@ -22,7 +22,30 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "2daf6a0314b5501d",
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
+  },
+  {
+   "title": "Public Lands Day Kickoff @ Catawba Falls - Scenic Hike & Litter Pickup",
+   "start": "2026-09-25T17:00:00",
+   "end": "2026-09-25T19:30:00",
+   "all_day": false,
+   "url": "https://www.g5trailcollective.org/volunteer",
+   "description": "Start your weekend with a scenic hike and litter pickup at one of our most popular sites in the Forest. We'll hike out and back on the river trail to the lower and upper falls while picking up litter along the way.",
+   "venue": "Catawba Falls Trailhead",
+   "city": "Old Fort",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "source": "g5-trail-collective",
+   "source_name": "G5 Trail Collective",
+   "source_url": "https://www.g5trailcollective.org/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "trail-work",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "5ed4f8f775f3c785",
+   "last_seen": "2026-09-17"
   },
   {
    "title": "Women's + Trail Skills Workshop",
@@ -30,7 +53,7 @@
    "end": "2026-10-17T15:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Intro Class: Trail Maintenance 101. G5 Community Education Program.",
+   "description": "Intro Class: Trail Maintenance 101. G5 Community Education Program. REGISTRATION FULL",
    "venue": "Allison Trailhead Parking - Meetup",
    "city": "Old Fort",
    "state": "NC",
@@ -45,7 +68,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "58085b166d26dbaf",
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   },
   {
    "title": "G5 Fall Trail Weekend!",
@@ -68,7 +91,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "950ebae34683eda4",
-   "last_seen": "2026-09-16"
+   "last_seen": "2026-09-17"
   }
  ]
 }
