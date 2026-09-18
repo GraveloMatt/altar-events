@@ -1,13 +1,13 @@
 {
- "at": "2026-09-17T14:19:32.188726+00:00",
+ "at": "2026-09-18T13:37:38.236324+00:00",
  "events": [
   {
-   "title": "UCI Mountain Bike Continental Series - DHI Araucania",
+   "title": "UCI Mountain Bike Continental Series \u2013 DHI Araucania",
    "start": "2026-11-27",
    "end": "2026-11-29",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Continental Series (CS) - Downhill competition",
+   "description": "Continental Series (CS) Downhill event",
    "venue": "Temuco",
    "city": "Temuco",
    "state": "",
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "a429a749010fdf86",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-18"
   },
   {
    "title": "La Forestiere - XCM",
@@ -30,7 +30,7 @@
    "end": "2026-09-19",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC) - Cross Country Marathon",
+   "description": "Hors Class (HC) Cross Country Marathon event",
    "venue": "La Pesse",
    "city": "La Pesse",
    "state": "",
@@ -45,7 +45,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "d5f3ed6b7af30730",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-18"
   },
   {
    "title": "Extreme Sur Loue - XCM",
@@ -53,7 +53,7 @@
    "end": "2026-10-04",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC) - Cross Country Marathon",
+   "description": "Hors Class (HC) Cross Country Marathon event",
    "venue": "Ornans",
    "city": "Ornans",
    "state": "",
@@ -68,7 +68,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "1b11e287915045b5",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-18"
   },
   {
    "title": "Roc D'azur - XCM",
@@ -76,7 +76,7 @@
    "end": "2026-10-10",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC) - Cross Country Marathon",
+   "description": "Hors Class (HC) Cross Country Marathon event",
    "venue": "Fr\u00e9jus",
    "city": "Fr\u00e9jus",
    "state": "",
@@ -91,7 +91,7 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "3b613757ff568727",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-18"
   },
   {
    "title": "Serbia Epic Petrovaradin Fortress Bike Fest",
@@ -99,7 +99,7 @@
    "end": "2026-10-11",
    "all_day": true,
    "url": "https://en.wikipedia.org/wiki/2026_UCI_Mountain_Bike_season",
-   "description": "Hors Class (HC)",
+   "description": "Hors Class (HC) event",
    "venue": "Novi Sad",
    "city": "Novi Sad",
    "state": "",
@@ -114,7 +114,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "22b56ec9aa45fc91",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-18"
   },
   {
    "title": "Banyuwangi Ijen Geopark Downhill",
@@ -137,7 +137,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "2f0fdc546271b309",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   },
   {
    "title": "Karl XII Rittet",
@@ -160,7 +161,8 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "9929387968dd97c6",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   },
   {
    "title": "Cimtb #3 - Xco/Xcc/Xcm",
@@ -183,7 +185,8 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "4830d2ae4274f4e3",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   },
   {
    "title": "iXS European Downhill Cup Bike Park Pohorje Maribor",
@@ -206,7 +209,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "5c2b04c5d141b651",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   },
   {
    "title": "Bike Marathon Pulm\u00f3n de Acero - XCM",
@@ -229,7 +233,8 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "a166d04d1ca00c9a",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   },
   {
    "title": "XCO Predolac",
@@ -252,7 +257,8 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "80734f6419d365cb",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   },
   {
    "title": "Tierra Estella Epic - XCM",
@@ -275,7 +281,8 @@
    "category_basis": "default",
    "discipline": "mtb",
    "uid": "6dacdc876df507c9",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   },
   {
    "title": "Hammerstone - XCM/XCC",
@@ -298,7 +305,8 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "5dce7af735829c9e",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   },
   {
    "title": "Triple Crown DH Mini Series #1",
@@ -321,7 +329,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "527818bb77c43ff8",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   },
   {
    "title": "Triple Crown DH Mini Series #2",
@@ -344,7 +353,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b5e54acdd0d8d51b",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   },
   {
    "title": "Triple Crown DH Mini Series #3",
@@ -367,7 +377,8 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "718209fe0fac9f5e",
-   "last_seen": "2026-09-17"
+   "last_seen": "2026-09-17",
+   "held_since": "2026-09-17"
   }
  ]
 }
