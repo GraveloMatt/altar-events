@@ -1,5 +1,5 @@
 {
- "at": "2026-09-19T13:10:43.395416+00:00",
+ "at": "2026-09-20T13:35:31.006670+00:00",
  "events": [
   {
    "title": "October Group Ride + Social",
@@ -7,7 +7,7 @@
    "end": "2026-10-10T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in and around Old Fort. No e-bikes allowed. Post-ride social at Foothills Watershed. Open to all women 18 and older.",
+   "description": "Riding in and around Old Fort. Post-ride social at Foothills Watershed. No e-bikes allowed.",
    "venue": "Gateway Trails",
    "city": "Old Fort",
    "state": "NC",
@@ -22,7 +22,30 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b150ddbea280cbb5",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-20"
+  },
+  {
+   "title": "Test + Tune with Cane Creek Components (Again)",
+   "start": "2026-11-07T11:00:00",
+   "end": "2026-11-07T14:00:00",
+   "all_day": false,
+   "url": "https://www.dirtskrrts.com/schedule",
+   "description": "Suspension test and tune event with industry partner Cane Creek Components. For riders with suspension bikes comfortable on rocky/rooty downhill trails. No e-bikes allowed. 12 spots available.",
+   "venue": "Bent Creek Experimental Forest",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "source": "blue-ridge-dirt-skrrts",
+   "source_name": "Blue Ridge Dirt Skrrts",
+   "source_url": "https://www.dirtskrrts.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "race",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "db8cbeababc1d3b3",
+   "last_seen": "2026-09-20"
   },
   {
    "title": "November Group Ride + Social",
@@ -30,7 +53,7 @@
    "end": "2026-11-14T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Pisgah. No e-bikes allowed. Post-ride social at Oskar Blues Brewery. Open to all women 18 and older.",
+   "description": "Riding in Pisgah. Post-ride social at Oskar Blues Brewery. No e-bikes allowed.",
    "venue": "Pisgah",
    "city": "Brevard",
    "state": "NC",
@@ -45,7 +68,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e6ecfc09dd6c5bf2",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-20"
   },
   {
    "title": "December Group Ride + Social",
@@ -53,7 +76,7 @@
    "end": "2026-12-12T15:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Hot Springs. No e-bikes allowed. Post-ride social at Big Pillow Brewing. Open to all women 18 and older.",
+   "description": "Riding in Hot Springs. Post-ride social at Big Pillow Brewing. No e-bikes allowed.",
    "venue": "Hot Springs",
    "city": "Hot Springs",
    "state": "NC",
@@ -68,7 +91,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b68ee4e9e36aad4a",
-   "last_seen": "2026-09-19"
+   "last_seen": "2026-09-20"
   }
  ]
 }
