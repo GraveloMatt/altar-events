@@ -10,7 +10,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Bikeboom 2026
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260927
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:7ea8cf13a1f20b18@altar.bike
 CATEGORIES:race
 DESCRIPTION:Update on 7/10/26 Due to low registration number\, we have dec
@@ -34,7 +34,7 @@ BEGIN:VEVENT
 SUMMARY:2026 Ride to the Rock
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260926
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:f386287547fbc4ba@altar.bike
 CATEGORIES:race
 DESCRIPTION:SATURDAY\, SEPTEMBER 26\, 2026 Pickens\, SC Presented by the R
@@ -58,7 +58,7 @@ BEGIN:VEVENT
 SUMMARY:SECCC Conference Championships at Ride Rock Creek
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:c2e3c2a0c6471d35@altar.bike
 CATEGORIES:race
 DESCRIPTION:Pre-registration only. Registration closes Thursday\, Septembe
@@ -82,7 +82,7 @@ BEGIN:VEVENT
 SUMMARY:NCCX Pre-season - Cane Creek
 DTSTART;VALUE=DATE:20260927
 DTEND;VALUE=DATE:20260927
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:567c411f65a716bf@altar.bike
 CATEGORIES:race
 DESCRIPTION:Join North Carolina Cyclo-Cross and friends for pre-season rac
@@ -106,7 +106,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah 111 / 555
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261003
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:c6d05d9f51734aa6@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Pisgah 111 is the quintessential crusher of a cross-countr
@@ -130,7 +130,7 @@ BEGIN:VEVENT
 SUMMARY:2026 Gran Fondo Hincapie-Greenville
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261017
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:f2acb77c16a22d1c@altar.bike
 CATEGORIES:race
 DESCRIPTION:Not sure which distance is right for you? Visit our website to
@@ -146,7 +146,7 @@ BEGIN:VEVENT
 SUMMARY:2026 NCCX Race #3 Boone
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261018
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:0b3f52f489b0c6d2@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 30th season of the NCCX series. We are excited 
@@ -170,15 +170,22 @@ BEGIN:VEVENT
 SUMMARY:2026 BRAGco Cycling Event
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261025
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:743ac628878c17c6@altar.bike
 CATEGORIES:race
-DESCRIPTION:Below are the STRAVA links for the routes. The Classic - 68 Mi
- les: https://www.strava.com/routes/3523364347191326162 The Roadrunner - 41
-  Miles: https://www.strava.com/routes/3523365976376653266 The Sprint - 23 
- Miles: https://www.strava.com/routes/3523365976381818322\n\nMore: http://w
- ww.BikeReg.com/bragco-cycling-event\n\nSource: BikeReg\n\nListed by Altar 
- Cycles — altar.bike/calendar
+DESCRIPTION:Bike Ride Across Greene County Sunday\, October 25\, 2026 Star
+ t time: 8:30 AM for all routes Start location: 115 Academy Street\, Greene
+ ville\, TN Choose from three routes through Greene County\, Tennessee\, al
+ l beginning and ending in historic downtown Greeneville. Below are the STR
+ AVA links for the routes. The Classic - 68 Miles: https://www.strava.com/r
+ outes/3523364347191326162 The Roadrunner - 41 Miles: https://www.strava.co
+ m/routes/3523365976376653266 The Sprint - 23 Miles: https://www.strava.com
+ /routes/3523365976381818322 Each route has a dedicated Strava link\, so ri
+ ders can review the course\, distance\, and elevation profile ahead of tim
+ e and load it to a GPS device. Riders will also receive physical turn-by-t
+ urn route cards. All routes roll out together at 8:30 AM\, so plan to arri
+ ve early\n\nMore: http://www.BikeReg.com/bragco-cycling-event\n\nSource: B
+ ikeReg\n\nListed by Altar Cycles — altar.bike/calendar
 GEO:36.1623862;-82.8286381
 LOCATION:115 Academy St\, Greeneville\, TN
 URL:http://www.BikeReg.com/bragco-cycling-event
@@ -187,7 +194,7 @@ BEGIN:VEVENT
 SUMMARY:The Middle Fork Fondo 2026
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261031
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:0186abed2e6b428b@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Middle Fork Fondo 2026 benefits Bikes 4 Kids NC\, supporti
@@ -211,7 +218,7 @@ BEGIN:VEVENT
 SUMMARY:1000 Mile BikeWalk for Prevention
 DTSTART:20261031T000000
 DTEND:20261031T000000
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:ca69c113117cd0e8@altar.bike
 CATEGORIES:race
 DESCRIPTION:The 1000 Mile BikeWalk for Prevention to be held October 31\, 
@@ -235,7 +242,7 @@ BEGIN:VEVENT
 SUMMARY:Couch Potato
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261107
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:2e02b8a758b849f1@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 14th Annual Couch Potato race! We're very excit
@@ -259,7 +266,7 @@ BEGIN:VEVENT
 SUMMARY:Test + Tune with Cane Creek Components (Again)
 DTSTART:20261107T110000
 DTEND:20261107T140000
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:db8cbeababc1d3b3@altar.bike
 CATEGORIES:race
 DESCRIPTION:Suspension test and tune event with industry partner Cane Cree
@@ -274,7 +281,7 @@ BEGIN:VEVENT
 SUMMARY:Swank 65
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261108
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:808d5262f339b592@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 28th Annual Swank 65! We're very excited for an
@@ -298,7 +305,7 @@ BEGIN:VEVENT
 SUMMARY:2026 NCCX Race #8 Hickory
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261108
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:6ce7ed1f4106eec0@altar.bike
 CATEGORIES:race
 DESCRIPTION:Welcome to the 30th season of the NCCX series. We are excited 
@@ -322,7 +329,7 @@ BEGIN:VEVENT
 SUMMARY:We Shred Rock Creek
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261114
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:0a67e54dee113b1a@altar.bike
 CATEGORIES:race
 DESCRIPTION:We Shred Rock Creek is back for 2026 – and it is shaping up 
@@ -346,7 +353,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah DOUBLE DARE
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:59bf1e39a66ae34b@altar.bike
 CATEGORIES:race
 DESCRIPTION:Every year an event comes along that tests mental and physical
@@ -371,7 +378,7 @@ SUMMARY:2026 NORTH CAROLINA GRAND PRIX - R#1 & R#2 - NCCX Race #10 & Race
  #11 Hendersonville
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:1ea4003af619eb35@altar.bike
 CATEGORIES:race
 DESCRIPTION:Review the event website here. The 2026 guide will be posted c
@@ -394,22 +401,25 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Pisgah Rage Regular Season
 DTSTART;VALUE=DATE:20261201
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:670937aa0418b08a@altar.bike
 CATEGORIES:race
 DESCRIPTION:Runs 1 Dec 2026 to 30 May 2027. Regular season with practices 
- and races. Races typically occur 5-6 times across North Carolina from earl
- y March through late May. Weekend practices 2x per week March-May\n\nMore:
-  https://www.pisgahrage.com/\n\nSource: Pisgah Rage (NICA composite team)
- \n\nListed by Altar Cycles — altar.bike/calendar
-LOCATION:Asheville\, Asheville\, NC
+ and races. January includes 2-4 indoor training opportunities. February ha
+ s 1 weekend practice per week. March-May has 2 rides per week (1-2 weeknig
+ hts after 5pm for 1.5 hours and weekend practices alternating Saturdays/Su
+ ndays for 2 hours). Races begin in early March with typically 5-6 races ac
+ ross North Carolina through end of May.\n\nMore: https://www.pisgahrage.co
+ m/\n\nSource: Pisgah Rage (NICA composite team)\n\nListed by Altar Cycles 
+ — altar.bike/calendar
+LOCATION:Asheville area and across North Carolina\, Asheville\, NC
 URL:https://www.pisgahrage.com/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Pisgah Stage Race
 DTSTART;VALUE=DATE:20270406
 DTEND;VALUE=DATE:20270410
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:b96fc2f355480948@altar.bike
 CATEGORIES:race
 DESCRIPTION:Pisgah Stage Race is now running as a Three-Day Race. It's not
@@ -433,7 +443,7 @@ BEGIN:VEVENT
 SUMMARY:Bootlegger
 DTSTART;VALUE=DATE:20270417
 DTEND;VALUE=DATE:20270417
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:f0fa19e43a2adce0@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Bootlegger is one of the most challenging and scenic grave
@@ -457,7 +467,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Mountain Bike Adventure Race
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270501
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:996261671a499518@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Pisgah Mountain Bike Adventure Race (PMBAR) is the absolut
@@ -482,7 +492,7 @@ BEGIN:VEVENT
 SUMMARY:Carolina Reaper Road Race
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270515
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:6cb81637a4faee67@altar.bike
 CATEGORIES:race
 DESCRIPTION:Please visit www.reaperroadrace.com for more information.\n\nM
@@ -497,7 +507,7 @@ SUMMARY:2027 Gran Fondo Asheville\, p/b Applewood Manor Foundation\, a SEN
  A Gran Fondo National Series event
 DTSTART;VALUE=DATE:20270718
 DTEND;VALUE=DATE:20270718
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:19cc3e2cb7f4ed33@altar.bike
 CATEGORIES:race
 DESCRIPTION:THIS REGISTRATION IS FOR 2027 THESE DETAILS ARE FOR 2026 EVENT
@@ -521,7 +531,7 @@ BEGIN:VEVENT
 SUMMARY:HARDford 50 and HARDERford 75
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270801
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:fbb7b952544d9b16@altar.bike
 CATEGORIES:race
 DESCRIPTION:Riders have two course options: The HARDford 50 and the HARDER
@@ -545,7 +555,7 @@ BEGIN:VEVENT
 SUMMARY:2027 Boone Gran Fondo\, a SENA Gran Fondo National Series event
 DTSTART;VALUE=DATE:20270808
 DTEND;VALUE=DATE:20270808
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:eaf10f6e0cd70f9a@altar.bike
 CATEGORIES:race
 DESCRIPTION:THIS REGISTRATION IS FOR THE 2027 EVENT DETAILS BELOW SUBJECT 
@@ -569,7 +579,7 @@ BEGIN:VEVENT
 SUMMARY:Old Fort Fifty
 DTSTART;VALUE=DATE:20270814
 DTEND;VALUE=DATE:20270814
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:574c90ce85701ccd@altar.bike
 CATEGORIES:race
 DESCRIPTION:The Old Fort Fifty will be held on the rugged\, legendary trai
@@ -593,7 +603,7 @@ BEGIN:VEVENT
 SUMMARY:Pisgah Enduro
 DTSTART;VALUE=DATE:20270815
 DTEND;VALUE=DATE:20270815
-DTSTAMP:20260922T140514Z
+DTSTAMP:20260923T141710Z
 UID:903f0caa2f7afb82@altar.bike
 CATEGORIES:race
 DESCRIPTION:High-speed East Coast technical rocky rooty singletrack ENDURO

@@ -1,13 +1,13 @@
 {
- "at": "2026-09-22T14:03:03.712173+00:00",
+ "at": "2026-09-23T14:14:59.092650+00:00",
  "events": [
   {
    "title": "October Group Ride + Social",
-   "start": "2026-10-10T10:00:00",
-   "end": "2026-10-10T12:30:00",
+   "start": "2026-10-10T00:00:00",
+   "end": "2026-10-10T00:00:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in and around Old Fort. Post-ride social at Foothills Watershed. No e-bikes allowed. Registration opens October 1 at 7 pm via Eventbrite.",
+   "description": "Riding in and around Old Fort. Post-ride social at Foothills Watershed. No e-bikes allowed.",
    "venue": "Gateway Trails",
    "city": "Old Fort",
    "state": "NC",
@@ -22,15 +22,15 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b150ddbea280cbb5",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
    "title": "November Group Ride + Social",
-   "start": "2026-11-14T10:00:00",
-   "end": "2026-11-14T12:30:00",
+   "start": "2026-11-14T00:00:00",
+   "end": "2026-11-14T00:00:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Pisgah. Post-ride social at Oskar Blues Brewery. No e-bikes allowed. Registration opens November 1 at 7 pm via Eventbrite.",
+   "description": "Riding in Pisgah. Post-ride social at Oskar Blues Brewery. No e-bikes allowed.",
    "venue": "Pisgah",
    "city": "Brevard",
    "state": "NC",
@@ -45,15 +45,15 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e6ecfc09dd6c5bf2",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
    "title": "December Group Ride + Social",
-   "start": "2026-12-12T13:00:00",
-   "end": "2026-12-12T15:30:00",
+   "start": "2026-12-12T00:00:00",
+   "end": "2026-12-12T00:00:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Hot Springs. Post-ride social at Big Pillow Brewing. No e-bikes allowed. Registration opens December 1 at 7 pm via Eventbrite.",
+   "description": "Riding in Hot Springs. Post-ride social at Big Pillow Brewing. No e-bikes allowed.",
    "venue": "Hot Springs",
    "city": "Hot Springs",
    "state": "NC",
@@ -68,7 +68,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b68ee4e9e36aad4a",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
    "title": "Test + Tune with Cane Creek Components (Again)",

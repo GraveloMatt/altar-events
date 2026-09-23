@@ -1,33 +1,9 @@
 {
- "at": "2026-09-22T14:02:34.407814+00:00",
+ "at": "2026-09-23T14:14:43.212784+00:00",
  "events": [
   {
-   "title": "Smart Cycling Class",
-   "start": "2027-03-01",
-   "end": "",
-   "all_day": true,
-   "url": "https://ashevilleonbikes.com/events",
-   "description": "10 am \u2013 5 pm",
-   "venue": "",
-   "city": "Asheville",
-   "state": "NC",
-   "cost": null,
-   "date_precision": "month",
-   "extracted_by": "llm",
-   "source": "asheville-on-bikes",
-   "source_name": "Asheville on Bikes",
-   "source_url": "https://ashevilleonbikes.com/",
-   "trust": 80,
-   "bucket": "local",
-   "category": "clinic",
-   "category_basis": "rule",
-   "discipline": "other",
-   "uid": "3d04c78472303ea6",
-   "last_seen": "2026-09-22"
-  },
-  {
    "title": "Bike Valet at Forestry Camp for Drive-By Truckers",
-   "start": "2026-09-22",
+   "start": "2026-09-23",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
@@ -47,11 +23,11 @@
    "category_basis": "default",
    "discipline": "commuter",
    "uid": "29840e2362a0ef56",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
    "title": "Group Ride to Drive-By Truckers at Forestry Camp",
-   "start": "2026-09-22",
+   "start": "2026-09-23",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
@@ -71,11 +47,11 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "dfbd585de33a81e5",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
-   "title": "Crafted Bike Show \u2013 Southeast Handmade Bicycle & Gear Show",
-   "start": "2026-09-22",
+   "title": "Crafted Bike Show: Southeast Handmade Bicycle & Gear Show",
+   "start": "2026-09-23",
    "end": "",
    "all_day": true,
    "url": "https://ashevilleonbikes.com/events",
@@ -95,7 +71,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "69efd846125d8658",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
    "title": "Tour de Fat",
@@ -119,7 +95,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "548f70215540a5da",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
    "title": "Bike Valet at Forestry Camp for Burnpile",
@@ -143,7 +119,7 @@
    "category_basis": "default",
    "discipline": "commuter",
    "uid": "ee2e3dc469806832",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
    "title": "World Mental Health Ride at Bear's Smokehouse",
@@ -167,7 +143,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "0a759df2f1b97615",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
    "title": "Get There Asheville",
@@ -191,7 +167,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "1473187f58b65f1a",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
    "title": "Pumpkin Pedaller",
@@ -215,7 +191,7 @@
    "category_basis": "default",
    "discipline": "other",
    "uid": "a4fb8fc562c30f55",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
   },
   {
    "title": "Smart Cycling Class",
@@ -239,7 +215,32 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "d59523d7622bcc38",
-   "last_seen": "2026-09-22"
+   "last_seen": "2026-09-23"
+  },
+  {
+   "title": "Smart Cycling Class",
+   "start": "2027-03-01",
+   "end": "",
+   "all_day": true,
+   "url": "https://ashevilleonbikes.com/events",
+   "description": "10 am \u2013 5 pm",
+   "venue": "",
+   "city": "Asheville",
+   "state": "NC",
+   "cost": null,
+   "date_precision": "month",
+   "extracted_by": "llm",
+   "source": "asheville-on-bikes",
+   "source_name": "Asheville on Bikes",
+   "source_url": "https://ashevilleonbikes.com/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "clinic",
+   "category_basis": "rule",
+   "discipline": "other",
+   "uid": "3d04c78472303ea6",
+   "last_seen": "2026-09-22",
+   "held_since": "2026-09-22"
   }
  ]
 }
