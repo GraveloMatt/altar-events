@@ -7,26 +7,24 @@ X-WR-CALNAME:WNC Trail Work Days — Altar Cycles
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:Public Lands Day Kickoff @ Catawba Falls - Scenic Hike & Litter Pi
- ckup
-DTSTART:20260925T170000
-DTEND:20260925T193000
-DTSTAMP:20260925T143842Z
-UID:5ed4f8f775f3c785@altar.bike
+SUMMARY:Catawba View Volunteer Trail Day
+DTSTART:20261002T120000
+DTEND:20261002T163000
+DTSTAMP:20260926T134736Z
+UID:fc6597dffab95964@altar.bike
 CATEGORIES:trail-work
-DESCRIPTION:Scenic hike and litter pickup at Catawba Falls. Hike out and b
- ack on the river trail to the lower and upper falls while picking up litte
- r along the way.\n\nMore: https://www.g5trailcollective.org/volunteer\n\nS
- ource: G5 Trail Collective\n\nListed by Altar Cycles — altar.bike/calend
- ar
-LOCATION:Catawba Falls Trailhead\, Old Fort\, NC
+DESCRIPTION:Pruning and drain maintenance on one of the newest trails in t
+ he Gateway Trail System. Open to hike & bike with a scenic view point!\n\n
+ More: https://www.g5trailcollective.org/volunteer\n\nSource: G5 Trail Coll
+ ective\n\nListed by Altar Cycles — altar.bike/calendar
+LOCATION:Gateway Trailhead\, Old Fort\, NC
 URL:https://www.g5trailcollective.org/volunteer
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Carolina Mountain Club Joint Work Day
 DTSTART:20261009T083000
 DTEND:20261009T140000
-DTSTAMP:20260925T143842Z
+DTSTAMP:20260926T134736Z
 UID:798af262c46ed07e@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Join Carolina Mountain Club and Pisgah Area SORBA for a joint 
@@ -47,10 +45,25 @@ LOCATION:Pisgah Ranger Station/Visitor Center\, Pisgah Highway\, Pisgah Fo
 URL:https://www.pisgahareasorba.org/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Bernard Mountain Volunteer Trail Day
+DTSTART:20261010T090000
+DTEND:20261010T140000
+DTSTAMP:20260926T134736Z
+UID:7281360418a623b8@altar.bike
+CATEGORIES:trail-work
+DESCRIPTION:Pruning and drain maintenance. We're still giving it love and 
+ rehab from Hurricane Helene damage. Join in and help get one of everyone's
+  favorite trails closer to restored!\n\nMore: https://www.g5trailcollectiv
+ e.org/volunteer\n\nSource: G5 Trail Collective\n\nListed by Altar Cycles 
+ — altar.bike/calendar
+LOCATION:Allison Trailhead Parking - Meetup\, Old Fort\, NC
+URL:https://www.g5trailcollective.org/volunteer
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:G5 Fall Trail Weekend!
 DTSTART:20261106T150000
 DTEND:20261108T130000
-DTSTAMP:20260925T143842Z
+DTSTAMP:20260926T134736Z
 UID:950ebae34683eda4@altar.bike
 CATEGORIES:trail-work
 DESCRIPTION:Pisgah Grandfather Outdoor Community & Stewardship Party! Volu

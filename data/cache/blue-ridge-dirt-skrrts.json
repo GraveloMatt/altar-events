@@ -1,5 +1,5 @@
 {
- "at": "2026-09-25T14:37:10.098315+00:00",
+ "at": "2026-09-26T13:45:27.595278+00:00",
  "events": [
   {
    "title": "October Group Ride + Social",
@@ -7,7 +7,7 @@
    "end": "2026-10-10T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in and around Old Fort. Post-ride social at Foothills Watershed. No e-bikes allowed.",
+   "description": "Riding in and around Old Fort. No e-bikes allowed. Post-ride social at Foothills Watershed. Open to all women 18 and older.",
    "venue": "Gateway Trails",
    "city": "Old Fort",
    "state": "NC",
@@ -22,7 +22,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "b150ddbea280cbb5",
-   "last_seen": "2026-09-25"
+   "last_seen": "2026-09-26"
   },
   {
    "title": "November Group Ride + Social",
@@ -30,7 +30,7 @@
    "end": "2026-11-14T12:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Pisgah. Post-ride social at Oskar Blues Brewery. No e-bikes allowed.",
+   "description": "Riding in Pisgah. No e-bikes allowed. Post-ride social at Oskar Blues Brewery. Open to all women 18 and older.",
    "venue": "Pisgah",
    "city": "Brevard",
    "state": "NC",
@@ -45,7 +45,7 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "e6ecfc09dd6c5bf2",
-   "last_seen": "2026-09-25"
+   "last_seen": "2026-09-26"
   },
   {
    "title": "December Group Ride + Social",
@@ -53,7 +53,7 @@
    "end": "2026-12-12T15:30:00",
    "all_day": false,
    "url": "https://www.dirtskrrts.com/schedule",
-   "description": "Riding in Hot Springs. Post-ride social at Big Pillow Brewing. No e-bikes allowed.",
+   "description": "Riding in Hot Springs. No e-bikes allowed. Post-ride social at Big Pillow Brewing. Open to all women 18 and older.",
    "venue": "Hot Springs",
    "city": "Hot Springs",
    "state": "NC",
@@ -68,7 +68,7 @@
    "category_basis": "rule",
    "discipline": "other",
    "uid": "b68ee4e9e36aad4a",
-   "last_seen": "2026-09-25"
+   "last_seen": "2026-09-26"
   },
   {
    "title": "Test + Tune with Cane Creek Components (Again)",

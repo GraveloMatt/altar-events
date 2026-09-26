@@ -1,14 +1,14 @@
 {
- "at": "2026-09-25T14:37:23.287511+00:00",
+ "at": "2026-09-26T13:45:42.355065+00:00",
  "events": [
   {
-   "title": "Public Lands Day Kickoff @ Catawba Falls - Scenic Hike & Litter Pickup",
-   "start": "2026-09-25T17:00:00",
-   "end": "2026-09-25T19:30:00",
+   "title": "Catawba View Volunteer Trail Day",
+   "start": "2026-10-02T12:00:00",
+   "end": "2026-10-02T16:30:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Scenic hike and litter pickup at Catawba Falls. Hike out and back on the river trail to the lower and upper falls while picking up litter along the way.",
-   "venue": "Catawba Falls Trailhead",
+   "description": "Pruning and drain maintenance on one of the newest trails in the Gateway Trail System. Open to hike & bike with a scenic view point!",
+   "venue": "Gateway Trailhead",
    "city": "Old Fort",
    "state": "NC",
    "cost": null,
@@ -21,16 +21,39 @@
    "category": "trail-work",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "5ed4f8f775f3c785",
-   "last_seen": "2026-09-25"
+   "uid": "fc6597dffab95964",
+   "last_seen": "2026-09-26"
   },
   {
-   "title": "Women's + Trail Skills Workshop",
+   "title": "Bernard Mountain Volunteer Trail Day",
+   "start": "2026-10-10T09:00:00",
+   "end": "2026-10-10T14:00:00",
+   "all_day": false,
+   "url": "https://www.g5trailcollective.org/volunteer",
+   "description": "Pruning and drain maintenance. We're still giving it love and rehab from Hurricane Helene damage. Join in and help get one of everyone's favorite trails closer to restored!",
+   "venue": "Allison Trailhead Parking - Meetup",
+   "city": "Old Fort",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "source": "g5-trail-collective",
+   "source_name": "G5 Trail Collective",
+   "source_url": "https://www.g5trailcollective.org/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "trail-work",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "7281360418a623b8",
+   "last_seen": "2026-09-26"
+  },
+  {
+   "title": "Women's + Trail Skills Workshop - Intro Class: Trail Maintenance 101",
    "start": "2026-10-17T09:00:00",
    "end": "2026-10-17T15:00:00",
    "all_day": false,
    "url": "https://www.g5trailcollective.org/volunteer",
-   "description": "Intro Class: Trail Maintenance 101. G5 Community Education Program. REGISTRATION FULL",
+   "description": "Registration full",
    "venue": "Allison Trailhead Parking - Meetup",
    "city": "Old Fort",
    "state": "NC",
@@ -44,8 +67,8 @@
    "category": "clinic",
    "category_basis": "rule",
    "discipline": "mtb",
-   "uid": "58085b166d26dbaf",
-   "last_seen": "2026-09-25"
+   "uid": "2d942221ff77fefb",
+   "last_seen": "2026-09-26"
   },
   {
    "title": "G5 Fall Trail Weekend!",
@@ -68,7 +91,31 @@
    "category_basis": "rule",
    "discipline": "mtb",
    "uid": "950ebae34683eda4",
-   "last_seen": "2026-09-25"
+   "last_seen": "2026-09-26"
+  },
+  {
+   "title": "Women's + Trail Skills Workshop",
+   "start": "2026-10-17T09:00:00",
+   "end": "2026-10-17T15:00:00",
+   "all_day": false,
+   "url": "https://www.g5trailcollective.org/volunteer",
+   "description": "Intro Class: Trail Maintenance 101. G5 Community Education Program. REGISTRATION FULL",
+   "venue": "Allison Trailhead Parking - Meetup",
+   "city": "Old Fort",
+   "state": "NC",
+   "cost": null,
+   "extracted_by": "llm",
+   "source": "g5-trail-collective",
+   "source_name": "G5 Trail Collective",
+   "source_url": "https://www.g5trailcollective.org/",
+   "trust": 80,
+   "bucket": "local",
+   "category": "clinic",
+   "category_basis": "rule",
+   "discipline": "mtb",
+   "uid": "58085b166d26dbaf",
+   "last_seen": "2026-09-25",
+   "held_since": "2026-09-25"
   }
  ]
 }
